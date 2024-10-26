@@ -8,19 +8,19 @@ public class PlayerData : MonoBehaviour
 {
     [SerializeField] private int _jumpNum;    //mvp패턴 변수
 
-    public int JumpNum { get {return _jumpNum; } set { _jumpNum = value; } }
-    
+    public int JumpNum { get { return _jumpNum; } set { _jumpNum = value; } }
+
     [SerializeField] private int _fallNum;  //mvp패턴 변수
 
     public int FallNum { get { return _fallNum; } set { _fallNum = value; } }
 
     [SerializeField] private float _jumpPower;
 
-    public float JumpPower {  get { return _jumpPower; } set { _jumpPower = value; } }
+    public float JumpPower { get { return _jumpPower; } set { _jumpPower = value; } }
 
     [SerializeField] private float _moveSpeed;
 
-    public float MoveSpeed {  get { return _moveSpeed; }  set { _moveSpeed = value; } }
+    public float MoveSpeed { get { return _moveSpeed; } set { _moveSpeed = value; } }
 
     [SerializeField] private bool _hasItem;
 
@@ -29,6 +29,11 @@ public class PlayerData : MonoBehaviour
     [SerializeField] private float _throwPower;
 
     public float ThrowPower { get { return _throwPower; } set { _throwPower = value; } }
+
+    [SerializeField] private bool _isStiff;
+
+    public bool IsStiff { get { return _isStiff; }  set { _isStiff = value; }  }
+
 
 
 }
