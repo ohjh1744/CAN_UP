@@ -24,7 +24,7 @@ public class PlayerData : MonoBehaviour
 
     [SerializeField] private bool _hasItem;
 
-    public bool HasItem { get { return _hasItem; } set { _hasItem = value; } }
+    public bool HasItem { get { return _hasItem; } set { _hasItem = value; } } //추후에 SaveData 쪽과 연동할 예정.
 
     [SerializeField] private float _throwPower;
 
