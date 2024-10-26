@@ -22,6 +22,7 @@ public class NodeData
 }
 
 //간선 정보
+[System.Serializable]
 public class EdgeData
 {
     // 루트노드인지 확인
