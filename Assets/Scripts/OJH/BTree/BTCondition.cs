@@ -1,18 +1,20 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR;
 
-public class BTCondition : MonoBehaviour
+public class BTCondition : BTNode
 {
-    // Start is called before the first frame update
-    void Start()
+    private Func<bool> condition;
+
+    public BTCondition(Func<bool> condition)
     {
-        
+        this.condition = condition;
     }
 
-    // Update is called once per frame
-    void Update()
+    public override BTNodeState Evaluate()
     {
-        
+        return condition() ? BTNodeState.Success : BTNodeState.Failure;
     }
 }

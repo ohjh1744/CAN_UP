@@ -1,18 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR;
 
-public class BTNode : MonoBehaviour
+public enum BTNodeState
 {
-    // Start is called before the first frame update
-    void Start()
+    Success,
+    Failure,
+    Running
+}
+public abstract class BTNode 
+{
+    protected List<BTNode> children = new List<BTNode>();
+
+    public void AddChild(BTNode node)
     {
-        
+        children.Add(node);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public abstract BTNodeState Evaluate();
 }

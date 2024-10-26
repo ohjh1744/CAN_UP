@@ -1,18 +1,19 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR;
 
-public class BTAction : MonoBehaviour
+public class BTAction : BTNode
 {
-    // Start is called before the first frame update
-    void Start()
+    private Func<BTNodeState> action;
+    public BTAction(Func<BTNodeState> action)
     {
-        
+        this.action = action;
     }
 
-    // Update is called once per frame
-    void Update()
+    public override BTNodeState Evaluate()
     {
-        
+        return action();
     }
 }
