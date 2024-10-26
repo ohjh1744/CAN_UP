@@ -10,6 +10,9 @@ public enum EBTType {Sequence, Selector, Parallel, BTAction, BTCondition }
 [System.Serializable]
 public class NodeData
 {
+
+    public bool isRoot;
+
     public EBTType NodeType;
 
     public string NodeName;
@@ -25,9 +28,6 @@ public class NodeData
 [System.Serializable]
 public class EdgeData
 {
-    // 루트노드인지 확인
-    public bool IsRoot;
-
     public string ParentName;
 
     public string[] ChildNames;
@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private NodeData[] _nodeDatas;
 
     //노드 저장하는 공간
-    private Dictionary<string, BTNode> _nodes;
+    private Dictionary<string, BTNode> _nodes = new Dictionary<string, BTNode>();
 
     void Start()
     {
@@ -56,7 +56,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _root.Evaluate();
+       _root.Evaluate();
     }
 
     //노드 생성 및 트리 연결
@@ -64,7 +64,9 @@ public class PlayerController : MonoBehaviour
     {
         for(int i = 0; i < _nodeDatas.Length; i++)
         {
-            BTNode btNode;
+            BTNode btNode = new BTSelector();
+
+            bool isRoot = _nodeDatas[i].isRoot;
 
             EBTType btType = _nodeDatas[i].NodeType;
 
@@ -80,9 +82,9 @@ public class PlayerController : MonoBehaviour
                 case EBTType.Sequence:
                     btNode = new BTSequence();
                     _nodes.Add(btString, btNode);
-                     break;
+                    break;
                 case EBTType.Selector:
-                     btNode = new BTSelector();
+                    btNode = new BTSelector();
                     _nodes.Add(btString, btNode);
                     break;
                 case EBTType.Parallel:
@@ -99,38 +101,37 @@ public class PlayerController : MonoBehaviour
                     break;
             }
 
-
-            //트리 연결
-            for (int j = 0; j < _edgeDatas.Length; j++)
+            if (isRoot == true)
             {
-                if (_nodes.ContainsKey(_edgeDatas[j].ParentName) == false)
-                {
-                    Debug.Log($"Cant Find {_edgeDatas[j].ParentName} Node");
-                }
-                else
-                {
-                    BTNode ParentNode = _nodes[_edgeDatas[j].ParentName];
+                _root = btNode;
+            }
 
-                    for (int k = 0; k < _edgeDatas[j].ChildNames.Length; k++)
+        }
+
+        //트리 연결
+        for (int j = 0; j < _edgeDatas.Length; j++)
+        {
+            if (_nodes.ContainsKey(_edgeDatas[j].ParentName) == false)
+            {
+                Debug.Log($"Cant Find {_edgeDatas[j].ParentName} Node");
+            }
+            else
+            {
+                BTNode ParentNode = _nodes[_edgeDatas[j].ParentName];
+
+                for (int k = 0; k < _edgeDatas[j].ChildNames.Length; k++)
+                {
+                    if (_nodes.ContainsKey(_edgeDatas[j].ChildNames[k]) == false)
                     {
-                        if (_nodes.ContainsKey(_edgeDatas[j].ChildNames[k]) == false)
-                        {
-                            Debug.Log($"Cant Find {_nodes[_edgeDatas[j].ChildNames[k]]} Node");
-                        }
-                        else
-                        {
-                            BTNode CHildNode = _nodes[_edgeDatas[j].ChildNames[k]];
+                        Debug.Log($"Cant Find {_nodes[_edgeDatas[j].ChildNames[k]]} Node");
+                    }
+                    else
+                    {
+                        BTNode CHildNode = _nodes[_edgeDatas[j].ChildNames[k]];
+                        ParentNode.AddChild(CHildNode);
+                        Debug.Log(ParentNode);
+                        Debug.Log(CHildNode);
 
-                            if (_edgeDatas[j].IsRoot == true)
-                            {
-                                _root.AddChild(CHildNode);
-                            }
-                            else
-                            {
-                                ParentNode.AddChild(CHildNode);
-                            }
-                            
-                        }
                     }
                 }
             }
