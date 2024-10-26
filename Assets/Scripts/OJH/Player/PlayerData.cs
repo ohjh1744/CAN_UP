@@ -30,6 +30,9 @@ public class PlayerData : MonoBehaviour
 
     public float ThrowPower { get { return _throwPower; } set { _throwPower = value; } }
 
+
+    // 경직 조건: 장애물이나 플랫폼과 부딪힐때, 단 플랫폼은 Player의 아래에 있을 경우 제외.
+    //            
     [SerializeField] private bool _isStiff;
 
     public bool IsStiff { get { return _isStiff; }  set { _isStiff = value; }  }
