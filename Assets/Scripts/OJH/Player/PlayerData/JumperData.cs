@@ -2,17 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class JumperData : MonoBehaviour
+[System.Serializable]
+public class JumperData : PlayerData, IKeyMove
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private float _moveSpeed;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public float MoveSpeed { get { return _moveSpeed; } set { _moveSpeed = value; } }
+
+    [SerializeField] private Vector3 _moveDir;
+
+    public Vector3 MoveDir { get { return _moveDir; } set { _moveDir = value; } }
+
 }

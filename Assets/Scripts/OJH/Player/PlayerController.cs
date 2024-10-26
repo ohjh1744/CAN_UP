@@ -39,6 +39,9 @@ public class PlayerController : MonoBehaviour
     // 루트 노드
     private BTNode _root;
 
+    // 추후에 떨어진횟수 및 점프 횟수 MVP패턴을 위한 PlayerData 참조
+    [SerializeField] private PlayerData _playerData;
+
     // 정점들
     [SerializeField] private EdgeData[] _edgeDatas;
 
@@ -137,6 +140,8 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+
+    
 
 
 

@@ -2,17 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StoneData : MonoBehaviour
+[System.Serializable]
+public class StoneData : PlayerData, IClickMove
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private Vector3 _clickDownPos;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public Vector3 ClickDownPos { get { return _clickDownPos; } set { _clickDownPos = value; } }
+
+
+    private Vector3 _clickUpPos;
+
+    public Vector3 ClickUpPos { get { return _clickUpPos; } set { _clickUpPos = value; } }
 }

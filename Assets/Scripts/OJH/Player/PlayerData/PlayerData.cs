@@ -4,7 +4,8 @@ using TMPro;
 using UnityEngine;
 
 // PlayerData는 추후에 프로퍼티 수정 예정.
-public abstract class PlayerData : MonoBehaviour
+[System.Serializable]
+public class PlayerData : MonoBehaviour
 {
     [SerializeField] private int _jumpNum;    //mvp패턴 변수
 
@@ -18,20 +19,8 @@ public abstract class PlayerData : MonoBehaviour
 
     public float JumpPower { get { return _jumpPower; } set { _jumpPower = value; } }
 
-    [SerializeField] private float _moveSpeed;
 
-    public float MoveSpeed { get { return _moveSpeed; } set { _moveSpeed = value; } }
-
-    [SerializeField] private bool _hasItem;
-
-    public bool HasItem { get { return _hasItem; } set { _hasItem = value; } } //추후에 SaveData 쪽과 연동할 예정.
-
-    [SerializeField] private float _throwPower;
-
-    public float ThrowPower { get { return _throwPower; } set { _throwPower = value; } }
-
-
-    // 경직 조건: 장애물이나 플랫폼과 부딪힐때, 단 플랫폼은 Player의 아래에 있을 경우 제외.
+    // 경직 조건: 공중 상황, 장애물이 물리적으로 밀쳤을때
     //isStiff 변수의 경우는 장애물이 물리적으로 밀쳤을때에만 사용.             
     [SerializeField] private bool _isStiff;
 

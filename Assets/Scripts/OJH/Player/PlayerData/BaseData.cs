@@ -2,17 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BaseData : MonoBehaviour
+[System.Serializable]
+public class BaseData : PlayerData, IKeyMove, IHasItem
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private float _moveSpeed;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public float MoveSpeed { get { return _moveSpeed; } set { _moveSpeed = value; } }
+
+    [SerializeField] private Vector3 _moveDir;
+
+    public Vector3 MoveDir { get { return _moveDir; } set { _moveDir = value; } }
+
+    [SerializeField] private bool _hasItem;
+
+    public bool HasItem { get { return _hasItem; } set { _hasItem = value; } } //추후에 SaveData 쪽과 연동할 예정.
+
+    [SerializeField] private float _throwPower;
+
+    public float ThrowPower { get { return _throwPower; } set { _throwPower = value; } }
+
 }
