@@ -12,6 +12,7 @@ public class ReadyJump : PlayerAction
     
     public override BTNodeState DoAction()
     {
+
         if ((Input.GetKeyUp(KeyCode.Space) || _canJumpTime > _maxTime) && !(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)))
         {
             Debug.Log("점프!");
@@ -25,7 +26,6 @@ public class ReadyJump : PlayerAction
             Debug.Log("점프력 차징 중");
 
             return BTNodeState.Running;
-
         }
        
 
