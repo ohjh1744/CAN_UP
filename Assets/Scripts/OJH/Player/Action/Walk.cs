@@ -6,7 +6,7 @@ public class Walk : PlayerAction
 {
     public override BTNodeState DoAction()
     {
-        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))
+        if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)) && !Input.GetKey(KeyCode.Space))
         {
             Debug.Log("¿Ãµø¡ﬂ");
             return BTNodeState.Running;
