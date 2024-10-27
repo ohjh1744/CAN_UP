@@ -43,10 +43,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private PlayerData _playerData;
 
     // 정점들
-    [SerializeField] private EdgeData[] _edgeDatas;
+    [SerializeField] private NodeData[] _nodeDatas;
 
     // 간선들
-    [SerializeField] private NodeData[] _nodeDatas;
+    [SerializeField] private EdgeData[] _edgeDatas;
+
 
     //노드 저장하는 공간
     private Dictionary<string, BTNode> _nodes = new Dictionary<string, BTNode>();
