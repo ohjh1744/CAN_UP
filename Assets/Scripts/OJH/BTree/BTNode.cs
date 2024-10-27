@@ -11,11 +11,11 @@ public enum BTNodeState
 }
 public abstract class BTNode 
 {
-    protected List<BTNode> children = new List<BTNode>();
+    protected List<BTNode> _children = new List<BTNode>();
 
     public void AddChild(BTNode node)
     {
-        children.Add(node);
+        _children.Add(node);
     }
 
     public abstract BTNodeState Evaluate();

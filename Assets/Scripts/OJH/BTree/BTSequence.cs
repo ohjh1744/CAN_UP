@@ -9,7 +9,7 @@ public class BTSequence : BTNode
     public override BTNodeState Evaluate()
     {
         bool isAnyCHildRunning = false;
-        foreach (BTNode node in children)
+        foreach (BTNode node in _children)
         {
             BTNodeState result = node.Evaluate();
             if (result == BTNodeState.Failure)

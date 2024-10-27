@@ -11,7 +11,7 @@ public class BTParallel : BTNode
         bool isAnyRunning = false;
         bool isAllSuccess = true;
 
-        foreach (BTNode node in children)
+        foreach (BTNode node in _children)
         {
             BTNodeState result = node.Evaluate();
             if (result == BTNodeState.Running)

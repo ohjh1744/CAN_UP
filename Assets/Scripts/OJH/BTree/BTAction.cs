@@ -6,14 +6,14 @@ using UnityEngine.XR;
 
 public class BTAction : BTNode
 {
-    private Func<BTNodeState> action;
+    private Func<BTNodeState> _action;
     public BTAction(Func<BTNodeState> action)
     {
-        this.action = action;
+        this._action = action;
     }
 
     public override BTNodeState Evaluate()
     {
-        return action();
+        return _action();
     }
 }

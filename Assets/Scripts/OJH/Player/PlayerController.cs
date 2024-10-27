@@ -11,7 +11,7 @@ public enum EBTType {Sequence, Selector, Parallel, BTAction, BTCondition }
 public class NodeData
 {
 
-    public bool isRoot;
+    public bool IsRoot;
 
     public EBTType NodeType;
 
@@ -69,7 +69,7 @@ public class PlayerController : MonoBehaviour
         {
             BTNode btNode = new BTSelector();
 
-            bool isRoot = _nodeDatas[i].isRoot;
+            bool isRoot = _nodeDatas[i].IsRoot;
 
             EBTType btType = _nodeDatas[i].NodeType;
 

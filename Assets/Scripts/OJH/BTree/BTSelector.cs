@@ -8,7 +8,7 @@ public class BTSelector : BTNode
 {
     public override BTNodeState Evaluate()
     {
-        foreach (BTNode node in children)
+        foreach (BTNode node in _children)
         {
             BTNodeState result = node.Evaluate();
             if (result == BTNodeState.Success)

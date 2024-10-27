@@ -6,15 +6,15 @@ using UnityEngine.XR;
 
 public class BTCondition : BTNode
 {
-    private Func<bool> condition;
+    private Func<bool> _condition;
 
     public BTCondition(Func<bool> condition)
     {
-        this.condition = condition;
+        this._condition = condition;
     }
 
     public override BTNodeState Evaluate()
     {
-        return condition() ? BTNodeState.Success : BTNodeState.Failure;
+        return _condition() ? BTNodeState.Success : BTNodeState.Failure;
     }
 }
