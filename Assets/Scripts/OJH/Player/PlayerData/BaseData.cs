@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class BaseData : PlayerData, IKeyMove, IHasItem
+public class BaseData : PlayerData
 {
     [SerializeField] private float _moveSpeed;
 

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class StoneData : PlayerData, IClickMove
+public class StoneData : PlayerData
 {
     private Vector3 _clickDownPos;
 
