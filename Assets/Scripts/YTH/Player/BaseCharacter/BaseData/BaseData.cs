@@ -19,13 +19,9 @@ public class BaseData : PlayerData
 
     public float CanJumpTime { get { return _canJumpTime; } set { _canJumpTime = value; } } // 점프 게이지 // Space 누르고 있으면 게이지가 차는 중
 
-    [SerializeField] private float _maxTime;
+    [SerializeField] private float _maxJumpPower;
 
-    public float MaxTime { get { return _maxTime; } set { _maxTime = value; } }
-
-    [SerializeField] private float _minJumpGauge;
-
-    public float MinJumpGauge { get {return _minJumpGauge; } set {_minJumpGauge = value; } }
+    public float MaxJumpPower { get { return _maxJumpPower; } set { _maxJumpPower = value; } }
 
     [SerializeField] private bool _hasItem;
 
