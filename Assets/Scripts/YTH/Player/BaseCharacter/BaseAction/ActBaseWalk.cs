@@ -12,7 +12,10 @@ public class ActBaseWalk : PlayerAction
     {
         if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)) && !Input.GetKey(KeyCode.Space))
         {
+           // Vector3 MoveDir = new Vector3(0, 0, _data.Z);
+            
             _rigidbody.velocity = _data.MoveDir * _data.MoveSpeed;
+
             Debug.Log("¿Ãµø¡ﬂ");
             return BTNodeState.Running;
         }

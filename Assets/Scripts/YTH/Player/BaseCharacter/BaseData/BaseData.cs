@@ -7,6 +7,10 @@ public class BaseData : PlayerData
 
     public float MoveSpeed { get { return _moveSpeed; } set { _moveSpeed = value; } }
 
+    private float _z;
+
+    public float Z { get { return _z; } private set { } }
+
     [SerializeField] private Vector3 _moveDir;
 
     public Vector3 MoveDir { get { return _moveDir; } set { _moveDir = value; } }
