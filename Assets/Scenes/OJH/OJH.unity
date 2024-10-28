@@ -405,8 +405,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerData: {fileID: 0}
-  _nodeDatas: []
-  _edgeDatas: []
+  _nodeDatas:
+  - IsRoot: 1
+    NodeType: 0
+    NodeName: Parent
+    PlayerAction: {fileID: 0}
+    PlayerCondition: {fileID: 0}
+  - IsRoot: 1
+    NodeType: 1
+    NodeName: Child
+    PlayerAction: {fileID: 0}
+    PlayerCondition: {fileID: 0}
+  _edgeDatas:
+  - ParentName: Parent
+    ChildNames:
+    - Child
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
