@@ -4,15 +4,8 @@ using UnityEngine;
 
 public class ActBaseReadyThrow : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    //마우스 버튼 좌클릭 누르고 있는 도중이고, 마우스를 떼지 않았을 때 Return running
+    //else 만약 아니라면 return failure
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }

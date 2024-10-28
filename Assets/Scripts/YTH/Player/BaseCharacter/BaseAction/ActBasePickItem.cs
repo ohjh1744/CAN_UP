@@ -4,15 +4,7 @@ using UnityEngine;
 
 public class ActBasePickItem : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   //좌클릭을 누를 시, return success 
+   // 아니라면
+   //return failure
 }

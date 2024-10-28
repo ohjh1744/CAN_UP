@@ -2,17 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CondBaseCanUseItem : MonoBehaviour
+public class CondBaseCanUseItem : PlayerCondition
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] BaseData _data;
 
-    // Update is called once per frame
-    void Update()
+    public override bool DoCheck()
     {
-        
+        if (_data.IsStiff == true)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
     }
 }

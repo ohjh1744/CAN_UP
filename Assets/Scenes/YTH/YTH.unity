@@ -224,6 +224,9 @@ GameObject:
   - component: {fileID: 635052261}
   - component: {fileID: 635052269}
   - component: {fileID: 635052270}
+  - component: {fileID: 635052273}
+  - component: {fileID: 635052272}
+  - component: {fileID: 635052271}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -271,7 +274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3a2049ed5268e64fae4941cd1c48edb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerData: {fileID: 0}
+  _playerData: {fileID: 635052269}
   _nodeDatas:
   - IsRoot: 1
     NodeType: 2
@@ -280,7 +283,7 @@ MonoBehaviour:
     PlayerCondition: {fileID: 0}
   - IsRoot: 0
     NodeType: 0
-    NodeName: ActBaseWalk
+    NodeName: Sequence1
     PlayerAction: {fileID: 0}
     PlayerCondition: {fileID: 0}
   - IsRoot: 0
@@ -288,6 +291,11 @@ MonoBehaviour:
     NodeName: CondBaseCanMove
     PlayerAction: {fileID: 0}
     PlayerCondition: {fileID: 635052270}
+  - IsRoot: 0
+    NodeType: 1
+    NodeName: Selector1
+    PlayerAction: {fileID: 0}
+    PlayerCondition: {fileID: 0}
   - IsRoot: 0
     NodeType: 3
     NodeName: ActBaseJump
@@ -299,14 +307,14 @@ MonoBehaviour:
     PlayerAction: {fileID: 635052261}
     PlayerCondition: {fileID: 0}
   _edgeDatas:
-  - ParentName: Parrallel
+  - ParentName: Parallel
     ChildNames:
-    - Sequence
-  - ParentName: Sequence
+    - Sequence1
+  - ParentName: Sequence1
     ChildNames:
     - CondBaseCanMove
-    - Select
-  - ParentName: Select
+    - Selector1
+  - ParentName: Selector1
     ChildNames:
     - ActBaseJump
     - ActBaseWalk
@@ -418,7 +426,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _jumpNum: 0
   _fallNum: 0
-  _jumpPower: 0
+  _jumpPower: 0.5
   _isStiff: 0
   _moveSpeed: 6
   _moveDir: {x: 0, y: 0, z: 0}
@@ -427,6 +435,7 @@ MonoBehaviour:
   _minJumpGauge: 0
   _hasItem: 0
   _throwPower: 0
+  _groundCheckDistance: 0
   _isGrounded: 0
 --- !u!114 &635052270
 MonoBehaviour:
@@ -440,12 +449,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a13a20149dd4da4dbac0ca596a1c199, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _baseData: {fileID: 635052269}
+  _data: {fileID: 635052269}
   _rigidbody: {fileID: 635052264}
-  Ground:
-    serializedVersion: 2
-    m_Bits: 0
-  groundCheckDistance: 0.1
+--- !u!114 &635052271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635052260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c3e829e35fd6aa49a9d8425337ac453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data: {fileID: 635052269}
+--- !u!114 &635052272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635052260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdf6b38e28a2d3b4a963e6439bc1a99c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data: {fileID: 635052269}
+--- !u!114 &635052273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635052260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e368219e232fee1448ab5e90733ccae5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data: {fileID: 635052269}
 --- !u!1 &1677884363
 GameObject:
   m_ObjectHideFlags: 0
@@ -461,7 +505,7 @@ GameObject:
   - component: {fileID: 1677884368}
   m_Layer: 0
   m_Name: Map
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
