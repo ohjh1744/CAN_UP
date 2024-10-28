@@ -5,17 +5,19 @@ using UnityEngine;
 public class JumperMove : PlayerAction
 {
     private JumperData _jumperData;
+
     private Rigidbody _rigidbody;
 
 
     // DoAction 재정의
     public override BTNodeState DoAction()
     {
+        // JumperData, Rigidbody 가져오기
         _jumperData = GameObject.FindObjectOfType<JumperData>();
 
         _rigidbody = GameObject.FindObjectOfType<Rigidbody>();
 
-
+        // A,D 입력시 이동 진행
         if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)) && !Input.GetKey(KeyCode.Space))
         {
             float horizontalInput = Input.GetAxis("Horizontal");
@@ -23,6 +25,7 @@ public class JumperMove : PlayerAction
             Debug.Log("이동 중");
             return BTNodeState.Running;
         }
+        // 미 입력 시 Failure 반환
         else
         {
             return BTNodeState.Failure;
