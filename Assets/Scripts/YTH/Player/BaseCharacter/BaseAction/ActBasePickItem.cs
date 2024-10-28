@@ -1,10 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class ActBasePickItem : MonoBehaviour
+public class ActBasePickItem : PlayerAction
 {
-   //좌클릭을 누를 시, return success 
-   // 아니라면
-   //return failure
+    [SerializeField] BaseData _data;
+
+    public override BTNodeState DoAction()
+    {
+        if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            return BTNodeState.Success;
+        }
+        else
+        {
+            return BTNodeState.Failure;
+        }
+
+    }
 }
