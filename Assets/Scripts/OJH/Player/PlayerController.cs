@@ -10,11 +10,13 @@ public enum EBTType {Sequence, Selector, Parallel, BTAction, BTCondition }
 [System.Serializable]
 public class NodeData
 {
-
+    // 루트인지 확인하는 변수
     public bool IsRoot;
 
+    // 노드 타입
     public EBTType NodeType;
 
+    // 노드 이름
     public string NodeName;
 
     // Action 노드일 경우 필요
@@ -28,8 +30,10 @@ public class NodeData
 [System.Serializable]
 public class EdgeData
 {
+    // 부모가 될 노드 이름
     public string ParentName;
 
+    // 연결할 자식들 이름
     public string[] ChildNames;
 }
 
