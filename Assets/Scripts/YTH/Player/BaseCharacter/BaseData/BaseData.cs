@@ -31,7 +31,7 @@ public class BaseData : PlayerData
 
     public float ThrowPower { get { return _throwPower; } set { _throwPower = value; } }
 
-    [SerializeField] private float _groundCheckDistance;
+    [SerializeField] private float _groundCheckDistance = 0.1f;
 
     public float GroundCheckDistance { get { return _groundCheckDistance; } set { _groundCheckDistance = value; } } 
 
