@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CondBaseCanMove : PlayerCondition
@@ -8,19 +9,9 @@ public class CondBaseCanMove : PlayerCondition
 
     public override bool DoCheck()
     {
-        Debug.Log("작동 1");
-        Ray ray = new Ray(transform.position, Vector3.down);
-        if (Physics.Raycast(ray, out RaycastHit hitInfo, _data.GroundCheckDistance))
-        {
-            if (hitInfo.collider.CompareTag("Ground"))
-            {
-                Debug.Log(_data.IsGrounded);
-                _data.IsGrounded = false;
-                return true;
-            }
-        }
+        Debug.Log("작동 중");
 
-        if (_data.IsStiff == true || _data.IsGrounded == false) //밀쳐진 상태   //그냥 공중에 있는 상태도 체크 필요
+        if (_data.IsStiff == true || _data.IsGrounded == false) //물리적으로 밀쳐진 상태
         {
             Debug.Log("점프 불가 ! ");
             return false;
@@ -29,6 +20,14 @@ public class CondBaseCanMove : PlayerCondition
         {
             Debug.Log("점프 가능 ! ");
             return true;
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            _data.IsGrounded = true;
         }
     }
 }
