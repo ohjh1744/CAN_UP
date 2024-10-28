@@ -6,34 +6,34 @@ using UnityEngine;
 public class EnviromentManager : MonoBehaviour
 {
     [Header("Directional Light(Sun) From Scene")]
-    [SerializeField] private Light mDirectionalLight;
+    [SerializeField] private Light _mDirectionalLight;
 
     [Header("Skybox Rotate Speed")]
-    [SerializeField] private float mSkyboxRotSpeed;
+    [SerializeField] private float _mSkyboxRotSpeed;
 
     [Space(30)]
     [Header("Preload Enviroment Preset")]
-    [SerializeField] private EnviromentPreset[] mEnviromentPresets;
+    [SerializeField] private EnviromentPreset[] _mEnviromentPresets;
 
-    private Dictionary<string, EnviromentPreset> mPreloadEnviromentPresets = new Dictionary<string, EnviromentPreset>();
-    private EnviromentPreset? mCurrentPreset = null, mPrevPreset = null; // Current & Prev preset
+    private Dictionary<string, EnviromentPreset> _mPreloadEnviromentPresets = new Dictionary<string, EnviromentPreset>();
+    private EnviromentPreset? mCurrentPreset = null, _mPrevPreset = null; // Current & Prev preset
 
-    private Material mSkyboxMat; // Scene's skybox material
-    private float mCurrentSkyboxRot; // Store the current rotation angle
-    private Coroutine mCoBlendEnviroment; // Control blend coroutine
+    private Material _mSkyboxMat; // Scene's skybox material
+    private float _mCurrentSkyboxRot; // Store the current rotation angle
+    private Coroutine _mCoBlendEnviroment; // Control blend coroutine
 
     private void Awake()
     {
         // Instance skybox material
-        mSkyboxMat = new Material(RenderSettings.skybox);
-        RenderSettings.skybox = mSkyboxMat;
+        _mSkyboxMat = new Material(RenderSettings.skybox);
+        RenderSettings.skybox = _mSkyboxMat;
 
         // Get skybox rotation
-        mCurrentSkyboxRot = mSkyboxMat.GetFloat("_Rotation");
+        _mCurrentSkyboxRot = _mSkyboxMat.GetFloat("_Rotation");
 
         // Load preload presets
-        foreach (EnviromentPreset preset in mEnviromentPresets)
-            mPreloadEnviromentPresets.Add(preset.name, preset);
+        foreach (EnviromentPreset preset in _mEnviromentPresets)
+            _mPreloadEnviromentPresets.Add(preset.name, preset);
 
 
         // Set "mCurrentPreset" from initial scene options
@@ -44,64 +44,64 @@ public class EnviromentManager : MonoBehaviour
 
     private void Update()
     {
-        mCurrentSkyboxRot += Time.deltaTime * mSkyboxRotSpeed;
+        _mCurrentSkyboxRot += Time.deltaTime * _mSkyboxRotSpeed;
 
-        if (mCurrentSkyboxRot > 360f)
-            mCurrentSkyboxRot -= 360f;
+        if (_mCurrentSkyboxRot > 360f)
+            _mCurrentSkyboxRot -= 360f;
 
-        mSkyboxMat.SetFloat("_Rotation", mCurrentSkyboxRot);
+        _mSkyboxMat.SetFloat("_Rotation", _mCurrentSkyboxRot);
     }
 
     public bool TryInvertEnviromentPreset(float duration)
     {
-        if (mPrevPreset == null || mCurrentPreset == null)
+        if (_mPrevPreset == null || mCurrentPreset == null)
         {
             Debug.LogWarning("Not Preset Loaded!");
             return false;
         }
 
-        BlendEnviroment(mPrevPreset, duration);
+        BlendEnviroment(_mPrevPreset, duration);
 
         return true;
     }
 
     public void BlendEnviroment(string key, float duration)
     {
-        this.BlendEnviroment(mPreloadEnviromentPresets[key], duration);
+        this.BlendEnviroment(_mPreloadEnviromentPresets[key], duration);
     }
 
     public void BlendEnviroment(EnviromentPreset preset, float duration)
     {
-        if (mCoBlendEnviroment is not null)
-            StopCoroutine(mCoBlendEnviroment);
+        if (_mCoBlendEnviroment is not null)
+            StopCoroutine(_mCoBlendEnviroment);
 
-        mCoBlendEnviroment = StartCoroutine(CoBlendEnviroment(preset, duration));
+        _mCoBlendEnviroment = StartCoroutine(CoBlendEnviroment(preset, duration));
     }
 
     private IEnumerator CoBlendEnviroment(EnviromentPreset preset, float duration)
     {
         // Store Current & Prev preset
-        mPrevPreset = mCurrentPreset;
+        _mPrevPreset = mCurrentPreset;
         mCurrentPreset = preset;
 
         // Get current option state
         EnviromentPreset curState = ScriptableObject.CreateInstance<EnviromentPreset>();
         curState.LightningIntensityMultiplier = RenderSettings.ambientIntensity;
         curState.ReflectionsIntensityMultiplier = RenderSettings.reflectionIntensity;
-        float currentBlendValue = mSkyboxMat.GetFloat("_Blend");
-        Color currentSunColor = mDirectionalLight.color;
-        float currentSunIntensity = mDirectionalLight.intensity;
+        float currentBlendValue = _mSkyboxMat.GetFloat("_Blend");
+        Color currentSunColor = _mDirectionalLight.color;
+        float currentSunIntensity = _mDirectionalLight.intensity;
         Color currentFogColor = RenderSettings.fogColor;
         float currentFogStart = RenderSettings.fogStartDistance;
         float currentFogEnd = RenderSettings.fogEndDistance;
 
         // Load blend target textures to skybox mat
-        mSkyboxMat.SetTexture("_FrontTex2", preset.SidedSkyboxPreset.FrontTex);
-        mSkyboxMat.SetTexture("_BackTex2", preset.SidedSkyboxPreset.BackTex);
-        mSkyboxMat.SetTexture("_LeftTex2", preset.SidedSkyboxPreset.LeftTex);
-        mSkyboxMat.SetTexture("_RightTex2", preset.SidedSkyboxPreset.RightTex);
-        mSkyboxMat.SetTexture("_UpTex2", preset.SidedSkyboxPreset.UpTex);
-        mSkyboxMat.SetTexture("_DownTex2", preset.SidedSkyboxPreset.DownTex);
+        _mSkyboxMat.SetTexture("_FrontTex2", preset.SidedSkyboxPreset.FrontTex);
+        _mSkyboxMat.SetTexture("_BackTex2", preset.SidedSkyboxPreset.BackTex);
+        _mSkyboxMat.SetTexture("_LeftTex2", preset.SidedSkyboxPreset.LeftTex);
+        _mSkyboxMat.SetTexture("_RightTex2", preset.SidedSkyboxPreset.RightTex);
+        _mSkyboxMat.SetTexture("_UpTex2", preset.SidedSkyboxPreset.UpTex);
+        _mSkyboxMat.SetTexture("_DownTex2", preset.SidedSkyboxPreset.DownTex);
 
         // Blend processes
         float process = 0f;
@@ -119,22 +119,22 @@ public class EnviromentManager : MonoBehaviour
             RenderSettings.fogEndDistance = Mathf.Lerp(currentFogEnd, preset.FogPreset.FogEnd, process);
 
             // Directional Light(Sun) Blend
-            mDirectionalLight.color = Color.Lerp(currentSunColor, preset.SunPreset.SunColor, process);
-            mDirectionalLight.intensity = Mathf.Lerp(currentSunIntensity, preset.SunPreset.SunIntensity, process);
+            _mDirectionalLight.color = Color.Lerp(currentSunColor, preset.SunPreset.SunColor, process);
+            _mDirectionalLight.intensity = Mathf.Lerp(currentSunIntensity, preset.SunPreset.SunIntensity, process);
 
             // Skybox Blend
-            mSkyboxMat.SetFloat("_Blend", Mathf.Lerp(currentBlendValue, 1.0f, process));
+            _mSkyboxMat.SetFloat("_Blend", Mathf.Lerp(currentBlendValue, 1.0f, process));
 
             yield return null;
         }
 
         // Load blended preset textures to base texture
-        mSkyboxMat.SetTexture("_FrontTex", preset.SidedSkyboxPreset.FrontTex);
-        mSkyboxMat.SetTexture("_BackTex", preset.SidedSkyboxPreset.BackTex);
-        mSkyboxMat.SetTexture("_LeftTex", preset.SidedSkyboxPreset.LeftTex);
-        mSkyboxMat.SetTexture("_RightTex", preset.SidedSkyboxPreset.RightTex);
-        mSkyboxMat.SetTexture("_UpTex", preset.SidedSkyboxPreset.UpTex);
-        mSkyboxMat.SetTexture("_DownTex", preset.SidedSkyboxPreset.DownTex);
-        mSkyboxMat.SetFloat("_Blend", 0f);
+        _mSkyboxMat.SetTexture("_FrontTex", preset.SidedSkyboxPreset.FrontTex);
+        _mSkyboxMat.SetTexture("_BackTex", preset.SidedSkyboxPreset.BackTex);
+        _mSkyboxMat.SetTexture("_LeftTex", preset.SidedSkyboxPreset.LeftTex);
+        _mSkyboxMat.SetTexture("_RightTex", preset.SidedSkyboxPreset.RightTex);
+        _mSkyboxMat.SetTexture("_UpTex", preset.SidedSkyboxPreset.UpTex);
+        _mSkyboxMat.SetTexture("_DownTex", preset.SidedSkyboxPreset.DownTex);
+        _mSkyboxMat.SetFloat("_Blend", 0f);
     }
 }
