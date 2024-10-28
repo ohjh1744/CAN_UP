@@ -6,37 +6,37 @@ using UnityEngine;
 public class EnviromentManager : MonoBehaviour
 {
     [Header("Directional Light(Sun) From Scene")]
-    [SerializeField] private Light _mDirectionalLight;
+    [SerializeField] private Light _mDirectionalLight;  // Directional Light
 
     [Header("Skybox Rotate Speed")]
-    [SerializeField] private float _mSkyboxRotSpeed;
+    [SerializeField] private float _mSkyboxRotSpeed;    // 스카이박스 회전 속도
 
     [Space(30)]
     [Header("Preload Enviroment Preset")]
-    [SerializeField] private EnviromentPreset[] _mEnviromentPresets;
+    [SerializeField] private EnviromentPreset[] _mEnviromentPresets;    // 스카이박스 프리셋
 
     private Dictionary<string, EnviromentPreset> _mPreloadEnviromentPresets = new Dictionary<string, EnviromentPreset>();
-    private EnviromentPreset? mCurrentPreset = null, _mPrevPreset = null; // Current & Prev preset
+    private EnviromentPreset? mCurrentPreset = null, _mPrevPreset = null; // 현재 프리셋, 이전 프리셋
 
-    private Material _mSkyboxMat; // Scene's skybox material
+    private Material _mSkyboxMat; // 스카이박스 머티리얼
     private float _mCurrentSkyboxRot; // Store the current rotation angle
     private Coroutine _mCoBlendEnviroment; // Control blend coroutine
 
     private void Awake()
     {
-        // Instance skybox material
+        // 스카이박스 머티리얼 참조
         _mSkyboxMat = new Material(RenderSettings.skybox);
         RenderSettings.skybox = _mSkyboxMat;
 
-        // Get skybox rotation
+        // 스카이박스 _Rotation 값 가져오기
         _mCurrentSkyboxRot = _mSkyboxMat.GetFloat("_Rotation");
 
-        // Load preload presets
+        // 준비된 프리셋 가져오기
         foreach (EnviromentPreset preset in _mEnviromentPresets)
             _mPreloadEnviromentPresets.Add(preset.name, preset);
 
 
-        // Set "mCurrentPreset" from initial scene options
+        // mCurrentPreset를 첫번째 스카이박스로 설정
         EnviromentPreset currentPreset = ScriptableObject.CreateInstance<EnviromentPreset>();
         currentPreset.LoadCurrentSettings();
         mCurrentPreset = currentPreset;
@@ -44,14 +44,18 @@ public class EnviromentManager : MonoBehaviour
 
     private void Update()
     {
+        // 스카이박스 회전을 초당 _mSkyboxRotSpeed만큼 회전
         _mCurrentSkyboxRot += Time.deltaTime * _mSkyboxRotSpeed;
 
+        // _mSkyboxRotSpeed가 360도를 초과할 경우, _mSkyboxRotSpeed를 초기화
         if (_mCurrentSkyboxRot > 360f)
             _mCurrentSkyboxRot -= 360f;
 
+        // _Rotation값을 _mCurrentSkyboxRot로 변경
         _mSkyboxMat.SetFloat("_Rotation", _mCurrentSkyboxRot);
     }
 
+    // EnviromentPreset 적용 시도
     public bool TryInvertEnviromentPreset(float duration)
     {
         if (_mPrevPreset == null || mCurrentPreset == null)
@@ -65,6 +69,7 @@ public class EnviromentManager : MonoBehaviour
         return true;
     }
 
+    // 스카이박스 블렌드 함수
     public void BlendEnviroment(string key, float duration)
     {
         this.BlendEnviroment(_mPreloadEnviromentPresets[key], duration);
@@ -78,13 +83,14 @@ public class EnviromentManager : MonoBehaviour
         _mCoBlendEnviroment = StartCoroutine(CoBlendEnviroment(preset, duration));
     }
 
+    // 스카이박스 블렌드 코루틴
     private IEnumerator CoBlendEnviroment(EnviromentPreset preset, float duration)
     {
-        // Store Current & Prev preset
+        // 현재/이전 프리셋 가져오기
         _mPrevPreset = mCurrentPreset;
         mCurrentPreset = preset;
 
-        // Get current option state
+        // 현재 설정 가져오기
         EnviromentPreset curState = ScriptableObject.CreateInstance<EnviromentPreset>();
         curState.LightningIntensityMultiplier = RenderSettings.ambientIntensity;
         curState.ReflectionsIntensityMultiplier = RenderSettings.reflectionIntensity;
@@ -95,7 +101,7 @@ public class EnviromentManager : MonoBehaviour
         float currentFogStart = RenderSettings.fogStartDistance;
         float currentFogEnd = RenderSettings.fogEndDistance;
 
-        // Load blend target textures to skybox mat
+        // 지정한 텍스쳐를 스카이박스 머티리얼로 변경
         _mSkyboxMat.SetTexture("_FrontTex2", preset.SidedSkyboxPreset.FrontTex);
         _mSkyboxMat.SetTexture("_BackTex2", preset.SidedSkyboxPreset.BackTex);
         _mSkyboxMat.SetTexture("_LeftTex2", preset.SidedSkyboxPreset.LeftTex);
@@ -103,32 +109,31 @@ public class EnviromentManager : MonoBehaviour
         _mSkyboxMat.SetTexture("_UpTex2", preset.SidedSkyboxPreset.UpTex);
         _mSkyboxMat.SetTexture("_DownTex2", preset.SidedSkyboxPreset.DownTex);
 
-        // Blend processes
+        // 스카이박스 블렌드
         float process = 0f;
         while (process < 1f)
         {
             process += Time.deltaTime / duration;
 
-            // Enviroment Intensity Blend
             RenderSettings.ambientIntensity = Mathf.Lerp(curState.LightningIntensityMultiplier, preset.LightningIntensityMultiplier, process);
             RenderSettings.reflectionIntensity = Mathf.Lerp(curState.ReflectionsIntensityMultiplier, preset.ReflectionsIntensityMultiplier, process);
 
-            // Fog Blend
+            // Fog 블렌드
             RenderSettings.fogColor = Color.Lerp(currentFogColor, preset.FogPreset.FogColor, process);
             RenderSettings.fogStartDistance = Mathf.Lerp(currentFogStart, preset.FogPreset.FogStart, process);
             RenderSettings.fogEndDistance = Mathf.Lerp(currentFogEnd, preset.FogPreset.FogEnd, process);
 
-            // Directional Light(Sun) Blend
+            // Directional Light 블렌드
             _mDirectionalLight.color = Color.Lerp(currentSunColor, preset.SunPreset.SunColor, process);
             _mDirectionalLight.intensity = Mathf.Lerp(currentSunIntensity, preset.SunPreset.SunIntensity, process);
 
-            // Skybox Blend
+            // 스카이박스 블렌드
             _mSkyboxMat.SetFloat("_Blend", Mathf.Lerp(currentBlendValue, 1.0f, process));
 
             yield return null;
         }
 
-        // Load blended preset textures to base texture
+        // 블렌드된 텍스쳐를 기본 텍스쳐로 변경
         _mSkyboxMat.SetTexture("_FrontTex", preset.SidedSkyboxPreset.FrontTex);
         _mSkyboxMat.SetTexture("_BackTex", preset.SidedSkyboxPreset.BackTex);
         _mSkyboxMat.SetTexture("_LeftTex", preset.SidedSkyboxPreset.LeftTex);
