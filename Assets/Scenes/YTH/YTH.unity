@@ -198,8 +198,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 75359715}
-  m_LocalRotation: {x: 0.27394816, y: -0.00064024335, z: 0.00010366366, w: 0.9617443}
-  m_LocalPosition: {x: -0.4422122, y: 12.186665, z: -12.42996}
+  m_LocalRotation: {x: 0.2016984, y: 0.006408564, z: -0.0013144438, w: 0.97942585}
+  m_LocalPosition: {x: -6.0879545, y: 6.182514, z: -5.837155}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -884,11 +884,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 586216585037462232, guid: e12d8357f7da1ef40966a31c11a90e72, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 586216585037462239, guid: e12d8357f7da1ef40966a31c11a90e72, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6543994554549905554, guid: e12d8357f7da1ef40966a31c11a90e72, type: 3}
       propertyPath: m_Name
       value: woman_sumo
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 586216585037462232, guid: e12d8357f7da1ef40966a31c11a90e72, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e12d8357f7da1ef40966a31c11a90e72, type: 3}
 --- !u!1 &6451252190299773957 stripped
 GameObject:
@@ -980,11 +989,11 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 827026048448115233}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: befb0df652b75f04a9e9eb3cf40901a2, type: 3}
   m_Controller: {fileID: 9100000, guid: cf0ae26f5395f6d4ca07a413c74ef728, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 
