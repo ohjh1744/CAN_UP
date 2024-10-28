@@ -13,6 +13,10 @@ public class JumperData : PlayerData
 
     public Vector3 MoveDir { get { return _moveDir; } set { _moveDir = value; } }
 
+    [SerializeField] private float _resist;
+
+    public float Resist { get { return _resist; } set { _resist = value; } }
+
     // 땅에 닿아있는지 판단할 Grounded 불 변수
     public bool _isGrounded { get; set; }
 }

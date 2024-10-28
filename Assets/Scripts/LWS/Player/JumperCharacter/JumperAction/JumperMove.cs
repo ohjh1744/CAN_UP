@@ -4,20 +4,9 @@ using UnityEngine;
 
 public class JumperMove : PlayerAction
 {
-    private JumperData _jumperData;
+    [SerializeField] JumperData _jumperData;
 
-    private Rigidbody _rigidbody;
-
-    // 감속 비율
-    private float _decelerationFactor = 0.9f;
-
-    // JumperData, Rigidbody 가져오기
-    private void Start()
-    {
-        _jumperData = GameObject.FindObjectOfType<JumperData>();
-
-        _rigidbody = GameObject.FindObjectOfType<Rigidbody>();
-    }
+    [SerializeField] Rigidbody _rigidbody;
 
     // DoAction 재정의
     public override BTNodeState DoAction()
@@ -28,30 +17,36 @@ public class JumperMove : PlayerAction
             return BTNodeState.Failure;
         }
 
+        // isStiff 일때는 반대 방향키 누를 시 튕겨져 나가는 속도 감속
+        if (_jumperData.IsStiff)
+        {
+            bool horizontalInput = Input.GetButton("Horizontal");
+
+            // 현재 속도 방향과 반대 방향인지 확인
+            if ((horizontalInput == true && _rigidbody.velocity.x > 0 ))  
+            {
+                _rigidbody.AddForce(Vector3.left * _jumperData.Resist, ForceMode.Force);
+            }
+            
+            else if ((horizontalInput == true && _rigidbody.velocity.x < 0))
+            {
+                _rigidbody.AddForce(Vector3.right * _jumperData.Resist, ForceMode.Force);
+            }
+
+            // 반대 키 입력이 없으면 제어 불가
+            return BTNodeState.Failure;
+        }
+
         // A,D 입력시 이동 진행
-        if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)))
+        else if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)))
         {            
             float horizontalInput = Input.GetAxis("Horizontal");
 
-            // 현재 이동 방향이 반대인지 확인
-            bool isOppositeDirection = (horizontalInput < 0 && _rigidbody.velocity.x > 0) || (horizontalInput > 0 && _rigidbody.velocity.x < 0);
-
-            Debug.Log($"반대 방향 여부: {isOppositeDirection}");
-
-            // 반대방향 키를 눌렀을 때 감속 적용
-            if (isOppositeDirection)
-            {
-                _rigidbody.velocity = new Vector3(_rigidbody.velocity.x * (1 - _decelerationFactor), _rigidbody.velocity.y, _rigidbody.velocity.z);
-                Debug.Log("감속 중");
-            }
-            else
-            {
-                _rigidbody.velocity = new Vector3(horizontalInput * _jumperData.MoveSpeed, _rigidbody.velocity.y, _rigidbody.velocity.z);
-                Debug.Log("공중에서 이동 중");
-            }
+            _rigidbody.velocity = new Vector3(horizontalInput * _jumperData.MoveSpeed, _rigidbody.velocity.y, _rigidbody.velocity.z);
 
             return BTNodeState.Running;
         }
+
         // 미 입력 시 Failure 반환
         else
         {
