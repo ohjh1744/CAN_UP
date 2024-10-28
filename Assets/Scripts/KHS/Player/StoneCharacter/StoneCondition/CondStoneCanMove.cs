@@ -8,7 +8,6 @@ public class CondStoneCanMove : PlayerCondition
 
     public override bool DoCheck()
     {
-        _data.RayDistance = 5; 
         Ray ray = new Ray(transform.position, Vector3.down);
         Debug.Log("레이케스트 시작");
         if (Physics.Raycast(ray, out RaycastHit hit, _data.RayDistance))
