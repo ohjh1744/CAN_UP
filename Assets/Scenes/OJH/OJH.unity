@@ -228,12 +228,12 @@ GameObject:
   - component: {fileID: 846569534}
   - component: {fileID: 846569533}
   - component: {fileID: 846569532}
-  - component: {fileID: 846569531}
   - component: {fileID: 846569530}
   - component: {fileID: 846569538}
   - component: {fileID: 846569537}
   - component: {fileID: 846569536}
   - component: {fileID: 846569539}
+  - component: {fileID: 846569540}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -259,50 +259,6 @@ MonoBehaviour:
   _isStiff: 0
   _moveSpeed: 0
   _moveDir: {x: 0, y: 0, z: 0}
---- !u!114 &846569531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 846569527}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91dfe26c7922f1840a812b5de5523b23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _playerData: {fileID: 846569530}
-  _nodeDatas:
-  - IsRoot: 1
-    NodeType: 1
-    NodeName: Root
-    PlayerAction: {fileID: 0}
-    PlayerCondition: {fileID: 0}
-  - IsRoot: 0
-    NodeType: 0
-    NodeName: Sequence
-    PlayerAction: {fileID: 0}
-    PlayerCondition: {fileID: 0}
-  - IsRoot: 0
-    NodeType: 3
-    NodeName: ReadyJump
-    PlayerAction: {fileID: 846569538}
-    PlayerCondition: {fileID: 0}
-  - IsRoot: 0
-    NodeType: 3
-    NodeName: Jump
-    PlayerAction: {fileID: 846569537}
-    PlayerCondition: {fileID: 0}
-  - IsRoot: 0
-    NodeType: 3
-    NodeName: Walk
-    PlayerAction: {fileID: 846569536}
-    PlayerCondition: {fileID: 0}
-  _edgeDatas:
-  - ParentName: Root
-    ChildNames:
-    - ReadyJump
-    - Walk
 --- !u!65 &846569532
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -436,6 +392,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &846569540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846569527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3a2049ed5268e64fae4941cd1c48edb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerData: {fileID: 0}
+  _nodeDatas: []
+  _edgeDatas: []
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
