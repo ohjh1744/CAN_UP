@@ -3,7 +3,7 @@ using UnityEngine;
 [System.Serializable]
 public class BaseData : PlayerData
 {
-    [SerializeField] private float _moveSpeed;
+    [SerializeField] private float _moveSpeed; // 이동 속도
 
     public float MoveSpeed { get { return _moveSpeed; } set { _moveSpeed = value; } }
 
@@ -15,11 +15,7 @@ public class BaseData : PlayerData
 
     public Vector3 MoveDir { get { return _moveDir; } set { _moveDir = value; } }
 
-    [SerializeField] private float _canJumpTime; 
-
-    public float CanJumpTime { get { return _canJumpTime; } set { _canJumpTime = value; } } // 점프 게이지 // Space 누르고 있으면 게이지가 차는 중
-
-    [SerializeField] private float _maxJumpPower;
+    [SerializeField] private float _maxJumpPower; // 최대 점프력 = 5m
 
     public float MaxJumpPower { get { return _maxJumpPower; } set { _maxJumpPower = value; } }
 
@@ -33,9 +29,9 @@ public class BaseData : PlayerData
 
     [SerializeField] private float _groundCheckDistance = 0.1f;
 
-    public float GroundCheckDistance { get { return _groundCheckDistance; } set { _groundCheckDistance = value; } } 
+    public float GroundCheckDistance { get { return _groundCheckDistance; } set { _groundCheckDistance = value; } }  // Ground 로 Raycast 쏘는 거리
 
-    [SerializeField] private bool _isGrounded;
+    [SerializeField] private bool _isGrounded; // 땅에 닿아있는지 여부
 
     public bool IsGrounded { get { return _isGrounded; } set { _isGrounded = value; } }
 }
