@@ -13,4 +13,6 @@ public class JumperData : PlayerData
 
     public Vector3 MoveDir { get { return _moveDir; } set { _moveDir = value; } }
 
+    // 땅에 닿아있는지 판단할 Grounded 불 변수
+    public bool _isGrounded { get; set; }
 }
