@@ -8,14 +8,22 @@ public class JumperMove : PlayerAction
 
     private Rigidbody _rigidbody;
 
+    // JumperData, Rigidbody 가져오기
+    private void Start()
+    {
+        _jumperData = GameObject.FindObjectOfType<JumperData>();
+
+        _rigidbody = GameObject.FindObjectOfType<Rigidbody>();
+    }
 
     // DoAction 재정의
     public override BTNodeState DoAction()
     {
-        // JumperData, Rigidbody 가져오기
-        _jumperData = GameObject.FindObjectOfType<JumperData>();
-
-        _rigidbody = GameObject.FindObjectOfType<Rigidbody>();
+        // Grounded 상태일 때는 이동 진행 X
+        if (_jumperData._isGrounded)
+        {
+            return BTNodeState.Failure;
+        }
 
         // A,D 입력시 이동 진행
         if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)) && !Input.GetKey(KeyCode.Space))
