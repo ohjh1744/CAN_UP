@@ -146,7 +146,29 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "Obstacle")
+        {
+            IInteractable interactable = collision.gameObject.GetComponent<IInteractable>();
+            interactable.TargetInteractEnter(this);
+        }
+    }
+
+
+    private void OnCollisionStay(Collision collision)
+    {
+        
+    }
+
+
+    private void OnCollisionExit(Collision collision)
+    {
+        
+    }
+
+
 
 
 
