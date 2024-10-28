@@ -2,10 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ActBaseThrow : MonoBehaviour
+public class ActBaseThrow : PlayerAction
 {
-   //마우스 버튼 좌클릭 떼고, 좌클릭을 누른 상태가 아닐때, return success,
-   //else
+    public override BTNodeState DoAction()
+    {
+        if (Input.GetKeyUp(KeyCode.Mouse1))
+        {
+            if (Input.GetKeyUp(KeyCode.Mouse1) == null)
+            {
+                return BTNodeState.Success;
+            }
+            return BTNodeState.Success;
+        }
+        else
+        {
+            return BTNodeState.Failure;
+        }
 
-    //return failure
+    }
 }
