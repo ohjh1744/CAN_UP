@@ -8,8 +8,12 @@ public class ActBaseReadyThrow : PlayerAction
 
     public override BTNodeState DoAction()
     {
-        if (Input.GetKey(KeyCode.Mouse1))
+        if (Input.GetKey(KeyCode.Mouse0)) // 좌클릭 누르는 중, 마우스를 떼지 않았을 때
         {
+            if (Input.GetKey(KeyCode.Mouse0) != null)
+            {
+                return BTNodeState.Running;
+            }
             return BTNodeState.Running;
         }
         else

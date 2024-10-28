@@ -6,9 +6,9 @@ public class ActBaseThrow : PlayerAction
 {
     public override BTNodeState DoAction()
     {
-        if (Input.GetKeyUp(KeyCode.Mouse1))
+        if (Input.GetKeyUp(KeyCode.Mouse0))
         {
-            if (Input.GetKeyUp(KeyCode.Mouse1) == null)
+            if (Input.GetKeyUp(KeyCode.Mouse0) == null) // ÁÂÅ¬¸¯ ¶¼°í, ÁÂÅ¬¸¯ ´©¸¥ »óÅÂ°¡ ¾Æ´Ò ¶§
             {
                 return BTNodeState.Success;
             }

@@ -9,7 +9,7 @@ public class ActBasePickItem : PlayerAction
 
     public override BTNodeState DoAction()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse1))
+        if (Input.GetKeyDown(KeyCode.Mouse0)) // 좌클릭 입력 시
         {
             return BTNodeState.Success;
         }
