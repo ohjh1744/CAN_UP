@@ -9,7 +9,7 @@ public class JumperJump : PlayerAction
     private Rigidbody _rigidbody;
 
     // 점프 간격 시간 0.2초
-    private float _jumpCooldown = 0.2f;
+    private float _jumpCooldown = 0.0f;
 
     // 게임 시작하자마자 점프 할 수 있도록, -1을 초기값으로 지정
     private float _groundedTime = -1f;
