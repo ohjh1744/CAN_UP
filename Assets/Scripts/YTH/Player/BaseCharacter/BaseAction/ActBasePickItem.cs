@@ -30,10 +30,6 @@ public class ActBasePickItem : PlayerAction
             _item.transform.position = _handPosition.position;
             _item.transform.rotation = _handPosition.rotation;
             _item.transform.SetParent(_handPosition);
-
-            // 물리효과 비활성화
-            Rigidbody _itemRb = _item.GetComponent<Rigidbody>();
-            _itemRb.isKinematic = true;
         }
     }
 }
