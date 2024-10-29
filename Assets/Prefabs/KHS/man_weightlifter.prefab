@@ -3495,6 +3495,7 @@ MonoBehaviour:
   _dragStartPoint: {x: 0, y: 0, z: 0}
   _forceValue: 1
   _maxPullDistance: 5
+  _flying: 0
 --- !u!114 &2069362824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3521,6 +3522,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data: {fileID: 2069362823}
+  _ragdoll: {fileID: 0}
 --- !u!114 &2069362826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3535,6 +3537,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _data: {fileID: 2069362823}
   _ragdoll: {fileID: 2069362830}
+  stopSpeed: 0
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &2069362827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5582,7 +5588,7 @@ Transform:
   m_GameObject: {fileID: 2537874691488595584}
   m_LocalRotation: {x: 0.9986457, y: 0.04921381, z: 0.016525296, w: -0.0034128937}
   m_LocalPosition: {x: 0.020835532, y: -0.0056810114, z: 0.08196866}
-  m_LocalScale: {x: 0.58, y: 0.58, z: 0.58}
+  m_LocalScale: {x: 1.02, y: 1.02, z: 1.02}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 504224220535424106}
@@ -10520,7 +10526,7 @@ Transform:
   m_GameObject: {fileID: 4653984181152415815}
   m_LocalRotation: {x: -0.049213815, y: 0.9986457, z: -0.0034128937, w: -0.016525296}
   m_LocalPosition: {x: 0.020835532, y: -0.0056810114, z: -0.08196866}
-  m_LocalScale: {x: 0.58, y: 0.58, z: 0.58}
+  m_LocalScale: {x: 1.02, y: 1.02, z: 1.02}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 787234467422679014}

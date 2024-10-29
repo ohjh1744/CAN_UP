@@ -28,6 +28,7 @@ public class ActStoneReadyMove : PlayerAction
             _ragdoll.RagDollOn();
             //ApplyForceToPlayer();
             Debug.Log("레그돌 시작");
+            _data.StandAni = false;
             return BTNodeState.Failure;
         }
         return BTNodeState.Running;

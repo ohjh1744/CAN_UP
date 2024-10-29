@@ -6,8 +6,12 @@ public class CondStoneCanMove : PlayerCondition
 {
     [SerializeField] StoneData _data;
     [SerializeField] StoneRagdoll _ragdoll;
+    [SerializeField] Animator _animator;
     [SerializeField] float stopSpeed;
     [SerializeField] LayerMask groundMask;
+
+    [SerializeField] Transform _parent;
+
 
     public override bool DoCheck()
     {
@@ -28,11 +32,21 @@ public class CondStoneCanMove : PlayerCondition
             Debug.DrawRay(pos, Vector3.down * _data.RayDistance, Color.red, 1f);
             if(hit.collider.CompareTag("Ground") && _data.Flying == false)
             {
+   
                 Debug.Log($"{hit.collider.tag}감지됨");
+                if(_data.StandAni == false)
+                {
+                    _animator.SetTrigger("StandUp");
+                    _data.StandAni = true;
+                }
                 _ragdoll.RagDollOff();
+                _parent.position = new Vector3(_parent.position.x, hit.point.y, _parent.position.z);
                 return true;
             }
         }
+
+
+
 
         return false;
     }
