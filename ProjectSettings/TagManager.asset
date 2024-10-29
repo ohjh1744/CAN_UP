@@ -4,9 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Obstacle
   - Ground
   - Item
+  - ObstacleCol
+  - ObstacleTri
   layers:
   - Default
   - TransparentFX
