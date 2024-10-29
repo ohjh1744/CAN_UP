@@ -1,0 +1,70 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Obstacle3 : MonoBehaviour
+{
+    [Header("폭발 설정")]
+
+    [SerializeField] private float _explosionDelay; // 폭발까지 대기 시간
+    [SerializeField] private float _explosionForce; // 폭발 강도
+    [SerializeField] private float _explosionRadius; // 폭발 범위
+    [SerializeField] private float _resetDelay; // 발판 활성화 대기 시간
+
+    // 폭발 경고 구체 오브젝트 배열
+    [SerializeField] private GameObject[] _warningSpheres;
+
+    // 폭발 여부 및 타이머
+    [SerializeField] bool _isTriggered = false;
+    [SerializeField] float _explosionTimer;
+
+    private void Start()
+    {
+        _explosionTimer = _explosionDelay;
+    }
+
+    public void Count(PlayerController player)
+    {
+        if (!_isTriggered)
+        {
+            _isTriggered = true;
+            StartCoroutine(CountDown(player));
+        }
+    }
+
+    private IEnumerator CountDown(PlayerController player)
+    {
+        while (_explosionTimer > 0)
+        {
+            _explosionTimer -= Time.deltaTime;
+
+            // 2초 남았을 때 구체 하나 색 변경
+            if (_explosionTimer <= 2f && _explosionTimer > 1f)
+            {
+                _warningSpheres[0].GetComponent<Renderer>().material.color = Color.red;
+            }
+
+            // 1초 남았을 때 하나 더 변경
+            else if (_explosionTimer <= 1f && _explosionTimer > 0f)
+            {
+                _warningSpheres[1].GetComponent<Renderer>().material.color = Color.red;
+            }
+
+            _explosionTimer -= Time.deltaTime;
+            yield return null;
+        }
+
+        // 폭발 실행
+        _warningSpheres[2].GetComponent<Renderer>().material.color= Color.red;
+        Explode(player);
+    }
+
+    private void Explode(PlayerController player)
+    {
+        Rigidbody rigid = player.GetComponent<Rigidbody>();
+
+        // 폭발할 각도 계산
+        Vector3 explosionDir = (player.transform.position - transform.position).normalized;
+        rigid.AddForce(explosionDir * _explosionForce, ForceMode.Impulse);
+    }
+}
