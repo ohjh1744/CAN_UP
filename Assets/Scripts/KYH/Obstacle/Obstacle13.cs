@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class Obstacle13 : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private float _rotateSpeed;
+    [SerializeField] private float _rotateAngle;
+    [SerializeField] private Rigidbody _rigid;
 
-    // Update is called once per frame
-    void Update()
+    public void RotatePlatform(PlayerController player)
     {
-        
+        Debug.Log("fsda");
+        transform.Rotate(new Vector3(0, 0, _rotateSpeed * Time.deltaTime));
     }
 }
