@@ -22,6 +22,11 @@ public class Obstacle6 : MonoBehaviour, IResetObject
     //reset()에서 사용하기 위해 wallInstance를 저장할 필드
     private GameObject wallInstance;
 
+    private void Awake()
+    {
+        _appearDelay = new WaitForSeconds(1.5f);
+    }
+
     public void WallCreate(PlayerController player)
     {
         // 플레이어 위치 + offset에서 생성
