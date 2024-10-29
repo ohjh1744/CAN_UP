@@ -7,10 +7,6 @@ public class BaseData : PlayerData
 
     public float MoveSpeed { get { return _moveSpeed; } set { _moveSpeed = value; } }
 
-   // private float _z;
-   //
-   // public float Z { get { return _z; } private set { } }
-
    // [SerializeField] private Vector3 _moveDir;
    //
    // public Vector3 MoveDir { get { return _moveDir; } set { _moveDir = value; } }
@@ -19,9 +15,9 @@ public class BaseData : PlayerData
 
     public float MaxJumpPower { get { return _maxJumpPower; } set { _maxJumpPower = value; } }
 
-    [SerializeField] private bool _hasItem;
+    [SerializeField] private float _rate;
 
-    public bool HasItem { get { return _hasItem; } set { _hasItem = value; } } //추후에 SaveData 쪽과 연동할 예정.
+    public float Rate { get { return _rate; } set { _rate = value; } }
 
     [SerializeField] private float _throwPower;
 
@@ -31,5 +27,8 @@ public class BaseData : PlayerData
 
     public bool IsGrounded { get { return _isGrounded; } set { _isGrounded = value; } }
 
-    
+    [SerializeField] private bool _hasItem;
+
+    public bool HasItem { get { return _hasItem; } set { _hasItem = value; } } //추후에 SaveData 쪽과 연동할 예정.
+
 }

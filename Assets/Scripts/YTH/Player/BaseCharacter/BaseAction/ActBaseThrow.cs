@@ -15,10 +15,10 @@ public class ActBaseThrow : PlayerAction
     {
         if (Input.GetKeyUp(KeyCode.Mouse0))
         {
-            if (Input.GetKeyUp(KeyCode.Mouse0) == false) // 좌클릭 떼고, 좌클릭 누른 상태가 아닐 때
-            {
+           //if (Input.GetKeyUp(KeyCode.Mouse0) == false) // 좌클릭 떼고, 좌클릭 누른 상태가 아닐 때
+           //{
                 ThrowItem();
-            }
+           // }
             return BTNodeState.Success;
         }
         else
@@ -42,7 +42,7 @@ public class ActBaseThrow : PlayerAction
             // 비활성화된 물리 작용 활성화하여 던짐
             Rigidbody _itemRb = _item.GetComponent<Rigidbody>();
             _item.transform.SetParent(null);
-            _itemRb.isKinematic = true;
+            _itemRb.isKinematic = false;
             _itemRb.AddForce(throwDirection * _data.ThrowPower, ForceMode.Impulse);
         }
     }

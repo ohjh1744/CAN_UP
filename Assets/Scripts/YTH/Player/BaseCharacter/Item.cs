@@ -6,11 +6,16 @@ public class Item : MonoBehaviour
 {
     [SerializeField] Rigidbody _rigidbody;
 
+    [SerializeField] Collider _collider;
+
     private void OnCollisionEnter(Collision collision)
     {
        if (collision.gameObject.CompareTag("Player"))
         {
             _rigidbody.isKinematic = true;
+            //Collider collider = gameObject.GetComponent<Collider>();
+
+            _collider.enabled = false;
         }
 
     }
