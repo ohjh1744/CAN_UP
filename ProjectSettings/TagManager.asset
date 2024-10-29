@@ -8,6 +8,9 @@ TagManager:
   - Item
   - ObstacleCol
   - ObstacleTri
+  - Base
+  - Stone
+  - Jumper
   layers:
   - Default
   - TransparentFX
