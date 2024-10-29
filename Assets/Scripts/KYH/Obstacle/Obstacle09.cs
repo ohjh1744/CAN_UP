@@ -4,14 +4,10 @@ using UnityEngine;
 
 public class Obstacle09 : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] GameObject _player;
+    [SerializeField] float _moveSpeed;
 
-    // Update is called once per frame
-    void Update()
+    public void MoveWithPlayer(PlayerController player)
     {
         
     }
