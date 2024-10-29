@@ -30,6 +30,9 @@ public class ActBasePickItem : PlayerAction
             _item.transform.position = _handPosition.position;
             _item.transform.rotation = _handPosition.rotation;
             _item.transform.SetParent(_handPosition);
+            _item.transform.localPosition = Vector3.zero;
+            
+
         }
     }
 }
