@@ -5,16 +5,31 @@ using UnityEngine;
 public class CondStoneCanMove : PlayerCondition
 {
     [SerializeField] StoneData _data;
+    [SerializeField] StoneRagdoll _ragdoll;
+    [SerializeField] float stopSpeed;
+    [SerializeField] LayerMask groundMask;
 
     public override bool DoCheck()
     {
-        Ray ray = new Ray(transform.position, Vector3.down);
-        Debug.Log("레이케스트 시작");
-        if (Physics.Raycast(ray, out RaycastHit hit, _data.RayDistance))
+        Debug.Log("두체크 시작");
+        if(_ragdoll.SpeedRigdbody() > stopSpeed)
+            return false;
+
+        //if(_ragdoll.SpeedRigdbody() <= stopSpeed)
+        //{
+        //    _ragdoll.RagDollOff();
+        //}
+        Vector3 pos = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+        Ray ray = new Ray(pos, Vector3.down);
+
+        //Debug.Log("레이케스트 시작");
+        if (Physics.Raycast(ray, out RaycastHit hit, _data.RayDistance, groundMask))
         {
-            if(hit.collider.CompareTag("Ground"))
+            Debug.DrawRay(pos, Vector3.down * _data.RayDistance, Color.red, 1f);
+            if(hit.collider.CompareTag("Ground") && _data.Flying == false)
             {
                 Debug.Log($"{hit.collider.tag}감지됨");
+                _ragdoll.RagDollOff();
                 return true;
             }
         }

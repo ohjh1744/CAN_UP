@@ -6,10 +6,12 @@ public class ActStoneMove : PlayerAction
 {
     [SerializeField] StoneData _data;
 
+
     public override BTNodeState DoAction()
     {
         Debug.Log("날아가는 로직 진입함");
         ApplyForceToPlayer();
+        Debug.Log("힘 줌");
         return BTNodeState.Success;
     }
 
@@ -52,9 +54,16 @@ public class ActStoneMove : PlayerAction
         {
             // 힘을 가해주는 위치 설정
             rb.AddForceAtPosition(forceDirection * forceMagnitude, _data.SelectedPlayer.transform.position, ForceMode.Impulse);
-            //rb.AddForce(forceDirection * forceMagnitude, ForceMode.Impulse);
+            _data.Flying = true;
+            StartCoroutine(Delay());
         }
 
         _data.SelectedPlayer = null;
+    }
+
+    private IEnumerator Delay()
+    {
+        yield return new WaitForSeconds(0.2f);
+        _data.Flying = false;
     }
 }
