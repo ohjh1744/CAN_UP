@@ -26,13 +26,10 @@ public class ActBasePickItem : PlayerAction
         {
             _data.HasItem = true;
 
-            //아이템 주웠을 시 에 붙이고 다니는 기능
+            //아이템 주웠을 때 붙이고 다니는 기능
             _item.transform.position = _handPosition.position;
-            _item.transform.rotation = _handPosition.rotation;
             _item.transform.SetParent(_handPosition);
             _item.transform.localPosition = Vector3.zero;
-            
-
         }
     }
 }

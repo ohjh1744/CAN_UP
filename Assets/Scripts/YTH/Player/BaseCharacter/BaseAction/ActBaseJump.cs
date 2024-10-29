@@ -33,8 +33,8 @@ public class ActBaseJump : PlayerAction
             return BTNodeState.Running;
         }
 
-        if ((Input.GetKeyUp(KeyCode.Space)) &&  !(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))) // space 떼거나
-        {                                                                                              // 점프력이 최대 점프력에 도달 시
+        else if ((Input.GetKeyUp(KeyCode.Space)) &&  !(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))) // space 떼거나
+        {                                                                                                   // 점프력이 최대 점프력에 도달 시
             _rigidbody.AddForce(_jumpDirection * _data.JumpPower, ForceMode.Impulse); // 점프
             _animator.SetTrigger("Jump");
             Debug.Log("점프!");
