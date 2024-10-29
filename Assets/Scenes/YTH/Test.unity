@@ -459,6 +459,14 @@ PrefabInstance:
       propertyPath: _maxJumpPower
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 6697927630460738287, guid: a2392114c7aaea74d977442e89428043, type: 3}
+      propertyPath: _edgeDatas.Array.data[5].ChildNames.Array.data[0]
+      value: CondBaseHasItem
+      objectReference: {fileID: 0}
+    - target: {fileID: 6697927630460738287, guid: a2392114c7aaea74d977442e89428043, type: 3}
+      propertyPath: _edgeDatas.Array.data[6].ChildNames.Array.data[0]
+      value: CondBaseNoItem
+      objectReference: {fileID: 0}
     - target: {fileID: 6697927630460738296, guid: a2392114c7aaea74d977442e89428043, type: 3}
       propertyPath: m_Name
       value: man_business 1
