@@ -21,7 +21,7 @@ public class ActBaseJump : PlayerAction
             _data.JumpPower += Time.deltaTime * 6f;  // 점프력 상승중
             Debug.Log("점프력 차징 중");
 
-            if (_data.JumpPower >= _data.MaxJumpPower)  // 점프력이 최대 점프력을 넘어서면 최대 점프력으로 점프                                                                                             
+            if (_data.JumpPower >= _data.MaxJumpPower) // 점프력이 최대 점프력을 넘어서면 최대 점프력으로 점프                                                                                             
             {
                 _data.JumpPower = _data.MaxJumpPower;
                 _rigidbody.AddForce(_jumpDirection * _data.JumpPower, ForceMode.Impulse);

@@ -17,6 +17,13 @@ public class RagDollController : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+            TakeDamage();
+        }
+    }
     public void TakeDamage()
     {
         //렉돌 활성화하기 위해

@@ -9,9 +9,6 @@ public class ActBaseWalk : PlayerAction
     [SerializeField] Animator _animator;
 
     Vector3 dir = new Vector3(-1, 0, 0);
-    float x;
-
-
 
     public override BTNodeState DoAction()
     {
@@ -38,7 +35,6 @@ public class ActBaseWalk : PlayerAction
         if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
         {
             _animator.SetBool("isIdle", true);
-            Debug.Log("Idle ÄÑÁü");
             _rigidbody.velocity = Vector3.zero;
             return BTNodeState.Success;
         }
