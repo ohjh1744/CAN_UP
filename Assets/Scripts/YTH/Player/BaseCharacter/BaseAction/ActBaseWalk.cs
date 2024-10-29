@@ -32,7 +32,7 @@ public class ActBaseWalk : PlayerAction
         }
        
         //Å° ÀÔ·Â ¾øÀ»¶§ ¸ØÃã
-        if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
+        else if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
         {
             _animator.SetBool("isIdle", true);
             _rigidbody.velocity = Vector3.zero;

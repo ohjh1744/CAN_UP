@@ -208,13 +208,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 75359715}
-  m_LocalRotation: {x: 0.07627506, y: -0.91823655, z: 0.21803433, w: 0.32169053}
-  m_LocalPosition: {x: 3.165964, y: 3.951345, z: 5.8977747}
+  m_LocalRotation: {x: 0.20966268, y: -0.40794623, z: 0.096945435, w: 0.88330233}
+  m_LocalPosition: {x: -1.5241852, y: 7.1814327, z: -3.5447054}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1018898167160615428}
-  m_RootOrder: 2
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1070787311
 GameObject:
@@ -261,7 +261,7 @@ Transform:
   m_Children:
   - {fileID: 1018898167160615428}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1677884363
 GameObject:
@@ -359,7 +359,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!54 &1677884368
 Rigidbody:
@@ -469,7 +469,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!95 &466518254344506272 stripped
 Animator:
@@ -509,7 +509,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 781464729452546700, guid: f48a933a904155f4a8411d6013475530, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 781464729452546700, guid: f48a933a904155f4a8411d6013475530, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1933,7 +1933,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6697927630460738284, guid: a2392114c7aaea74d977442e89428043, type: 3}
       propertyPath: m_IsKinematic
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6697927630460738285, guid: a2392114c7aaea74d977442e89428043, type: 3}
       propertyPath: m_Height

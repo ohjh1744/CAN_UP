@@ -13,7 +13,7 @@ public class CondBaseCanMove : PlayerCondition
         Ray ray = new Ray(pos, Vector3.down);
 
         //Debug.Log("레이케스트 시작");
-        if (Physics.Raycast(ray, out RaycastHit hit, 0.1f))
+        if (Physics.Raycast(ray, out RaycastHit hit, 0.2f))
         {
             Debug.DrawRay(pos, Vector3.down * 0.3f, Color.red);
             if (hit.collider.CompareTag("Ground"))

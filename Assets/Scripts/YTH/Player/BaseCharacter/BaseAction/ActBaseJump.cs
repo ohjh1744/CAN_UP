@@ -10,8 +10,6 @@ public class ActBaseJump : PlayerAction
 
     [SerializeField] Animator _animator;
 
-    
-
     public override BTNodeState DoAction()
     {
         Vector3 _jumpDirection = new Vector3(1,2,0).normalized;
@@ -35,7 +33,7 @@ public class ActBaseJump : PlayerAction
 
         else if ((Input.GetKeyUp(KeyCode.Space)) &&  !(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))) // space 떼거나
         {                                                                                                   // 점프력이 최대 점프력에 도달 시
-            _rigidbody.AddForce(_jumpDirection * _data.JumpPower, ForceMode.Impulse); // 점프
+            _rigidbody.AddForce(_jumpDirection * _data.JumpPower, ForceMode.Impulse);                       // 점프
             _animator.SetTrigger("Jump");
             Debug.Log("점프!");
 
@@ -43,6 +41,8 @@ public class ActBaseJump : PlayerAction
             _data.JumpPower = 0;
             return BTNodeState.Success;
         }
+
+
 
         else
         {
