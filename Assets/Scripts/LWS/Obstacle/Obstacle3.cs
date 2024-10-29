@@ -8,7 +8,6 @@ public class Obstacle3 : MonoBehaviour
 
     [SerializeField] private float _explosionDelay; // 폭발까지 대기 시간
     [SerializeField] private float _explosionForce; // 폭발 강도
-    [SerializeField] private float _explosionRadius; // 폭발 범위
     [SerializeField] private float _resetDelay; // 발판 활성화 대기 시간
 
     // 폭발 경고 구체 오브젝트 배열
@@ -66,5 +65,22 @@ public class Obstacle3 : MonoBehaviour
         // 폭발할 각도 계산
         Vector3 explosionDir = (player.transform.position - transform.position).normalized;
         rigid.AddForce(explosionDir * _explosionForce, ForceMode.Impulse);
+
+        // 비활성화 후 재활성화 시작
+        gameObject.SetActive(false);
+        Invoke(nameof(ResetPlatform), _resetDelay);
+    }
+
+    private void ResetPlatform()
+    {
+        gameObject.SetActive(true);
+        _isTriggered = false;
+        _explosionTimer = _explosionDelay;
+
+        // 경고 구체 색상 초기화
+        foreach (var sphere in _warningSpheres)
+        {
+            sphere.GetComponent<Renderer>().material.color = Color.white;
+        }
     }
 }
