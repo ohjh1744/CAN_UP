@@ -3,12 +3,14 @@ using UnityEngine;
 public class ActStoneReadyMove : PlayerAction
 {
     [SerializeField] StoneData _data;
+    [SerializeField] StoneRagdoll _ragdoll;
 
     public override BTNodeState DoAction()
     {
         if (Input.GetMouseButton(0))
         {
             DetectPlayerWithRay();
+            _data.Flying = false;
 
             if (_data.IsDragging)
             {
@@ -21,15 +23,20 @@ public class ActStoneReadyMove : PlayerAction
         {
             _data.IsDragging = false;
             _data.LineRenderer.enabled = false;
+
+            //_ragdoll.AddForceRagdoll(Vector3.up * 5);
+            _ragdoll.RagDollOn();
+            //ApplyForceToPlayer();
+            Debug.Log("레그돌 시작");
             return BTNodeState.Failure;
         }
-        return BTNodeState.Failure;
+        return BTNodeState.Running;
 
     }
 
     private void DetectPlayerWithRay()
     {
-        Debug.Log("마우스 왼쪽 버튼 누름");
+        //Debug.Log("마우스 왼쪽 버튼 누름");
         // 카메라가 비추는 화면에서 스크린에 레이를 발사하는 로직
         Ray ray = _data.MainCamera.ScreenPointToRay(Input.mousePosition);
 
@@ -66,14 +73,14 @@ public class ActStoneReadyMove : PlayerAction
             _data.LineRenderer.SetPosition(0, _data.DragStartPoint);
             _data.LineRenderer.SetPosition(1, limitedPosition);
 
-            Debug.Log("커서 최대거리 넘어감");
+            //Debug.Log("커서 최대거리 넘어감");
         }
         else
         {
             _data.LineRenderer.SetPosition(0, _data.DragStartPoint);
             _data.LineRenderer.SetPosition(1, mousePosition);
 
-            Debug.Log("커서 작동중");
+            //Debug.Log("커서 작동중");
         }
     }
 

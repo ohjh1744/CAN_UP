@@ -49,4 +49,8 @@ public class StoneData : PlayerData
     [SerializeField] float _maxPullDistance;
 
     public float MaxPullDistance { get { return _maxPullDistance; } set { _maxPullDistance = value; } }
+
+    [SerializeField] bool _flying = false;
+
+    public bool Flying { get { return _flying; } set { _flying = value; } }
 }
