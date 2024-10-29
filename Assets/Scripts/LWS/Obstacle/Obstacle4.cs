@@ -51,11 +51,11 @@ public class Obstacle4 : MonoBehaviour
 
     public void PushPlayer(PlayerController player)
     {
-        Rigidbody playerRb = player.GetComponent<Rigidbody>();
-        if (playerRb != null)
+        Rigidbody rigid = player.GetComponent<Rigidbody>();
+        if (rigid != null)
         {
             Vector3 pushDirection = (player.transform.position - transform.position).normalized;
-            playerRb.AddForce(pushDirection * pushForce, ForceMode.Impulse);
+            rigid.AddForce(pushDirection * pushForce, ForceMode.Impulse);
         }
     }
 }
