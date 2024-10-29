@@ -11,6 +11,6 @@ public class Obstacle07 : MonoBehaviour
     public void TouchPlayer(PlayerController player)
     {
         Debug.Log("rrr");
-        transform.position = Vector3.MoveTowards(gameObject.transform.position, _stopPos.position, 1f);
+        transform.position = Vector3.Lerp(gameObject.transform.position, _stopPos.position, 2.0f);
     }
 }
