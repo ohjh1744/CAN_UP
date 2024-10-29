@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 281501550}
   m_Layer: 7
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -528,13 +528,29 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1292874648, guid: 8b62c4d186f4bb84f8d169c2909fa014, type: 3}
+      propertyPath: m_Radius
+      value: 0.07879171
+      objectReference: {fileID: 0}
+    - target: {fileID: 1292874648, guid: 8b62c4d186f4bb84f8d169c2909fa014, type: 3}
+      propertyPath: m_Center.x
+      value: -0.095879875
+      objectReference: {fileID: 0}
+    - target: {fileID: 1292874648, guid: 8b62c4d186f4bb84f8d169c2909fa014, type: 3}
+      propertyPath: m_Center.y
+      value: 0.023837741
+      objectReference: {fileID: 0}
+    - target: {fileID: 1292874648, guid: 8b62c4d186f4bb84f8d169c2909fa014, type: 3}
+      propertyPath: m_Center.z
+      value: 0.0000000097828075
+      objectReference: {fileID: 0}
     - target: {fileID: 2069362823, guid: 8b62c4d186f4bb84f8d169c2909fa014, type: 3}
       propertyPath: _mainCamera
       value: 
       objectReference: {fileID: 517632471}
     - target: {fileID: 2069362823, guid: 8b62c4d186f4bb84f8d169c2909fa014, type: 3}
       propertyPath: _rayDistance
-      value: 0.8
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2069362824, guid: 8b62c4d186f4bb84f8d169c2909fa014, type: 3}
       propertyPath: _ragdoll
@@ -1354,7 +1370,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8155859366119933256, guid: 8b62c4d186f4bb84f8d169c2909fa014, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.9
+      value: -0.37
       objectReference: {fileID: 0}
     - target: {fileID: 8155859366119933256, guid: 8b62c4d186f4bb84f8d169c2909fa014, type: 3}
       propertyPath: m_LocalPosition.z

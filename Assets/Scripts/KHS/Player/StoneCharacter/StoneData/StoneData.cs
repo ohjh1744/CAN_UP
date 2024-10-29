@@ -53,4 +53,10 @@ public class StoneData : PlayerData
     [SerializeField] bool _flying = false;
 
     public bool Flying { get { return _flying; } set { _flying = value; } }
+
+    [SerializeField] bool _standAni = false;
+
+    public bool StandAni { get { return _standAni; } set { _standAni = value; } }
+
+
 }
