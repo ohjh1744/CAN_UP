@@ -10,7 +10,7 @@ public class Obstacle07 : MonoBehaviour
 
     public void TouchPlayer(PlayerController player)
     {
-        Debug.Log("rrr");
+        // 멈추는 위치에 빈 오브젝트 설치할 것
         transform.position = Vector3.Lerp(gameObject.transform.position, _stopPos.position, 2.0f);
     }
 }
