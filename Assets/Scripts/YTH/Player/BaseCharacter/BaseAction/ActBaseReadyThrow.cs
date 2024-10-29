@@ -2,10 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ActBaseReadyThrow : MonoBehaviour
+public class ActBaseReadyThrow : PlayerAction
 {
-    //마우스 버튼 좌클릭 누르고 있는 도중이고, 마우스를 떼지 않았을 때 Return running
-    //else 만약 아니라면 return failure
+    [SerializeField] BaseData _data;
 
-    
+    public override BTNodeState DoAction()
+    {
+        if (Input.GetKey(KeyCode.Mouse0)) // 좌클릭 누르는 중, 마우스를 떼지 않았을 때
+        {
+            if (Input.GetKey(KeyCode.Mouse0) == true)
+            {
+                return BTNodeState.Running;
+            }
+            return BTNodeState.Running;
+        }
+        else
+        {
+            return BTNodeState.Failure;
+        }
+
+    }
 }

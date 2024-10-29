@@ -1,10 +1,35 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class ActBasePickItem : MonoBehaviour
+public class ActBasePickItem : PlayerAction
 {
-   //좌클릭을 누를 시, return success 
-   // 아니라면
-   //return failure
+    [SerializeField] BaseData _data;
+
+    [SerializeField] public Transform _handPosition; // 아이템을 들 위치(손)
+
+    [SerializeField] private GameObject _item;
+
+    public override BTNodeState DoAction()
+    {
+        if (Input.GetKeyDown(KeyCode.Mouse0)) // 좌클릭 입력 시
+        {
+            return BTNodeState.Success;
+        }
+        else
+        {
+            return BTNodeState.Failure;
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Item"))
+        {
+            _data.HasItem = true;
+
+            //아이템 주웠을 시 에 붙이고 다니는 기능
+            _item.transform.position = _handPosition.position;
+            _item.transform.rotation = _handPosition.rotation;
+            _item.transform.SetParent(_handPosition);
+        }
+    }
 }
