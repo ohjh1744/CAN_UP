@@ -1,22 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Obstacle01 : MonoBehaviour
 {
-    [SerializeField] PlayerData _data;
+    //public enum ECharacterNum {Base, Stone, Jumper }
 
-    public void AddJumpForce(PlayerController player)
-    {
-        // 테스트할 때 진행해볼 것
-
-        _data = GetComponent<PlayerData>();
-
-        // 플레이어 오브젝트가 null이거나 플레이어가 StoneCharacter인 경우 예외처리
-        if (player == null || player.gameObject.name == "StoneCharacter")
-            return;
-
-        // OnTriggerStay 동안 JumpPower를 2배 증가
-        _data.JumpPower *= 2;
-    }
+    //[SerializeField] private float[] _power;
+    //
+    //public void ForcedJump(PlayerController player)
+    //{
+    //    Rigidbody rigid = player.GetComponent<Rigidbody>();
+    //
+    //    if (player.gameObject.tag == "Stone")
+    //    {
+    //        rigid.AddForce(Vector3.up * _power[(int)ECharacterNum.Stone]);
+    //    }
+    //    else if (player.gameObject.tag == "Jumper")
+    //    {
+    //        rigid.AddForce(Vector3.up * _power[(int)ECharacterNum.Jumper]);
+    //    }
+    //    else if (player.gameObject.tag == "Base")
+    //    {
+    //        rigid.AddForce(Vector3.up * _power[(int)ECharacterNum.Base]);
+    //    }
+    //}
 }
