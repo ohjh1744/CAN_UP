@@ -10,7 +10,9 @@ public class CondStoneCanMove : PlayerCondition
     [SerializeField] float stopSpeed;
     [SerializeField] LayerMask groundMask;
 
- 
+    [SerializeField] Transform _parent;
+
+
     public override bool DoCheck()
     {
         Debug.Log("두체크 시작");
@@ -38,11 +40,14 @@ public class CondStoneCanMove : PlayerCondition
                     _data.StandAni = true;
                 }
                 _ragdoll.RagDollOff();
+                _parent.position = new Vector3(_parent.position.x, hit.point.y, _parent.position.z);
                 return true;
             }
         }
-            
-        _data.StandAni = false;
+
+
+
+
         return false;
     }
 }
