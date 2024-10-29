@@ -7,25 +7,46 @@ using UnityEngine.Events;
 public class InteractAdapter : MonoBehaviour, IInteractable
 {
     // 이벤트를 이용한 어뎁터 방식
-    public UnityEvent<PlayerController> OnInteractEnter;
+    public UnityEvent<PlayerController> OnInteractColEnter;
 
-    public UnityEvent<PlayerController> OnInteractStay;
+    public UnityEvent<PlayerController> OnInteractColStay;
 
-    public UnityEvent<PlayerController> OnInteractExit;
+    public UnityEvent<PlayerController> OnInteractColExit;
 
-    public void TargetInteractEnter(PlayerController player)
+    public UnityEvent<PlayerController> OnInteractTriEnter;
+
+    public UnityEvent<PlayerController> OnInteractTriStay;
+
+    public UnityEvent<PlayerController> OnInteractTriExit;
+
+    public void TargetInteractColEnter(PlayerController player)
     {
-        OnInteractEnter?.Invoke(player);
+        OnInteractColEnter?.Invoke(player);
     }
 
-    public void TargetInteractStay(PlayerController player)
+    public void TargetInteractColStay(PlayerController player)
     {
-        OnInteractStay?.Invoke(player);
+        OnInteractColStay?.Invoke(player);
     }
 
-    public void TargetInteractExit(PlayerController player)
+    public void TargetInteractColExit(PlayerController player)
     {
-        OnInteractExit?.Invoke(player);
+        OnInteractColExit?.Invoke(player);
+    }
+
+    public void TargetInteractTriEnter(PlayerController player)
+    {
+        OnInteractTriEnter?.Invoke(player);
+    }
+
+    public void TargetInteractTriStay(PlayerController player)
+    {
+        OnInteractTriStay?.Invoke(player);
+    }
+
+    public void TargetInteractTriExit(PlayerController player)
+    {
+        OnInteractTriExit?.Invoke(player);
     }
 
 }

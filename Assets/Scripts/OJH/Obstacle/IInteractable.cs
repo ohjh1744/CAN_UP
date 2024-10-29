@@ -4,12 +4,26 @@ using UnityEngine;
 
 public interface IInteractable
 {
+    //collision
     // Player와 접촉시 발생하는 함수
-    void TargetInteractEnter(PlayerController player);
+    void TargetInteractColEnter(PlayerController player);
 
     // Player와 접촉중에 발생하는 함수
-    void TargetInteractStay(PlayerController player);
+    void TargetInteractColStay(PlayerController player);
 
     // Player와 접촉 후 떨어졌을 때 발생하는 함수
-    void TargetInteractExit(PlayerController player);
+    void TargetInteractColExit(PlayerController player);
+
+    //trigger
+    // Player와 접촉 후 떨어졌을 때 발생하는 함수
+    void TargetInteractTriEnter(PlayerController player);
+
+    // Player와 접촉 후 떨어졌을 때 발생하는 함수
+    void TargetInteractTriStay(PlayerController player);
+
+    // Player와 접촉 후 떨어졌을 때 발생하는 함수
+    void TargetInteractTriExit(PlayerController player);
+
+
+
 }

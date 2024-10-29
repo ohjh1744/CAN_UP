@@ -149,23 +149,57 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "Obstacle")
+        if(collision.gameObject.tag == "ObstacleCol")
         {
             IInteractable interactable = collision.gameObject.GetComponent<IInteractable>();
-            interactable.TargetInteractEnter(this);
+            interactable.TargetInteractColEnter(this);
         }
     }
 
 
     private void OnCollisionStay(Collision collision)
     {
-        
+        if (collision.gameObject.tag == "ObstacleCol")
+        {
+            IInteractable interactable = collision.gameObject.GetComponent<IInteractable>();
+            interactable.TargetInteractColStay(this);
+        }
     }
-
 
     private void OnCollisionExit(Collision collision)
     {
-        
+        if (collision.gameObject.tag == "ObstacleCol")
+        {
+            IInteractable interactable = collision.gameObject.GetComponent<IInteractable>();
+            interactable.TargetInteractColExit(this);
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "ObstacleTri")
+        {
+            IInteractable interactable = other.gameObject.GetComponent<IInteractable>();
+            interactable.TargetInteractTriEnter(this);
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.tag == "ObstacleTri")
+        {
+            IInteractable interactable = other.gameObject.GetComponent<IInteractable>();
+            interactable.TargetInteractTriStay(this);
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "ObstacleTri")
+        {
+            IInteractable interactable = other.gameObject.GetComponent<IInteractable>();
+            interactable.TargetInteractTriExit(this);
+        }
     }
 
 
