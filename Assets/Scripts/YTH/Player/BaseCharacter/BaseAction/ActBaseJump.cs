@@ -8,6 +8,8 @@ public class ActBaseJump : PlayerAction
 
     [SerializeField] BaseData _data;
 
+    [SerializeField] Animator _animator;
+
     public override BTNodeState DoAction()
     {
         if (Input.GetKey(KeyCode.Space) && !(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))) // space 누르고 있는 상태
@@ -19,6 +21,7 @@ public class ActBaseJump : PlayerAction
             {
                 _data.JumpPower = _data.MaxJumpPower;
                 _rigidbody.AddForce(Vector3.up * _data.JumpPower, ForceMode.Impulse);
+                _animator.SetTrigger("Jump");
                 _data.JumpPower = 0;
                 return BTNodeState.Success;
             }
@@ -28,6 +31,7 @@ public class ActBaseJump : PlayerAction
         if ((Input.GetKeyUp(KeyCode.Space)) &&  !(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))) // space 떼거나
         {                                                                                              // 점프력이 최대 점프력에 도달 시
             _rigidbody.AddForce(Vector3.up * _data.JumpPower, ForceMode.Impulse); // 점프
+            _animator.SetTrigger("Jump");
             Debug.Log("점프!");
 
             _data.IsGrounded = false;

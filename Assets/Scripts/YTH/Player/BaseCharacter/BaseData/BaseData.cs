@@ -7,13 +7,13 @@ public class BaseData : PlayerData
 
     public float MoveSpeed { get { return _moveSpeed; } set { _moveSpeed = value; } }
 
-    private float _z;
+   // private float _z;
+   //
+   // public float Z { get { return _z; } private set { } }
 
-    public float Z { get { return _z; } private set { } }
-
-    [SerializeField] private Vector3 _moveDir;
-
-    public Vector3 MoveDir { get { return _moveDir; } set { _moveDir = value; } }
+   // [SerializeField] private Vector3 _moveDir;
+   //
+   // public Vector3 MoveDir { get { return _moveDir; } set { _moveDir = value; } }
 
     [SerializeField] private float _maxJumpPower; // 최대 점프력 = 5m
 
@@ -27,11 +27,9 @@ public class BaseData : PlayerData
 
     public float ThrowPower { get { return _throwPower; } set { _throwPower = value; } }
 
-    [SerializeField] private float _groundCheckDistance = 0.1f;
-
-    public float GroundCheckDistance { get { return _groundCheckDistance; } set { _groundCheckDistance = value; } }  // Ground 로 Raycast 쏘는 거리
-
     [SerializeField] private bool _isGrounded; // 땅에 닿아있는지 여부
 
     public bool IsGrounded { get { return _isGrounded; } set { _isGrounded = value; } }
+
+    
 }
