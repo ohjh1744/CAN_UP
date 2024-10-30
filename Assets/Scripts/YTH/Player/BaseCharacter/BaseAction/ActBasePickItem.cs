@@ -12,10 +12,12 @@ public class ActBasePickItem : PlayerAction
     {
         if (Input.GetKeyDown(KeyCode.Mouse0)) // 좌클릭 입력 시
         {
+            Debug.Log("아이템 잡음");
             return BTNodeState.Success;
         }
         else
         {
+            Debug.Log("아이템 잡xxxxxxxxxxxx");
             return BTNodeState.Failure;
         }
     }

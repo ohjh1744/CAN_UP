@@ -10,10 +10,12 @@ public class CondBaseHasItem : PlayerCondition
     {
         if (_data.HasItem == true)
         {
+            Debug.Log("아이템 사용 가능 + 아이템 소지 확인");
             return true;
         }
         else
         {
+            Debug.Log("아이템 사용 가능 + 아이템 소지 X");
             return false;
         }
     }

@@ -13,10 +13,7 @@ public class Item : MonoBehaviour
        if (collision.gameObject.CompareTag("Player"))
         {
             _rigidbody.isKinematic = true;
-            //Collider collider = gameObject.GetComponent<Collider>();
-
             _collider.enabled = false;
         }
-
     }
 }
