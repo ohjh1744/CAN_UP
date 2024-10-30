@@ -98,7 +98,7 @@ public class ActBaseJump : PlayerAction
     //점프 시 공통적으로 발생하는 함수
     public void JumpEvent()
     {
-        transform.position = new Vector3(transform.position.x, transform.position.y + 0.3f, transform.position.z);
+        transform.position = new Vector3(transform.position.x, transform.position.y + _startJumpPositionY, transform.position.z);
         _data.IsGrounded = false;
         _animator.SetTrigger("Jump");
         _data.JumpPower = 0;
