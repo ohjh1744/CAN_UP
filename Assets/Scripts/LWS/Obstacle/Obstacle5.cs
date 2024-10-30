@@ -4,57 +4,33 @@ using UnityEngine;
 
 public class Obstacle5 : MonoBehaviour
 {
-    // 반복 주기 (초)
-    [SerializeField] float _moveInterval;
+    // 발사 할 프리팹
+    [SerializeField] GameObject _obstaclePrefab;
 
-    // 속도
-    [SerializeField] float _speed;
+    // 프리팹을 던질 주기
+    [SerializeField] private float _launchInterval;
 
-    // 이동 방향
-    [SerializeField] Vector3 _dir;
+    // 발사 방향
+    // 1,0,0 = 오른쪽, -1,0,0 = 왼쪽
+    [SerializeField] private Vector3 _direction;
 
-    // 초기 위치
-    [SerializeField] Vector3 _startPos;
-
-    // 플레이어를 밀어낼 힘의 크기
-    [SerializeField] float _pushForce;
-
-    [SerializeField] bool _movingOut;
+    // 발사 속도
+    [SerializeField] private float _launchSpeed;
 
     private void Start()
     {
-        _startPos = transform.position;
-        StartCoroutine(RoutineObstacle());
+        // launchInterval마다 발사
+        InvokeRepeating(nameof(LaunchObstacle), 0f, _launchInterval);
     }
 
-    private IEnumerator RoutineObstacle()
+    private void LaunchObstacle()
     {
-        while (true)
-        {
-            // 목표 위치 계산
-            Vector3 targetPosition = _movingOut ? _startPos + _dir : _startPos;
+        // 프리팹 생성
+        GameObject obstacle = Instantiate(_obstaclePrefab, transform.position, Quaternion.identity);
 
-            // 목표 위치까지 이동
-            while (Vector3.Distance(transform.position, targetPosition) > 0.01f)
-            {
-                transform.position = Vector3.MoveTowards(transform.position, targetPosition, _speed * Time.deltaTime);
+        // 발사설정
+        Rigidbody rigid = obstacle.GetComponent<Rigidbody>();
 
-                yield return null;
-            }
-
-            _movingOut = !_movingOut;
-
-            yield return new WaitForSeconds(_moveInterval);
-        }
-    }
-
-    public void PushPlayer(PlayerController player)
-    {
-        Rigidbody rigid = player.GetComponent<Rigidbody>();
-        if (rigid != null)
-        {
-            Vector3 pushDirection = (player.transform.position - transform.position).normalized;
-            rigid.AddForce(pushDirection * _pushForce, ForceMode.Impulse);
-        }
+        rigid.velocity = _direction.normalized * _launchSpeed;
     }
 }

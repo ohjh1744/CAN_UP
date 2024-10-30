@@ -8,6 +8,41 @@ public class JumperJump : PlayerAction
 
     [SerializeField] Rigidbody _rigidbody;
 
+
+    private void Update()
+    {
+        CheckGround();
+    }
+
+    // 땅을 감지하는 레이캐스트
+    private void CheckGround()
+    {
+        // 레이캐스트 발사 방향을 아래로 설정
+        Vector3 rayDirection = Vector3.down;
+
+        // 레이캐스트 시각화 (씬 뷰에서 보임)
+        Debug.DrawRay(transform.position, rayDirection * 1.55f, Color.red);
+
+        // 캐릭터 아래 방향으로 레이캐스트 발사
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, rayDirection, out hit, 1.55f))
+        {
+            // 레이캐스트가 태그가 맞는 오브젝트에 닿았는지 확인
+            if (hit.collider.CompareTag("Ground") || hit.collider.CompareTag("ObstacleCol") || hit.collider.CompareTag("ObstacleTri"))
+            {
+                _jumperData._isGrounded = true;
+            }
+            else
+            {
+                _jumperData._isGrounded = false;
+            }
+        }
+        else
+        {
+            _jumperData._isGrounded = false;
+        }
+    }
+
     // DoAction 재정의
     public override BTNodeState DoAction()
     {
@@ -21,15 +56,6 @@ public class JumperJump : PlayerAction
         else
         {
             return BTNodeState.Failure;
-        }
-    }
-
-    // 땅에 닿으면 _isGrounded = true -> 점프 실행
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("ObstacleCol") || collision.gameObject.CompareTag("ObstacleTri"))
-        {
-            _jumperData._isGrounded = true;
         }
     }
 }
