@@ -1561,12 +1561,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dad37081a1080554b82fddfedbce8a12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moveInterval: 3
-  _speed: 20
-  _dir: {x: 5, y: 0, z: 0}
-  _startPos: {x: 0, y: 0, z: 0}
-  _pushForce: 0
-  _movingOut: 0
+  _obstaclePrefab: {fileID: 194384286864999546, guid: 7aec139932b747c4da9bd43411857b8f, type: 3}
+  _launchInterval: 5
+  _direction: {x: 1, y: 0, z: 0}
+  _launchSpeed: 5
 --- !u!65 &72511333
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2080,7 +2078,7 @@ RectTransform:
   - {fileID: 606035018}
   - {fileID: 743205382}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2267,7 +2265,7 @@ GameObject:
   - component: {fileID: 117550116}
   m_Layer: 0
   m_Name: Obstacle11
-  m_TagString: Untagged
+  m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5030,7 +5028,6 @@ MonoBehaviour:
   _fallDistance: 5
   _startPos: {x: 0, y: 0, z: 0}
   _endPos: {x: 0, y: 0, z: 0}
-  _playerEntered: 0
   _isFalling: 0
   _isReturning: 0
   _stayTimer: 0
@@ -13849,7 +13846,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1123418836
 GameObject:
@@ -16479,9 +16476,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _escapePlatform: {fileID: 1937808693}
   _moveSpeed: 0
-  _startPos: {x: 0, y: 0, z: 0}
   _replaceObject: {fileID: 0}
-  _stageNum: 0
 --- !u!65 &1431417869
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16556,8 +16551,7 @@ Transform:
   m_LocalPosition: {x: 16.56, y: 1.15, z: 0}
   m_LocalScale: {x: 4, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1937808689}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -20361,7 +20355,7 @@ MonoBehaviour:
   _speed: 10
   _dir: {x: 0, y: 5, z: 0}
   _startPos: {x: 0, y: 0, z: 0}
-  _pushForce: 0
+  _pushForce: 20
   _movingOut: 0
 --- !u!65 &1811022907
 BoxCollider:
@@ -21318,7 +21312,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1911614300
 GameObject:
@@ -21962,13 +21956,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1937808688}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.427, y: 0.21, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 26.268, y: 1.36, z: 0}
+  m_LocalScale: {x: 4, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1431417872}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1937808690
 BoxCollider:
@@ -24318,6 +24312,10 @@ PrefabInstance:
     - target: {fileID: 7998873950400676229, guid: 4dd9159ee24de434b96e1d661e9bca45, type: 3}
       propertyPath: m_Name
       value: KKE
+      objectReference: {fileID: 0}
+    - target: {fileID: 7998873950400676229, guid: 4dd9159ee24de434b96e1d661e9bca45, type: 3}
+      propertyPath: m_TagString
+      value: Jumper
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4dd9159ee24de434b96e1d661e9bca45, type: 3}
