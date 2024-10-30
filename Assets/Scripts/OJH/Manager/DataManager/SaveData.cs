@@ -12,6 +12,10 @@ public class GameData
 
     public bool IsClear { get {return _isClear;} set { _isClear = value; } }
 
+    [SerializeField] private int _characterNum;
+
+    public int CharacterNum { get { return _characterNum; } set { _characterNum = value; } }
+
     //현재 플레이어가 위치한 Stage
     [SerializeField] private int _playerStage;
 
