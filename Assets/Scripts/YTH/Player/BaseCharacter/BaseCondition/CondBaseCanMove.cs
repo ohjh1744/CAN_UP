@@ -17,7 +17,7 @@ public class CondBaseCanMove : PlayerCondition
         if (Physics.Raycast(ray, out RaycastHit hit, 0.3f))
         {
             Debug.DrawRay(pos, Vector3.down * 0.3f, Color.red);
-            if (hit.collider.CompareTag("Ground"))
+            if (hit.collider.CompareTag("Ground") || hit.collider.CompareTag("ObstacleTri") || hit.collider.CompareTag("ObstacleCol"))
             {
                 _data.IsGrounded = true;
                 return true;
