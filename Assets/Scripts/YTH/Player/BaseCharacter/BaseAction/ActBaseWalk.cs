@@ -43,6 +43,5 @@ public class ActBaseWalk : PlayerAction
         {
             return BTNodeState.Failure;
         }
-
     }
 }
