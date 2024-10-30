@@ -41,13 +41,18 @@ public class StoneData : PlayerData
     [SerializeField] Vector3 _dragStartPoint;
 
     public Vector3 DragStartPoint { get { return _dragStartPoint; } set { _dragStartPoint = value; } }
-    // 날리는 힘
-    [SerializeField] float _forceValue;
 
-    public float ForceValue { get { return _forceValue; } set { _forceValue = value; } }
+    //// 날리는 힘
+    //[SerializeField] float _forceValue;
+    //public float ForceValue { get { return _forceValue; } set { _forceValue = value; } }
+    
+    // 에니메이터
+    [SerializeField] Animator _animator;
+
+    public Animator Animator { get { return _animator; } set { _animator = value; } }
+
     // 당기는 최대거리
     [SerializeField] float _maxPullDistance;
-
     public float MaxPullDistance { get { return _maxPullDistance; } set { _maxPullDistance = value; } }
 
     [SerializeField] bool _flying = false;
