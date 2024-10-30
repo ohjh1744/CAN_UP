@@ -19,7 +19,6 @@ public class ActBasePickItem : PlayerAction
         }
         else
         {
-            Debug.Log("아이템 잡xxxxxxxxxxxx");
             return BTNodeState.Failure;
         }
     }
