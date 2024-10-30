@@ -1,9 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
-using TMPro;
-using UnityEditorInternal;
 using UnityEngine;
-using static UnityEditor.Progress;
 
 public class ActBaseThrow : PlayerAction
 {
@@ -11,39 +7,55 @@ public class ActBaseThrow : PlayerAction
 
     [SerializeField] GameObject _item;
 
+    [SerializeField] Animator _animator;
+
+    [SerializeField] Transform throwPoint;
     public override BTNodeState DoAction()
     {
         if (Input.GetKeyUp(KeyCode.Mouse0))
         {
-           //if (Input.GetKeyUp(KeyCode.Mouse0) == false) // 좌클릭 떼고, 좌클릭 누른 상태가 아닐 때
-           //{
-                ThrowItem();
-           // }
+            throwRoutine = StartCoroutine(ThrowRoutine());
+            //ThrowItem();
             return BTNodeState.Success;
         }
         else
         {
             return BTNodeState.Failure;
         }
-
     }
 
-    private void ThrowItem()
+    public void ThrowItem()
     {
-        // 마우스 위치를 기준으로 Ray 생성
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
+        Vector3 mousePos = Input.mousePosition;
+        mousePos.z = Camera.main.WorldToScreenPoint(throwPoint.position).z;
 
-        if (Physics.Raycast(ray, out hit, 10f)) // 10f 거리는 테스트용 수정 필요
-        {
-            // 아이템 마우스 방향으로 던짐
-            Vector3 throwDirection = (hit.point - transform.position).normalized;
+        Vector3 worldMousePos = Camera.main.ScreenToWorldPoint(mousePos);
+        worldMousePos.z = throwPoint.position.z; // Z축 고정
 
-            // 비활성화된 물리 작용 활성화하여 던짐
-            Rigidbody _itemRb = _item.GetComponent<Rigidbody>();
-            _item.transform.SetParent(null);
-            _itemRb.isKinematic = false;
-            _itemRb.AddForce(throwDirection * _data.ThrowPower, ForceMode.Impulse);
-        }
+        // 던질 방향 계산 (X, Y축만 고려)
+        Vector3 throwDirection = (worldMousePos - transform.position).normalized;
+        throwDirection.z = 0; // Z축을 0으로 고정
+
+        Rigidbody _itemRb = _item.GetComponent<Rigidbody>();                                  // 물리 기능 활성화하여 던지는 기능
+        Collider _collider = _item.GetComponent<Collider>();                                  //
+        _item.transform.SetParent(null);                                                      //
+        _itemRb.isKinematic = false;                                                          //
+        _collider.enabled = true;                                                             //
+        _collider.isTrigger = true;                                                           // 
+        _itemRb.AddForce(throwDirection * _data.ThrowPower, ForceMode.Impulse);               //
+        _data.HasItem = false;
+
+       // _animator.SetTrigger("Throw");  //애니메이션 재생
+    }
+
+    Coroutine throwRoutine;
+    IEnumerator ThrowRoutine()
+    {
+        WaitForSeconds dealy = new(0.5f);
+
+        _animator.SetTrigger("Throw");
+        yield return dealy;
+        ThrowItem();
+        throwRoutine = null;
     }
 }
