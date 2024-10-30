@@ -8,6 +8,8 @@ public class ActBasePickItem : PlayerAction
 
     [SerializeField] private GameObject _item;
 
+    [SerializeField] Animator _animator;
+
     public override BTNodeState DoAction()
     {
         if (Input.GetKeyDown(KeyCode.Mouse0)) // 좌클릭 입력 시
@@ -27,6 +29,8 @@ public class ActBasePickItem : PlayerAction
         if (collision.gameObject.CompareTag("Item"))
         {
             _data.HasItem = true;
+
+            _animator.SetTrigger("PickItem");
 
             //아이템 주웠을 때 붙이고 다니는 기능
             _item.transform.position = _handPosition.position;

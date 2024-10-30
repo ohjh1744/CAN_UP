@@ -6,6 +6,7 @@ public class ActBaseThrow : PlayerAction
 
     [SerializeField] GameObject _item;
 
+    [SerializeField] Animator _animator;
     public override BTNodeState DoAction()
     {
         if (Input.GetKeyUp(KeyCode.Mouse0))
@@ -39,6 +40,8 @@ public class ActBaseThrow : PlayerAction
         // 아이템 마우스 방향으로 던짐
         Vector3 throwDirection = (hit.point - transform.position).normalized;
 
+        
+
         // 비활성화된 물리 작용 활성화하여 던짐
         Rigidbody _itemRb = _item.GetComponent<Rigidbody>();
         Collider _collider = _item.GetComponent<Collider>();
@@ -46,5 +49,6 @@ public class ActBaseThrow : PlayerAction
         _itemRb.isKinematic = false;
         _collider.enabled = true;
         _itemRb.AddForce(throwDirection * _data.ThrowPower, ForceMode.Impulse);
+        _animator.SetTrigger("Throw");
     }
 }
