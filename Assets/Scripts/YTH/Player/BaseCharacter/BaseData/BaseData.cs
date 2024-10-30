@@ -23,9 +23,9 @@ public class BaseData : PlayerData
 
     public float ThrowPower { get { return _throwPower; } set { _throwPower = value; } }
 
-    [SerializeField] private bool _isGrounded; // 땅에 닿아있는지 여부
+    //[SerializeField] private bool _isGrounded; // 땅에 닿아있는지 여부
 
-    public bool IsGrounded { get { return _isGrounded; } set { _isGrounded = value; } }
+    //public bool IsGrounded { get { return _isGrounded; } set { _isGrounded = value; } }
 
     [SerializeField] private bool _hasItem;
 

@@ -19,6 +19,10 @@ public class PlayerData : MonoBehaviour
 
     public float JumpPower { get { return _jumpPower; } set { _jumpPower = value; } }
 
+    [SerializeField] private bool _isGrounded;
+
+    public bool IsGrounded { get { return _isGrounded; } set { _isGrounded = value; } }
+
 
     // 경직 조건: 공중 상황, 장애물이 물리적으로 밀쳤을때
     //isStiff 변수의 경우는 장애물이 물리적으로 밀쳤을때에만 사용.             
