@@ -2,12 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Obstacle13 : MonoBehaviour
+public class Obstacle13 : MonoBehaviour, IResetObject
 {
+    private Quaternion _startRot;
+
+    [SerializeField] private int _stageNum;
+    public int StageNum { get; set; }
+
     [SerializeField] private float _rotateSpeed;
+
     [SerializeField] private float _rotateAngle;
+
     [SerializeField] private Rigidbody _rigid;
+
     private Coroutine _rotateRoutine;
+
+    private void Start()
+    {
+        _startRot = transform.rotation;
+    }
 
     public void RotatePlatform(PlayerController player)
     {
@@ -32,5 +45,10 @@ public class Obstacle13 : MonoBehaviour
 
             yield return null;
         }
+    }
+
+    public void Reset()
+    {
+        transform.rotation = _startRot;
     }
 }
