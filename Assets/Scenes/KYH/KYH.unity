@@ -2083,6 +2083,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36b9871945454774d8f1e66578661420, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stageNum: 0
   _moveSpeed: 5
   _stopPos: {fileID: 1510861621}
   _rigid: {fileID: 1853075860}
@@ -2256,6 +2257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c71b55c5f8fd4542b445510e200245a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _stageNum: 0
   _rotateSpeed: 5
   _rotateAngle: 90
   _rigid: {fileID: 1880813341}
@@ -2372,7 +2374,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1880813334}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.07, y: 2.28, z: -0.363}
+  m_LocalPosition: {x: 14.05, y: 2.28, z: -0.363}
   m_LocalScale: {x: 2, y: 0.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
