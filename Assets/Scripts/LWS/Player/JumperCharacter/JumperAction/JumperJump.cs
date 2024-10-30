@@ -27,7 +27,7 @@ public class JumperJump : PlayerAction
     // ¶¥¿¡ ´êÀ¸¸é _isGrounded = true -> Á¡ÇÁ ½ÇÇà
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Ground"))
+        if (collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("ObstacleCol") || collision.gameObject.CompareTag("ObstacleTri"))
         {
             _jumperData._isGrounded = true;
         }
