@@ -13,6 +13,10 @@ public class Obstacle13 : MonoBehaviour, IResetObject
 
     [SerializeField] private float _rotateAngle;
 
+    [SerializeField] private bool _isRotate;
+
+    [SerializeField] private GameObject _rotatePos;
+
     [SerializeField] private Rigidbody _rigid;
 
     private Coroutine _rotateRoutine;
@@ -24,27 +28,12 @@ public class Obstacle13 : MonoBehaviour, IResetObject
 
     public void RotatePlatform(PlayerController player)
     {
-        Debug.Log("fsda");
-        StartCoroutine(RotateRoutine(_rotateAngle));
-    }
+        if (_isRotate == true)
+            return;
 
-    IEnumerator RotateRoutine(float rotateAngle)
-    {
-        float startRot = gameObject.transform.eulerAngles.z;
-        float endRot = rotateAngle;
+        gameObject.transform.RotateAround(_rotatePos.transform.position, Vector3.forward, _rotateAngle);
+        _isRotate = true;
 
-        float rot = 0f;
-
-        while (rot < 1.5f)
-        {
-            rot += Time.deltaTime;
-            _rotateSpeed = rot;
-            float zRotation = Mathf.Lerp(startRot, endRot, _rotateSpeed) % 360.0f;
-
-            gameObject.transform.eulerAngles = new Vector3(gameObject.transform.eulerAngles.x, gameObject.transform.eulerAngles.y, zRotation);
-
-            yield return null;
-        }
     }
 
     public void Reset()
