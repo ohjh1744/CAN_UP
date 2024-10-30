@@ -3,14 +3,14 @@ using UnityEngine;
 public class ActStoneReadyMove : PlayerAction
 {
     [SerializeField] StoneData _data;
-    [SerializeField] StoneRagdoll _ragdoll;
+    //[SerializeField] StoneRagdoll _ragdoll;
 
     public override BTNodeState DoAction()
     {
         if (Input.GetMouseButton(0))
         {
             DetectPlayerWithRay();
-            _data.Flying = false;
+            //_data.Flying = false;
 
             if (_data.IsDragging)
             {
@@ -25,10 +25,10 @@ public class ActStoneReadyMove : PlayerAction
             _data.LineRenderer.enabled = false;
 
             //_ragdoll.AddForceRagdoll(Vector3.up * 5);
-            _ragdoll.RagDollOn();
+            //_ragdoll.RagDollOn();
             //ApplyForceToPlayer();
-            Debug.Log("레그돌 시작");
-            _data.StandAni = false;
+            //Debug.Log("레그돌 시작");
+            //_data.StandAni = false;
             return BTNodeState.Failure;
         }
         return BTNodeState.Running;
@@ -42,7 +42,7 @@ public class ActStoneReadyMove : PlayerAction
         Ray ray = _data.MainCamera.ScreenPointToRay(Input.mousePosition);
 
         // 레이케스트를 사용해서 ray변수에 닿은 물체가 있고, 해당 물체의 태그가 Player인 경우
-        if (Physics.Raycast(ray.origin, ray.direction, out RaycastHit hit) && hit.collider.CompareTag("Player"))
+        if (Physics.Raycast(ray.origin, ray.direction, out RaycastHit hit) && hit.collider.CompareTag("Stone"))
         {
             // 감지된 오브젝트를 선언해둔 selectedPlayer에 저장
             _data.SelectedPlayer = hit.collider.gameObject;

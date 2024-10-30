@@ -54,16 +54,16 @@ public class ActStoneMove : PlayerAction
         {
             // 힘을 가해주는 위치 설정
             rb.AddForceAtPosition(forceDirection * forceMagnitude, _data.SelectedPlayer.transform.position, ForceMode.Impulse);
-            _data.Flying = true;
+
+            //_data.Flying = true;
             StartCoroutine(Delay());
         }
-
         _data.SelectedPlayer = null;
     }
 
     private IEnumerator Delay()
     {
-        yield return new WaitForSeconds(0.2f);
-        _data.Flying = false;
+        yield return new WaitForSeconds(0.1f);
+        _data.Animator.SetBool("Flying", true);
     }
 }
