@@ -20,6 +20,7 @@ public class Obstacle8 : MonoBehaviour
     [SerializeField] private Vector3 _endPos;
 
     // 발판이 내려오고 있는지 여부
+    [SerializeField] private bool _playerEntered;
     [SerializeField] private bool _isFalling;
     [SerializeField] private bool _isReturning;
     [SerializeField] private float _stayTimer;
