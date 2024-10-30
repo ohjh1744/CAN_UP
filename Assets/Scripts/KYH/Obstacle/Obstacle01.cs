@@ -5,25 +5,47 @@ using UnityEngine;
 
 public class Obstacle01 : MonoBehaviour
 {
-    public enum ECharacterNum {Base, Stone, Jumper }
+    [SerializeField] BaseData _baseData;
 
-    [SerializeField] private float[] _power;
-    
+    [SerializeField] PlayerData _playerData;
+
+    [SerializeField] private bool _isIncrease;
+
     public void ForcedJump(PlayerController player)
     {
-        Rigidbody rigid = player.GetComponent<Rigidbody>();
-    
-        if (player.gameObject.tag == "Stone")
+        if (_isIncrease == true)
+            return;
+
+        if (player.gameObject.tag == "Base")
         {
-            rigid.AddForce(Vector3.up * _power[(int)ECharacterNum.Stone]);
+            _baseData = player.GetComponent<BaseData>();
+            _baseData.MaxJumpPower *= 2;
+            _isIncrease = true;
         }
-        else if (player.gameObject.tag == "Jumper")
+        else
         {
-            rigid.AddForce(Vector3.up * _power[(int)ECharacterNum.Jumper]);
+            _playerData = player.GetComponent<PlayerData>();
+            _playerData.JumpPower *= 2;
+            _isIncrease = true;
         }
-        else if (player.gameObject.tag == "Base")
+    }
+
+    public void CancelJump(PlayerController player)
+    {
+        if (_isIncrease == false)
+            return;
+
+        if (player.gameObject.tag == "Base")
         {
-            rigid.AddForce(Vector3.up * _power[(int)ECharacterNum.Base]);
+            _baseData = player.GetComponent<BaseData>();
+            _baseData.MaxJumpPower /= 2;
+            _isIncrease = false;
+        }
+        else
+        {
+            _playerData = player.GetComponent<PlayerData>();
+            _playerData.JumpPower /= 2;
+            _isIncrease = false;
         }
     }
 }
