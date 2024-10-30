@@ -1373,7 +1373,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1394518549}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.83, y: 2.574, z: -0.58}
+  m_LocalPosition: {x: -7.68, y: 2.574, z: -0.58}
   m_LocalScale: {x: 3, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1459,7 +1459,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a4ad74ddc99c7e478bee1a1e66a6543, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _data: {fileID: 0}
+  _baseData: {fileID: 0}
+  _playerData: {fileID: 0}
+  _isIncrease: 0
 --- !u!114 &1430024359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1492,7 +1494,19 @@ MonoBehaviour:
       m_Calls: []
   OnInteractColExit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1430024358}
+        m_TargetAssemblyTypeName: Obstacle01, Assembly-CSharp
+        m_MethodName: CancelJump
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnInteractTriEnter:
     m_PersistentCalls:
       m_Calls: []
@@ -1573,7 +1587,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1430024356}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.04, y: 2.28, z: -0.363}
+  m_LocalPosition: {x: 6.07, y: 2.28, z: -0.363}
   m_LocalScale: {x: 4, y: 0.3, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1955,7 +1969,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1713752408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2057,7 +2071,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1713752407}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.23, y: 1.66, z: -0.26}
+  m_LocalPosition: {x: -4.14, y: 1.66, z: -0.26}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2406,7 +2420,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1880813334}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.54, y: 0, z: 0}
+  m_LocalPosition: {x: 5.91, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 0.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
