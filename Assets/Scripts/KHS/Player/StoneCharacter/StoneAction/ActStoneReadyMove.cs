@@ -41,21 +41,25 @@ public class ActStoneReadyMove : PlayerAction
         // 카메라가 비추는 화면에서 스크린에 레이를 발사하는 로직
         Ray ray = _data.MainCamera.ScreenPointToRay(Input.mousePosition);
 
-        // 레이케스트를 사용해서 ray변수에 닿은 물체가 있고, 해당 물체의 태그가 Player인 경우
-        if (Physics.Raycast(ray.origin, ray.direction, out RaycastHit hit) && hit.collider.CompareTag("Stone"))
+        RaycastHit[] hits = Physics.RaycastAll(ray);
+        foreach (RaycastHit hit in hits)
         {
-            // 감지된 오브젝트를 선언해둔 selectedPlayer에 저장
-            _data.SelectedPlayer = hit.collider.gameObject;
+            if(hit.collider.CompareTag("Stone"))
+            {
+                // 감지된 오브젝트를 선언해둔 selectedPlayer에 저장
+                _data.SelectedPlayer = hit.collider.gameObject;
 
-            // 현재 드래그중
-            _data.IsDragging = true;
+                // 현재 드래그중
+                _data.IsDragging = true;
 
-            // 드래그 시작 위치를 감지된 플레이어의 위치로 저장
-            _data.DragStartPoint = _data.SelectedPlayer.transform.position;
+                // 드래그 시작 위치를 감지된 플레이어의 위치로 저장
+                _data.DragStartPoint = _data.SelectedPlayer.transform.position;
 
-            // 라인 렌더러는 활성화
-            _data.LineRenderer.enabled = true;
-
+                // 라인 렌더러는 활성화
+                _data.LineRenderer.enabled = true;
+            }
+            Debug.Log("Hit: " + hit.collider.name);
+            // 필요한 경우 추가 처리 가능
         }
     }
 

@@ -26,6 +26,14 @@ public class CondStoneCanMove : PlayerCondition
     {
         Debug.Log("DoCheck 시작");
 
+        if (_rb.velocity.z >= 0.1f || _rb.velocity.z <= -0.1f)
+        {
+            Vector3 rigidVelocity = _rb.velocity;
+            rigidVelocity.z = 0;
+            _rb.velocity = rigidVelocity;
+            _parentObj.transform.position = new Vector3(_parentObj.transform.position.x, _parentObj.transform.position.y, 0);
+        }
+
         if (_rb.velocity.magnitude > stopSpeed)
             return false;
 
@@ -36,11 +44,13 @@ public class CondStoneCanMove : PlayerCondition
         Ray ray = new Ray(_rayPoint.transform.position, Vector3.down);
 
         //Debug.Log("레이케스트 시작");
-        if (Physics.Raycast(ray, out RaycastHit hit, _data.RayDistance, groundMask))
+        if (Physics.Raycast(ray, out RaycastHit hit, _data.RayDistance /*groundMask*/))
         {
-            Debug.DrawRay(_rayPoint.transform.position, Vector3.down * _data.RayDistance, Color.yellow, 1f);
-            if (hit.collider.CompareTag("Ground") && _data.Flying == false)
+            Debug.DrawRay(_rayPoint.transform.position, Vector3.down * 0.3f, Color.yellow, 1f);
+
+            if ((hit.collider.CompareTag("Ground")|| hit.collider.CompareTag("ObstacleCol") || hit.collider.CompareTag("ObstacleTri")) && _data.Flying == false)
             {
+                Debug.DrawRay(_rayPoint.transform.position, Vector3.down * _data.RayDistance, Color.red, 1f);
 
                 Debug.Log($"{hit.collider.tag}감지됨");
                 _data.Animator.SetBool("Flying", false);

@@ -3342,11 +3342,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8291976539149281493}
   - component: {fileID: 3603522853415931165}
-  - component: {fileID: 3603522853415931152}
-  - component: {fileID: 3603522853415931153}
-  - component: {fileID: 3603522853415931154}
-  - component: {fileID: 3603522853415931155}
-  - component: {fileID: 3603522853415931164}
   - component: {fileID: 3603522853415931159}
   m_Layer: 0
   m_Name: 'man_weightlifter '
@@ -3393,128 +3388,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &3603522853415931152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1435631539095754947}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3a2049ed5268e64fae4941cd1c48edb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _playerData: {fileID: 3603522853415931153}
-  _nodeDatas:
-  - IsRoot: 1
-    NodeType: 0
-    NodeName: Sequence
-    PlayerAction: {fileID: 0}
-    PlayerCondition: {fileID: 0}
-  - IsRoot: 0
-    NodeType: 4
-    NodeName: CondStoneCanMove
-    PlayerAction: {fileID: 0}
-    PlayerCondition: {fileID: 3603522853415931154}
-  - IsRoot: 0
-    NodeType: 1
-    NodeName: Selector
-    PlayerAction: {fileID: 0}
-    PlayerCondition: {fileID: 0}
-  - IsRoot: 0
-    NodeType: 3
-    NodeName: ActStoneReadyMove
-    PlayerAction: {fileID: 3603522853415931155}
-    PlayerCondition: {fileID: 0}
-  - IsRoot: 0
-    NodeType: 3
-    NodeName: ActStoneMove
-    PlayerAction: {fileID: 3603522853415931164}
-    PlayerCondition: {fileID: 0}
-  _edgeDatas:
-  - ParentName: Sequence
-    ChildNames:
-    - CondStoneCanMove
-    - Selector
-  - ParentName: Selector
-    ChildNames:
-    - ActStoneReadyMove
-    - ActStoneMove
---- !u!114 &3603522853415931153
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1435631539095754947}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36652fcf5f34a544795d39ed13d46f11, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _jumpNum: 0
-  _fallNum: 0
-  _jumpPower: 2
-  _isStiff: 0
-  _clickDownPos: {x: 0, y: 0, z: 0}
-  _clickUpPos: {x: 0, y: 0, z: 0}
-  _rayDistance: 1
-  _mainCamera: {fileID: 0}
-  _lineRenderer: {fileID: 3603522853415931159}
-  _selectedPlayer: {fileID: 0}
-  _isDragging: 0
-  _dragStartPoint: {x: 0, y: 0, z: 0}
-  _animator: {fileID: 3603522853415931165}
-  _maxPullDistance: 5
-  _flying: 0
-  _standAni: 0
---- !u!114 &3603522853415931154
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1435631539095754947}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2382825c5c238674ba9fe35e300ef8c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data: {fileID: 3603522853415931153}
-  _rb: {fileID: 5413037003821632156}
-  _parentObj: {fileID: 5413037003821632152}
-  _rayPoint: {fileID: 5413037003463899701}
-  stopSpeed: 0.1
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 128
---- !u!114 &3603522853415931155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1435631539095754947}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ee6c94ca32e55842824fbad4f245cf5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data: {fileID: 3603522853415931153}
---- !u!114 &3603522853415931164
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1435631539095754947}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 068a25cad0929a24f82eb23c0e0cf5d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data: {fileID: 3603522853415931153}
 --- !u!120 &3603522853415931159
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -11619,9 +11492,14 @@ GameObject:
   - component: {fileID: 5413037003821632157}
   - component: {fileID: 5413037003821632158}
   - component: {fileID: 5413037003821632156}
+  - component: {fileID: 1418573035}
+  - component: {fileID: 1418573036}
+  - component: {fileID: 1418573037}
+  - component: {fileID: 1418573038}
+  - component: {fileID: 1418573039}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Player
+  m_TagString: Stone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11633,7 +11511,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5413037003821632152}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1.495, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -11671,8 +11549,130 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 48
   m_CollisionDetection: 0
+--- !u!114 &1418573035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5413037003821632152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 068a25cad0929a24f82eb23c0e0cf5d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data: {fileID: 1418573038}
+--- !u!114 &1418573036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5413037003821632152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ee6c94ca32e55842824fbad4f245cf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data: {fileID: 1418573038}
+--- !u!114 &1418573037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5413037003821632152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2382825c5c238674ba9fe35e300ef8c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data: {fileID: 1418573038}
+  _rb: {fileID: 5413037003821632156}
+  _parentObj: {fileID: 5413037003821632152}
+  _rayPoint: {fileID: 5413037003463899701}
+  stopSpeed: 0.1
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 128
+--- !u!114 &1418573038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5413037003821632152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36652fcf5f34a544795d39ed13d46f11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _jumpNum: 0
+  _fallNum: 0
+  _jumpPower: 2
+  _isStiff: 0
+  _clickDownPos: {x: 0, y: 0, z: 0}
+  _clickUpPos: {x: 0, y: 0, z: 0}
+  _rayDistance: 1
+  _mainCamera: {fileID: 0}
+  _lineRenderer: {fileID: 3603522853415931159}
+  _selectedPlayer: {fileID: 0}
+  _isDragging: 0
+  _dragStartPoint: {x: 0, y: 0, z: 0}
+  _animator: {fileID: 3603522853415931165}
+  _maxPullDistance: 5
+  _flying: 0
+  _standAni: 0
+--- !u!114 &1418573039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5413037003821632152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3a2049ed5268e64fae4941cd1c48edb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerData: {fileID: 1418573038}
+  _nodeDatas:
+  - IsRoot: 1
+    NodeType: 0
+    NodeName: Sequence
+    PlayerAction: {fileID: 0}
+    PlayerCondition: {fileID: 0}
+  - IsRoot: 0
+    NodeType: 4
+    NodeName: CondStoneCanMove
+    PlayerAction: {fileID: 0}
+    PlayerCondition: {fileID: 1418573037}
+  - IsRoot: 0
+    NodeType: 1
+    NodeName: Selector
+    PlayerAction: {fileID: 0}
+    PlayerCondition: {fileID: 0}
+  - IsRoot: 0
+    NodeType: 3
+    NodeName: ActStoneReadyMove
+    PlayerAction: {fileID: 1418573036}
+    PlayerCondition: {fileID: 0}
+  - IsRoot: 0
+    NodeType: 3
+    NodeName: ActStoneMove
+    PlayerAction: {fileID: 1418573035}
+    PlayerCondition: {fileID: 0}
+  _edgeDatas:
+  - ParentName: Sequence
+    ChildNames:
+    - CondStoneCanMove
+    - Selector
+  - ParentName: Selector
+    ChildNames:
+    - ActStoneReadyMove
+    - ActStoneMove
 --- !u!1 &5422532420847901281
 GameObject:
   m_ObjectHideFlags: 0
