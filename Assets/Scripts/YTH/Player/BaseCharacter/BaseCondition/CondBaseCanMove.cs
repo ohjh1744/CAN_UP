@@ -9,6 +9,7 @@ public class CondBaseCanMove : PlayerCondition
     [SerializeField] float _dropRayPosY = 0.1f;
     public override bool DoCheck()
     {
+
         Vector3 pos = new Vector3(transform.position.x, transform.position.y + _dropRayPosY, transform.position.z);
         Ray ray = new Ray(pos, Vector3.down);
 

@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class ActBasePickItem : PlayerAction
@@ -29,12 +30,26 @@ public class ActBasePickItem : PlayerAction
         {
             _data.HasItem = true;
 
-            _animator.SetTrigger("PickItem");
+            pickRoutine = StartCoroutine(PickRoutine());
 
             //아이템 주웠을 때 붙이고 다니는 기능
-            _item.transform.position = _handPosition.position;
-            _item.transform.SetParent(_handPosition);
-            _item.transform.localPosition = Vector3.zero;
+
         }
     }
+
+    Coroutine pickRoutine;
+    IEnumerator PickRoutine()
+    {
+        WaitForSeconds dealy = new(0.4f);
+        _animator.SetTrigger("PickItem");
+        yield return dealy;
+        _item.transform.position = _handPosition.position;
+        _item.transform.SetParent(_handPosition);
+        _item.transform.localPosition = Vector3.zero;
+        pickRoutine = null;
+    }
+
+
+    
+      
 }
