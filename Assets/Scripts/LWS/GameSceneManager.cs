@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using Cinemachine;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
-public class GameSceneManager : MonoBehaviour
+public class GameSceneManager : UIBInder
 {
     // 세이브 포인트 배열
     [SerializeField] private Vector3[] _savePoints;
@@ -16,14 +18,6 @@ public class GameSceneManager : MonoBehaviour
     // 카메라 배열
     [SerializeField] private CinemachineVirtualCamera[] _cameras;
     public CinemachineVirtualCamera[] Cameras { get { return _cameras; } set { _cameras = value; } }
-
-    // 카메라 현재 인덱스
-    [SerializeField] private int _curCameraIndex;
-    public int CurCameraIndex { get { return _curCameraIndex; } set { _curCameraIndex = value; } }
-
-    // 카메라 과거 인덱스
-    [SerializeField] private int _preCameraIndex;
-    public int PreCameraIndex { get { return _preCameraIndex; } set { _preCameraIndex = value; } }
 
     // 현재 플레이어 포지션
     [SerializeField] private Vector3 _currentPlayerPos;
@@ -53,8 +47,49 @@ public class GameSceneManager : MonoBehaviour
     [SerializeField] private IReplaceObstacle[] _replaceObstacles;
     public IReplaceObstacle[] ReplaceObstacles { get { return _replaceObstacles; } set { _replaceObstacles = value; } }
 
+    // 시네머신 브레인 이벤트 함수에 활용할 시네머신 브레인
+    [SerializeField] private CinemachineBrain _brain;
+
+    // esc 누를 때 나올 패널
+    [SerializeField] private GameObject _ESCPanel;
+
+    // 씬체인저
+    [SerializeField] private SceneChanger _sceneChanger;
+
+    // 데이터 매니저
+    [SerializeField] private DataManager _dataManager;
+
+    private void Awake()
+    {
+        _brain = Camera.main.GetComponent<CinemachineBrain>();
+        BindAll();
+    }
+
+    private void Start()
+    {
+        AddEvent("ResumeButton", EventType.Click, ResumeGame);
+        AddEvent("SaveExitButton", EventType.Click, SaveAndQuitGame);
+        AddEvent("MainButton", EventType.Click, GiveUpGame);
+
+        SetGame(_dataManager);
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyUp(KeyCode.Escape))
+        {
+            Time.timeScale = 0;
+            _ESCPanel.SetActive(true);
+        }
+
+        CheckState(_dataManager);
+    }
+
     private void SetGame(DataManager dataManager)
     {
+        // 0. 초기화 되어야 하는 기본 변수
+        _item.transform.position = _savePoints[1];
+
         // 1. 저장된 savestage 가져오기
         // 현재 스테이지 및 저장된 스테이지를 저장된 playerStage로 지정
         _currentStage = dataManager.SaveData.GameData.PlayerStage;
@@ -74,8 +109,13 @@ public class GameSceneManager : MonoBehaviour
         // 4. 캐릭터 가져오기
         _players[dataManager.SaveData.GameData.CharacterNum].SetActive(true);
     }
+
     private void CheckState(DataManager dataManager)
     {
+        // 0. 계속 갱신되어야 하는 기본 변수
+        // 현재 포지션
+        _currentPlayerPos = _players[dataManager.SaveData.GameData.CharacterNum].transform.position;
+
         // 1. currentStage 갱신
         for (int i = 0; i < (int)EStage.Length; i++)
         {
@@ -88,34 +128,65 @@ public class GameSceneManager : MonoBehaviour
         }
 
         // 2. SavePoint 변경 (?)
-        if ( _currentSaveStage > _currentStage )
+        if (_currentSaveStage > _currentStage)
         {
             _currentSaveStage = _currentStage;
         }
-        
+
         // 3. CheckResetObject
+        CheckResetObject();
+
+        // 4. Item위치 체크 후 갱신
+        if (!dataManager.SaveData.GameData.HasItem)
+        {
+            if (_item.transform.position.y < _stageHight[_currentStage])
+            {
+                _item.transform.position = _savePoints[_currentStage];
+            }
+        }
     }
 
-    private void ResumeGame()
+    private void ResumeGame(PointerEventData eventData)
     {
-
+        Time.timeScale = 1;
+        _ESCPanel.SetActive(false);
     }
 
-    private void SaveAndQuitGame()
+    private void SaveAndQuitGame(PointerEventData eventData)
     {
-
+        DataManager.Instance.SaveData.GameData.IsClear = false;
+        DataManager.Instance.SaveData.GameData.PlayerStage = _currentStage;
+        DataManager.Instance.SaveData.GameData.HasItem = false;
+        DataManager.Instance.SaveData.GameData.ItemStage = _currentStage;
+        // DataManager.Instance.SaveData.GameData.JumpTime = 
+        // DataManager.Instance.SaveData.GameData.FallTime =
+        // DataManager.Instance.SaveData.GameData.PlayTime =
     }
 
-    private void GiveUpGame()
+    private void GiveUpGame(PointerEventData eventData)
     {
-
+        _sceneChanger.ChangeScene("MainScene");
+        _ESCPanel.SetActive(false);
     }
 
+    // 시네머신 브레인 이벤트 함수 실행해서 카메라가 변경될 때 마다 Reset()
     private void CheckResetObject()
     {
+        _brain.m_CameraActivatedEvent.AddListener(Reset1);
 
+        void Reset1(ICinemachineCamera forecamera, ICinemachineCamera toCamera)
+        {
+            for (int i = 0; i < _resetObjects.Length; i++)
+            {
+                foreach (IResetObject j in _resetObjects)
+                {
+                    j.Reset();
+                }
+            }
+        }
     }
 
+    // 시작 캐릭터가 Base가 아닐 경우, Replace가 필요한 Obstacle들 대체 실행
     private void CheckReplaceObstacle(DataManager dataManager)
     {
         if (dataManager.SaveData.GameData.CharacterNum == 2 || dataManager.SaveData.GameData.CharacterNum == 3)
@@ -130,7 +201,15 @@ public class GameSceneManager : MonoBehaviour
         }
     }
 
-    private void Awake()
+    private void UpdateJumpTime()
+    {
+
+    }
+    private void UpdateFallTime()
+    {
+
+    }
+    private void UpdatePlayTime()
     {
 
     }
