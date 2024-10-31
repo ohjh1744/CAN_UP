@@ -7,7 +7,7 @@ public static class InitManager
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     private static void Initalize()
     {
-        //GameObject.Instantiate(Resources.Load<DataManager>("Manager/DataManager"));
+        GameObject.Instantiate(Resources.Load<DataManager>("Manager/DataManager"));
     }
 
 
