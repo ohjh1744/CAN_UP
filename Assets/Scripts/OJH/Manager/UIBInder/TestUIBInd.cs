@@ -15,7 +15,7 @@ public class TestUIBInd : UIBInder
 
     private void Start()
     {
-        GetUI<TextMeshProUGUI>("Text2").text = "10";
+        //GetUI<TextMeshProUGUI>("Text2").text = "10";
     }
 
     // Update is called once per frame
@@ -23,7 +23,7 @@ public class TestUIBInd : UIBInder
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            GetUI<TextMeshProUGUI>("Text2").text = "100";
+            //GetUI<TextMeshProUGUI>("Text2").text = "100";
         }
     }
 
