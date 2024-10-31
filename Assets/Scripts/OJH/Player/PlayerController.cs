@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public enum EBTType { Sequence, Selector, Parallel, BTAction, BTCondition }
@@ -203,8 +204,9 @@ public class PlayerController : MonoBehaviour
 
     void CheckJumpTime() //점프 횟수
     {
+        Debug.Log(DataManager.Instance.SaveData.GameData.JumpTime);
         //Base 캐릭터
-        if (Input.GetKeyUp(KeyCode.Space) && _playerData.IsGrounded == true && DataManager.Instance.SaveData.GameData.CharacterNum == (int)ECharacterNum.Base)
+        if (Input.GetKeyDown(KeyCode.Space) && _playerData.IsGrounded == true && DataManager.Instance.SaveData.GameData.CharacterNum == (int)ECharacterNum.Base)
         {
             DataManager.Instance.SaveData.GameData.JumpTime++;
             Debug.Log(DataManager.Instance.SaveData.GameData.JumpTime);
@@ -226,26 +228,24 @@ public class PlayerController : MonoBehaviour
     }
 
 
-
+    float _faillingTime;
     void CheckFallTime() // 떨어진 횟수
     {
-        float _faillingTime = 0;
-
         if (_playerData.IsGrounded == false)
         {
+
             _faillingTime += Time.deltaTime; //체공 시간 체크
-        }
-        else if (_playerData.IsGrounded == true)
-        {
-            _faillingTime = _faillingTime;
+            Debug.Log(_faillingTime);
 
             if (_faillingTime > _playerData.CheckedTimeBase)   // (아래에 있는 발판으로)최대 점프력으로 점프 했을 때의 체공시간보다길어지면 낙하로 판정 
             {
-                DataManager.Instance.SaveData.GameData.FallTime++; // 낙하 횟수 +1
+                _faillingTime = 0;
+                DataManager.Instance.SaveData.GameData.FallTime = DataManager.Instance.SaveData.GameData.FallTime + 1; // 낙하 횟수 +1
                 Debug.Log(DataManager.Instance.SaveData.GameData.FallTime);
+                return;
             }
         }
-
        
+
     }
 }
