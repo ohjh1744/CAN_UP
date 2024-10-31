@@ -223,8 +223,6 @@ public class PlayerController : MonoBehaviour
             DataManager.Instance.SaveData.GameData.JumpTime++;
             Debug.Log(DataManager.Instance.SaveData.GameData.JumpTime);
         }
-
-        
     }
 
 
