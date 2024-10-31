@@ -7,46 +7,89 @@ using UnityEngine.Events;
 public class InteractAdapter : MonoBehaviour, IInteractable
 {
     // 이벤트를 이용한 어뎁터 방식
-    public UnityEvent<PlayerController> OnInteractColEnter;
+    public UnityEvent<PlayerController> OnInteractPlayerColEnter;
 
-    public UnityEvent<PlayerController> OnInteractColStay;
+    public UnityEvent<PlayerController> OnInteractPlayerColStay;
 
-    public UnityEvent<PlayerController> OnInteractColExit;
+    public UnityEvent<PlayerController> OnInteractPlayerColExit;
 
-    public UnityEvent<PlayerController> OnInteractTriEnter;
+    public UnityEvent<PlayerController> OnInteractPlayerTriEnter;
 
-    public UnityEvent<PlayerController> OnInteractTriStay;
+    public UnityEvent<PlayerController> OnInteractPlayerTriStay;
 
-    public UnityEvent<PlayerController> OnInteractTriExit;
+    public UnityEvent<PlayerController> OnInteractPlayerTriExit;
+
+    //아이템
+    public UnityEvent<Item> OnInteractItemColEnter;
+
+    public UnityEvent<Item> OnInteractItemColStay;
+
+    public UnityEvent<Item> OnInteractItemColExit;
+
+    public UnityEvent<Item> OnInteractItemTriEnter;
+
+    public UnityEvent<Item> OnInteractItemTriStay;
+
+    public UnityEvent<Item> OnInteractItemTriExit;
 
     public void TargetInteractColEnter(PlayerController player)
     {
-        OnInteractColEnter?.Invoke(player);
+        OnInteractPlayerColEnter?.Invoke(player);
     }
 
     public void TargetInteractColStay(PlayerController player)
     {
-        OnInteractColStay?.Invoke(player);
+        OnInteractPlayerColStay?.Invoke(player);
     }
 
     public void TargetInteractColExit(PlayerController player)
     {
-        OnInteractColExit?.Invoke(player);
+        OnInteractPlayerColExit?.Invoke(player);
     }
 
     public void TargetInteractTriEnter(PlayerController player)
     {
-        OnInteractTriEnter?.Invoke(player);
+        OnInteractPlayerTriEnter?.Invoke(player);
     }
 
     public void TargetInteractTriStay(PlayerController player)
     {
-        OnInteractTriStay?.Invoke(player);
+        OnInteractPlayerTriStay?.Invoke(player);
     }
 
     public void TargetInteractTriExit(PlayerController player)
     {
-        OnInteractTriExit?.Invoke(player);
+        OnInteractPlayerTriExit?.Invoke(player);
     }
 
+    //아이템
+    public void TargetInteractColEnter(Item item)
+    {
+        OnInteractItemColEnter?.Invoke(item);
+    }
+
+    public void TargetInteractColStay(Item item)
+    {
+        OnInteractItemColStay?.Invoke(item);
+    }
+
+    public void TargetInteractColExit(Item item)
+    {
+        OnInteractItemColExit?.Invoke(item);
+    }
+
+    public void TargetInteractTriEnter(Item item)
+    {
+        OnInteractItemTriEnter?.Invoke(item);
+    }
+
+    public void TargetInteractTriStay(Item item)
+    {
+        OnInteractItemTriStay?.Invoke(item);
+    }
+
+    public void TargetInteractTriExit(Item item)
+    {
+        OnInteractItemTriExit?.Invoke(item);
+    }
 }
