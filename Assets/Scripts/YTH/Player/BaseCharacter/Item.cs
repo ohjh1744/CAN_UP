@@ -11,6 +11,7 @@ public class Item : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Base"))
         {
+            Debug.Log("hi");
             _rigidbody.isKinematic = true;
             _collider.enabled = false;
         }

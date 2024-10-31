@@ -253,10 +253,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8167bda167561ae42a92bf776d569fc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _jumpNum: 0
-  _fallNum: 0
   _jumpPower: 0
+  _isGrounded: 0
   _isStiff: 0
+  _checkedFallTime: 0
   _moveSpeed: 0
   _moveDir: {x: 0, y: 0, z: 0}
   _resist: 0
@@ -405,7 +405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3a2049ed5268e64fae4941cd1c48edb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerData: {fileID: 0}
+  _playerData: {fileID: 846569530}
   _nodeDatas:
   - IsRoot: 1
     NodeType: 0
@@ -627,34 +627,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnInteractColEnter:
+  OnInteractPlayerColEnter:
     m_PersistentCalls:
       m_Calls: []
-  OnInteractColStay:
+  OnInteractPlayerColStay:
     m_PersistentCalls:
       m_Calls: []
-  OnInteractColExit:
+  OnInteractPlayerColExit:
     m_PersistentCalls:
       m_Calls: []
-  OnInteractTriEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1248237196}
-        m_TargetAssemblyTypeName: TestObstacle, Assembly-CSharp
-        m_MethodName: TouchPlayer
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnInteractTriStay:
+  OnInteractPlayerTriEnter:
     m_PersistentCalls:
       m_Calls: []
-  OnInteractTriExit:
+  OnInteractPlayerTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriExit:
     m_PersistentCalls:
       m_Calls: []
 --- !u!65 &1248237198

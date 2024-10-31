@@ -35,7 +35,7 @@ public class GameSceneManager : MonoBehaviour
 
     // 현재 저장된 스테이지
     [SerializeField] private int _currentSaveStage;
-    public int CurrentSaveStage { get { return _currentStage} set {_currentStage = value; } }
+    public int CurrentSaveStage { get { return _currentStage; } set {_currentStage = value; } }
 
     // 아이템
     [SerializeField] private GameObject _item;
@@ -88,7 +88,7 @@ public class GameSceneManager : MonoBehaviour
         }
 
         // 2. SavePoint 변경
-        if (CurrentStage < CurrentSaveStage)
+        //if (CurrentStage < CurrentSaveStage)
     }
 
     private void ResumeGame()
