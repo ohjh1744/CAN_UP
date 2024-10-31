@@ -1,10 +1,7 @@
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using UnityEngine;
 
-public enum EBTType {Sequence, Selector, Parallel, BTAction, BTCondition }
+public enum EBTType { Sequence, Selector, Parallel, BTAction, BTCondition }
 
 // Node 정보
 [System.Serializable]
@@ -20,10 +17,10 @@ public class NodeData
     public string NodeName;
 
     // Action 노드일 경우 필요
-    public PlayerAction PlayerAction; 
+    public PlayerAction PlayerAction;
 
     // Condition 노드일 경우 필요
-    public PlayerCondition PlayerCondition; 
+    public PlayerCondition PlayerCondition;
 }
 
 //간선 정보
@@ -64,13 +61,15 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       _root.Evaluate();
+        _root.Evaluate();
+        CheckJumpTime();
+        CheckFallTime();
     }
 
     //노드 생성 및 트리 연결
     private void Init()
     {
-        for(int i = 0; i < _nodeDatas.Length; i++)
+        for (int i = 0; i < _nodeDatas.Length; i++)
         {
             BTNode btNode = new BTSelector();
 
@@ -149,7 +148,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "ObstacleCol")
+        if (collision.gameObject.tag == "ObstacleCol")
         {
             IInteractable interactable = collision.gameObject.GetComponent<IInteractable>();
             interactable.TargetInteractColEnter(this);
@@ -177,7 +176,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "ObstacleTri")
+        if (other.gameObject.tag == "ObstacleTri")
         {
             IInteractable interactable = other.gameObject.GetComponent<IInteractable>();
             interactable.TargetInteractTriEnter(this);
@@ -202,18 +201,53 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    void CheckJumpTime() //점프 횟수
+    {
+        //Base 캐릭터
+        if (Input.GetKeyUp(KeyCode.Space) && _playerData.IsGrounded == true && DataManager.Instance.SaveData.GameData.CharacterNum == (int)ECharacterNum.Base)
+        {
+            DataManager.Instance.SaveData.GameData.JumpTime++;
+            Debug.Log(DataManager.Instance.SaveData.GameData.JumpTime);
+        }
+
+        //Stone 캐릭터
+        else if (_playerData.IsGrounded == false && DataManager.Instance.SaveData.GameData.CharacterNum == (int)ECharacterNum.Stone)
+        {
+            DataManager.Instance.SaveData.GameData.JumpTime++;
+            Debug.Log(DataManager.Instance.SaveData.GameData.JumpTime);
+        }
+
+        //Jump 캐릭터
+        else if (_playerData.IsGrounded == false && DataManager.Instance.SaveData.GameData.CharacterNum == (int)ECharacterNum.Jump)
+        {
+            DataManager.Instance.SaveData.GameData.JumpTime++;
+            Debug.Log(DataManager.Instance.SaveData.GameData.JumpTime);
+        }
+
+        
+    }
 
 
 
+    void CheckFallTime() // 떨어진 횟수
+    {
+        float _faillingTime = 0;
 
+        if (_playerData.IsGrounded == false)
+        {
+            _faillingTime += Time.deltaTime; //체공 시간 체크
+        }
+        else if (_playerData.IsGrounded == true)
+        {
+            _faillingTime = _faillingTime;
 
+            if (_faillingTime > _playerData.CheckedTimeBase)   // (아래에 있는 발판으로)최대 점프력으로 점프 했을 때의 체공시간보다길어지면 낙하로 판정 
+            {
+                DataManager.Instance.SaveData.GameData.FallTime++; // 낙하 횟수 +1
+                Debug.Log(DataManager.Instance.SaveData.GameData.FallTime);
+            }
+        }
 
-
-
-
-
-
-
-
-
+       
+    }
 }
