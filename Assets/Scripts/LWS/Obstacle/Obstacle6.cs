@@ -29,6 +29,15 @@ public class Obstacle6 : MonoBehaviour, IResetObject
         MoveWall();
     }
 
+    public void WallCreate(Item item)
+    {
+        // 벽 생성 후 초기위치 저장
+        wallInstance = Instantiate(_wallPrefab, _spawnPosition, Quaternion.identity);
+
+        // 벽이 목표 위치까지 이동
+        MoveWall();
+    }
+
     // 벽 이동용 함수
     private void MoveWall()
     {

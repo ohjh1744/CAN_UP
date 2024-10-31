@@ -57,4 +57,14 @@ public class Obstacle4 : MonoBehaviour
             rigid.AddForce(pushDirection * _pushForce, ForceMode.Impulse);
         }
     }
+
+    public void PushItem(Item item)
+    {
+        Rigidbody rigid = item.GetComponent<Rigidbody>();
+        if (rigid != null)
+        {
+            Vector3 pushDirection = (item.transform.position - transform.position).normalized;
+            rigid.AddForce(pushDirection * _pushForce, ForceMode.Impulse);
+        }
+    }
 }

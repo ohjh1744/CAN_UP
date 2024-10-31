@@ -20,4 +20,13 @@ public class Obstacle5Bullet : MonoBehaviour
         Vector3 pushDir = (rigid.transform.position - transform.position).normalized;
         rigid.AddForce(pushDir * pushForce, ForceMode.Impulse);
     }
+
+    public void PushPlayer(Item item)
+    {
+        // 플레이어의 rigid를 가져옴
+        Rigidbody rigid = item.GetComponent<Rigidbody>();
+
+        Vector3 pushDir = (rigid.transform.position - transform.position).normalized;
+        rigid.AddForce(pushDir * pushForce, ForceMode.Impulse);
+    }
 }

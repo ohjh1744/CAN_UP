@@ -23,6 +23,13 @@ public class Obstacle9 : MonoBehaviour, IReplaceObstacle
         Vector3 moveDir = new Vector3(horizontalInput * _moveSpeed, 0, 0);
         _escapePlatform.velocity = moveDir;
     }
+    public void Runaway(Item item)
+    {
+        float horizontalInput = Input.GetAxis("Horizontal");
+
+        Vector3 moveDir = new Vector3(horizontalInput * _moveSpeed, 0, 0);
+        _escapePlatform.velocity = moveDir;
+    }
 
     public void Replace()
     {

@@ -77,4 +77,12 @@ public class Obstacle8 : MonoBehaviour
             _isFalling = true;
         }
     }
+
+    public void ActivateFall(Item item)
+    {
+        if (!_isFalling && !_isReturning) // 이동 중이 아닐 때만 실행
+        {
+            _isFalling = true;
+        }
+    }
 }
