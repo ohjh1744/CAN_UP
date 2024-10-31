@@ -54,13 +54,9 @@ public class CondStoneCanMove : PlayerCondition
 
                 Debug.Log($"{hit.collider.tag}감지됨");
                 _data.Animator.SetBool("Flying", false);
-                //if(_data.StandAni == false)
-                //{
-                //    _animator.SetTrigger("StandUp");
-                //    _data.StandAni = true;
-                //}
-                //_ragdoll.RagDollOff();
-                ////_parent.position = new Vector3(_parent.position.x, hit.point.y, _parent.position.z);
+
+                _data.IsGrounded = true;
+
                 _rb.velocity = Vector3.zero;
                 _parentObj.transform.position = new Vector3(_parentObj.transform.position.x, _parentObj.transform.position.y,0);
                 return true;
