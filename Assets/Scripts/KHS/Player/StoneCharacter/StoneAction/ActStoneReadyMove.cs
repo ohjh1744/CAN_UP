@@ -24,6 +24,8 @@ public class ActStoneReadyMove : PlayerAction
             _data.IsDragging = false;
             _data.LineRenderer.enabled = false;
 
+
+
             //_ragdoll.AddForceRagdoll(Vector3.up * 5);
             //_ragdoll.RagDollOn();
             //ApplyForceToPlayer();
