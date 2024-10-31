@@ -13,5 +13,8 @@ public class Item : MonoBehaviour
             _rigidbody.isKinematic = true;
             _collider.enabled = false;
         }
+        
+
     }
+
 }
