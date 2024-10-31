@@ -1,9 +1,13 @@
 using Cinemachine;
+using System.Text;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class GameSceneManager : UIBInder
 {
+    private StringBuilder _sb = new StringBuilder();
+
     // 세이브 포인트 배열
     [SerializeField] private Vector3[] _savePoints;
     public Vector3[] SavePoints { get { return _savePoints; } set { _savePoints = value; } }
@@ -64,6 +68,20 @@ public class GameSceneManager : UIBInder
         BindAll();
     }
 
+    private void OnEnable()
+    {
+        DataManager.Instance.SaveData.GameData.OnJumpTimeChange += UpdateJumpTime;
+        DataManager.Instance.SaveData.GameData.OnFallTimeChange += UpdateFallTime;
+        DataManager.Instance.SaveData.GameData.OnPlayTimeChange += UpdatePlayTime;
+    }
+
+    private void OnDisable()
+    {
+        DataManager.Instance.SaveData.GameData.OnJumpTimeChange -= UpdateJumpTime;
+        DataManager.Instance.SaveData.GameData.OnFallTimeChange -= UpdateFallTime;
+        DataManager.Instance.SaveData.GameData.OnPlayTimeChange -= UpdatePlayTime;
+    }
+
     private void Start()
     {
         AddEvent("ResumeButton", EventType.Click, ResumeGame);
@@ -72,6 +90,8 @@ public class GameSceneManager : UIBInder
 
         SetGame(DataManager.Instance);
     }
+
+
 
     private void Update()
     {
@@ -83,6 +103,8 @@ public class GameSceneManager : UIBInder
 
         CheckState(DataManager.Instance);
     }
+
+   
 
     private void SetGame(DataManager dataManager)
     {
@@ -203,14 +225,22 @@ public class GameSceneManager : UIBInder
 
     private void UpdateJumpTime()
     {
-
+        Debug.Log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+        _sb.Clear();
+        _sb.Append(DataManager.Instance.SaveData.GameData.JumpTime);
+        GetUI<TextMeshProUGUI>("JumpTime").SetText(_sb);
+        Debug.Log(GetUI<TextMeshProUGUI>("JumpTime").name);
     }
     private void UpdateFallTime()
     {
-
+        _sb.Clear();
+        _sb.Append(DataManager.Instance.SaveData.GameData.FallTime);
+        GetUI<TextMeshProUGUI>("FallTime").SetText(_sb);
     }
     private void UpdatePlayTime()
     {
-
+        _sb.Clear();
+        _sb.Append(DataManager.Instance.SaveData.GameData.PlayTime);
+        GetUI<TextMeshProUGUI>("PlayTime").SetText(_sb);
     }
 }
