@@ -8,7 +8,7 @@ using System.IO;
 
 public enum EStage { First = 1, Second = 2, Third = 3, Fourth = 4, Fifth = 5 }
 
-public enum ECharacterNum {Base, Stone, Jump }
+public enum ECharacterNum {Base , Stone, Jump }
 
 public class DataManager : MonoBehaviour
 {

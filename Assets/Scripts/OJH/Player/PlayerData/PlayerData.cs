@@ -7,14 +7,6 @@ using UnityEngine;
 [System.Serializable]
 public class PlayerData : MonoBehaviour
 {
-    [SerializeField] private int _jumpNum;    //mvp패턴 변수
-
-    public int JumpNum { get { return _jumpNum; } set { _jumpNum = value; } }
-
-    [SerializeField] private int _fallNum;  //mvp패턴 변수
-
-    public int FallNum { get { return _fallNum; } set { _fallNum = value; } }
-
     [SerializeField] private float _jumpPower;
 
     public float JumpPower { get { return _jumpPower; } set { _jumpPower = value; } }
@@ -32,4 +24,10 @@ public class PlayerData : MonoBehaviour
 
 
 
+
+    //발판이 아래에 있는 경우 고려
+    //기본적으로 평지에서의 체공시간보다 조금 더 길게 설정할 것
+    [SerializeField] private float _checkedFallTime; //Base 캐릭터 체공시간
+    public float CheckedTimeBase { get { return _checkedFallTime; } set { _checkedFallTime = value; } }
+    
 }
