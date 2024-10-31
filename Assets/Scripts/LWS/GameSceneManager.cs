@@ -179,9 +179,7 @@ public class GameSceneManager : UIBInder
         DataManager.Instance.SaveData.GameData.PlayerStage = _currentStage;
         DataManager.Instance.SaveData.GameData.HasItem = false;
         DataManager.Instance.SaveData.GameData.ItemStage = _currentStage;
-        // DataManager.Instance.SaveData.GameData.JumpTime = 
-        // DataManager.Instance.SaveData.GameData.FallTime =
-        // DataManager.Instance.SaveData.GameData.PlayTime =
+        //DataManager.Instance.SaveData.GameData.PlayTime;
         Application.Quit();
     }
 
@@ -225,11 +223,9 @@ public class GameSceneManager : UIBInder
 
     private void UpdateJumpTime()
     {
-        Debug.Log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         _sb.Clear();
         _sb.Append(DataManager.Instance.SaveData.GameData.JumpTime);
         GetUI<TextMeshProUGUI>("JumpTime").SetText(_sb);
-        Debug.Log(GetUI<TextMeshProUGUI>("JumpTime").name);
     }
     private void UpdateFallTime()
     {
