@@ -8,7 +8,7 @@ using System.IO;
 
 public enum EStage { First = 1, Second = 2, Third = 3, Fourth = 4, Fifth = 5, Length = 6 }
 
-public enum ECharacterNum {Base = 1, Stone, Jump, Length }
+public enum ECharacterNum {Base = 1, Stone = 2, Jump = 3, Length = 4}
 
 public class DataManager : MonoBehaviour
 {
@@ -32,25 +32,25 @@ public class DataManager : MonoBehaviour
         }
     }
 
-    // Æ÷±âÇÏ±â ¹öÆ° ´­·¶À»¶§ Reset
+    // í¬ê¸°í•˜ê¸° ë²„íŠ¼ ëˆŒë €ì„ë•Œ Reset
     public void ResetData()
     {
-        // PlayerStage Ã³À½À¸·Î
+        // PlayerStage ì²˜ìŒìœ¼ë¡œ
         _saveData.GameData.PlayerStage = (int)EStage.First;
 
-        // ¾ÆÀÌÅÛ º¸À¯ ¿©ºÎ´Â ¾øÀ½.
+        // ì•„ì´í…œ ë³´ìœ  ì—¬ë¶€ëŠ” ì—†ìŒ.
         _saveData.GameData.HasItem = false;
 
-        //ItemStageµµ Ã³À½ÀÇ SavePoint·Î
+        //ItemStageë„ ì²˜ìŒì˜ SavePointë¡œ
         _saveData.GameData.ItemStage = (int)EStage.First;
 
-        //JumpTime ÃÊ±âÈ­
+        //JumpTime ì´ˆê¸°í™”
         _saveData.GameData.JumpTime = 0;
 
-        //FallTime ÃÊ±âÈ­
+        //FallTime ì´ˆê¸°í™”
         _saveData.GameData.FallTime = 0;
 
-        //PlayTime ÃÊ±âÈ­
+        //PlayTime ì´ˆê¸°í™”
         _saveData.GameData.PlayTime = 0;
     }
 

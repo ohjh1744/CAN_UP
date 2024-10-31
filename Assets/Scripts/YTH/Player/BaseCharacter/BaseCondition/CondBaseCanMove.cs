@@ -13,7 +13,6 @@ public class CondBaseCanMove : PlayerCondition
         Vector3 pos = new Vector3(transform.position.x, transform.position.y + _dropRayPosY, transform.position.z);
         Ray ray = new Ray(pos, Vector3.down);
 
-        Debug.Log("레이케스트 시작");
         if (Physics.Raycast(ray, out RaycastHit hit, 0.3f))
         {
             Debug.DrawRay(pos, Vector3.down * 0.3f, Color.red);

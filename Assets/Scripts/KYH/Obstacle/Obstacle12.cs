@@ -4,11 +4,19 @@ using UnityEngine;
 
 public class Obstacle12 : MonoBehaviour
 {
+    // 발판이 움직이는 속도
     [SerializeField] private float _moveSpeed;
-    [SerializeField] private Transform _startPos;
-    [SerializeField] private Transform _endPos;
-    [SerializeField] Rigidbody _rigid;
 
+    // 발판 이동의 시작 지점
+    [SerializeField] private Transform _startPos;
+
+    // 발판 이동의 끝 지점
+    [SerializeField] private Transform _endPos;
+
+    // 발판의 Rigidbody 참조용
+    [SerializeField] private Rigidbody _rigid;
+
+    // 발판 움직임 구현 코루틴 변수
     private Coroutine _upRoutine;
 
     //OnCollisionEnter하면
@@ -20,6 +28,20 @@ public class Obstacle12 : MonoBehaviour
     
     // OnCollisionExit하면
     public void PlatformReturn(PlayerController player)
+    {
+        // 플랫폼이 _startPos로 복귀
+        _upRoutine = StartCoroutine(UpCoroutine());
+    }
+
+    //OnCollisionEnter하면
+    public void PlatformDown(Item item)
+    {
+        // 플랫폼이 아래로 일정 속도로 낙하
+        _rigid.velocity = Vector3.down * _moveSpeed;
+    }
+
+    // OnCollisionExit하면
+    public void PlatformReturn(Item item)
     {
         // 플랫폼이 _startPos로 복귀
         _upRoutine = StartCoroutine(UpCoroutine());
