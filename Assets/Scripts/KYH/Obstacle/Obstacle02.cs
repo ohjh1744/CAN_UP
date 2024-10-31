@@ -29,7 +29,7 @@ public class Obstacle02 : MonoBehaviour
         // 캐릭터 반대 방향으로 밀어내기
         _rigid.AddForce(Vector3.left * _moveSpeed, ForceMode.Impulse);
         // 밀어내는 타이밍 추가
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(0.2f);
 
         // 코루틴을 null로 처리
         _railRoutine = null;
