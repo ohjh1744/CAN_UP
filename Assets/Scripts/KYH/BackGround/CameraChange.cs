@@ -8,7 +8,7 @@ public class CameraChange : MonoBehaviour
     [SerializeField] private GameObject _player;
     [SerializeField] private CinemachineVirtualCamera[] _cameras;
     [SerializeField] private Material[] _materials;
-    [SerializeField] private float[] _stageHight;
+    //[SerializeField] private float[] _stageHight;
 
 
     private Coroutine _changeCamera;
@@ -39,13 +39,13 @@ public class CameraChange : MonoBehaviour
             _cameras[1].Priority = 0;
             _cameras[2].Priority = 0;
         }
-        else if (_player.transform.position.y <= _stageHight[0])
-        {
-            _cameras[0].Priority = 0;
-            _cameras[1].Priority = 1;
-            _cameras[2].Priority = 0;
-            RenderSettings.skybox = _materials[0];
-        }
+        //else if (_player.transform.position.y <= _stageHight[0])
+        //{
+        //    _cameras[0].Priority = 0;
+        //    _cameras[1].Priority = 1;
+        //    _cameras[2].Priority = 0;
+        //    RenderSettings.skybox = _materials[0];
+        //}
         else if (_player.transform.position.y <= 37.5f)
         {
             _cameras[0].Priority = 0;
