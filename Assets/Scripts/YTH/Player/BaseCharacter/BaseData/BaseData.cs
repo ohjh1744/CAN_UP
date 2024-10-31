@@ -7,10 +7,6 @@ public class BaseData : PlayerData
 
     public float MoveSpeed { get { return _moveSpeed; } set { _moveSpeed = value; } }
 
-   // [SerializeField] private Vector3 _moveDir;
-   
-   // public Vector3 MoveDir { get { return _moveDir; } set { _moveDir = value; } }
-
     [SerializeField] private float _maxJumpPower; // 최대 점프력 = 5m
 
     public float MaxJumpPower { get { return _maxJumpPower; } set { _maxJumpPower = value; } }
@@ -34,4 +30,9 @@ public class BaseData : PlayerData
     [SerializeField] private Vector3 _jumpDir;
 
     public Vector3 JumpDir { get { return _jumpDir; } set { _jumpDir = value; } }
+
+    [SerializeField] private float _pickUpRange;
+
+    public float PickUpRange { get { return _pickUpRange; ; } set { _pickUpRange = value; } }
+
 }

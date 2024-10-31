@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using static UnityEditor.Progress;
 
 public class ActBasePickItem : PlayerAction
 {
@@ -13,27 +14,18 @@ public class ActBasePickItem : PlayerAction
 
     public override BTNodeState DoAction()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0)) // 좌클릭 입력 시
+        float distance = Vector3.Distance(transform.position, _item.transform.position);
+
+        if (Input.GetKeyDown(KeyCode.Mouse0) && distance <= _data.PickUpRange) //캐릭터와 아이템이 가까울 때 좌클릭 입력 시
         {
-            Debug.Log("아이템 잡음");
+            pickRoutine = StartCoroutine(PickRoutine());
+            _data.HasItem = true;
+
             return BTNodeState.Success;
         }
         else
         {
             return BTNodeState.Failure;
-        }
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Item"))
-        {
-            _data.HasItem = true;
-
-            pickRoutine = StartCoroutine(PickRoutine());
-
-            //아이템 주웠을 때 붙이고 다니는 기능
-
         }
     }
 
@@ -43,13 +35,11 @@ public class ActBasePickItem : PlayerAction
         WaitForSeconds dealy = new(0.4f);
         _animator.SetTrigger("PickItem");
         yield return dealy;
+
+        //아이템 주웠을 때 붙이고 다니는 기능
         _item.transform.position = _handPosition.position;
         _item.transform.SetParent(_handPosition);
         _item.transform.localPosition = Vector3.zero;
         pickRoutine = null;
     }
-
-
-    
-      
 }

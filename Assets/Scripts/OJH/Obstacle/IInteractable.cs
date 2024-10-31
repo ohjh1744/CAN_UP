@@ -24,6 +24,22 @@ public interface IInteractable
     // Player와 접촉 후 떨어졌을 때 발생하는 함수
     void TargetInteractTriExit(PlayerController player);
 
+    void TargetInteractColEnter(Item item);
 
+    // Player와 접촉중에 발생하는 함수
+    void TargetInteractColStay(Item item);
+
+    // Player와 접촉 후 떨어졌을 때 발생하는 함수
+    void TargetInteractColExit(Item item);
+
+    //trigger
+    // Player와 접촉 후 떨어졌을 때 발생하는 함수
+    void TargetInteractTriEnter(Item item);
+
+    // Player와 접촉 후 떨어졌을 때 발생하는 함수
+    void TargetInteractTriStay(Item item);
+
+    // Player와 접촉 후 떨어졌을 때 발생하는 함수
+    void TargetInteractTriExit(Item item);
 
 }
