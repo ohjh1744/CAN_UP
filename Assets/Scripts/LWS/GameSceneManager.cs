@@ -1,12 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using Cinemachine;
+using System.Text;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.UI;
 
 public class GameSceneManager : UIBInder
 {
+    private StringBuilder _sb = new StringBuilder();
+
     // 세이브 포인트 배열
     [SerializeField] private Vector3[] _savePoints;
     public Vector3[] SavePoints { get { return _savePoints; } set { _savePoints = value; } }
@@ -49,20 +50,36 @@ public class GameSceneManager : UIBInder
 
     // 시네머신 브레인 이벤트 함수에 활용할 시네머신 브레인
     [SerializeField] private CinemachineBrain _brain;
+    public CinemachineBrain Brain { get { return _brain; } set { _brain = value; } }
 
     // esc 누를 때 나올 패널
-    [SerializeField] private GameObject _ESCPanel;
+    [SerializeField] private GameObject _escPanel;
+
+    public GameObject EscPanel { get { return _escPanel; } set { _escPanel = value; } }
 
     // 씬체인저
     [SerializeField] private SceneChanger _sceneChanger;
 
-    // 데이터 매니저
-    [SerializeField] private DataManager _dataManager;
+    public SceneChanger SceneChanger { get { return _sceneChanger; } set { _sceneChanger = value; } }
 
     private void Awake()
     {
         _brain = Camera.main.GetComponent<CinemachineBrain>();
         BindAll();
+    }
+
+    private void OnEnable()
+    {
+        DataManager.Instance.SaveData.GameData.OnJumpTimeChange += UpdateJumpTime;
+        DataManager.Instance.SaveData.GameData.OnFallTimeChange += UpdateFallTime;
+        DataManager.Instance.SaveData.GameData.OnPlayTimeChange += UpdatePlayTime;
+    }
+
+    private void OnDisable()
+    {
+        DataManager.Instance.SaveData.GameData.OnJumpTimeChange -= UpdateJumpTime;
+        DataManager.Instance.SaveData.GameData.OnFallTimeChange -= UpdateFallTime;
+        DataManager.Instance.SaveData.GameData.OnPlayTimeChange -= UpdatePlayTime;
     }
 
     private void Start()
@@ -71,19 +88,23 @@ public class GameSceneManager : UIBInder
         AddEvent("SaveExitButton", EventType.Click, SaveAndQuitGame);
         AddEvent("MainButton", EventType.Click, GiveUpGame);
 
-        SetGame(_dataManager);
+        SetGame(DataManager.Instance);
     }
+
+
 
     private void Update()
     {
         if (Input.GetKeyUp(KeyCode.Escape))
         {
             Time.timeScale = 0;
-            _ESCPanel.SetActive(true);
+            _escPanel.SetActive(true);
         }
 
-        CheckState(_dataManager);
+        CheckState(DataManager.Instance);
     }
+
+   
 
     private void SetGame(DataManager dataManager)
     {
@@ -149,7 +170,7 @@ public class GameSceneManager : UIBInder
     private void ResumeGame(PointerEventData eventData)
     {
         Time.timeScale = 1;
-        _ESCPanel.SetActive(false);
+        _escPanel.SetActive(false);
     }
 
     private void SaveAndQuitGame(PointerEventData eventData)
@@ -161,12 +182,13 @@ public class GameSceneManager : UIBInder
         // DataManager.Instance.SaveData.GameData.JumpTime = 
         // DataManager.Instance.SaveData.GameData.FallTime =
         // DataManager.Instance.SaveData.GameData.PlayTime =
+        Application.Quit();
     }
 
     private void GiveUpGame(PointerEventData eventData)
     {
         _sceneChanger.ChangeScene("MainScene");
-        _ESCPanel.SetActive(false);
+        _escPanel.SetActive(false);
     }
 
     // 시네머신 브레인 이벤트 함수 실행해서 카메라가 변경될 때 마다 Reset()
@@ -203,14 +225,22 @@ public class GameSceneManager : UIBInder
 
     private void UpdateJumpTime()
     {
-
+        Debug.Log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+        _sb.Clear();
+        _sb.Append(DataManager.Instance.SaveData.GameData.JumpTime);
+        GetUI<TextMeshProUGUI>("JumpTime").SetText(_sb);
+        Debug.Log(GetUI<TextMeshProUGUI>("JumpTime").name);
     }
     private void UpdateFallTime()
     {
-
+        _sb.Clear();
+        _sb.Append(DataManager.Instance.SaveData.GameData.FallTime);
+        GetUI<TextMeshProUGUI>("FallTime").SetText(_sb);
     }
     private void UpdatePlayTime()
     {
-
+        _sb.Clear();
+        _sb.Append(DataManager.Instance.SaveData.GameData.PlayTime);
+        GetUI<TextMeshProUGUI>("PlayTime").SetText(_sb);
     }
 }
