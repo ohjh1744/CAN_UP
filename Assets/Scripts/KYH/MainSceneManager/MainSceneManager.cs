@@ -3,18 +3,18 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Text;
+using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
-public class MainSceneManager : MonoBehaviour
+public class MainSceneManager : UIBInder
 {
     // SceneChanger 클래스 참조용
-    [SerializeField] private SceneChanger _sceneChanger { get; }
+    [SerializeField] private SceneChanger _sceneChanger;
 
     // SaveData 클래스 참조용
-    [SerializeField] private GameData _gameData { get; set; }
-
-    // DataManager 클래스 참조용
-    [SerializeField] private DataManager _dataManager { get; }
+    [SerializeField] private GameData _gameData;
 
     // 조작법 설명용 이미지 오브젝트
     [SerializeField] private GameObject _explainImage;
@@ -22,81 +22,130 @@ public class MainSceneManager : MonoBehaviour
     // 조작법 설명용 이미지 활성화 여부 체크
     [SerializeField] private bool _isImageActive;
 
-    // 게임 난이도 표시 텍스트 모음 배열
-    [SerializeField] private GameObject[] _difficultyTexts;
+    [SerializeField] private ECharacterNum _characterNum;
 
-    // 게임 캐릭터 표시 텍스트 모음 배열
-    [SerializeField] private GameObject[] _characterTexts;
+    private void Awake()
+    {
+        BindAll();
+    }
 
     private void Start()
     {
-        _difficultyTexts[0].SetActive(false);
-        _difficultyTexts[1].SetActive(true);
-        _difficultyTexts[2].SetActive(false);
-        _explainImage.SetActive(false); // 조작법 설명 이미지 오브젝트를 비활성화
-        _isImageActive = false;         // 이미지 활성화 여부를 false로 체크
+        //GetUI<Image>("CharacterText").gameObject.SetActive(false);
+
+        AddEvent("NewPlay Button", EventType.Click, NewGameStart);
+
+        AddEvent("LoadPlay Button", EventType.Click, LastGameStart);
+
+        AddEvent("Character_Right", EventType.Click, NextCharacter);
+
+        AddEvent("Character_Left", EventType.Click, PreviousCharacter);
+
+        AddEvent("Explain Button", EventType.Click, ShowHowToPlay);
+
+        AddEvent("Exit Button", EventType.Click, QuitGame);
     }
 
     private void Update()
     {
-        // 조작법 이미지가 활성화 되어 있으면서 ESC 키를 입력했을 경우
-        if (_isImageActive == true && Input.GetKeyDown(KeyCode.Escape))
+        if (_isImageActive = true && Input.GetKeyDown(KeyCode.Escape))
         {
-            _explainImage.SetActive(false); // 조작법 설명 이미지 오브젝트를 비활성화
-            _isImageActive = false;         // 이미지 활성화 여부를 false로 체크
+            GetUI<Image>("ExplainImage").gameObject.SetActive(false);
+            _isImageActive = false;
         }
     }
 
     // 새 게임 시작 버튼
-    public void NewGameStart()
+    public void NewGameStart(PointerEventData eventData)
     {
-        _dataManager.ResetData();               // 저장된 게임 진행 데이터 리셋
-        _sceneChanger.ChangeScene("GameScene"); // 화면을 GameScene으로 전환
+        DataManager.Instance.ResetData();       // 저장된 게임 진행 데이터 리셋
+        DataManager.Instance.SaveData.GameData.CharacterNum = (int)_characterNum;
+        _sceneChanger.ChangeScene("LWS"); // 화면을 GameScene으로 전환
     }
 
     // 진행 중인 게임 시작 버튼
-    public void LastGameStart()
+    public void LastGameStart(PointerEventData eventData)
     {
-        // 저장된 게임을 불러와야 하기 때문에 데이터 리셋 불필요
-        _sceneChanger.ChangeScene("GameScene"); // 화면을 GameScene으로 전환
+        //DataManager.Instance.Load();
+        _sceneChanger.ChangeScene("LWS"); // 화면을 GameScene으로 전환
     }
 
     // 게임 조작법 안내 버튼
-    public void ShowHowToPlay()
+    public void ShowHowToPlay(PointerEventData eventData)
     {
-        _explainImage.SetActive(true);  // 조작법 설명 이미지 오브젝트를 활성화
+        GetUI<Image>("ExplainImage").gameObject.SetActive(true);
+        //_explainImage.SetActive(true);  // 조작법 설명 이미지 오브젝트를 활성화
         _isImageActive = true;          // 이미지 활성화 여부를 true로 체크
     }
 
     // 다음 캐릭터 선택 버튼
-    public void NextCharacter()
+    public void NextCharacter(PointerEventData eventData)
     {
-        if (_gameData.IsClear == false)
+        if (_characterNum == ECharacterNum.Length - 1)
             return;
 
+        _characterNum++;
 
+        switch (_characterNum)
+        {
+            case ECharacterNum.Base:
+                Debug.Log("Base");
+                GetUI<TextMeshProUGUI>("CharacterText").text = "Base";
+                break;
+        
+            case ECharacterNum.Stone:
+                Debug.Log("Stone");
+                GetUI<TextMeshProUGUI>("CharacterText").text = "Stone";
+                break;
+        
+            case ECharacterNum.Jump:
+                Debug.Log("Jump");
+                GetUI<TextMeshProUGUI>("CharacterText").text = "Jump";
+                break;
+        }
     }
 
     // 이전 캐릭터 선택 버튼
-    public void PreviousCharacter()
+    public void PreviousCharacter(PointerEventData eventData)
     {
+        if (_characterNum == ECharacterNum.Base)
+            return;
 
+        _characterNum--;
+
+        switch (_characterNum)
+        {
+            case ECharacterNum.Base:
+                Debug.Log("Base");
+                GetUI<TextMeshProUGUI>("CharacterText").text = "Base";
+                break;
+
+            case ECharacterNum.Stone:
+                Debug.Log("Stone");
+                GetUI<TextMeshProUGUI>("CharacterText").text = "Stone";
+                break;
+
+            case ECharacterNum.Jump:
+                Debug.Log("Jump");
+                GetUI<TextMeshProUGUI>("CharacterText").text = "Jump";
+                break;
+        }
     }
 
     // 다음 난이도 선택 버튼
-    public void NextDifficulty()
+    public void NextDifficulty(PointerEventData eventData)
     {
-
+        // 추후 난이도 개발되면 추가 작성
     }
 
     // 이전 난이도 선택 버튼
-    public void PreviousDifficulty()
+    public void PreviousDifficulty(PointerEventData eventData)
     {
-
+        // 추후 난이도 개발되면 추가 작성
     }
 
     // 게임 종료 버튼
-    public void QuitGame()
+    public void QuitGame(PointerEventData eventData)
     {
         _sceneChanger.QuitGame();   // SceneChanger에서 게임 종료 함수 호출
     }
