@@ -11,10 +11,10 @@ using UnityEngine.UI;
 public class MainSceneManager : UIBInder
 {
     // SceneChanger 클래스 참조용
-    [SerializeField] private SceneChanger _sceneChanger { get; }
+    [SerializeField] private SceneChanger _sceneChanger;
 
     // SaveData 클래스 참조용
-    [SerializeField] private GameData _gameData { get; set; }
+    [SerializeField] private GameData _gameData;
 
     // 조작법 설명용 이미지 오브젝트
     [SerializeField] private GameObject _explainImage;
