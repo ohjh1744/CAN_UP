@@ -873,46 +873,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnInteractColEnter:
+  OnInteractPlayerColEnter:
     m_PersistentCalls:
       m_Calls: []
-  OnInteractColStay:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 825236607}
-        m_TargetAssemblyTypeName: Obstacle12, Assembly-CSharp
-        m_MethodName: PlatformDown
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnInteractColExit:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 825236607}
-        m_TargetAssemblyTypeName: Obstacle12, Assembly-CSharp
-        m_MethodName: PlatformReturn
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnInteractTriEnter:
+  OnInteractPlayerColStay:
     m_PersistentCalls:
       m_Calls: []
-  OnInteractTriStay:
+  OnInteractPlayerColExit:
     m_PersistentCalls:
       m_Calls: []
-  OnInteractTriExit:
+  OnInteractPlayerTriEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriExit:
     m_PersistentCalls:
       m_Calls: []
 --- !u!54 &825236609
@@ -1258,7 +1252,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _moveSpeed: 5
-  _replaceObstacle: {fileID: 1572828209}
   _rigid: {fileID: 0}
 --- !u!114 &1394518551
 MonoBehaviour:
@@ -1272,19 +1265,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnInteractColEnter:
+  OnInteractPlayerColEnter:
     m_PersistentCalls:
       m_Calls: []
-  OnInteractColStay:
+  OnInteractPlayerColStay:
     m_PersistentCalls:
       m_Calls: []
-  OnInteractColExit:
+  OnInteractPlayerColExit:
     m_PersistentCalls:
       m_Calls: []
-  OnInteractTriEnter:
+  OnInteractPlayerTriEnter:
     m_PersistentCalls:
       m_Calls: []
-  OnInteractTriStay:
+  OnInteractPlayerTriStay:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1394518550}
@@ -1299,7 +1292,37 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  OnInteractTriExit:
+  OnInteractPlayerTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriStay:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1394518550}
+        m_TargetAssemblyTypeName: Obstacle02, Assembly-CSharp
+        m_MethodName: RailObstacle
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnInteractItemTriExit:
     m_PersistentCalls:
       m_Calls: []
 --- !u!65 &1394518552
@@ -1461,7 +1484,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _baseData: {fileID: 0}
   _playerData: {fileID: 0}
+  _itemData: {fileID: 0}
   _isIncrease: 0
+  _itemJumpPower: 0
 --- !u!114 &1430024359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1474,7 +1499,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnInteractColEnter:
+  OnInteractPlayerColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerColStay:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1430024358}
@@ -1489,10 +1517,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  OnInteractColStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractColExit:
+  OnInteractPlayerColExit:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1430024358}
@@ -1507,13 +1532,43 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  OnInteractTriEnter:
+  OnInteractPlayerTriEnter:
     m_PersistentCalls:
       m_Calls: []
-  OnInteractTriStay:
+  OnInteractPlayerTriStay:
     m_PersistentCalls:
       m_Calls: []
-  OnInteractTriExit:
+  OnInteractPlayerTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1430024358}
+        m_TargetAssemblyTypeName: Obstacle01, Assembly-CSharp
+        m_MethodName: BounceItem
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnInteractItemColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriExit:
     m_PersistentCalls:
       m_Calls: []
 --- !u!65 &1430024360
@@ -1852,22 +1907,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnInteractColEnter:
+  OnInteractPlayerColEnter:
     m_PersistentCalls:
       m_Calls: []
-  OnInteractColStay:
+  OnInteractPlayerColStay:
     m_PersistentCalls:
       m_Calls: []
-  OnInteractColExit:
+  OnInteractPlayerColExit:
     m_PersistentCalls:
       m_Calls: []
-  OnInteractTriEnter:
+  OnInteractPlayerTriEnter:
     m_PersistentCalls:
       m_Calls: []
-  OnInteractTriStay:
+  OnInteractPlayerTriStay:
     m_PersistentCalls:
       m_Calls: []
-  OnInteractTriExit:
+  OnInteractPlayerTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriExit:
     m_PersistentCalls:
       m_Calls: []
 --- !u!65 &1697892623
@@ -2143,34 +2216,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnInteractColEnter:
+  OnInteractPlayerColEnter:
     m_PersistentCalls:
       m_Calls: []
-  OnInteractColStay:
+  OnInteractPlayerColStay:
     m_PersistentCalls:
       m_Calls: []
-  OnInteractColExit:
+  OnInteractPlayerColExit:
     m_PersistentCalls:
       m_Calls: []
-  OnInteractTriEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1853075854}
-        m_TargetAssemblyTypeName: Obstacle07, Assembly-CSharp
-        m_MethodName: MovePlatform
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnInteractTriStay:
+  OnInteractPlayerTriEnter:
     m_PersistentCalls:
       m_Calls: []
-  OnInteractTriExit:
+  OnInteractPlayerTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriExit:
     m_PersistentCalls:
       m_Calls: []
 --- !u!65 &1853075856
@@ -2319,34 +2398,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnInteractColEnter:
+  OnInteractPlayerColEnter:
     m_PersistentCalls:
       m_Calls: []
-  OnInteractColStay:
+  OnInteractPlayerColStay:
     m_PersistentCalls:
       m_Calls: []
-  OnInteractColExit:
+  OnInteractPlayerColExit:
     m_PersistentCalls:
       m_Calls: []
-  OnInteractTriEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1880813335}
-        m_TargetAssemblyTypeName: Obstacle13, Assembly-CSharp
-        m_MethodName: RotatePlatform
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnInteractTriStay:
+  OnInteractPlayerTriEnter:
     m_PersistentCalls:
       m_Calls: []
-  OnInteractTriExit:
+  OnInteractPlayerTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriExit:
     m_PersistentCalls:
       m_Calls: []
 --- !u!65 &1880813337
@@ -2637,11 +2722,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a93eb623e6ca2245a19c6f6afeeb3c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _player: {fileID: 0}
-  _cameras:
-  - {fileID: 1211724755}
-  - {fileID: 885334960}
-  - {fileID: 1053267852}
-  _materials:
-  - {fileID: 2100000, guid: bbe9494f815f3c340956427c884b72a0, type: 2}
-  - {fileID: 2100000, guid: 2441c79940171dc43b33badf9fe97828, type: 2}
