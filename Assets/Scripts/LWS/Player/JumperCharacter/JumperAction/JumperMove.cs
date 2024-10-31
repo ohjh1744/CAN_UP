@@ -12,7 +12,7 @@ public class JumperMove : PlayerAction
     public override BTNodeState DoAction()
     {
         // Grounded 상태일 때는 이동 진행 X
-        if (_jumperData._isGrounded)
+        if (_jumperData.IsGrounded)
         {
             return BTNodeState.Failure;
         }
