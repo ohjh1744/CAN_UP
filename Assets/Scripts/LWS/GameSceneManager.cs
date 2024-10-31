@@ -11,7 +11,7 @@ public class GameSceneManager : MonoBehaviour
 
     // 스테이지 높이 배열
     [SerializeField] private float[] _stageHight;
-    public float[] StageHight { get { return _stageHight; } set {_stageHight = value; } }
+    public float[] StageHight { get { return _stageHight; } set { _stageHight = value; } }
 
     // 카메라 배열
     [SerializeField] private CinemachineVirtualCamera[] _cameras;
@@ -23,7 +23,7 @@ public class GameSceneManager : MonoBehaviour
 
     // 카메라 과거 인덱스
     [SerializeField] private int _preCameraIndex;
-    public int PreCameraIndex { get { return _preCameraIndex; } set {_preCameraIndex = value; } }
+    public int PreCameraIndex { get { return _preCameraIndex; } set { _preCameraIndex = value; } }
 
     // 현재 플레이어 포지션
     [SerializeField] private Vector3 _currentPlayerPos;
@@ -31,11 +31,11 @@ public class GameSceneManager : MonoBehaviour
 
     // 현재 스테이지
     [SerializeField] private int _currentStage;
-    public int CurrentStage { get { return _currentStage; } set {_currentStage = value; } }
+    public int CurrentStage { get { return _currentStage; } set { _currentStage = value; } }
 
     // 현재 저장된 스테이지
     [SerializeField] private int _currentSaveStage;
-    public int CurrentSaveStage { get { return _currentStage; } set {_currentStage = value; } }
+    public int CurrentSaveStage { get { return _currentStage; } set { _currentStage = value; } }
 
     // 아이템
     [SerializeField] private GameObject _item;
@@ -69,26 +69,31 @@ public class GameSceneManager : MonoBehaviour
         }
 
         // 3. CheckReplaceObject 실행 (?)
-        CheckReplaceObject(dataManager);
+        CheckReplaceObstacle(dataManager);
 
         // 4. 캐릭터 가져오기
         _players[dataManager.SaveData.GameData.CharacterNum].SetActive(true);
     }
     private void CheckState(DataManager dataManager)
     {
-        // 1. currentStage Update
+        // 1. currentStage 갱신
         for (int i = 0; i < (int)EStage.Length; i++)
         {
             if (_stageHight[i] <= _players[dataManager.SaveData.GameData.CharacterNum].transform.position.y &&
-                _players[dataManager.SaveData.GameData.CharacterNum].transform.position.y < _stageHight[i+1])
+                _players[dataManager.SaveData.GameData.CharacterNum].transform.position.y < _stageHight[i + 1])
             {
                 _currentStage = i + 1;
                 break;
             }
         }
 
-        // 2. SavePoint 변경
-        //if (CurrentStage < CurrentSaveStage)
+        // 2. SavePoint 변경 (?)
+        if ( _currentSaveStage > _currentStage )
+        {
+            _currentSaveStage = _currentStage;
+        }
+        
+        // 3. CheckResetObject
     }
 
     private void ResumeGame()
@@ -111,7 +116,7 @@ public class GameSceneManager : MonoBehaviour
 
     }
 
-    private void CheckReplaceObject(DataManager dataManager)
+    private void CheckReplaceObstacle(DataManager dataManager)
     {
         if (dataManager.SaveData.GameData.CharacterNum == 2 || dataManager.SaveData.GameData.CharacterNum == 3)
         {
@@ -123,5 +128,10 @@ public class GameSceneManager : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void Awake()
+    {
+
     }
 }

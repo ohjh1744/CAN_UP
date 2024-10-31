@@ -17,6 +17,4 @@ public class JumperData : PlayerData
 
     public float Resist { get { return _resist; } set { _resist = value; } }
 
-    // 땅에 닿아있는지 판단할 Grounded 불 변수
-    public bool _isGrounded { get; set; }
 }
