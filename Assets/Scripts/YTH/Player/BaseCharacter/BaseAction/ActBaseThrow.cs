@@ -15,7 +15,6 @@ public class ActBaseThrow : PlayerAction
         if (Input.GetKeyUp(KeyCode.Mouse0))
         {
             throwRoutine = StartCoroutine(ThrowRoutine());
-            //ThrowItem();
             return BTNodeState.Success;
         }
         else
@@ -43,9 +42,8 @@ public class ActBaseThrow : PlayerAction
         _collider.enabled = true;                                                             //
         _collider.isTrigger = true;                                                           // 
         _itemRb.AddForce(throwDirection * _data.ThrowPower, ForceMode.Impulse);               //
-        _data.HasItem = false;
 
-       // _animator.SetTrigger("Throw");  //애니메이션 재생
+        _data.HasItem = false;
     }
 
     Coroutine throwRoutine;
