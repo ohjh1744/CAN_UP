@@ -9,7 +9,11 @@ public class GameSceneManager : UIBInder
 {
     private StringBuilder _sb = new StringBuilder();
 
+    // 캐릭터 생성 오프셋
     [SerializeField] private float _savePointYOffset;
+
+    // 아이템 생성 오프셋
+    [SerializeField] private float _itemPointXOffset;
 
     // 세이브 포인트 배열
     [SerializeField] private Vector3[] _savePoints;
@@ -134,10 +138,13 @@ public class GameSceneManager : UIBInder
         // 저장된 캐릭터를 세이브포인트에 소환
         _players[DataManager.Instance.SaveData.GameData.CharacterNum].transform.position = _newSavePoint;
 
+        // x축오른쪽으로 itemPoint지정하여 Player와 item 충돌없이
+        Vector3 _newItemPoint = new Vector3(_savePoints[_currentSaveStage].x + _itemPointXOffset , _savePoints[_currentSaveStage].y, _savePoints[_currentSaveStage].z);
+
         // 2. Item 위치 가져오기
         if (DataManager.Instance.SaveData.GameData.CharacterNum == 1)
         {
-            _item.transform.position = _players[DataManager.Instance.SaveData.GameData.CharacterNum].transform.position;
+            _item.transform.position = _newItemPoint;
         }
         else
         {
