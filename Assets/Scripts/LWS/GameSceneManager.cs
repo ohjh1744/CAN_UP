@@ -9,6 +9,8 @@ public class GameSceneManager : UIBInder
 {
     private StringBuilder _sb = new StringBuilder();
 
+    [SerializeField] private float _savePointYOffset;
+
     // 세이브 포인트 배열
     [SerializeField] private Vector3[] _savePoints;
     public Vector3[] SavePoints { get { return _savePoints; } set { _savePoints = value; } }
@@ -31,7 +33,7 @@ public class GameSceneManager : UIBInder
 
     // 현재 저장된 스테이지
     [SerializeField] private int _currentSaveStage;
-    public int CurrentSaveStage { get { return _currentStage; } set { _currentStage = value; } }
+    public int CurrentSaveStage { get { return _currentSaveStage; } set { _currentSaveStage = value; } }
 
     // 아이템
     [SerializeField] private GameObject _item;
@@ -91,7 +93,7 @@ public class GameSceneManager : UIBInder
         AddEvent("SaveExitButton", EventType.Click, SaveAndQuitGame);
         AddEvent("MainButton", EventType.Click, GiveUpGame);
 
-        SetGame(DataManager.Instance);
+        SetGame();
 
         UpdateJumpTime();
         UpdateFallTime();
@@ -107,49 +109,59 @@ public class GameSceneManager : UIBInder
             _escPanel.SetActive(true);
         }
 
-        CheckState(DataManager.Instance);
+        CheckState();
 
         CheckPlayTime();
     }
 
 
 
-    private void SetGame(DataManager dataManager)
+    private void SetGame()
     {
         // 0. 초기화 되어야 하는 기본 변수
         _item.transform.position = _savePoints[1];
 
         // 1. 저장된 savestage 가져오기
-        // 현재 스테이지 및 저장된 스테이지를 저장된 playerStage로 지정
-        _currentStage = dataManager.SaveData.GameData.PlayerStage;
+        // 저장된 스테이지를 저장된 playerStage로 지정
+        _currentSaveStage = DataManager.Instance.SaveData.GameData.PlayerStage;
+
+        // 현재 스테이지도 저장된스테이지로 동일하게 변경.
+        _currentStage = _currentSaveStage;
+
+        // y축위로 savePOint지정하여 Player와 platform 충돌없이
+        Vector3 _newSavePoint = new Vector3(_savePoints[_currentSaveStage].x, _savePoints[_currentSaveStage].y + _savePointYOffset, _savePoints[_currentSaveStage].z);
 
         // 저장된 캐릭터를 세이브포인트에 소환
-        _players[dataManager.SaveData.GameData.CharacterNum].transform.position = _savePoints[_currentSaveStage];
+        _players[DataManager.Instance.SaveData.GameData.CharacterNum].transform.position = _newSavePoint;
 
         // 2. Item 위치 가져오기
-        if (dataManager.SaveData.GameData.CharacterNum == 1)
+        if (DataManager.Instance.SaveData.GameData.CharacterNum == 1)
         {
-            _item.transform.position = _players[dataManager.SaveData.GameData.CharacterNum].transform.position;
+            _item.transform.position = _players[DataManager.Instance.SaveData.GameData.CharacterNum].transform.position;
+        }
+        else
+        {
+            _item.SetActive(false);
         }
 
         // 3. CheckReplaceObject 실행 (?)
-        CheckReplaceObstacle(dataManager);
+        CheckReplaceObstacle();
 
         // 4. 캐릭터 가져오기
-        _players[dataManager.SaveData.GameData.CharacterNum].SetActive(true);
+        _players[DataManager.Instance.SaveData.GameData.CharacterNum].SetActive(true);
     }
 
-    private void CheckState(DataManager dataManager)
+    private void CheckState()
     {
         // 0. 계속 갱신되어야 하는 기본 변수
         // 현재 포지션
-        _currentPlayerPos = _players[dataManager.SaveData.GameData.CharacterNum].transform.position;
+        _currentPlayerPos = _players[DataManager.Instance.SaveData.GameData.CharacterNum].transform.position;
 
         // 1. currentStage 갱신
         for (int i = 1; i < (int)EStage.Length; i++)
         {
-            if (_stageHight[i] <= _players[dataManager.SaveData.GameData.CharacterNum].transform.position.y &&
-                _players[dataManager.SaveData.GameData.CharacterNum].transform.position.y < _stageHight[i + 1])
+            if (_stageHight[i] <= _players[DataManager.Instance.SaveData.GameData.CharacterNum].transform.position.y &&
+                _players[DataManager.Instance.SaveData.GameData.CharacterNum].transform.position.y < _stageHight[i + 1])
             {
                 _currentStage = i;
                 break;
@@ -166,7 +178,7 @@ public class GameSceneManager : UIBInder
         CheckResetObject();
 
         // 4. Item위치 체크 후 갱신
-        if (!dataManager.SaveData.GameData.HasItem)
+        if (!DataManager.Instance.SaveData.GameData.HasItem)
         {
             if (_item.transform.position.y < _stageHight[_currentStage])
             {
@@ -184,7 +196,7 @@ public class GameSceneManager : UIBInder
     private void SaveAndQuitGame(PointerEventData eventData)
     {
         DataManager.Instance.SaveData.GameData.IsClear = false;
-        DataManager.Instance.SaveData.GameData.PlayerStage = _currentStage;
+        DataManager.Instance.SaveData.GameData.PlayerStage = _currentSaveStage;
         DataManager.Instance.SaveData.GameData.HasItem = false;
         DataManager.Instance.SaveData.GameData.ItemStage = _currentStage;
         DataManager.Instance.SaveData.GameData.PlayTime = _curPlayTime;
@@ -217,9 +229,9 @@ public class GameSceneManager : UIBInder
     }
 
     // 시작 캐릭터가 Base가 아닐 경우, Replace가 필요한 Obstacle들 대체 실행
-    private void CheckReplaceObstacle(DataManager dataManager)
+    private void CheckReplaceObstacle()
     {
-        if (dataManager.SaveData.GameData.CharacterNum == 2 || dataManager.SaveData.GameData.CharacterNum == 3)
+        if (DataManager.Instance.SaveData.GameData.CharacterNum == 2 || DataManager.Instance.SaveData.GameData.CharacterNum == 3)
         {
             for (int i = 0; i < _replaceObstacles.Length; i++)
             {

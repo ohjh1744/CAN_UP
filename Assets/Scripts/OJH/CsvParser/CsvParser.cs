@@ -22,14 +22,13 @@ public class CsvParser : MonoBehaviour
     {
         // 저장경로 user/appdata/LocalLow/Can_Up/Save
         _savePath = Application.persistentDataPath + "/Save";
-        CreateCsv();
     }
 
     [ContextMenu("Save")]
     private void CreateCsv()
     {
         //csv형식으로 stringbuilder에 저장.
-        for (int i = 0; i < _gameObjects.Length; i++)
+        for(int i = 0; i < _gameObjects.Length; i++)
         {
             IObjectPosition _obejctPosition = _gameObjects[i].GetComponent<IObjectPosition>();
 
@@ -48,16 +47,15 @@ public class CsvParser : MonoBehaviour
         }
 
         // 저장경로가 존재하지않다면 생성. 있다면 기존꺼 사용.
-        if (Directory.Exists(_savePath) == false)
+        if(Directory.Exists(_savePath) == false)
         {
             Directory.CreateDirectory(_savePath);
         }
 
+        File.WriteAllText(_savePath + "/Save.csv", string.Empty);
+
         // WRite 작성.
         File.WriteAllText(_savePath + "/Save.csv", string.Join("\n", _sb));
-
-
-
 
 
     }

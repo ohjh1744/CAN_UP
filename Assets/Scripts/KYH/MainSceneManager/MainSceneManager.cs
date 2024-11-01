@@ -57,14 +57,14 @@ public class MainSceneManager : UIBInder
     {
         DataManager.Instance.ResetData();       // 저장된 게임 진행 데이터 리셋
         DataManager.Instance.SaveData.GameData.CharacterNum = (int)_characterNum;
-        _sceneChanger.ChangeScene("LWS"); // 화면을 GameScene으로 전환
+        _sceneChanger.ChangeScene("GameScene"); // 화면을 GameScene으로 전환
     }
 
-    // 진행 중인 게임 시작 버튼
+    // 저장된 게임 시작버튼
     public void LastGameStart(PointerEventData eventData)
     {
-        //DataManager.Instance.Load();
-        _sceneChanger.ChangeScene("LWS"); // 화면을 GameScene으로 전환
+        DataManager.Instance.Load();
+        _sceneChanger.ChangeScene("GameScene"); // 화면을 GameScene으로 전환
     }
 
     // 게임 조작법 안내 버튼

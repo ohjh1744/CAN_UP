@@ -56,6 +56,7 @@ public class DataManager : MonoBehaviour
 
     public void Save()
     {
+        Debug.Log("Save!!!!!!!!!!!!!!!!Save!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         StringBuilder path = new StringBuilder();
         path.Append(Application.persistentDataPath).Append("/Save");
         if (Directory.Exists(path.ToString()) == false)
@@ -67,7 +68,7 @@ public class DataManager : MonoBehaviour
         File.WriteAllText($"{path}/SaveFile.txt", json);
     }
 
-    public void Load(string loadName)
+    public void Load()
     {
         StringBuilder path = new StringBuilder();
         path.Append(Application.persistentDataPath).Append($"/Save/SaveFile.txt");

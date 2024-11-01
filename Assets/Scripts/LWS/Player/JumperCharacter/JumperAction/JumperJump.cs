@@ -8,11 +8,24 @@ public class JumperJump : PlayerAction
 
     [SerializeField] Rigidbody _rigidbody;
 
+    private bool _isJumping;
 
     private void Update()
     {
         CheckGround();
+
+        if(_rigidbody.velocity.y > 0 && !_jumperData.IsGrounded)
+        {
+            if (!_isJumping)
+            {
+                _jumperData.JumpCount++;
+            }
+            _isJumping = true;
+        }
+
     }
+
+    
 
     // 땅을 감지하는 레이캐스트
     private void CheckGround()
@@ -46,7 +59,10 @@ public class JumperJump : PlayerAction
         if (_jumperData.IsGrounded)
         {
             _rigidbody.velocity = new Vector3(_rigidbody.velocity.x, _jumperData.JumpPower, 0);
+            _isJumping = false;
+
             return BTNodeState.Running;
+
         }
         else
         {

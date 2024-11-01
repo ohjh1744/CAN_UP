@@ -8,7 +8,9 @@ public class CondStoneCanMove : PlayerCondition
 
     // 부모 리지드바디
     [SerializeField] Rigidbody _rb;
+
     [SerializeField] GameObject _parentObj;
+
     [SerializeField] GameObject _rayPoint;
 
     // 멈추는 속도
@@ -19,7 +21,20 @@ public class CondStoneCanMove : PlayerCondition
 
     private bool hit;
 
-    //[SerializeField] Transform _parent;
+    private bool _isJumping;
+
+    private void Update()
+    {
+        if (_rb.velocity.y > 0 && !_data.IsGrounded)
+        {
+            if (!_isJumping)
+            {
+                _data.JumpCount++;
+            }
+            _isJumping = true;
+        }
+
+    }
 
 
     public override bool DoCheck()
@@ -44,7 +59,7 @@ public class CondStoneCanMove : PlayerCondition
         Ray ray = new Ray(_rayPoint.transform.position, Vector3.down);
 
         //Debug.Log("레이케스트 시작");
-        if (Physics.Raycast(ray, out RaycastHit hit, _data.RayDistance /*groundMask*/))
+        if (Physics.Raycast(ray, out RaycastHit hit, _data.RayDistance ))
         {
             Debug.DrawRay(_rayPoint.transform.position, Vector3.down * 0.3f, Color.yellow, 1f);
 
@@ -56,6 +71,7 @@ public class CondStoneCanMove : PlayerCondition
                 _data.Animator.SetBool("Flying", false);
 
                 _data.IsGrounded = true;
+                _isJumping = false;
 
                 _rb.velocity = Vector3.zero;
                 _parentObj.transform.position = new Vector3(_parentObj.transform.position.x, _parentObj.transform.position.y,0);

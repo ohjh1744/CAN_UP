@@ -50,9 +50,18 @@ public class PlayerController : MonoBehaviour
     // 간선들
     [SerializeField] private EdgeData[] _edgeDatas;
 
-
     //노드 저장하는 공간
     private Dictionary<string, BTNode> _nodes = new Dictionary<string, BTNode>();
+
+    private void OnEnable()
+    {
+        _playerData.OnJumpCount += CheckJumpTime;
+    }
+
+    private void OnDisable()
+    {
+        _playerData.OnJumpCount -= CheckJumpTime;
+    }
 
     void Start()
     {
@@ -63,7 +72,6 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         _root.Evaluate();
-        CheckJumpTime();
         CheckFallTime();
     }
 
@@ -146,6 +154,9 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    // 지금 나은 방법이 PlayerData쪽에서 isjUmp int형으로 하나만든다으메
+    // 각 캐릭터에서 JUmp할때 isjump++를 따로 else 처리 x.
+    // 카운트가 늘때마다  이쪽함수에서 datamanager.instance.savedata.gamedata.jumptime++;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -202,29 +213,10 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+
     void CheckJumpTime() //점프 횟수
     {
-        Debug.Log(DataManager.Instance.SaveData.GameData.JumpTime);
-        //Base 캐릭터
-        if (Input.GetKeyDown(KeyCode.Space) && _playerData.IsGrounded == true && DataManager.Instance.SaveData.GameData.CharacterNum == (int)ECharacterNum.Base)
-        {
-            DataManager.Instance.SaveData.GameData.JumpTime++;
-            Debug.Log(DataManager.Instance.SaveData.GameData.JumpTime);
-        }
-
-        //Stone 캐릭터
-        else if (_playerData.IsGrounded == false && DataManager.Instance.SaveData.GameData.CharacterNum == (int)ECharacterNum.Stone)
-        {
-            DataManager.Instance.SaveData.GameData.JumpTime++;
-            Debug.Log(DataManager.Instance.SaveData.GameData.JumpTime);
-        }
-
-        //Jump 캐릭터
-        else if (_playerData.IsGrounded == false && DataManager.Instance.SaveData.GameData.CharacterNum == (int)ECharacterNum.Jump)
-        {
-            DataManager.Instance.SaveData.GameData.JumpTime++;
-            Debug.Log(DataManager.Instance.SaveData.GameData.JumpTime);
-        }
+        DataManager.Instance.SaveData.GameData.JumpTime++;
     }
 
 
