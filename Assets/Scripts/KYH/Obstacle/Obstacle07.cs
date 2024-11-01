@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Obstacle07 : MonoBehaviour, IResetObject
+public class Obstacle07 : MonoBehaviour, IResetObject, IObjectPosition
 {
     [SerializeField] private int _stageNum;
     public int StageNum { get; set; }
@@ -14,6 +14,21 @@ public class Obstacle07 : MonoBehaviour, IResetObject
     [SerializeField] Transform _stopPos;
 
     [SerializeField] Rigidbody _rigid;
+
+    // 이름 설정
+    [SerializeField] string _name;
+
+    public string Name
+    {
+        get { return _name; }
+        set { _name = value; }
+    }
+
+    public Vector3 Position
+    {
+        get { return transform.position; }
+        set { transform.position = value; }
+    }
 
     private void Start()
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Obstacle01 : MonoBehaviour
+public class Obstacle01 : MonoBehaviour, IObjectPosition
 {
     // BaseCharacter의 데이터
     [SerializeField] BaseData _baseData;
@@ -19,6 +19,21 @@ public class Obstacle01 : MonoBehaviour
 
     // 아이템이 튕기는 수치
     [SerializeField] private float _itemJumpPower;
+
+    // 이름 설정
+    [SerializeField] string _name;
+
+    public string Name
+    {
+        get { return _name; }
+        set { _name = value; }
+    }
+
+    public Vector3 Position
+    {
+        get { return transform.position; }
+        set { transform.position = value; }
+    }
 
     // 캐릭터의 점프 수치 증가 함수
     public void ForcedJump(PlayerController player)

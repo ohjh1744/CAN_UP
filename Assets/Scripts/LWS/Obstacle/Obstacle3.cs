@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Obstacle3 : MonoBehaviour
+public class Obstacle3 : MonoBehaviour, IObjectPosition
 {
     [Header("폭발 설정")]
 
@@ -17,11 +17,26 @@ public class Obstacle3 : MonoBehaviour
     [SerializeField] bool _isTriggered = false;
     [SerializeField] float _explosionTimer;
 
+    // 이름 설정
+    [SerializeField] string _name;
+    
+
+    public string Name
+    {
+        get { return _name; }
+        set { _name = value; }
+    }
+
+    public Vector3 Position
+    {
+        get { return transform.position; }
+        set { transform.position = value; }
+    }
+
     private void Start()
     {
         _explosionTimer = _explosionDelay;
     }
-
     public void Count(PlayerController player)
     {
         if (!_isTriggered)

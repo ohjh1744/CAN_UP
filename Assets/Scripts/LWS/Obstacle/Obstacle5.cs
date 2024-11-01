@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Obstacle5 : MonoBehaviour
+public class Obstacle5 : MonoBehaviour, IObjectPosition
 {
     // 발사 할 프리팹
     [SerializeField] GameObject _obstaclePrefab;
@@ -16,6 +16,22 @@ public class Obstacle5 : MonoBehaviour
 
     // 발사 속도
     [SerializeField] private float _launchSpeed;
+
+    // 이름 설정
+    [SerializeField] string _name;
+
+
+    public string Name
+    {
+        get { return _name; }
+        set { _name = value; }
+    }
+
+    public Vector3 Position
+    {
+        get { return transform.position; }
+        set { transform.position = value; }
+    }
 
     private void Start()
     {

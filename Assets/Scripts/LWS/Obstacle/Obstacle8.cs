@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Obstacle8 : MonoBehaviour
+public class Obstacle8 : MonoBehaviour, IObjectPosition
 {    // 내려오는 속도
     [SerializeField] private float _fallSpeed;
 
@@ -23,6 +23,22 @@ public class Obstacle8 : MonoBehaviour
     [SerializeField] private bool _isFalling;
     [SerializeField] private bool _isReturning;
     [SerializeField] private float _stayTimer;
+
+    // 이름 설정
+    [SerializeField] string _name;
+
+
+    public string Name
+    {
+        get { return _name; }
+        set { _name = value; }
+    }
+
+    public Vector3 Position
+    {
+        get { return transform.position; }
+        set { transform.position = value; }
+    }
 
     private void Start()
     {
