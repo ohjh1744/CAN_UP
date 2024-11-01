@@ -861,6 +861,7 @@ MonoBehaviour:
   _startPos: {fileID: 383942625}
   _endPos: {fileID: 1905875909}
   _rigid: {fileID: 825236609}
+  _name: 
 --- !u!114 &825236608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1163,6 +1164,8 @@ MonoBehaviour:
   _currentSaveStage: 0
   _item: {fileID: 0}
   _players: []
+  _resetObjects: []
+  _replaceObstacles: []
   _brain: {fileID: 0}
   _escPanel: {fileID: 0}
   _sceneChanger: {fileID: 0}
@@ -1360,6 +1363,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _moveSpeed: 5
   _rigid: {fileID: 0}
+  _name: 
 --- !u!114 &1394518551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1594,6 +1598,7 @@ MonoBehaviour:
   _itemData: {fileID: 0}
   _isIncrease: 0
   _itemJumpPower: 0
+  _name: 
 --- !u!114 &1430024359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2133,6 +2138,7 @@ MonoBehaviour:
   _moveSpeed: 5
   _stopPos: {fileID: 1510861621}
   _rigid: {fileID: 1853075860}
+  _name: 
 --- !u!114 &1853075855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2314,6 +2320,7 @@ MonoBehaviour:
   _isRotate: 0
   _rotatePos: {fileID: 1891649052}
   _rigid: {fileID: 1880813341}
+  _name: 
 --- !u!114 &1880813336
 MonoBehaviour:
   m_ObjectHideFlags: 0
