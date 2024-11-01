@@ -5,7 +5,7 @@ using UnityEngine;
 public class ActStoneMove : PlayerAction
 {
     [SerializeField] StoneData _data;
-
+    [SerializeField] GameObject _playerForcePos;
 
     public override BTNodeState DoAction()
     {
@@ -18,10 +18,10 @@ public class ActStoneMove : PlayerAction
     private void ApplyForceToPlayer()
     {
         // 선택된 플레이어가 없으면 return
-        if (_data.SelectedPlayer == null) return;
+        //if (_data.SelectedPlayer == null) return;
 
-        Vector3 releasePosition = _data.MainCamera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, _data.MainCamera.WorldToScreenPoint(_data.SelectedPlayer.transform.position).z));
-        releasePosition.z = _data.SelectedPlayer.transform.position.z;
+        Vector3 releasePosition = _data.MainCamera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, _data.MainCamera.WorldToScreenPoint(transform.position /*_data.SelectedPlayer.transform.position*/).z));
+        releasePosition.z = transform.position.z; /*_data.SelectedPlayer.transform.position.z;*/
 
         // 방향 벡터
         float dragDistance = Vector3.Distance(_data.DragStartPoint, releasePosition);
@@ -49,16 +49,16 @@ public class ActStoneMove : PlayerAction
         // 캐릭터의 위치와 마우스커서 위치의 거리를 float값으로 저장
         float forceMagnitude = dragDistance * _data.JumpPower;
 
-        Rigidbody rb = _data.SelectedPlayer.GetComponent<Rigidbody>();
+        Rigidbody rb = gameObject.GetComponent<Rigidbody>(); /*_data.SelectedPlayer.GetComponent<Rigidbody>();*/
         if (rb != null)
         {
             // 힘을 가해주는 위치 설정
-            rb.AddForceAtPosition(forceDirection * forceMagnitude, _data.SelectedPlayer.transform.position, ForceMode.Impulse);
+            rb.AddForceAtPosition(forceDirection * forceMagnitude, _playerForcePos.transform.position /* _data.SelectedPlayer.transform.position*/, ForceMode.Impulse);
 
             //_data.Flying = true;
             StartCoroutine(Delay());
         }
-        _data.SelectedPlayer = null;
+        //_data.SelectedPlayer = null;
     }
 
     private IEnumerator Delay()
