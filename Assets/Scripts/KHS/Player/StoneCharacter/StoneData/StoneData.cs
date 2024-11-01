@@ -27,11 +27,6 @@ public class StoneData : PlayerData
 
     public LineRenderer LineRenderer { get { return _lineRenderer; } set { _lineRenderer = value; } }
 
-    // 선택된 플레이어
-    [SerializeField] GameObject _selectedPlayer;
-
-    public GameObject SelectedPlayer { get { return _selectedPlayer; } set { _selectedPlayer = value; } }
-
     // 현재 드래그를 진행중인지
     [SerializeField] bool _isDragging = false;
 

@@ -8,6 +8,8 @@ public class Platform : MonoBehaviour , IObjectPosition
 
     [SerializeField] bool _isSavePlatform;
 
+    [SerializeField] bool _isClearPlatform;
+
     [SerializeField] string _name;
 
     public string Name { get { return _name; } set { _name = value; } }
@@ -22,6 +24,11 @@ public class Platform : MonoBehaviour , IObjectPosition
             if (_isSavePlatform == true)
             {
                 UpdateSavePoint(_stage);
+            }
+
+            if(_isClearPlatform == true)
+            {
+                DataManager.Instance.SaveData.GameData.IsClear = true;           
             }
         }
     }
