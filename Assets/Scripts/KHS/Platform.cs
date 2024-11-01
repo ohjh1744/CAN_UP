@@ -1,10 +1,15 @@
 using UnityEngine;
 
-public class Platform : MonoBehaviour
+public class Platform : MonoBehaviour , IObjectPosition
 {
     [SerializeField] GameSceneManager _gameSceneManager;
     [SerializeField] EStage _stage;
     [SerializeField] bool _isSavePlatform;
+
+    [SerializeField] string _name;
+
+    public string Name { get { return _name; } set { _name = value; } }
+    public Vector3 Position { get { return transform.position; } set { transform.position = value; } }
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -20,41 +25,41 @@ public class Platform : MonoBehaviour
     }
 
     // 세이브 포인트 지점 설정
-    //private void UpdateSavePoint(EStage stage)
-    //{
-    //    switch (stage)
-    //    {
-    //        // 1번째 세이브지점
-    //        case EStage.First:
-    //            _gameSceneManager._savePoints[1] = transform.position;
-    //            _gameSceneManager._currentSaveStage = 1;
-    //            break;
+    private void UpdateSavePoint(EStage stage)
+    {
+        switch (stage)
+        {
+            // 1번째 세이브지점
+            case EStage.First:
+                _gameSceneManager.SavePoints[1] = transform.position;
+                _gameSceneManager.CurrentSaveStage = 1;
+                break;
 
-    //        // 2번째 세이브지점
-    //        case EStage.Second:
-    //            _gameSceneManager._savePoints[2] = transform.position;
-    //            _gameSceneManager._currentSaveStage = 2;
-    //            break;
+            // 2번째 세이브지점
+            case EStage.Second:
+                _gameSceneManager.SavePoints[2] = transform.position;
+                _gameSceneManager.CurrentSaveStage = 2;
+                break;
 
-    //        // 3번째 세이브지점
-    //        case EStage.Third:
-    //            _gameSceneManager._savePoints[3] = transform.position;
-    //            _gameSceneManager._currentSaveStage = 3;
-    //            break;
+            // 3번째 세이브지점
+            case EStage.Third:
+                _gameSceneManager.SavePoints[3] = transform.position;
+                _gameSceneManager.CurrentSaveStage = 3;
+                break;
 
-    //        // 4번째 세이브지점
-    //        case EStage.Fourth:
-    //            _gameSceneManager._savePoints[4] = transform.position;
-    //            _gameSceneManager._currentSaveStage = 4;
-    //            break;
+            // 4번째 세이브지점
+            case EStage.Fourth:
+                _gameSceneManager.SavePoints[4] = transform.position;
+                _gameSceneManager.CurrentSaveStage = 4;
+                break;
 
-    //        // 5번째 세이브지점
-    //        case EStage.Fifth:
-    //            _gameSceneManager._savePoints[5] = transform.position;
-    //            _gameSceneManager._currentSaveStage = 5;
-    //            break;
-    //    }
+            // 5번째 세이브지점
+            case EStage.Fifth:
+                _gameSceneManager.SavePoints[5] = transform.position;
+                _gameSceneManager.CurrentSaveStage = 5;
+                break;
+        }
 
-    //}
+    }
 
 }
