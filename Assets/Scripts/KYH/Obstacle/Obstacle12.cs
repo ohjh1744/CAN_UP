@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Obstacle12 : MonoBehaviour
+public class Obstacle12 : MonoBehaviour, IObjectPosition
 {
     // 발판이 움직이는 속도
     [SerializeField] private float _moveSpeed;
@@ -18,6 +18,21 @@ public class Obstacle12 : MonoBehaviour
 
     // 발판 움직임 구현 코루틴 변수
     private Coroutine _upRoutine;
+
+    // 이름 설정
+    [SerializeField] string _name;
+
+    public string Name
+    {
+        get { return _name; }
+        set { _name = value; }
+    }
+
+    public Vector3 Position
+    {
+        get { return transform.position; }
+        set { transform.position = value; }
+    }
 
     //OnCollisionEnter하면
     public void PlatformDown(PlayerController player)

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Obstacle13 : MonoBehaviour, IResetObject
+public class Obstacle13 : MonoBehaviour, IResetObject, IObjectPosition
 {
     // Reset 시 시작 각도 저장용 변수
     private Quaternion _startRot;
@@ -24,6 +24,22 @@ public class Obstacle13 : MonoBehaviour, IResetObject
     [SerializeField] private Rigidbody _rigid;
 
     private Coroutine _rotateRoutine;
+
+    // 이름 설정
+    [SerializeField] string _name;
+
+
+    public string Name
+    {
+        get { return _name; }
+        set { _name = value; }
+    }
+
+    public Vector3 Position
+    {
+        get { return transform.position; }
+        set { transform.position = value; }
+    }
 
     private void Start()
     {

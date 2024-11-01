@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Obstacle9 : MonoBehaviour, IReplaceObstacle
+public class Obstacle9 : MonoBehaviour, IReplaceObstacle, IObjectPosition
 {
     // 올라탔을 때 기믹이 발동할 (이 스크립트를 적용할) 트리거발판을 1번. 도망갈 발판을 2번이라고 부르겠음.
     // 콩콩이 캐릭터가 trigger enter와 exit을 판단할 수 있게 하기 위해, isTrigger인 콜라이더 적용 필요 (콩콩이의 점프높이보다 높아야함)
@@ -15,7 +15,22 @@ public class Obstacle9 : MonoBehaviour, IReplaceObstacle
     [SerializeField] private float _moveSpeed;
 
     [SerializeField] GameObject _replaceObject;
-    
+
+    // 이름 설정
+    [SerializeField] string _name;
+
+    public string Name
+    {
+        get { return _name; }
+        set { _name = value; }
+    }
+
+    public Vector3 Position
+    {
+        get { return transform.position; }
+        set { transform.position = value; }
+    }
+
     public void Runaway(PlayerController player)
     {
         float horizontalInput = Input.GetAxis("Horizontal");

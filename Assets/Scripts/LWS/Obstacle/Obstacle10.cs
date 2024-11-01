@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Obstacle10 : MonoBehaviour
+public class Obstacle10 : MonoBehaviour, IObjectPosition
 {
     // reset()에 사용하기 위해 원래 위치 저장 변수
     [SerializeField] Vector3 _startPos;
@@ -11,6 +11,22 @@ public class Obstacle10 : MonoBehaviour
     [SerializeField] bool _isPlatformDestroyed;
 
     [SerializeField] float _respawnDelay;
+
+    // 이름 설정
+    [SerializeField] string _name;
+
+
+    public string Name
+    {
+        get { return _name; }
+        set { _name = value; }
+    }
+
+    public Vector3 Position
+    {
+        get { return transform.position; }
+        set { transform.position = value; }
+    }
 
     private void Start()
     {

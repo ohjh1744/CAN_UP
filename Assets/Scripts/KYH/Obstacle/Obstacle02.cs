@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Obstacle02 : MonoBehaviour
+public class Obstacle02 : MonoBehaviour, IObjectPosition
 {
     // 플레이어 및 아이템이 밀려나는 속도
     [SerializeField] private float _moveSpeed;
@@ -12,6 +12,21 @@ public class Obstacle02 : MonoBehaviour
 
     // 레일 발판 기능 코루틴 변수(플레이어용)
     private Coroutine _railRoutine;
+
+    // 이름 설정
+    [SerializeField] string _name;
+
+    public string Name
+    {
+        get { return _name; }
+        set { _name = value; }
+    }
+
+    public Vector3 Position
+    {
+        get { return transform.position; }
+        set { transform.position = value; }
+    }
 
     // 레일 발판 기능 함수(플레이어)
     public void RailObstacle(PlayerController player)
