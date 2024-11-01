@@ -19,8 +19,6 @@ public class ActBasePickItem : PlayerAction
         if (Input.GetKeyDown(KeyCode.Mouse0) && distance <= _data.PickUpRange) //캐릭터와 아이템이 가까울 때 좌클릭 입력 시
         {
             pickRoutine = StartCoroutine(PickRoutine());
-            _data.HasItem = true;
-
             return BTNodeState.Success;
         }
         else
@@ -41,5 +39,8 @@ public class ActBasePickItem : PlayerAction
         _item.transform.SetParent(_handPosition);
         _item.transform.localPosition = Vector3.zero;
         pickRoutine = null;
+
+        yield return dealy;
+        _data.HasItem = true;
     }
 }

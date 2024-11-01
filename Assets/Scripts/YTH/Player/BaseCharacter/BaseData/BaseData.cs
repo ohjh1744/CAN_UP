@@ -35,4 +35,8 @@ public class BaseData : PlayerData
 
     public float PickUpRange { get { return _pickUpRange; ; } set { _pickUpRange = value; } }
 
+    [SerializeField] private bool _isReadyToThrow;
+
+    public bool IsReadyToThrow { get { return _isReadyToThrow; } set { _isReadyToThrow = value; } }
+
 }
