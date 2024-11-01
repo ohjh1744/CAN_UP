@@ -1,4 +1,5 @@
 using Cinemachine;
+using System;
 using System.Text;
 using TMPro;
 using UnityEngine;
@@ -41,12 +42,12 @@ public class GameSceneManager : UIBInder
     public GameObject[] Players { get { return _players; } set { _players = value; } }
 
     // 리셋 기믹들
-    [SerializeField] private IResetObject[] _resetObjects;
-    public IResetObject[] ResetObjects { get { return _resetObjects; } set { _resetObjects = value; } }
+    [SerializeField] private GameObject[] _resetObjects;
+    public GameObject[] ResetObjects { get { return _resetObjects; } set { _resetObjects = value; } }
 
     // 대체 기믹들
-    [SerializeField] private IReplaceObstacle[] _replaceObstacles;
-    public IReplaceObstacle[] ReplaceObstacles { get { return _replaceObstacles; } set { _replaceObstacles = value; } }
+    [SerializeField] private GameObject[] _replaceObstacles;
+    public GameObject[] ReplaceObstacles { get { return _replaceObstacles; } set { _replaceObstacles = value; } }
 
     // 시네머신 브레인 이벤트 함수에 활용할 시네머신 브레인
     [SerializeField] private CinemachineBrain _brain;
@@ -61,6 +62,8 @@ public class GameSceneManager : UIBInder
     [SerializeField] private SceneChanger _sceneChanger;
 
     public SceneChanger SceneChanger { get { return _sceneChanger; } set { _sceneChanger = value; } }
+
+    private float _curPlayTime;
 
     private void Awake()
     {
@@ -89,6 +92,9 @@ public class GameSceneManager : UIBInder
         AddEvent("MainButton", EventType.Click, GiveUpGame);
 
         SetGame(DataManager.Instance);
+
+        UpdateJumpTime();
+        UpdateFallTime();
     }
 
 
@@ -102,9 +108,11 @@ public class GameSceneManager : UIBInder
         }
 
         CheckState(DataManager.Instance);
+
+        CheckPlayTime();
     }
 
-   
+
 
     private void SetGame(DataManager dataManager)
     {
@@ -138,12 +146,12 @@ public class GameSceneManager : UIBInder
         _currentPlayerPos = _players[dataManager.SaveData.GameData.CharacterNum].transform.position;
 
         // 1. currentStage 갱신
-        for (int i = 0; i < (int)EStage.Length; i++)
+        for (int i = 1; i < (int)EStage.Length; i++)
         {
             if (_stageHight[i] <= _players[dataManager.SaveData.GameData.CharacterNum].transform.position.y &&
                 _players[dataManager.SaveData.GameData.CharacterNum].transform.position.y < _stageHight[i + 1])
             {
-                _currentStage = i + 1;
+                _currentStage = i;
                 break;
             }
         }
@@ -179,7 +187,8 @@ public class GameSceneManager : UIBInder
         DataManager.Instance.SaveData.GameData.PlayerStage = _currentStage;
         DataManager.Instance.SaveData.GameData.HasItem = false;
         DataManager.Instance.SaveData.GameData.ItemStage = _currentStage;
-        //DataManager.Instance.SaveData.GameData.PlayTime;
+        DataManager.Instance.SaveData.GameData.PlayTime = _curPlayTime;
+        DataManager.Instance.Save();
         Application.Quit();
     }
 
@@ -198,9 +207,10 @@ public class GameSceneManager : UIBInder
         {
             for (int i = 0; i < _resetObjects.Length; i++)
             {
-                foreach (IResetObject j in _resetObjects)
+                foreach (GameObject j in _resetObjects)
                 {
-                    j.Reset();
+                    IResetObject resetObject = j.GetComponent<IResetObject>();
+                    resetObject.Reset();
                 }
             }
         }
@@ -213,9 +223,10 @@ public class GameSceneManager : UIBInder
         {
             for (int i = 0; i < _replaceObstacles.Length; i++)
             {
-                foreach (IReplaceObstacle j in _replaceObstacles)
+                foreach (GameObject j in _replaceObstacles)
                 {
-                    j.Replace();
+                    IReplaceObstacle replaceObstacle = j.GetComponent<IReplaceObstacle>();
+                    replaceObstacle.Replace();
                 }
             }
         }
@@ -236,7 +247,15 @@ public class GameSceneManager : UIBInder
     private void UpdatePlayTime()
     {
         _sb.Clear();
-        _sb.Append(DataManager.Instance.SaveData.GameData.PlayTime);
+        TimeSpan timeSpan = TimeSpan.FromSeconds(_curPlayTime);
+        string formattedTime = string.Format("{0:D2}:{1:D2}:{2:D2}", (int)timeSpan.TotalHours, timeSpan.Minutes, timeSpan.Seconds);
+        _sb.Append(formattedTime);
         GetUI<TextMeshProUGUI>("PlayTime").SetText(_sb);
+    }
+
+    void CheckPlayTime()
+    {
+        _curPlayTime += Time.deltaTime;
+        DataManager.Instance.SaveData.GameData.PlayTime = _curPlayTime;
     }
 }
