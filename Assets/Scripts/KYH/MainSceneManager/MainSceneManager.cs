@@ -30,24 +30,33 @@ public class MainSceneManager : UIBInder
     {
         //GetUI<Image>("CharacterText").gameObject.SetActive(false);
 
+        // 새로 플레이 버튼 클릭 이벤트
         AddEvent("NewPlay Button", EventType.Click, NewGameStart);
 
+        // 저장 플레이 버튼 클릭 이벤트
         AddEvent("LoadPlay Button", EventType.Click, LastGameStart);
 
+        // 캐릭터 선택(오른쪽) 버튼 클릭 이벤트
         AddEvent("Character_Right", EventType.Click, NextCharacter);
 
+        // 캐릭터 선택(왼쪽) 버튼 클릭 이벤트
         AddEvent("Character_Left", EventType.Click, PreviousCharacter);
 
+        // 조작법 설명 버튼 클릭 이벤트
         AddEvent("Explain Button", EventType.Click, ShowHowToPlay);
 
+        // 나가기 버튼 클릭 이벤트
         AddEvent("Exit Button", EventType.Click, QuitGame);
     }
 
     private void Update()
     {
+        // 조작법 설명 이미지가 활성화 되어있는 상태에서 ESC 키를 입력했을 경우
         if (_isImageActive = true && Input.GetKeyDown(KeyCode.Escape))
         {
+            // 조작법 설명 이미지 오브젝트 비활성화
             GetUI<Image>("ExplainImage").gameObject.SetActive(false);
+            // 이미지 활성화 체크 여부 false로 변경
             _isImageActive = false;
         }
     }
@@ -89,12 +98,12 @@ public class MainSceneManager : UIBInder
                 Debug.Log("Base");
                 GetUI<TextMeshProUGUI>("CharacterText").text = "Base";
                 break;
-        
+
             case ECharacterNum.Stone:
                 Debug.Log("Stone");
                 GetUI<TextMeshProUGUI>("CharacterText").text = "Stone";
                 break;
-        
+
             case ECharacterNum.Jump:
                 Debug.Log("Jump");
                 GetUI<TextMeshProUGUI>("CharacterText").text = "Jump";
