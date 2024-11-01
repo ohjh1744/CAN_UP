@@ -8,7 +8,7 @@ using UnityEngine.UIElements;
 public class CsvParser : MonoBehaviour
 {
 
-    [SerializeField] private IObjectPosition[] _objectPositions;
+    [SerializeField] private GameObject[] _gameObjects;
 
     //임시용
     //private Vector3[] _positions = { new Vector3(1, 1, 0), new Vector3(1, 1, 2) };
@@ -28,26 +28,27 @@ public class CsvParser : MonoBehaviour
     [ContextMenu("Save")]
     private void CreateCsv()
     {
-        
         //csv형식으로 stringbuilder에 저장.
-        for(int i = 0; i < _objectPositions.Length; i++)
+        for (int i = 0; i < _gameObjects.Length; i++)
         {
+            IObjectPosition _obejctPosition = _gameObjects[i].GetComponent<IObjectPosition>();
+
             StringBuilder _tempSb = new StringBuilder();
 
-            _tempSb.Append(_objectPositions[i].Name);
+            _tempSb.Append(_obejctPosition.Name);
             _tempSb.Append(",");
-            _tempSb.Append(_objectPositions[i].Position.x);
+            _tempSb.Append(_obejctPosition.Position.x);
             _tempSb.Append(",");
-            _tempSb.Append(_objectPositions[i].Position.y);
+            _tempSb.Append(_obejctPosition.Position.y);
             _tempSb.Append(",");
-            _tempSb.Append(_objectPositions[i].Position.z);
+            _tempSb.Append(_obejctPosition.Position.z);
             _tempSb.Append("\n");
 
             _sb.Append(_tempSb);
         }
 
         // 저장경로가 존재하지않다면 생성. 있다면 기존꺼 사용.
-        if(Directory.Exists(_savePath) == false)
+        if (Directory.Exists(_savePath) == false)
         {
             Directory.CreateDirectory(_savePath);
         }
