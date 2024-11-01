@@ -9,6 +9,8 @@ public class ActBaseJump : PlayerAction
     [SerializeField] Animator _animator;
 
     [SerializeField] float _startJumpPositionY = 0.3f;
+
+    [SerializeField] float _jumpPowerRate;
     public override BTNodeState DoAction()
     {
         Vector3 _jumpDirectionR = new Vector3(1, 2, 0).normalized;
@@ -39,7 +41,7 @@ public class ActBaseJump : PlayerAction
         if (Input.GetKey(KeyCode.Space))// space 누르고 있는 상태
         {
 
-            _data.JumpPower += Time.deltaTime * 6f;
+            _data.JumpPower += Time.deltaTime * _jumpPowerRate;
             //회전 적용
             if (Input.GetKey(KeyCode.A))
             {
