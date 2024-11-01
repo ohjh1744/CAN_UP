@@ -64,6 +64,10 @@ public class GameSceneManager : UIBInder
 
     public GameObject EscPanel { get { return _escPanel; } set { _escPanel = value; } }
 
+    [SerializeField] private GameObject _clearPanel;
+
+    public GameObject ClearPanel { get { return _clearPanel; } private set { } }
+
     // 씬체인저
     [SerializeField] private SceneChanger _sceneChanger;
 
@@ -95,7 +99,8 @@ public class GameSceneManager : UIBInder
     {
         AddEvent("ResumeButton", EventType.Click, ResumeGame);
         AddEvent("SaveExitButton", EventType.Click, SaveAndQuitGame);
-        AddEvent("MainButton", EventType.Click, GiveUpGame);
+        AddEvent("GiveUpButton", EventType.Click, GoToMain);
+        AddEvent("MainButton", EventType.Click, GoToMain);
 
         SetGame();
 
@@ -107,6 +112,14 @@ public class GameSceneManager : UIBInder
 
     private void Update()
     {
+
+        //만약에 마지막 최종 플랫폼을 밟아 isClear를 켜진다면 clear Panel 켜지면서 time stop.
+        if (DataManager.Instance.SaveData.GameData.IsClear == true)
+        {
+            Time.timeScale = 0f;
+            ClearPanel.SetActive(true);
+        }
+
         if (Input.GetKeyUp(KeyCode.Escape))
         {
             Time.timeScale = 0;
@@ -211,10 +224,9 @@ public class GameSceneManager : UIBInder
         Application.Quit();
     }
 
-    private void GiveUpGame(PointerEventData eventData)
+    private void GoToMain(PointerEventData eventData)
     {
         _sceneChanger.ChangeScene("MainScene");
-        _escPanel.SetActive(false);
     }
 
     // 시네머신 브레인 이벤트 함수 실행해서 카메라가 변경될 때 마다 Reset()
@@ -251,17 +263,25 @@ public class GameSceneManager : UIBInder
         }
     }
 
+    private void ClearStage()
+    {
+        DataManager.Instance.ResetData();
+        _sceneChanger.ChangeScene("MainScene");
+    }
+
     private void UpdateJumpTime()
     {
         _sb.Clear();
         _sb.Append(DataManager.Instance.SaveData.GameData.JumpTime);
         GetUI<TextMeshProUGUI>("JumpTime").SetText(_sb);
+        GetUI<TextMeshProUGUI>("JumpTime2").SetText(_sb);
     }
     private void UpdateFallTime()
     {
         _sb.Clear();
         _sb.Append(DataManager.Instance.SaveData.GameData.FallTime);
         GetUI<TextMeshProUGUI>("FallTime").SetText(_sb);
+        GetUI<TextMeshProUGUI>("FallTime2").SetText(_sb);
     }
     private void UpdatePlayTime()
     {
@@ -270,6 +290,7 @@ public class GameSceneManager : UIBInder
         string formattedTime = string.Format("{0:D2}:{1:D2}:{2:D2}", (int)timeSpan.TotalHours, timeSpan.Minutes, timeSpan.Seconds);
         _sb.Append(formattedTime);
         GetUI<TextMeshProUGUI>("PlayTime").SetText(_sb);
+        GetUI<TextMeshProUGUI>("PlayTime2").SetText(_sb);
     }
 
     void CheckPlayTime()
