@@ -8,6 +8,8 @@ public class JumperJump : PlayerAction
 
     [SerializeField] Rigidbody _rigidbody;
 
+    [SerializeField] GameObject _rayShooter;
+
     private bool _isJumping;
 
     private void Update()
@@ -34,16 +36,15 @@ public class JumperJump : PlayerAction
         Vector3 rayDirection = Vector3.down;
 
         // 레이캐스트 시각화 (씬 뷰에서 보임)
-        Debug.DrawRay(transform.position, rayDirection * 1.75f, Color.red);
+        Debug.DrawRay(_rayShooter.transform.position, rayDirection * 0.55f, Color.red);
 
         // 캐릭터 아래 방향으로 레이캐스트 발사
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, rayDirection, out hit, 1.75f))
+        if (Physics.Raycast( _rayShooter.transform.position, rayDirection, out hit, 0.55f))
         {
             // 레이캐스트가 태그가 맞는 오브젝트에 닿았는지 확인
             if (hit.collider.CompareTag("Ground") || hit.collider.CompareTag("ObstacleCol") || hit.collider.CompareTag("ObstacleTri"))
             {
-                Debug.Log("x");
                 _jumperData.IsGrounded = true;
             }
         }
