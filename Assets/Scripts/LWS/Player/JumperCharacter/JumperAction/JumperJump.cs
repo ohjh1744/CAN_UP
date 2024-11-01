@@ -37,6 +37,7 @@ public class JumperJump : PlayerAction
 
         // 레이캐스트 시각화 (씬 뷰에서 보임)
         Debug.DrawRay(_rayShooter.transform.position, rayDirection * 1.6f, Color.red);
+        Debug.Log("shootray");
 
         // 캐릭터 아래 방향으로 레이캐스트 발사
         RaycastHit hit;
