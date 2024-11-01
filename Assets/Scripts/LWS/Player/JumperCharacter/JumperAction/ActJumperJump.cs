@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class JumperJump : PlayerAction
+public class ActJumperJump : PlayerAction
 {
     [SerializeField] JumperData _jumperData;
 
