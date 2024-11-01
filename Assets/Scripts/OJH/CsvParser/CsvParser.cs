@@ -27,8 +27,11 @@ public class CsvParser : MonoBehaviour
     [ContextMenu("Save")]
     private void CreateCsv()
     {
+
+
+        _sb.Append("Name,x,y,z\n");
         //csv형식으로 stringbuilder에 저장.
-        for(int i = 0; i < _gameObjects.Length; i++)
+        for (int i = 0; i < _gameObjects.Length; i++)
         {
             IObjectPosition _obejctPosition = _gameObjects[i].GetComponent<IObjectPosition>();
 
@@ -47,7 +50,7 @@ public class CsvParser : MonoBehaviour
         }
 
         // 저장경로가 존재하지않다면 생성. 있다면 기존꺼 사용.
-        if(Directory.Exists(_savePath) == false)
+        if (Directory.Exists(_savePath) == false)
         {
             Directory.CreateDirectory(_savePath);
         }
