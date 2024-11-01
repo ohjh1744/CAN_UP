@@ -102,5 +102,6 @@ public class ActBaseJump : PlayerAction
         _data.IsGrounded = false;
         _animator.SetTrigger("Jump");
         _data.JumpPower = 0;
+        _data.JumpCount++;
     }
 }

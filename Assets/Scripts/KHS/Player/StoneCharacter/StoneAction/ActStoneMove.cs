@@ -66,5 +66,6 @@ public class ActStoneMove : PlayerAction
         yield return new WaitForSeconds(0.1f);
         _data.Animator.SetBool("Flying", true);
         _data.IsGrounded = false;
+
     }
 }

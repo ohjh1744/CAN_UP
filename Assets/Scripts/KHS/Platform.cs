@@ -3,7 +3,9 @@ using UnityEngine;
 public class Platform : MonoBehaviour , IObjectPosition
 {
     [SerializeField] GameSceneManager _gameSceneManager;
+
     [SerializeField] EStage _stage;
+
     [SerializeField] bool _isSavePlatform;
 
     [SerializeField] string _name;
@@ -19,7 +21,7 @@ public class Platform : MonoBehaviour , IObjectPosition
             // 세이브하는 플렛폼일 경우
             if (_isSavePlatform == true)
             {
-                //UpdateSavePoint(_stage);
+                UpdateSavePoint(_stage);
             }
         }
     }
@@ -31,31 +33,26 @@ public class Platform : MonoBehaviour , IObjectPosition
         {
             // 1번째 세이브지점
             case EStage.First:
-                _gameSceneManager.SavePoints[1] = transform.position;
                 _gameSceneManager.CurrentSaveStage = 1;
                 break;
 
             // 2번째 세이브지점
             case EStage.Second:
-                _gameSceneManager.SavePoints[2] = transform.position;
                 _gameSceneManager.CurrentSaveStage = 2;
                 break;
 
             // 3번째 세이브지점
             case EStage.Third:
-                _gameSceneManager.SavePoints[3] = transform.position;
                 _gameSceneManager.CurrentSaveStage = 3;
                 break;
 
             // 4번째 세이브지점
             case EStage.Fourth:
-                _gameSceneManager.SavePoints[4] = transform.position;
                 _gameSceneManager.CurrentSaveStage = 4;
                 break;
 
             // 5번째 세이브지점
             case EStage.Fifth:
-                _gameSceneManager.SavePoints[5] = transform.position;
                 _gameSceneManager.CurrentSaveStage = 5;
                 break;
         }
