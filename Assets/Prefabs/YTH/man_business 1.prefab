@@ -18062,7 +18062,7 @@ MonoBehaviour:
   - ParentName: Sequence3
     ChildNames:
     - CondBaseHasItem
-    - ActBaseThrow
+    - Select3
   - ParentName: Sequence4
     ChildNames:
     - CondBaseNoItem
@@ -18083,11 +18083,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d8f340a1862c904c873497ac731ae54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _jumpNum: 0
-  _fallNum: 0
   _jumpPower: 4
   _isGrounded: 0
   _isStiff: 0
+  _checkedFallTime: 0
   _moveSpeed: 6
   _maxJumpPower: 10
   _rate: 50

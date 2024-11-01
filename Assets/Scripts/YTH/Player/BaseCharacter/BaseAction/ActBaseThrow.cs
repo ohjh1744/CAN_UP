@@ -12,9 +12,10 @@ public class ActBaseThrow : PlayerAction
     [SerializeField] Transform throwPoint;
     public override BTNodeState DoAction()
     {
-        if (Input.GetKeyUp(KeyCode.Mouse0))
+        if (Input.GetKeyUp(KeyCode.Mouse0) && _data.IsReadyToThrow == true)
         {
             throwRoutine = StartCoroutine(ThrowRoutine());
+            _data.IsReadyToThrow = false;
             return BTNodeState.Success;
         }
         else
