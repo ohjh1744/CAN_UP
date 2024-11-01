@@ -4,6 +4,7 @@ public class ActStoneReadyMove : PlayerAction
 {
     [SerializeField] StoneData _data;
     //[SerializeField] StoneRagdoll _ragdoll;
+    [SerializeField] GameObject _playerForcePos;
 
     public override BTNodeState DoAction()
     {
@@ -41,13 +42,13 @@ public class ActStoneReadyMove : PlayerAction
             if(hit.collider.CompareTag("Stone"))
             {
                 // 감지된 오브젝트를 선언해둔 selectedPlayer에 저장
-                _data.SelectedPlayer = hit.collider.gameObject;
+                //_data.SelectedPlayer = hit.collider.gameObject;
 
                 // 현재 드래그중
                 _data.IsDragging = true;
 
                 // 드래그 시작 위치를 감지된 플레이어의 위치로 저장
-                _data.DragStartPoint = _data.SelectedPlayer.transform.position;
+                _data.DragStartPoint = _playerForcePos.transform.position; /*_data.SelectedPlayer.transform.position;*/
 
                 // 라인 렌더러는 활성화
                 _data.LineRenderer.enabled = true;
@@ -61,8 +62,8 @@ public class ActStoneReadyMove : PlayerAction
     void DrawLineToCursor()
     {
 
-        Vector3 mousePosition = _data.MainCamera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, _data.MainCamera.WorldToScreenPoint(_data.SelectedPlayer.transform.position).z));
-        mousePosition.z = _data.SelectedPlayer.transform.position.z;
+        Vector3 mousePosition = _data.MainCamera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, _data.MainCamera.WorldToScreenPoint(_playerForcePos.transform.position/*_data.SelectedPlayer.transform.position*/).z));
+        mousePosition.z = _playerForcePos.transform.position.z; /*_data.SelectedPlayer.transform.position.z;*/
 
         float dragDistance = Vector3.Distance(_data.DragStartPoint, mousePosition);
 

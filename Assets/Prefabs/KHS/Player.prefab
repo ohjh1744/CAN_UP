@@ -11564,6 +11564,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data: {fileID: 1418573038}
+  _playerForcePos: {fileID: 0}
 --- !u!114 &1418573036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11609,10 +11610,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36652fcf5f34a544795d39ed13d46f11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _jumpNum: 0
-  _fallNum: 0
   _jumpPower: 2
+  _isGrounded: 0
   _isStiff: 0
+  _checkedFallTime: 0
   _clickDownPos: {x: 0, y: 0, z: 0}
   _clickUpPos: {x: 0, y: 0, z: 0}
   _rayDistance: 1
