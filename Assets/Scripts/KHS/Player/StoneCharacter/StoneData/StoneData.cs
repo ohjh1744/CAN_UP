@@ -58,5 +58,8 @@ public class StoneData : PlayerData
 
     public bool StandAni { get { return _standAni; } set { _standAni = value; } }
 
+    [SerializeField] GameObject _selectedPlayer;
+    public GameObject SelectedPlayer { get { return _selectedPlayer; } set { _selectedPlayer = value; } }
+
 
 }

@@ -58,7 +58,7 @@ public class ActStoneMove : PlayerAction
             //_data.Flying = true;
             StartCoroutine(Delay());
         }
-        //_data.SelectedPlayer = null;
+        _data.SelectedPlayer = null;
     }
 
     private IEnumerator Delay()

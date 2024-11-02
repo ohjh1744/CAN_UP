@@ -20,7 +20,7 @@ public class ActStoneReadyMove : PlayerAction
             return BTNodeState.Running;
         }
         
-        else if(Input.GetMouseButtonUp(0)) 
+        else if(Input.GetMouseButtonUp(0) && _data.SelectedPlayer != null) 
         {
             _data.IsDragging = false;
             _data.LineRenderer.enabled = false;
@@ -42,7 +42,7 @@ public class ActStoneReadyMove : PlayerAction
             if(hit.collider.CompareTag("Stone"))
             {
                 // 감지된 오브젝트를 선언해둔 selectedPlayer에 저장
-                //_data.SelectedPlayer = hit.collider.gameObject;
+                _data.SelectedPlayer = hit.collider.gameObject;
 
                 // 현재 드래그중
                 _data.IsDragging = true;
@@ -52,6 +52,8 @@ public class ActStoneReadyMove : PlayerAction
 
                 // 라인 렌더러는 활성화
                 _data.LineRenderer.enabled = true;
+
+                Debug.Log("스톤 캐릭터 감지");
             }
             Debug.Log("Hit: " + hit.collider.name);
             // 필요한 경우 추가 처리 가능
