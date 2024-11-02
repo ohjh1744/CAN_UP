@@ -9,14 +9,16 @@ public class Obstacle07 : MonoBehaviour, IResetObject, IObjectPosition
 
     private Vector3 _startPos;
 
-    [SerializeField] float _moveSpeed;
+    [SerializeField] private float _moveSpeed;
 
-    [SerializeField] Transform _stopPos;
+    [SerializeField] private bool _isMove;
 
-    [SerializeField] Rigidbody _rigid;
+    [SerializeField] private Transform _stopPos;
+
+    [SerializeField] private Rigidbody _rigid;
 
     // 이름 설정
-    [SerializeField] string _name;
+    [SerializeField] private string _name;
 
     public string Name
     {
@@ -37,8 +39,22 @@ public class Obstacle07 : MonoBehaviour, IResetObject, IObjectPosition
 
     public void MovePlatform(PlayerController player)
     {
+        if (_isMove == true)
+            return;
+
         // 멈추는 위치에 빈 오브젝트 설치할 것
         transform.position = Vector3.Lerp(gameObject.transform.position, _stopPos.position, 2.0f);
+        _isMove = true;
+    }
+
+    public void MovePlatform(Item item)
+    {
+        if (_isMove == true)
+            return;
+
+        // 멈추는 위치에 빈 오브젝트 설치할 것
+        transform.position = Vector3.Lerp(gameObject.transform.position, _stopPos.position, 2.0f);
+        _isMove = true;
     }
 
     public void Reset()
