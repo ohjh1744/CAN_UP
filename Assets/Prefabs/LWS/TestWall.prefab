@@ -65,7 +65,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 4c869673364e0214192e15cc825585b3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -141,33 +141,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OnInteractColEnter:
+  OnInteractPlayerColEnter:
     m_PersistentCalls:
       m_Calls: []
-  OnInteractColStay:
+  OnInteractPlayerColStay:
     m_PersistentCalls:
       m_Calls: []
-  OnInteractColExit:
+  OnInteractPlayerColExit:
     m_PersistentCalls:
       m_Calls: []
-  OnInteractTriEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: -2297151525962458527}
-        m_TargetAssemblyTypeName: Obstacle5Bullet, Assembly-CSharp
-        m_MethodName: PushPlayer
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnInteractTriStay:
+  OnInteractPlayerTriEnter:
     m_PersistentCalls:
       m_Calls: []
-  OnInteractTriExit:
+  OnInteractPlayerTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriExit:
     m_PersistentCalls:
       m_Calls: []
