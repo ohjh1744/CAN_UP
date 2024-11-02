@@ -79,14 +79,14 @@ public class Obstacle01 : MonoBehaviour, IObjectPosition
         if (player.gameObject.tag == "Base")
         {
             _baseData = player.GetComponent<BaseData>();    // BaseCharacter의 데이터를 참조
-            _baseData.MaxJumpPower /= 2;                    // BaseCharacter의 최대 점프치를 1/2배 증가
+            _baseData.MaxJumpPower -= 2;                    // BaseCharacter의 최대 점프치를 1/2배 증가
             _isIncrease = false;                            // 점프 수치가 원상태로 되돌아왔다고 체크
         }
         // 플레이어가 나머지 캐릭터 중 하나인 경우
         else
         {
             _playerData = player.GetComponent<PlayerData>();    // 플레이어의 데이터를 참조
-            _playerData.JumpPower /= 2;                         // 플레이어의 최대 점프치를 1/2배 증가
+            _playerData.JumpPower -= 2;                         // 플레이어의 최대 점프치를 1/2배 증가
             _isIncrease = false;                                // 점프 수치가 원상태로 되돌아왔다고 체크
         }
     }
