@@ -14,6 +14,9 @@ public class Obstacle01 : MonoBehaviour, IObjectPosition
     // Item의 데이터
     [SerializeField] Item _itemData;
 
+    // 강화될 점프 수치
+    [SerializeField] float _jumpForce;
+
     // 점프 수치가 증가했는지 체크용
     [SerializeField] private bool _isIncrease;
 
@@ -46,14 +49,14 @@ public class Obstacle01 : MonoBehaviour, IObjectPosition
         if (player.gameObject.tag == "Base")
         {
             _baseData = player.GetComponent<BaseData>();    // BaseCharacter의 데이터를 참조
-            _baseData.MaxJumpPower *= 2;                    // BaseCharacter의 최대 점프치를 2배 증가
+            _baseData.MaxJumpPower += _jumpForce;                    // BaseCharacter의 최대 점프치를 2배 증가
             _isIncrease = true;                             // 점프 수치가 증가됐다고 체크
         }
         // 플레이어가 나머지 캐릭터 중 하나인 경우
         else
         {
             _playerData = player.GetComponent<PlayerData>();    // 플레이어의 데이터를 참조
-            _playerData.JumpPower *= 2;                         // 플레이어의 점프력을 2배 증가
+            _playerData.JumpPower += _jumpForce;                         // 플레이어의 점프력을 2배 증가
             _isIncrease = true;                                 // 점프 수치가 증가됐다고 체크
         }
     }
