@@ -250,7 +250,7 @@ public class GameSceneManager : UIBInder
     // 시작 캐릭터가 Base가 아닐 경우, Replace가 필요한 Obstacle들 대체 실행
     private void CheckReplaceObstacle()
     {
-        if (DataManager.Instance.SaveData.GameData.CharacterNum == 2 || DataManager.Instance.SaveData.GameData.CharacterNum == 3)
+        if (DataManager.Instance.SaveData.GameData.CharacterNum == (int)ECharacterNum.Stone)
         {
             for (int i = 0; i < _replaceObstacles.Length; i++)
             {
