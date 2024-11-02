@@ -84,6 +84,10 @@ public class CameraChange : MonoBehaviour
             // 현재 플레이어의 y좌표값이 스테이지 변경값 이하일 경우
             else if (_gameSceneManager.CurrentPlayerPos.y <= _gameSceneManager.StageHight[i + 1])
             {
+                if (i == 0)
+                {
+                    return;
+                }
                 // i - 1번째(이전 스테이지) 스카이박스 메터리얼로 스카이박스를 변경
                 RenderSettings.skybox = _skyMaterials[i - 1];
             }

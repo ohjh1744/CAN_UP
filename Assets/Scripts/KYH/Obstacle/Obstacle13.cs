@@ -11,6 +11,8 @@ public class Obstacle13 : MonoBehaviour, IResetObject, IObjectPosition
     [SerializeField] private int _stageNum;
     public int StageNum { get; set; }
 
+    [SerializeField] GameObject _gameObject;
+ 
     // 발판 회전 각도
     [SerializeField] private float _rotateAngle;
 
@@ -55,7 +57,7 @@ public class Obstacle13 : MonoBehaviour, IResetObject, IObjectPosition
             return;
 
         // _rotatePos를 회전축으로 _rotateAngle의 정도만큼 회전
-        gameObject.transform.RotateAround(_rotatePos.transform.position, Vector3.forward, _rotateAngle);
+        _gameObject.transform.RotateAround(_rotatePos.transform.position, Vector3.forward, _rotateAngle);
         _isRotate = true;   // 회전했다고 체크
 
     }
