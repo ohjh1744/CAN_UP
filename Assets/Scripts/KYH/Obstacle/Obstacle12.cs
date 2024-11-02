@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class Obstacle12 : MonoBehaviour, IObjectPosition
@@ -71,7 +70,6 @@ public class Obstacle12 : MonoBehaviour, IObjectPosition
             // 플랫폼의 y좌표값이 _startPos의 y좌표값 이상일 때
             if (gameObject.transform.position.y >= _startPos.position.y)
             {
-                Debug.Log("플랫폼의 y좌표값이 _startPos의 y좌표값 이상");
                 _rigid.velocity = Vector3.zero;     // 이동값을 0으로 설정
                 StopCoroutine(_upRoutine);          // 코루틴 정지
                 _upRoutine = null;                  // 코루틴 값을 null로 비우기
@@ -80,7 +78,6 @@ public class Obstacle12 : MonoBehaviour, IObjectPosition
             else
             {
                 // 원래 위치로 원상복귀
-                Debug.Log("플랫폼의 y좌표값이 _startPos의 y좌표값 이상 xxxxxxxxxx");
                 _rigid.velocity = Vector3.up * _moveSpeed;
             }
             
