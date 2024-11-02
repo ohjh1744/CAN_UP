@@ -7,12 +7,7 @@ using UnityEngine.UIElements;
 
 public class CsvParser : MonoBehaviour
 {
-
-    [SerializeField] private GameObject[] _gameObjects;
-
-    //임시용
-    //private Vector3[] _positions = { new Vector3(1, 1, 0), new Vector3(1, 1, 2) };
-    //private string[] _names = { "OBstacle1", "Obstacle2" };
+    [SerializeField] private GameObject _objects;
 
     private StringBuilder _sb = new StringBuilder();
 
@@ -28,22 +23,23 @@ public class CsvParser : MonoBehaviour
     private void CreateCsv()
     {
 
+        IObjectPosition[] objectPositions = _objects.GetComponentsInChildren<IObjectPosition>();
 
         _sb.Append("Name,x,y,z\n");
         //csv형식으로 stringbuilder에 저장.
-        for (int i = 0; i < _gameObjects.Length; i++)
+        for (int i = 0; i < objectPositions.Length; i++)
         {
-            IObjectPosition _obejctPosition = _gameObjects[i].GetComponent<IObjectPosition>();
+            IObjectPosition _objectPosition = objectPositions[i];
 
             StringBuilder _tempSb = new StringBuilder();
 
-            _tempSb.Append(_obejctPosition.Name);
+            _tempSb.Append(_objectPosition.Name);
             _tempSb.Append(",");
-            _tempSb.Append(_obejctPosition.Position.x);
+            _tempSb.Append(_objectPosition.Position.x);
             _tempSb.Append(",");
-            _tempSb.Append(_obejctPosition.Position.y);
+            _tempSb.Append(_objectPosition.Position.y);
             _tempSb.Append(",");
-            _tempSb.Append(_obejctPosition.Position.z);
+            _tempSb.Append(_objectPosition.Position.z);
             _tempSb.Append("\n");
 
             _sb.Append(_tempSb);
@@ -59,7 +55,6 @@ public class CsvParser : MonoBehaviour
 
         // WRite 작성.
         File.WriteAllText(_savePath + "/Save.csv", string.Join("\n", _sb));
-
 
     }
 
