@@ -16,6 +16,9 @@ public class Obstacle6 : MonoBehaviour, IResetObject, IObjectPosition
     // 벽의 목표 위치
     [SerializeField] private Vector3 _targetPosition;
 
+    // 목표 위치 설정용 빈 오브젝트
+    [SerializeField] private GameObject _targetPosObj;
+
     [SerializeField] private int _stageNum;
     public int StageNum { get; set; }
 
@@ -27,6 +30,7 @@ public class Obstacle6 : MonoBehaviour, IResetObject, IObjectPosition
     private void Awake()
     {
         _startPos = transform.position;
+        _targetPosition = _targetPosObj.transform.position;
         _isMoving = false;
     }
 

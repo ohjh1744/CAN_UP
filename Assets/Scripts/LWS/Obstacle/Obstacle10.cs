@@ -10,6 +10,11 @@ public class Obstacle10 : MonoBehaviour, IObjectPosition
     // 발판이 사라졌는지 여부 확인용 변수
     [SerializeField] bool _isPlatformDestroyed;
 
+    // 사라지는 시간
+    [SerializeField] float _disappearTime;
+
+
+    // 재생성 타이머
     [SerializeField] float _respawnDelay;
 
     // 이름 설정
@@ -38,14 +43,14 @@ public class Obstacle10 : MonoBehaviour, IObjectPosition
     {
         if (!_isPlatformDestroyed)
         {
-            Invoke(nameof(DestroyPlatform), 1f);
+            Invoke(nameof(DestroyPlatform), _disappearTime);
         }
     }
     public void Disappear(Item item)
     {
         if (!_isPlatformDestroyed)
         {
-            Invoke(nameof(DestroyPlatform), 1f);
+            Invoke(nameof(DestroyPlatform), _disappearTime);
         }
     }
 
