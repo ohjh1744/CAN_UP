@@ -9,6 +9,8 @@ public class Obstacle07 : MonoBehaviour, IResetObject, IObjectPosition
 
     private Vector3 _startPos;
 
+    [SerializeField] GameObject _gameObject;
+
     [SerializeField] private float _moveSpeed;
 
     [SerializeField] private bool _isMove;
@@ -34,7 +36,7 @@ public class Obstacle07 : MonoBehaviour, IResetObject, IObjectPosition
 
     private void Start()
     {
-        _startPos = transform.position;
+        _startPos = _gameObject.transform.position;
     }
 
     public void MovePlatform(PlayerController player)
@@ -43,7 +45,7 @@ public class Obstacle07 : MonoBehaviour, IResetObject, IObjectPosition
             return;
 
         // 멈추는 위치에 빈 오브젝트 설치할 것
-        transform.position = Vector3.Lerp(gameObject.transform.position, _stopPos.position, 2.0f);
+        _gameObject.transform.position = Vector3.Lerp(_gameObject.transform.position, _stopPos.position, 2.0f);
         _isMove = true;
     }
 
@@ -53,12 +55,12 @@ public class Obstacle07 : MonoBehaviour, IResetObject, IObjectPosition
             return;
 
         // 멈추는 위치에 빈 오브젝트 설치할 것
-        transform.position = Vector3.Lerp(gameObject.transform.position, _stopPos.position, 2.0f);
+        _gameObject.transform.position = Vector3.Lerp(_gameObject.transform.position, _stopPos.position, 2.0f);
         _isMove = true;
     }
 
     public void Reset()
     {
-        transform.position = _startPos;
+        _gameObject.transform.position = _startPos;
     }
 }
