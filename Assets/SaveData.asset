@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gameData:
     _isClear: 0
-    _characterNum: 2
+    _characterNum: 1
     _playerStage: 1
     _hasItem: 0
     _itemStage: 1
-    _jumpTime: 182
-    _fallTime: 14410
-    _playTime: 19.317118
+    _jumpTime: 0
+    _fallTime: 0
+    _playTime: 0

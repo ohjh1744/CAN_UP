@@ -150,7 +150,7 @@ public class GameSceneManager : UIBInder
 
     private void SetBGM()
     {
-        switch (DataManager.Instance.SaveData.GameData.PlayerStage)
+        switch (_currentStage)
         {
             case (int)EStage.First:
                 AudioClip audioClip = _audioClips[(int)EStage.First];

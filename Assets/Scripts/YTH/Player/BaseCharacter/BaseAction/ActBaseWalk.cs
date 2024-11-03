@@ -62,6 +62,11 @@ public class ActBaseWalk : PlayerAction
 
         else
         {
+            if(_data.WalkRoutine != null)
+            {
+                StopCoroutine(_data.WalkRoutine);
+                _data.WalkRoutine = null;
+            }
             return BTNodeState.Failure;
         }
 
