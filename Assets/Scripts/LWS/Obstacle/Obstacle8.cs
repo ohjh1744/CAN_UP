@@ -3,7 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Obstacle8 : MonoBehaviour, IObjectPosition
-{    // 내려오는 속도
+{
+    // 내려올 오브젝트
+    [SerializeField] private GameObject _targetObs;
+    
+    // 내려오는 속도
     [SerializeField] private float _fallSpeed;
 
     // 원래 위치로 돌아가는 속도
@@ -43,7 +47,7 @@ public class Obstacle8 : MonoBehaviour, IObjectPosition
     private void Start()
     {
         // 시작 위치와 내려온 위치 설정
-        _startPos = transform.position;
+        _startPos = _targetObs.transform.position;
         _endPos = _startPos - new Vector3(0, _fallDistance, 0);
     }
 
@@ -52,10 +56,10 @@ public class Obstacle8 : MonoBehaviour, IObjectPosition
         if (_isFalling)
         {
             // 내려오는 동안 위치를 fallPosition까지 이동
-            transform.position = Vector3.MoveTowards(transform.position, _endPos, _fallSpeed * Time.deltaTime);
+            _targetObs.transform.position = Vector3.MoveTowards(_targetObs.transform.position, _endPos, _fallSpeed * Time.deltaTime);
 
             // 목표 위치에 도달하면 대기 시간 시작
-            if (Vector3.Distance(transform.position, _endPos) < 0.01f)
+            if (Vector3.Distance(_targetObs.transform.position, _endPos) < 0.01f)
             {
                 _isFalling = false;
                 _stayTimer = _stayTime;
@@ -75,10 +79,10 @@ public class Obstacle8 : MonoBehaviour, IObjectPosition
         else if (_isReturning)
         {
             // 원래 위치로 돌아가기
-            transform.position = Vector3.MoveTowards(transform.position, _startPos, _returnSpeed * Time.deltaTime);
+            _targetObs.transform.position = Vector3.MoveTowards(_targetObs.transform.position, _startPos, _returnSpeed * Time.deltaTime);
 
             // 시작 위치에 도달하면 이동 종료
-            if (Vector3.Distance(transform.position, _startPos) < 0.01f)
+            if (Vector3.Distance(_targetObs.transform.position, _startPos) < 0.01f)
             {
                 _isReturning = false;
             }
