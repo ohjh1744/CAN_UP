@@ -36,6 +36,7 @@ public class Platform : MonoBehaviour , IObjectPosition
     // 세이브 포인트 지점 설정
     private void UpdateSavePoint(EStage stage)
     {
+        Debug.Log(true);
         switch (stage)
         {
             // 1번째 세이브지점

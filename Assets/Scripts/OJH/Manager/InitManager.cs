@@ -8,6 +8,7 @@ public static class InitManager
     private static void Initalize()
     {
         GameObject.Instantiate(Resources.Load<DataManager>("Manager/DataManager"));
+        GameObject.Instantiate(Resources.Load<SoundManager>("Manager/SoundManager"));
     }
 
 
