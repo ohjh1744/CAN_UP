@@ -42,18 +42,17 @@ public class ActJumperJump : PlayerAction
         Vector3 rayDirection = Vector3.down;
 
         // 레이캐스트 시각화 (씬 뷰에서 보임)
-        Debug.DrawRay(_rayShooter.transform.position, rayDirection * 1.6f, Color.red);
+        Debug.DrawRay(_rayShooter.transform.position, rayDirection * 1f, Color.red);
         Debug.Log("shootray");
 
         // 캐릭터 아래 방향으로 레이캐스트 발사
         RaycastHit hit;
-        if (Physics.Raycast( _rayShooter.transform.position, rayDirection, out hit, 1.6f))
+        if (Physics.Raycast( _rayShooter.transform.position, rayDirection, out hit, 1f))
         {
             // 레이캐스트가 태그가 맞는 오브젝트에 닿았는지 확인
             if (hit.collider.CompareTag("Ground") || hit.collider.CompareTag("ObstacleCol") || hit.collider.CompareTag("ObstacleTri"))
             {
                 _jumperData.IsGrounded = true;
-
             }
         }
         else
