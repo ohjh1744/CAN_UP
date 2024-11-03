@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 2586247}
   - component: {fileID: 2586246}
   - component: {fileID: 2586245}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_71
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -252,7 +252,7 @@ GameObject:
   - component: {fileID: 2749400}
   - component: {fileID: 2749399}
   - component: {fileID: 2749398}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_93
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -370,7 +370,7 @@ GameObject:
   - component: {fileID: 5562360}
   - component: {fileID: 5562365}
   - component: {fileID: 5562364}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform1_10
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -453,7 +453,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1599769823}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: -179.306, z: 0}
 --- !u!114 &5562364
 MonoBehaviour:
@@ -496,7 +496,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5781196}
   - component: {fileID: 5781197}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: virtualCamera (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -570,7 +570,7 @@ GameObject:
   - component: {fileID: 5844900}
   - component: {fileID: 5844899}
   - component: {fileID: 5844898}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_11
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -687,7 +687,7 @@ GameObject:
   - component: {fileID: 6674080}
   - component: {fileID: 6674079}
   - component: {fileID: 6674078}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_43
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -804,7 +804,7 @@ GameObject:
   - component: {fileID: 11070783}
   - component: {fileID: 11070782}
   - component: {fileID: 11070781}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_107
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -921,7 +921,7 @@ GameObject:
   - component: {fileID: 12265042}
   - component: {fileID: 12265041}
   - component: {fileID: 12265040}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_48
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1160,7 +1160,7 @@ GameObject:
   - component: {fileID: 17972975}
   - component: {fileID: 17972974}
   - component: {fileID: 17972977}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_88
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1277,7 +1277,7 @@ GameObject:
   - component: {fileID: 35863175}
   - component: {fileID: 35863174}
   - component: {fileID: 35863173}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_28
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1390,7 +1390,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 37599823}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rotate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1425,7 +1425,7 @@ GameObject:
   - component: {fileID: 42596896}
   - component: {fileID: 42596895}
   - component: {fileID: 42596894}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_134
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1542,7 +1542,7 @@ GameObject:
   - component: {fileID: 42692908}
   - component: {fileID: 42692907}
   - component: {fileID: 42692906}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_72
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1660,7 +1660,7 @@ GameObject:
   - component: {fileID: 43941758}
   - component: {fileID: 43941757}
   - component: {fileID: 43941756}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle3_16
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1794,7 +1794,7 @@ GameObject:
   - component: {fileID: 48584437}
   - component: {fileID: 48584436}
   - component: {fileID: 48584435}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_38
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1911,7 +1911,7 @@ GameObject:
   - component: {fileID: 50174542}
   - component: {fileID: 50174541}
   - component: {fileID: 50174540}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_9
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -2026,6 +2026,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PTK_Ramp_Large (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1556607509100966, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4353395921811104, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -2103,7 +2107,7 @@ GameObject:
   - component: {fileID: 64892608}
   - component: {fileID: 64892606}
   - component: {fileID: 64892605}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle3_12
   m_TagString: ObstacleCol
   m_Icon: {fileID: 0}
@@ -2297,6 +2301,10 @@ PrefabInstance:
       value: Platform2_18
       objectReference: {fileID: 0}
     - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
@@ -2400,7 +2408,7 @@ GameObject:
   - component: {fileID: 68313473}
   - component: {fileID: 68313472}
   - component: {fileID: 68313471}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_120
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -2516,7 +2524,7 @@ GameObject:
   - component: {fileID: 69352925}
   - component: {fileID: 69352924}
   - component: {fileID: 69352923}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: obstacle1_2
   m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
@@ -2655,7 +2663,7 @@ GameObject:
   - component: {fileID: 71223242}
   - component: {fileID: 71223241}
   - component: {fileID: 71223240}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_61
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -2772,7 +2780,7 @@ GameObject:
   - component: {fileID: 75991926}
   - component: {fileID: 75991925}
   - component: {fileID: 75991928}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_102
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -3028,7 +3036,7 @@ GameObject:
   - component: {fileID: 82485590}
   - component: {fileID: 82485589}
   - component: {fileID: 82485588}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle4_31
   m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
@@ -3145,7 +3153,7 @@ GameObject:
   - component: {fileID: 84101754}
   - component: {fileID: 84101753}
   - component: {fileID: 84101752}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_5
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -3262,7 +3270,7 @@ GameObject:
   - component: {fileID: 95132814}
   - component: {fileID: 95132813}
   - component: {fileID: 95132812}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_82
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -3514,7 +3522,7 @@ GameObject:
   - component: {fileID: 102242994}
   - component: {fileID: 102242993}
   - component: {fileID: 102242992}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_66
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -3690,7 +3698,7 @@ GameObject:
   m_Component:
   - component: {fileID: 105663115}
   - component: {fileID: 105663116}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3737,7 +3745,7 @@ GameObject:
   - component: {fileID: 106514555}
   - component: {fileID: 106514554}
   - component: {fileID: 106514553}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_6
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -3853,6 +3861,10 @@ PrefabInstance:
       value: Platform2_10
       objectReference: {fileID: 0}
     - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
@@ -3956,7 +3968,7 @@ GameObject:
   - component: {fileID: 119314449}
   - component: {fileID: 119314448}
   - component: {fileID: 119314447}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_37
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -4070,7 +4082,7 @@ GameObject:
   m_Component:
   - component: {fileID: 125315948}
   - component: {fileID: 125315949}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: virtualCamera (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4131,6 +4143,37 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 2031505856}
+--- !u!1 &129432284
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 129432285}
+  m_Layer: 8
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &129432285
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129432284}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 324416692}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &132018217
 GameObject:
   m_ObjectHideFlags: 0
@@ -4144,7 +4187,7 @@ GameObject:
   - component: {fileID: 132018220}
   - component: {fileID: 132018219}
   - component: {fileID: 132018218}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_115
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -4261,7 +4304,7 @@ GameObject:
   - component: {fileID: 135246631}
   - component: {fileID: 135246630}
   - component: {fileID: 135246629}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_118
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -4376,6 +4419,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PTK_Ramp_Large (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1556607509100966, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4353395921811104, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
       propertyPath: m_RootOrder
       value: 26
@@ -4455,7 +4502,7 @@ GameObject:
   - component: {fileID: 145859696}
   - component: {fileID: 145859695}
   - component: {fileID: 145859694}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle4_22
   m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
@@ -4669,7 +4716,7 @@ GameObject:
   - component: {fileID: 145955873}
   - component: {fileID: 145955872}
   - component: {fileID: 145955871}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle4_4
   m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
@@ -4784,6 +4831,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PTK_Ramp_Large (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1556607509100966, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4353395921811104, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
       propertyPath: m_RootOrder
       value: 25
@@ -4860,7 +4911,7 @@ GameObject:
   - component: {fileID: 151142339}
   - component: {fileID: 151142338}
   - component: {fileID: 151142337}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_71
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -4977,7 +5028,7 @@ GameObject:
   - component: {fileID: 158679087}
   - component: {fileID: 158679086}
   - component: {fileID: 158679085}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle4_7
   m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
@@ -5094,7 +5145,7 @@ GameObject:
   - component: {fileID: 161783867}
   - component: {fileID: 161783866}
   - component: {fileID: 161783865}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_124
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -5278,7 +5329,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 164671448}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rotate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5449,6 +5500,10 @@ PrefabInstance:
       value: Platform2_78 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
@@ -5544,7 +5599,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 188051878}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RotatePosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5579,7 +5634,7 @@ GameObject:
   - component: {fileID: 191939377}
   - component: {fileID: 191939376}
   - component: {fileID: 191939375}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_14
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -5696,7 +5751,7 @@ GameObject:
   - component: {fileID: 196141880}
   - component: {fileID: 196141879}
   - component: {fileID: 196141878}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_29
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -5813,7 +5868,7 @@ GameObject:
   - component: {fileID: 200788462}
   - component: {fileID: 200788461}
   - component: {fileID: 200788460}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_129
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -5927,7 +5982,7 @@ GameObject:
   m_Component:
   - component: {fileID: 203194652}
   - component: {fileID: 203194651}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Directional Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6024,7 +6079,7 @@ GameObject:
   - component: {fileID: 203568378}
   - component: {fileID: 203568377}
   - component: {fileID: 203568376}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_23
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -6141,7 +6196,7 @@ GameObject:
   - component: {fileID: 205292589}
   - component: {fileID: 205292588}
   - component: {fileID: 205292587}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_49
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -6258,7 +6313,7 @@ GameObject:
   - component: {fileID: 210370940}
   - component: {fileID: 210370939}
   - component: {fileID: 210370938}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_74
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -6375,7 +6430,7 @@ GameObject:
   - component: {fileID: 213894876}
   - component: {fileID: 213894875}
   - component: {fileID: 213894874}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_42
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -6492,7 +6547,7 @@ GameObject:
   - component: {fileID: 218474888}
   - component: {fileID: 218474887}
   - component: {fileID: 218474886}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_69
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -6609,7 +6664,7 @@ GameObject:
   - component: {fileID: 220419342}
   - component: {fileID: 220419341}
   - component: {fileID: 220419340}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle3_6
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -6624,12 +6679,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 220419338}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -19, y: 2, z: 0}
-  m_LocalScale: {x: 0.8, y: 6.1107764, z: 1}
+  m_LocalPosition: {x: -24.93, y: 7.6600037, z: 0}
+  m_LocalScale: {x: 1, y: 6.1107764, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 419065219}
-  m_RootOrder: 0
+  m_Children:
+  - {fileID: 324416692}
+  m_Father: {fileID: 1855016626}
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &220419340
 MonoBehaviour:
@@ -6726,7 +6782,7 @@ GameObject:
   - component: {fileID: 222487695}
   - component: {fileID: 222487694}
   - component: {fileID: 222487693}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_63
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -6843,7 +6899,7 @@ GameObject:
   - component: {fileID: 227471062}
   - component: {fileID: 227471060}
   - component: {fileID: 227471059}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle2_1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -6937,7 +6993,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 227471055}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 20.620373, y: 56.31828, z: -3.57}
+  m_LocalPosition: {x: 20.6, y: 56.4, z: -3.57}
   m_LocalScale: {x: 2.9776483, y: 1.9889301, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6960,7 +7016,7 @@ GameObject:
   - component: {fileID: 233113510}
   - component: {fileID: 233113515}
   - component: {fileID: 233113514}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform1_9
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -7089,7 +7145,7 @@ GameObject:
   - component: {fileID: 236702155}
   - component: {fileID: 236702154}
   - component: {fileID: 236702153}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_73
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -7206,7 +7262,7 @@ GameObject:
   - component: {fileID: 245185480}
   - component: {fileID: 245185479}
   - component: {fileID: 245185478}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_74
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -7380,7 +7436,7 @@ GameObject:
   - component: {fileID: 256801522}
   - component: {fileID: 256801521}
   - component: {fileID: 256801520}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_63
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -7496,7 +7552,7 @@ GameObject:
   - component: {fileID: 265776465}
   - component: {fileID: 265776464}
   - component: {fileID: 265776463}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle3_15
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -7600,7 +7656,7 @@ GameObject:
   - component: {fileID: 273737792}
   - component: {fileID: 273737791}
   - component: {fileID: 273737790}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_114
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -7715,7 +7771,7 @@ GameObject:
   - component: {fileID: 274469206}
   - component: {fileID: 274469209}
   - component: {fileID: 274469208}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sphere (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7803,7 +7859,7 @@ GameObject:
   - component: {fileID: 274974758}
   - component: {fileID: 274974757}
   - component: {fileID: 274974756}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle4_21
   m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
@@ -8017,7 +8073,7 @@ GameObject:
   - component: {fileID: 280130344}
   - component: {fileID: 280130343}
   - component: {fileID: 280130342}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_70
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -8134,7 +8190,7 @@ GameObject:
   - component: {fileID: 286862293}
   - component: {fileID: 286862292}
   - component: {fileID: 286862291}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_78
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -8251,7 +8307,7 @@ GameObject:
   - component: {fileID: 289086641}
   - component: {fileID: 289086640}
   - component: {fileID: 289086639}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_79
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -8368,7 +8424,7 @@ GameObject:
   - component: {fileID: 293562592}
   - component: {fileID: 293562591}
   - component: {fileID: 293562594}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_93
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -8485,7 +8541,7 @@ GameObject:
   - component: {fileID: 295201193}
   - component: {fileID: 295201192}
   - component: {fileID: 295201191}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_108
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -8780,7 +8836,7 @@ GameObject:
   m_Component:
   - component: {fileID: 323157998}
   - component: {fileID: 323157999}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8823,9 +8879,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 324416692}
-  m_Layer: 0
+  - component: {fileID: 324416695}
+  - component: {fileID: 324416694}
+  - component: {fileID: 324416693}
+  m_Layer: 2
   m_Name: GameObject
-  m_TagString: Untagged
+  m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8837,14 +8896,119 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 324416691}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4, y: 2.8, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 18.75, y: 0.13091676, z: 0}
+  m_LocalScale: {x: 1.25, y: 0.16364533, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 419065219}
-  m_RootOrder: 1
+  m_Children:
+  - {fileID: 129432285}
+  m_Father: {fileID: 220419339}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &324416693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324416691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67b0b74cfbfc6524d8e5431b3b7508ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _wall: {fileID: 220419338}
+  _moveSpeed: 5
+  _startPos: {x: 0, y: 0, z: 0}
+  _targetPosition: {x: 0, y: 0, z: 0}
+  _targetPosObj: {fileID: 129432284}
+  _stageNum: 0
+  _name: 
+--- !u!114 &324416694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324416691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnInteractPlayerColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 324416693}
+        m_TargetAssemblyTypeName: Obstacle6, Assembly-CSharp
+        m_MethodName: EnterWall
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnInteractPlayerTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 324416693}
+        m_TargetAssemblyTypeName: Obstacle6, Assembly-CSharp
+        m_MethodName: EnterWall
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnInteractItemTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!65 &324416695
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324416691}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 6.457657, z: 1}
+  m_Center: {x: 0, y: -0.39699554, z: 0}
 --- !u!1 &330649831
 GameObject:
   m_ObjectHideFlags: 0
@@ -8858,7 +9022,7 @@ GameObject:
   - component: {fileID: 330649835}
   - component: {fileID: 330649834}
   - component: {fileID: 330649833}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_44
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -8975,7 +9139,7 @@ GameObject:
   - component: {fileID: 334865617}
   - component: {fileID: 334865616}
   - component: {fileID: 334865619}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_105
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -9092,7 +9256,7 @@ GameObject:
   - component: {fileID: 344943796}
   - component: {fileID: 344943795}
   - component: {fileID: 344943794}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_59
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -9207,7 +9371,7 @@ GameObject:
   - component: {fileID: 351108540}
   - component: {fileID: 351108543}
   - component: {fileID: 351108542}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9292,7 +9456,7 @@ GameObject:
   - component: {fileID: 353435567}
   - component: {fileID: 353435566}
   - component: {fileID: 353435565}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_36
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -9409,7 +9573,7 @@ GameObject:
   - component: {fileID: 354866844}
   - component: {fileID: 354866843}
   - component: {fileID: 354866842}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_26
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -9526,7 +9690,7 @@ GameObject:
   - component: {fileID: 363347923}
   - component: {fileID: 363347922}
   - component: {fileID: 363347921}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_97
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -9630,6 +9794,145 @@ Transform:
   m_Father: {fileID: 313690256}
   m_RootOrder: 108
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!1 &370993145
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 370993146}
+  - component: {fileID: 370993147}
+  - component: {fileID: 370993149}
+  - component: {fileID: 370993148}
+  m_Layer: 2
+  m_Name: GameObject
+  m_TagString: ObstacleTri
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &370993146
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370993145}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.06, y: 12.17, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1215379195}
+  m_Father: {fileID: 1107319351}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &370993147
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370993145}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &370993148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370993145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnInteractPlayerColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 370993149}
+        m_TargetAssemblyTypeName: Obstacle6, Assembly-CSharp
+        m_MethodName: EnterWall
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnInteractPlayerTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 370993149}
+        m_TargetAssemblyTypeName: Obstacle6, Assembly-CSharp
+        m_MethodName: EnterWall
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnInteractItemTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &370993149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370993145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67b0b74cfbfc6524d8e5431b3b7508ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _wall: {fileID: 1107319346}
+  _moveSpeed: 5
+  _startPos: {x: 0, y: 0, z: 0}
+  _targetPosition: {x: 0, y: 0, z: 0}
+  _targetPosObj: {fileID: 1215379194}
+  _stageNum: 0
+  _name: 
 --- !u!1 &372002319
 GameObject:
   m_ObjectHideFlags: 0
@@ -9640,7 +9943,7 @@ GameObject:
   m_Component:
   - component: {fileID: 372002320}
   - component: {fileID: 372002321}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: virtualCamera (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9714,7 +10017,7 @@ GameObject:
   - component: {fileID: 375183659}
   - component: {fileID: 375183658}
   - component: {fileID: 375183657}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_137
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -9829,6 +10132,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PTK_Ramp_Large (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 1556607509100966, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4353395921811104, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
       propertyPath: m_RootOrder
       value: 30
@@ -9905,7 +10212,7 @@ GameObject:
   - component: {fileID: 387020455}
   - component: {fileID: 387020454}
   - component: {fileID: 387020453}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_53
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -10022,7 +10329,7 @@ GameObject:
   - component: {fileID: 388097402}
   - component: {fileID: 388097401}
   - component: {fileID: 388097400}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_61
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -10139,7 +10446,7 @@ GameObject:
   - component: {fileID: 394570420}
   - component: {fileID: 394570419}
   - component: {fileID: 394570418}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_39
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -10256,7 +10563,7 @@ GameObject:
   - component: {fileID: 404218764}
   - component: {fileID: 404218763}
   - component: {fileID: 404218762}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_17
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -10372,6 +10679,10 @@ PrefabInstance:
       value: Platform2_33
       objectReference: {fileID: 0}
     - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
@@ -10475,7 +10786,7 @@ GameObject:
   - component: {fileID: 409899599}
   - component: {fileID: 409899598}
   - component: {fileID: 409899597}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_12
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -10591,6 +10902,10 @@ PrefabInstance:
       value: Platform2_94
       objectReference: {fileID: 0}
     - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
@@ -10693,11 +11008,9 @@ GameObject:
   - component: {fileID: 419065225}
   - component: {fileID: 419065224}
   - component: {fileID: 419065223}
-  - component: {fileID: 419065221}
-  - component: {fileID: 419065220}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle3_5
-  m_TagString: ObstacleCol
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10713,91 +11026,10 @@ Transform:
   m_LocalPosition: {x: -1.18, y: 5.66, z: 0}
   m_LocalScale: {x: 1.25, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 220419339}
-  - {fileID: 324416692}
+  m_Children: []
   m_Father: {fileID: 1855016626}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &419065220
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 419065218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnInteractPlayerColEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 419065221}
-        m_TargetAssemblyTypeName: Obstacle6, Assembly-CSharp
-        m_MethodName: EnterWall
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnInteractPlayerColStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerColExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerTriEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerTriStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerTriExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriExit:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &419065221
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 419065218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67b0b74cfbfc6524d8e5431b3b7508ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _wall: {fileID: 220419338}
-  _moveSpeed: 5
-  _startPos: {x: 0, y: 0, z: 0}
-  _targetPosition: {x: -6, y: 2, z: 0}
-  _targetPosObj: {fileID: 324416691}
-  _stageNum: 0
-  _name: Obstacle3_5
 --- !u!65 &419065223
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10874,7 +11106,7 @@ GameObject:
   - component: {fileID: 426659598}
   - component: {fileID: 426659597}
   - component: {fileID: 426659596}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_25
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -10990,12 +11222,16 @@ PrefabInstance:
       value: PTK_Ramp_Medium (2)
       objectReference: {fileID: 0}
     - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 4226684656622418, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_RootOrder
-      value: 26
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 4226684656622418, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_LocalScale.x
@@ -11069,7 +11305,7 @@ GameObject:
   - component: {fileID: 431977596}
   - component: {fileID: 431977595}
   - component: {fileID: 431977594}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_42
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -11186,7 +11422,7 @@ GameObject:
   - component: {fileID: 431990076}
   - component: {fileID: 431990075}
   - component: {fileID: 431990074}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle3_20
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -11303,7 +11539,7 @@ GameObject:
   - component: {fileID: 438354522}
   - component: {fileID: 438354521}
   - component: {fileID: 438354524}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: GameObject (1)
   m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
@@ -11455,7 +11691,7 @@ GameObject:
   - component: {fileID: 439845156}
   - component: {fileID: 439845154}
   - component: {fileID: 439845153}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle3_11
   m_TagString: ObstacleCol
   m_Icon: {fileID: 0}
@@ -11793,7 +12029,7 @@ GameObject:
   - component: {fileID: 451501279}
   - component: {fileID: 451501278}
   - component: {fileID: 451501277}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_81
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -12045,7 +12281,7 @@ GameObject:
   - component: {fileID: 455334989}
   - component: {fileID: 455334988}
   - component: {fileID: 455334987}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle4_6
   m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
@@ -12161,6 +12397,10 @@ PrefabInstance:
       value: Platform2_44
       objectReference: {fileID: 0}
     - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
@@ -12267,7 +12507,7 @@ GameObject:
   - component: {fileID: 462970600}
   - component: {fileID: 462970599}
   - component: {fileID: 462970605}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle3_7
   m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
@@ -12481,7 +12721,7 @@ GameObject:
   - component: {fileID: 464043724}
   - component: {fileID: 464043723}
   - component: {fileID: 464043722}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_93
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -12598,7 +12838,7 @@ GameObject:
   - component: {fileID: 466113769}
   - component: {fileID: 466113768}
   - component: {fileID: 466113767}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_14
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -12715,7 +12955,7 @@ GameObject:
   - component: {fileID: 467380511}
   - component: {fileID: 467380510}
   - component: {fileID: 467380509}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -12819,6 +13059,145 @@ Transform:
   m_Father: {fileID: 313690256}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &472911109
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 472911110}
+  - component: {fileID: 472911113}
+  - component: {fileID: 472911112}
+  - component: {fileID: 472911111}
+  m_Layer: 2
+  m_Name: GameObject
+  m_TagString: ObstacleTri
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &472911110
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472911109}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 29.25, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2016628445}
+  m_Father: {fileID: 695645865}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &472911111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472911109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67b0b74cfbfc6524d8e5431b3b7508ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _wall: {fileID: 695645864}
+  _moveSpeed: 5
+  _startPos: {x: 0, y: 0, z: 0}
+  _targetPosition: {x: 0, y: 0, z: 0}
+  _targetPosObj: {fileID: 2016628444}
+  _stageNum: 0
+  _name: 
+--- !u!114 &472911112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472911109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnInteractPlayerColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 472911111}
+        m_TargetAssemblyTypeName: Obstacle6, Assembly-CSharp
+        m_MethodName: EnterWall
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnInteractPlayerTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 472911111}
+        m_TargetAssemblyTypeName: Obstacle6, Assembly-CSharp
+        m_MethodName: EnterWall
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnInteractItemTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!65 &472911113
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472911109}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &474396916
 GameObject:
   m_ObjectHideFlags: 0
@@ -12832,7 +13211,7 @@ GameObject:
   - component: {fileID: 474396920}
   - component: {fileID: 474396919}
   - component: {fileID: 474396918}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_20
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -12949,7 +13328,7 @@ GameObject:
   - component: {fileID: 476830528}
   - component: {fileID: 476830527}
   - component: {fileID: 476830526}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_82
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -13064,7 +13443,7 @@ GameObject:
   - component: {fileID: 478067483}
   - component: {fileID: 478067486}
   - component: {fileID: 478067485}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sphere (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13194,7 +13573,7 @@ GameObject:
   - component: {fileID: 482882845}
   - component: {fileID: 482882844}
   - component: {fileID: 482882843}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_11
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -13311,7 +13690,7 @@ GameObject:
   - component: {fileID: 487968197}
   - component: {fileID: 487968196}
   - component: {fileID: 487968192}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle3_14
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -13462,7 +13841,7 @@ GameObject:
   - component: {fileID: 493564182}
   - component: {fileID: 493564180}
   - component: {fileID: 493564186}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle1_2
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -13590,7 +13969,7 @@ GameObject:
   - component: {fileID: 494510853}
   - component: {fileID: 494510852}
   - component: {fileID: 494510851}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle4_8
   m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
@@ -13707,7 +14086,7 @@ GameObject:
   - component: {fileID: 500245887}
   - component: {fileID: 500245886}
   - component: {fileID: 500245885}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_54
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -13824,7 +14203,7 @@ GameObject:
   - component: {fileID: 500536146}
   - component: {fileID: 500536145}
   - component: {fileID: 500536148}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_91
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -13941,7 +14320,7 @@ GameObject:
   - component: {fileID: 501262843}
   - component: {fileID: 501262842}
   - component: {fileID: 501262841}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_15
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -14055,7 +14434,7 @@ GameObject:
   m_Component:
   - component: {fileID: 501948827}
   - component: {fileID: 501948828}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: virtualCamera (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14128,7 +14507,7 @@ GameObject:
   - component: {fileID: 505721543}
   - component: {fileID: 505721542}
   - component: {fileID: 505721541}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle3_18
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -14225,7 +14604,7 @@ GameObject:
   m_Component:
   - component: {fileID: 508439932}
   - component: {fileID: 508439933}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: virtualCamera (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14296,6 +14675,10 @@ PrefabInstance:
     - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_Name
       value: Platform2_105
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_TagString
@@ -14467,7 +14850,7 @@ GameObject:
   - component: {fileID: 512429410}
   - component: {fileID: 512429409}
   - component: {fileID: 512429408}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_83
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -14584,7 +14967,7 @@ GameObject:
   - component: {fileID: 517821730}
   - component: {fileID: 517821729}
   - component: {fileID: 517821728}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_32
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -14701,7 +15084,7 @@ GameObject:
   - component: {fileID: 521488926}
   - component: {fileID: 521488925}
   - component: {fileID: 521488924}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_36
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -14818,7 +15201,7 @@ GameObject:
   - component: {fileID: 529982083}
   - component: {fileID: 529982082}
   - component: {fileID: 529982081}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_78
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -14935,7 +15318,7 @@ GameObject:
   - component: {fileID: 535603369}
   - component: {fileID: 535603368}
   - component: {fileID: 535603371}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_100
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -15051,7 +15434,7 @@ GameObject:
   - component: {fileID: 536901373}
   - component: {fileID: 536901372}
   - component: {fileID: 536901371}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: Obstacle4_24
   m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
@@ -15166,7 +15549,7 @@ GameObject:
   - component: {fileID: 537317628}
   - component: {fileID: 537317627}
   - component: {fileID: 537317626}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_60
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -15283,7 +15666,7 @@ GameObject:
   - component: {fileID: 537324374}
   - component: {fileID: 537324373}
   - component: {fileID: 537324372}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_139
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -15400,7 +15783,7 @@ GameObject:
   - component: {fileID: 538129392}
   - component: {fileID: 538129391}
   - component: {fileID: 538129390}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_26
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -15517,7 +15900,7 @@ GameObject:
   - component: {fileID: 538136375}
   - component: {fileID: 538136374}
   - component: {fileID: 538136373}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_14
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -15634,7 +16017,7 @@ GameObject:
   - component: {fileID: 541449859}
   - component: {fileID: 541449858}
   - component: {fileID: 541449857}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_123
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -15751,7 +16134,7 @@ GameObject:
   - component: {fileID: 541670754}
   - component: {fileID: 541670753}
   - component: {fileID: 541670752}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_16
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -15864,7 +16247,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 550120190}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: StopPOS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15879,7 +16262,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 550120189}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.59, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15899,7 +16282,7 @@ GameObject:
   - component: {fileID: 550908249}
   - component: {fileID: 550908248}
   - component: {fileID: 550908247}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle4_32
   m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
@@ -16013,7 +16396,7 @@ GameObject:
   m_Component:
   - component: {fileID: 551300892}
   - component: {fileID: 551300893}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16060,7 +16443,7 @@ GameObject:
   - component: {fileID: 556804366}
   - component: {fileID: 556804365}
   - component: {fileID: 556804364}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_59
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -16177,7 +16560,7 @@ GameObject:
   - component: {fileID: 564252204}
   - component: {fileID: 564252203}
   - component: {fileID: 564252202}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_31
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -16295,7 +16678,7 @@ GameObject:
   - component: {fileID: 580500500}
   - component: {fileID: 580500505}
   - component: {fileID: 580500504}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform1_8
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -16424,7 +16807,7 @@ GameObject:
   - component: {fileID: 590206362}
   - component: {fileID: 590206361}
   - component: {fileID: 590206364}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_95
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -16541,7 +16924,7 @@ GameObject:
   - component: {fileID: 595129058}
   - component: {fileID: 595129057}
   - component: {fileID: 595129054}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle3_6
   m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
@@ -16657,7 +17040,7 @@ GameObject:
   - component: {fileID: 596710651}
   - component: {fileID: 596710650}
   - component: {fileID: 596710649}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_68
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -16772,6 +17155,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PTK_Ramp_Large (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1556607509100966, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4353395921811104, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -16848,7 +17235,7 @@ GameObject:
   - component: {fileID: 605216768}
   - component: {fileID: 605216767}
   - component: {fileID: 605216766}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_80
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -16967,7 +17354,7 @@ GameObject:
   - component: {fileID: 606909700}
   - component: {fileID: 606909699}
   - component: {fileID: 606909698}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle4_28
   m_TagString: ObstacleCol
   m_Icon: {fileID: 0}
@@ -17184,7 +17571,7 @@ GameObject:
   - component: {fileID: 607781599}
   - component: {fileID: 607781598}
   - component: {fileID: 607781601}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_101
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -17298,7 +17685,7 @@ GameObject:
   m_Component:
   - component: {fileID: 610603502}
   - component: {fileID: 610603503}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: virtualCamera (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17372,7 +17759,7 @@ GameObject:
   - component: {fileID: 610791810}
   - component: {fileID: 610791809}
   - component: {fileID: 610791808}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_5
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -17489,7 +17876,7 @@ GameObject:
   - component: {fileID: 610947939}
   - component: {fileID: 610947938}
   - component: {fileID: 610947937}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_81
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -17606,7 +17993,7 @@ GameObject:
   - component: {fileID: 612750412}
   - component: {fileID: 612750411}
   - component: {fileID: 612750410}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_25
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -17722,12 +18109,16 @@ PrefabInstance:
       value: PTK_Ramp_Medium (6)
       objectReference: {fileID: 0}
     - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 4226684656622418, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_RootOrder
-      value: 30
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 4226684656622418, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_LocalScale.x
@@ -17798,6 +18189,10 @@ PrefabInstance:
     - target: {fileID: 1556607509100966, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
       propertyPath: m_Name
       value: PTK_Ramp_Large (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1556607509100966, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4353395921811104, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
       propertyPath: m_RootOrder
@@ -17875,7 +18270,7 @@ GameObject:
   - component: {fileID: 634256835}
   - component: {fileID: 634256834}
   - component: {fileID: 634256833}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_53
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -17990,6 +18385,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PTK_Ramp_Large (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1556607509100966, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4353395921811104, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
       propertyPath: m_RootOrder
       value: 26
@@ -18063,7 +18462,7 @@ GameObject:
   m_Component:
   - component: {fileID: 636370700}
   - component: {fileID: 636370701}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18107,6 +18506,10 @@ PrefabInstance:
     - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_Name
       value: Platform2_102
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_TagString
@@ -18212,7 +18615,7 @@ GameObject:
   - component: {fileID: 647382752}
   - component: {fileID: 647382751}
   - component: {fileID: 647382750}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_40
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -18330,7 +18733,7 @@ GameObject:
   - component: {fileID: 647535667}
   - component: {fileID: 647535666}
   - component: {fileID: 647535665}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle3_3
   m_TagString: ObstacleCol
   m_Icon: {fileID: 0}
@@ -18529,6 +18932,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PTK_Ramp_Large (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 1556607509100966, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4353395921811104, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
       propertyPath: m_RootOrder
       value: 29
@@ -18605,7 +19012,7 @@ GameObject:
   - component: {fileID: 650430546}
   - component: {fileID: 650430545}
   - component: {fileID: 650430544}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_58
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -18722,7 +19129,7 @@ GameObject:
   - component: {fileID: 654865470}
   - component: {fileID: 654865469}
   - component: {fileID: 654865472}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_99
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -18840,7 +19247,7 @@ GameObject:
   - component: {fileID: 656773204}
   - component: {fileID: 656773209}
   - component: {fileID: 656773208}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform1_14
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -18923,7 +19330,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1599769823}
-  m_RootOrder: 18
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: -179.306, z: 0}
 --- !u!114 &656773208
 MonoBehaviour:
@@ -18968,7 +19375,7 @@ GameObject:
   - component: {fileID: 657932082}
   - component: {fileID: 657932081}
   - component: {fileID: 657932083}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_104
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -19073,7 +19480,7 @@ GameObject:
   - component: {fileID: 658732068}
   - component: {fileID: 658732067}
   - component: {fileID: 658732066}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle4_15
   m_TagString: ObstacleCol
   m_Icon: {fileID: 0}
@@ -19247,6 +19654,145 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 658732063}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &660211599
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 660211600}
+  - component: {fileID: 660211603}
+  - component: {fileID: 660211601}
+  - component: {fileID: 660211604}
+  m_Layer: 2
+  m_Name: GameObject
+  m_TagString: ObstacleTri
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &660211600
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660211599}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 49.91, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1441499440}
+  m_Father: {fileID: 1607683982}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &660211601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660211599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67b0b74cfbfc6524d8e5431b3b7508ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _wall: {fileID: 1607683981}
+  _moveSpeed: 5
+  _startPos: {x: 0, y: 0, z: 0}
+  _targetPosition: {x: 0, y: 0, z: 0}
+  _targetPosObj: {fileID: 1441499439}
+  _stageNum: 0
+  _name: 
+--- !u!65 &660211603
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660211599}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &660211604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660211599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnInteractPlayerColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 660211601}
+        m_TargetAssemblyTypeName: Obstacle6, Assembly-CSharp
+        m_MethodName: EnterWall
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnInteractPlayerTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 660211601}
+        m_TargetAssemblyTypeName: Obstacle6, Assembly-CSharp
+        m_MethodName: EnterWall
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnInteractItemTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriExit:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &661274547
 GameObject:
   m_ObjectHideFlags: 3
@@ -19257,7 +19803,7 @@ GameObject:
   m_Component:
   - component: {fileID: 661274548}
   - component: {fileID: 661274549}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19304,7 +19850,7 @@ GameObject:
   - component: {fileID: 661717347}
   - component: {fileID: 661717346}
   - component: {fileID: 661717345}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_91
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -19495,6 +20041,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PTK_Ramp_Large (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1556607509100966, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4353395921811104, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
       propertyPath: m_RootOrder
       value: 29
@@ -19568,6 +20118,10 @@ PrefabInstance:
     - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_Name
       value: Platform2_35
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_TagString
@@ -19673,7 +20227,7 @@ GameObject:
   - component: {fileID: 692166534}
   - component: {fileID: 692166533}
   - component: {fileID: 692166532}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_34
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -19790,7 +20344,7 @@ GameObject:
   - component: {fileID: 694056816}
   - component: {fileID: 694056815}
   - component: {fileID: 694056814}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_45
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -19907,7 +20461,8 @@ GameObject:
   - component: {fileID: 695645868}
   - component: {fileID: 695645867}
   - component: {fileID: 695645866}
-  m_Layer: 0
+  - component: {fileID: 695645870}
+  m_Layer: 8
   m_Name: Obstacle4_35_Wall
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -19922,12 +20477,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 695645864}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.726667, y: 3.5, z: 0}
-  m_LocalScale: {x: 0.33333334, y: 5, z: 1}
+  m_LocalPosition: {x: -28.06667, y: 59.499985, z: -2}
+  m_LocalScale: {x: 0.8333334, y: 2.5, z: 3}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1614320660}
-  m_RootOrder: 0
+  m_Children:
+  - {fileID: 472911110}
+  m_Father: {fileID: 1887573287}
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &695645866
 MonoBehaviour:
@@ -20011,6 +20567,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 695645864}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &695645870
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695645864}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &696131174
 GameObject:
   m_ObjectHideFlags: 0
@@ -20024,7 +20596,7 @@ GameObject:
   - component: {fileID: 696131178}
   - component: {fileID: 696131177}
   - component: {fileID: 696131176}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_16
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -20137,7 +20709,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 696933731}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: stopPOS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20172,7 +20744,7 @@ GameObject:
   - component: {fileID: 701018397}
   - component: {fileID: 701018396}
   - component: {fileID: 701018395}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_38
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -20289,7 +20861,7 @@ GameObject:
   - component: {fileID: 702161796}
   - component: {fileID: 702161795}
   - component: {fileID: 702161794}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_72
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -20407,7 +20979,7 @@ GameObject:
   - component: {fileID: 704917566}
   - component: {fileID: 704917571}
   - component: {fileID: 704917570}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform1_3
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -20536,7 +21108,7 @@ GameObject:
   - component: {fileID: 705594129}
   - component: {fileID: 705594128}
   - component: {fileID: 705594127}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_2
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -20653,7 +21225,7 @@ GameObject:
   - component: {fileID: 708172336}
   - component: {fileID: 708172335}
   - component: {fileID: 708172334}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_4
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -20769,7 +21341,7 @@ GameObject:
   - component: {fileID: 711496299}
   - component: {fileID: 711496298}
   - component: {fileID: 711496297}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
@@ -20908,7 +21480,7 @@ GameObject:
   - component: {fileID: 712098948}
   - component: {fileID: 712098947}
   - component: {fileID: 712098946}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_99
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -21025,7 +21597,7 @@ GameObject:
   - component: {fileID: 713550798}
   - component: {fileID: 713550797}
   - component: {fileID: 713550796}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_30
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -21201,7 +21773,7 @@ GameObject:
   - component: {fileID: 721189680}
   - component: {fileID: 721189679}
   - component: {fileID: 721189678}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_55
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -21317,6 +21889,10 @@ PrefabInstance:
       value: Platform2_119
       objectReference: {fileID: 0}
     - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
@@ -21420,7 +21996,7 @@ GameObject:
   - component: {fileID: 723864032}
   - component: {fileID: 723864031}
   - component: {fileID: 723864030}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_24
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -21539,7 +22115,7 @@ GameObject:
   - component: {fileID: 728000821}
   - component: {fileID: 728000820}
   - component: {fileID: 728000819}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle4_3
   m_TagString: ObstacleCol
   m_Icon: {fileID: 0}
@@ -21755,7 +22331,7 @@ GameObject:
   - component: {fileID: 729343243}
   - component: {fileID: 729343242}
   - component: {fileID: 729343241}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle3_10_2
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -21853,7 +22429,7 @@ GameObject:
   - component: {fileID: 734263521}
   - component: {fileID: 734263520}
   - component: {fileID: 734263523}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_90
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -21969,7 +22545,7 @@ GameObject:
   - component: {fileID: 735102180}
   - component: {fileID: 735102179}
   - component: {fileID: 735102178}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: GameObject (1)
   m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
@@ -22075,7 +22651,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53870400365bc0e47b5b4f204944b7ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetObs: {fileID: 1347336611}
+  _targetObs: {fileID: 505721535}
   _fallSpeed: 5
   _returnSpeed: 5
   _stayTime: 3
@@ -22094,7 +22670,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 735102176}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 3.5231323, z: 1}
@@ -22113,7 +22689,7 @@ GameObject:
   - component: {fileID: 740031196}
   - component: {fileID: 740031201}
   - component: {fileID: 740031200}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform1_2
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -22242,7 +22818,7 @@ GameObject:
   - component: {fileID: 741789085}
   - component: {fileID: 741789084}
   - component: {fileID: 741789083}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_25
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -22358,12 +22934,16 @@ PrefabInstance:
       value: PTK_Ramp_Medium (5)
       objectReference: {fileID: 0}
     - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 4226684656622418, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_RootOrder
-      value: 29
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4226684656622418, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_LocalScale.x
@@ -22441,7 +23021,7 @@ GameObject:
   - component: {fileID: 751431175}
   - component: {fileID: 751431174}
   - component: {fileID: 751431173}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle4_35
   m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
@@ -22461,7 +23041,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1887573287}
-  m_RootOrder: 34
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &751431173
 MonoBehaviour:
@@ -22554,7 +23134,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 757936253}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rotate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22589,7 +23169,7 @@ GameObject:
   - component: {fileID: 762753638}
   - component: {fileID: 762753637}
   - component: {fileID: 762753636}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_35
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -22844,7 +23424,7 @@ GameObject:
   - component: {fileID: 767804401}
   - component: {fileID: 767804400}
   - component: {fileID: 767804405}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle1_1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -22973,7 +23553,7 @@ GameObject:
   - component: {fileID: 769422437}
   - component: {fileID: 769422436}
   - component: {fileID: 769422435}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_27
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -23090,7 +23670,7 @@ GameObject:
   - component: {fileID: 770577825}
   - component: {fileID: 770577824}
   - component: {fileID: 770577823}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_58
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -23209,7 +23789,7 @@ GameObject:
   - component: {fileID: 773861773}
   - component: {fileID: 773861772}
   - component: {fileID: 773861771}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle4_2
   m_TagString: ObstacleCol
   m_Icon: {fileID: 0}
@@ -23426,7 +24006,7 @@ GameObject:
   - component: {fileID: 779966263}
   - component: {fileID: 779966262}
   - component: {fileID: 779966261}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_8
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -23543,7 +24123,7 @@ GameObject:
   - component: {fileID: 784969134}
   - component: {fileID: 784969133}
   - component: {fileID: 784969132}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_49
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -23795,7 +24375,7 @@ GameObject:
   - component: {fileID: 800291219}
   - component: {fileID: 800291218}
   - component: {fileID: 800291217}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_111
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -23912,7 +24492,7 @@ GameObject:
   - component: {fileID: 812424264}
   - component: {fileID: 812424263}
   - component: {fileID: 812424266}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_89
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -24029,7 +24609,7 @@ GameObject:
   - component: {fileID: 815445544}
   - component: {fileID: 815445543}
   - component: {fileID: 815445542}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_46
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -24147,7 +24727,7 @@ GameObject:
   - component: {fileID: 817671123}
   - component: {fileID: 817671128}
   - component: {fileID: 817671127}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform1_11
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -24230,7 +24810,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1599769823}
-  m_RootOrder: 14
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: -179.306, z: 0}
 --- !u!114 &817671127
 MonoBehaviour:
@@ -24276,7 +24856,7 @@ GameObject:
   - component: {fileID: 818389162}
   - component: {fileID: 818389161}
   - component: {fileID: 818389160}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_30
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -24393,7 +24973,7 @@ GameObject:
   - component: {fileID: 823094014}
   - component: {fileID: 823094013}
   - component: {fileID: 823094012}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_48
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -24510,7 +25090,7 @@ GameObject:
   - component: {fileID: 826831493}
   - component: {fileID: 826831492}
   - component: {fileID: 826831491}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_73
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -24627,7 +25207,7 @@ GameObject:
   - component: {fileID: 838427452}
   - component: {fileID: 838427451}
   - component: {fileID: 838427450}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_13
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -24744,7 +25324,7 @@ GameObject:
   - component: {fileID: 846077720}
   - component: {fileID: 846077719}
   - component: {fileID: 846077718}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_77
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -24858,7 +25438,7 @@ GameObject:
   m_Component:
   - component: {fileID: 856972640}
   - component: {fileID: 856972641}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24905,7 +25485,7 @@ GameObject:
   - component: {fileID: 865988743}
   - component: {fileID: 865988742}
   - component: {fileID: 865988745}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_94
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -25022,7 +25602,7 @@ GameObject:
   - component: {fileID: 871049488}
   - component: {fileID: 871049487}
   - component: {fileID: 871049486}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_87
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -25142,7 +25722,7 @@ GameObject:
   - component: {fileID: 871879535}
   - component: {fileID: 871879534}
   - component: {fileID: 871879533}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle4_20
   m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
@@ -25356,7 +25936,7 @@ GameObject:
   - component: {fileID: 884217609}
   - component: {fileID: 884217608}
   - component: {fileID: 884217607}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_59
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -25473,7 +26053,7 @@ GameObject:
   - component: {fileID: 886478531}
   - component: {fileID: 886478530}
   - component: {fileID: 886478529}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_3
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -25590,7 +26170,7 @@ GameObject:
   - component: {fileID: 890643924}
   - component: {fileID: 890643920}
   - component: {fileID: 890643926}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -25706,7 +26286,7 @@ GameObject:
   - component: {fileID: 891978025}
   - component: {fileID: 891978024}
   - component: {fileID: 891978023}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_70
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -25821,6 +26401,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PTK_Ramp_Large (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 1556607509100966, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4353395921811104, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
       propertyPath: m_RootOrder
       value: 32
@@ -25894,6 +26478,10 @@ PrefabInstance:
     - target: {fileID: 1556607509100966, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
       propertyPath: m_Name
       value: PTK_Ramp_Large (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1556607509100966, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4353395921811104, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
       propertyPath: m_RootOrder
@@ -25971,7 +26559,7 @@ GameObject:
   - component: {fileID: 898111701}
   - component: {fileID: 898111700}
   - component: {fileID: 898111699}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_47
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -26088,7 +26676,7 @@ GameObject:
   - component: {fileID: 898305493}
   - component: {fileID: 898305492}
   - component: {fileID: 898305491}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_128
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -26205,7 +26793,7 @@ GameObject:
   - component: {fileID: 898487423}
   - component: {fileID: 898487422}
   - component: {fileID: 898487421}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_97
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -26322,7 +26910,7 @@ GameObject:
   - component: {fileID: 901025220}
   - component: {fileID: 901025219}
   - component: {fileID: 901025218}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_41
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -26439,7 +27027,7 @@ GameObject:
   - component: {fileID: 903970699}
   - component: {fileID: 903970698}
   - component: {fileID: 903970697}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle4_29
   m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
@@ -26556,7 +27144,7 @@ GameObject:
   - component: {fileID: 913815242}
   - component: {fileID: 913815241}
   - component: {fileID: 913815240}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_60
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -26673,7 +27261,7 @@ GameObject:
   - component: {fileID: 915215807}
   - component: {fileID: 915215806}
   - component: {fileID: 915215805}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_8
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -26790,7 +27378,7 @@ GameObject:
   - component: {fileID: 916919604}
   - component: {fileID: 916919603}
   - component: {fileID: 916919602}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_103
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -26907,7 +27495,7 @@ GameObject:
   - component: {fileID: 919823966}
   - component: {fileID: 919823965}
   - component: {fileID: 919823964}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_89
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -27024,7 +27612,7 @@ GameObject:
   - component: {fileID: 928652738}
   - component: {fileID: 928652737}
   - component: {fileID: 928652736}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_24
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -27141,7 +27729,7 @@ GameObject:
   - component: {fileID: 929674618}
   - component: {fileID: 929674617}
   - component: {fileID: 929674616}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_20
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -27254,7 +27842,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 934670316}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RotatePosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27289,7 +27877,7 @@ GameObject:
   - component: {fileID: 934723311}
   - component: {fileID: 934723310}
   - component: {fileID: 934723309}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_63
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -27407,7 +27995,7 @@ GameObject:
   - component: {fileID: 937651733}
   - component: {fileID: 937651732}
   - component: {fileID: 937651737}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle1_6
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -27507,7 +28095,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1599769823}
-  m_RootOrder: 22
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: -179.306, z: 0}
 --- !u!114 &937651737
 MonoBehaviour:
@@ -27533,7 +28121,7 @@ GameObject:
   - component: {fileID: 940228565}
   - component: {fileID: 940228564}
   - component: {fileID: 940228563}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
@@ -27669,6 +28257,10 @@ PrefabInstance:
     - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_Name
       value: Platform2_84
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_TagString
@@ -27909,7 +28501,7 @@ GameObject:
   - component: {fileID: 949490004}
   - component: {fileID: 949490003}
   - component: {fileID: 949490002}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_69
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -28023,7 +28615,7 @@ GameObject:
   m_Component:
   - component: {fileID: 951115478}
   - component: {fileID: 951115479}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: virtualCamera (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28097,7 +28689,7 @@ GameObject:
   - component: {fileID: 958871513}
   - component: {fileID: 958871512}
   - component: {fileID: 958871511}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_66
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -28214,7 +28806,7 @@ GameObject:
   - component: {fileID: 964385337}
   - component: {fileID: 964385336}
   - component: {fileID: 964385335}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_40
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -28331,7 +28923,7 @@ GameObject:
   - component: {fileID: 965915039}
   - component: {fileID: 965915038}
   - component: {fileID: 965915037}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_100
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -28445,7 +29037,7 @@ GameObject:
   m_Component:
   - component: {fileID: 971765706}
   - component: {fileID: 971765707}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28489,7 +29081,7 @@ GameObject:
   m_Component:
   - component: {fileID: 972614916}
   - component: {fileID: 972614917}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: virtualCamera (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28564,7 +29156,7 @@ GameObject:
   - component: {fileID: 980061437}
   - component: {fileID: 980061436}
   - component: {fileID: 980061435}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle4_37
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -28796,7 +29388,7 @@ GameObject:
   - component: {fileID: 985572994}
   - component: {fileID: 985572993}
   - component: {fileID: 985572992}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_84
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -28913,7 +29505,7 @@ GameObject:
   - component: {fileID: 988816305}
   - component: {fileID: 988816304}
   - component: {fileID: 988816307}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_103
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -29030,7 +29622,7 @@ GameObject:
   - component: {fileID: 992764840}
   - component: {fileID: 992764839}
   - component: {fileID: 992764838}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -29147,7 +29739,7 @@ GameObject:
   - component: {fileID: 992840215}
   - component: {fileID: 992840214}
   - component: {fileID: 992840213}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_72
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -29261,7 +29853,7 @@ GameObject:
   m_Component:
   - component: {fileID: 996601389}
   - component: {fileID: 996601390}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: StopPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29310,7 +29902,7 @@ GameObject:
   - component: {fileID: 999293949}
   - component: {fileID: 999293948}
   - component: {fileID: 999293954}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle1_4
   m_TagString: ObstacleCol
   m_Icon: {fileID: 0}
@@ -29484,7 +30076,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1599769823}
-  m_RootOrder: 15
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &999293954
 MonoBehaviour:
@@ -29511,7 +30103,7 @@ GameObject:
   - component: {fileID: 1002443143}
   - component: {fileID: 1002443142}
   - component: {fileID: 1002443141}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_33
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -29628,7 +30220,7 @@ GameObject:
   - component: {fileID: 1003130821}
   - component: {fileID: 1003130820}
   - component: {fileID: 1003130819}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_80
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -29745,7 +30337,7 @@ GameObject:
   - component: {fileID: 1003278120}
   - component: {fileID: 1003278119}
   - component: {fileID: 1003278118}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_68
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -29861,11 +30453,9 @@ GameObject:
   - component: {fileID: 1007223698}
   - component: {fileID: 1007223697}
   - component: {fileID: 1007223696}
-  - component: {fileID: 1007223695}
-  - component: {fileID: 1007223694}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle4_33
-  m_TagString: ObstacleCol
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29881,102 +30471,10 @@ Transform:
   m_LocalPosition: {x: 10, y: 58, z: -2}
   m_LocalScale: {x: 1.5, y: 0.5, z: 3}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1607683982}
+  m_Children: []
   m_Father: {fileID: 1887573287}
-  m_RootOrder: 32
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1007223694
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1007223691}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnInteractPlayerColEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1007223695}
-        m_TargetAssemblyTypeName: Obstacle6, Assembly-CSharp
-        m_MethodName: EnterWall
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnInteractPlayerColStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerColExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerTriEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerTriStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerTriExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1007223695}
-        m_TargetAssemblyTypeName: Obstacle6, Assembly-CSharp
-        m_MethodName: EnterWall
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnInteractItemColStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriExit:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1007223695
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1007223691}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67b0b74cfbfc6524d8e5431b3b7508ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _wall: {fileID: 1607683981}
-  _moveSpeed: 15
-  _startPos: {x: 0, y: 0, z: 0}
-  _targetPosition: {x: 5.5, y: 59.5, z: -2}
-  _targetPosObj: {fileID: 871879530}
-  _stageNum: 0
-  _name: Obstacle4_33
 --- !u!65 &1007223696
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30053,7 +30551,7 @@ GameObject:
   - component: {fileID: 1013247931}
   - component: {fileID: 1013247930}
   - component: {fileID: 1013247929}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_13
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -30170,7 +30668,7 @@ GameObject:
   - component: {fileID: 1015132794}
   - component: {fileID: 1015132793}
   - component: {fileID: 1015132792}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_29
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -30287,7 +30785,7 @@ GameObject:
   - component: {fileID: 1015357674}
   - component: {fileID: 1015357673}
   - component: {fileID: 1015357672}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_64
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -30404,7 +30902,7 @@ GameObject:
   - component: {fileID: 1026817655}
   - component: {fileID: 1026817654}
   - component: {fileID: 1026817657}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_97
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -30521,7 +31019,7 @@ GameObject:
   - component: {fileID: 1028536143}
   - component: {fileID: 1028536142}
   - component: {fileID: 1028536141}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_96
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -30638,7 +31136,7 @@ GameObject:
   - component: {fileID: 1030388792}
   - component: {fileID: 1030388791}
   - component: {fileID: 1030388790}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_37
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -30751,7 +31249,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1031539232}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: StopPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30786,7 +31284,7 @@ GameObject:
   - component: {fileID: 1033522315}
   - component: {fileID: 1033522314}
   - component: {fileID: 1033522313}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_40
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -30903,7 +31401,7 @@ GameObject:
   - component: {fileID: 1035777339}
   - component: {fileID: 1035777338}
   - component: {fileID: 1035777337}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_101
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -31020,7 +31518,7 @@ GameObject:
   - component: {fileID: 1036967505}
   - component: {fileID: 1036967504}
   - component: {fileID: 1036967503}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_21
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -31198,6 +31696,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PTK_Ramp_Large (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1556607509100966, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4353395921811104, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
       propertyPath: m_RootOrder
       value: 28
@@ -31271,6 +31773,10 @@ PrefabInstance:
     - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_Name
       value: Platform2_74
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_TagString
@@ -31373,7 +31879,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1050677693}
   - component: {fileID: 1050677694}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31420,7 +31926,7 @@ GameObject:
   - component: {fileID: 1052413481}
   - component: {fileID: 1052413480}
   - component: {fileID: 1052413479}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_110
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -31537,7 +32043,7 @@ GameObject:
   - component: {fileID: 1052417311}
   - component: {fileID: 1052417310}
   - component: {fileID: 1052417305}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle3_22
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -31653,7 +32159,7 @@ GameObject:
   - component: {fileID: 1059989908}
   - component: {fileID: 1059989907}
   - component: {fileID: 1059989906}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_95
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -31770,7 +32276,7 @@ GameObject:
   - component: {fileID: 1062049096}
   - component: {fileID: 1062049095}
   - component: {fileID: 1062049094}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_84
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -31887,7 +32393,7 @@ GameObject:
   - component: {fileID: 1064265913}
   - component: {fileID: 1064265912}
   - component: {fileID: 1064265911}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_68
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -32260,7 +32766,7 @@ GameObject:
   - component: {fileID: 1072234388}
   - component: {fileID: 1072234387}
   - component: {fileID: 1072234385}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle3_21
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -32422,7 +32928,7 @@ GameObject:
   - component: {fileID: 1078450764}
   - component: {fileID: 1078450763}
   - component: {fileID: 1078450762}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_35
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -32540,7 +33046,7 @@ GameObject:
   - component: {fileID: 1078611677}
   - component: {fileID: 1078611675}
   - component: {fileID: 1078611674}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle3_17
   m_TagString: ObstacleCol
   m_Icon: {fileID: 0}
@@ -32741,7 +33247,7 @@ GameObject:
   - component: {fileID: 1079525581}
   - component: {fileID: 1079525580}
   - component: {fileID: 1079525579}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_27
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -32858,7 +33364,7 @@ GameObject:
   - component: {fileID: 1079649707}
   - component: {fileID: 1079649706}
   - component: {fileID: 1079649705}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_34
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -32974,6 +33480,10 @@ PrefabInstance:
       value: Platform2_80
       objectReference: {fileID: 0}
     - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
@@ -33073,7 +33583,7 @@ GameObject:
   - component: {fileID: 1087275526}
   - component: {fileID: 1087275525}
   - component: {fileID: 1087275524}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_55
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -33190,7 +33700,7 @@ GameObject:
   - component: {fileID: 1088342238}
   - component: {fileID: 1088342237}
   - component: {fileID: 1088342236}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_22
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -33308,7 +33818,7 @@ GameObject:
   - component: {fileID: 1091586469}
   - component: {fileID: 1091586468}
   - component: {fileID: 1091586467}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle4_36
   m_TagString: ObstacleCol
   m_Icon: {fileID: 0}
@@ -33509,7 +34019,7 @@ GameObject:
   - component: {fileID: 1091733127}
   - component: {fileID: 1091733126}
   - component: {fileID: 1091733124}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle2_2
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -33624,7 +34134,7 @@ GameObject:
   - component: {fileID: 1091876961}
   - component: {fileID: 1091876960}
   - component: {fileID: 1091876959}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
@@ -33763,7 +34273,7 @@ GameObject:
   - component: {fileID: 1098922347}
   - component: {fileID: 1098922346}
   - component: {fileID: 1098922345}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle4_30
   m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
@@ -33890,7 +34400,7 @@ GameObject:
   - component: {fileID: 1104846512}
   - component: {fileID: 1104846511}
   - component: {fileID: 1104846510}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_34
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -34006,6 +34516,10 @@ PrefabInstance:
       value: Platform2_106
       objectReference: {fileID: 0}
     - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
@@ -34110,7 +34624,7 @@ GameObject:
   - component: {fileID: 1106223767}
   - component: {fileID: 1106223766}
   - component: {fileID: 1106223765}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle4_17
   m_TagString: ObstacleCol
   m_Icon: {fileID: 0}
@@ -34296,7 +34810,7 @@ GameObject:
   - component: {fileID: 1107319350}
   - component: {fileID: 1107319349}
   - component: {fileID: 1107319348}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34377,7 +34891,8 @@ Transform:
   m_LocalPosition: {x: -11.499625, y: 111.85829, z: -3.57}
   m_LocalScale: {x: 2.8571954, y: 0.9919613, z: 3}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 370993146}
   m_Father: {fileID: 313690256}
   m_RootOrder: 117
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
@@ -34393,7 +34908,7 @@ GameObject:
   - component: {fileID: 1107324957}
   - component: {fileID: 1107324956}
   - component: {fileID: 1107324955}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
@@ -34509,7 +35024,7 @@ GameObject:
   - component: {fileID: 1115206867}
   - component: {fileID: 1115206872}
   - component: {fileID: 1115206871}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform1_16
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -34592,7 +35107,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1599769823}
-  m_RootOrder: 21
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: -179.306, z: 0}
 --- !u!114 &1115206871
 MonoBehaviour:
@@ -34638,7 +35153,7 @@ GameObject:
   - component: {fileID: 1116480049}
   - component: {fileID: 1116480048}
   - component: {fileID: 1116480051}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_87
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -34755,7 +35270,7 @@ GameObject:
   - component: {fileID: 1121163789}
   - component: {fileID: 1121163788}
   - component: {fileID: 1121163787}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_67
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -34870,6 +35385,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PTK_Ramp_Large (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1556607509100966, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4353395921811104, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
       propertyPath: m_RootOrder
       value: 27
@@ -34946,7 +35465,7 @@ GameObject:
   - component: {fileID: 1122117099}
   - component: {fileID: 1122117098}
   - component: {fileID: 1122117097}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_73
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -35063,7 +35582,7 @@ GameObject:
   - component: {fileID: 1122855411}
   - component: {fileID: 1122855410}
   - component: {fileID: 1122855409}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_9
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -35180,7 +35699,7 @@ GameObject:
   - component: {fileID: 1123475484}
   - component: {fileID: 1123475483}
   - component: {fileID: 1123475482}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_65
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -35295,6 +35814,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PTK_Ramp_Large (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1556607509100966, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4353395921811104, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
       propertyPath: m_RootOrder
       value: 24
@@ -35370,7 +35893,7 @@ GameObject:
   - component: {fileID: 1136159178}
   - component: {fileID: 1136159177}
   - component: {fileID: 1136159176}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
@@ -35509,7 +36032,7 @@ GameObject:
   - component: {fileID: 1143458083}
   - component: {fileID: 1143458082}
   - component: {fileID: 1143458081}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_52
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -35626,7 +36149,7 @@ GameObject:
   - component: {fileID: 1148723074}
   - component: {fileID: 1148723073}
   - component: {fileID: 1148723072}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_51
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -35740,7 +36263,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1150620947}
   - component: {fileID: 1150620948}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35787,7 +36310,7 @@ GameObject:
   - component: {fileID: 1153459177}
   - component: {fileID: 1153459176}
   - component: {fileID: 1153459175}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_20
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -35904,7 +36427,7 @@ GameObject:
   - component: {fileID: 1154030366}
   - component: {fileID: 1154030365}
   - component: {fileID: 1154030364}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_122
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -36154,7 +36677,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1162301732}
   - component: {fileID: 1162301733}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36200,12 +36723,16 @@ PrefabInstance:
       value: PTK_Ramp_Medium (1)
       objectReference: {fileID: 0}
     - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 4226684656622418, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 4226684656622418, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_LocalScale.x
@@ -36279,7 +36806,7 @@ GameObject:
   - component: {fileID: 1171307185}
   - component: {fileID: 1171307184}
   - component: {fileID: 1171307183}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_54
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -36396,7 +36923,7 @@ GameObject:
   - component: {fileID: 1175153193}
   - component: {fileID: 1175153192}
   - component: {fileID: 1175153191}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle4_39
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -36510,6 +37037,10 @@ PrefabInstance:
     - target: {fileID: 1556607509100966, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
       propertyPath: m_Name
       value: PTK_Ramp_Large (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1556607509100966, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4353395921811104, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
       propertyPath: m_RootOrder
@@ -36724,7 +37255,7 @@ GameObject:
   - component: {fileID: 1194306509}
   - component: {fileID: 1194306508}
   - component: {fileID: 1194306507}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_98
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -36841,7 +37372,7 @@ GameObject:
   - component: {fileID: 1197529327}
   - component: {fileID: 1197529326}
   - component: {fileID: 1197529329}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_96
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -36958,7 +37489,7 @@ GameObject:
   - component: {fileID: 1202192599}
   - component: {fileID: 1202192598}
   - component: {fileID: 1202192597}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_2
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -37072,7 +37603,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1202258324}
   - component: {fileID: 1202258325}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: virtualCamera (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37146,7 +37677,7 @@ GameObject:
   - component: {fileID: 1203660579}
   - component: {fileID: 1203660578}
   - component: {fileID: 1203660577}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_6
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -37263,7 +37794,7 @@ GameObject:
   - component: {fileID: 1206117367}
   - component: {fileID: 1206117366}
   - component: {fileID: 1206117363}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -37379,7 +37910,7 @@ GameObject:
   - component: {fileID: 1212079865}
   - component: {fileID: 1212079864}
   - component: {fileID: 1212079863}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle4_38
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -37496,7 +38027,7 @@ GameObject:
   - component: {fileID: 1214581788}
   - component: {fileID: 1214581787}
   - component: {fileID: 1214581786}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_47
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -37600,6 +38131,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1214581784}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1215379194
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1215379195}
+  m_Layer: 2
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1215379195
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215379194}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 370993146}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1219526843
 GameObject:
   m_ObjectHideFlags: 0
@@ -37613,7 +38175,7 @@ GameObject:
   - component: {fileID: 1219526847}
   - component: {fileID: 1219526846}
   - component: {fileID: 1219526845}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_76
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -37729,109 +38291,14 @@ GameObject:
   - component: {fileID: 1222439401}
   - component: {fileID: 1222439400}
   - component: {fileID: 1222439399}
-  - component: {fileID: 1222439398}
-  - component: {fileID: 1222439397}
-  - component: {fileID: 1222439396}
   - component: {fileID: 1222439403}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle1_3
   m_TagString: ObstacleCol
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &1222439396
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1222439395}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.4542748, y: 5.3864098, z: 0}
-  m_Center: {x: 0.06, y: 0.5009861, z: 0.5000005}
---- !u!114 &1222439397
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1222439395}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnInteractPlayerColEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1222439398}
-        m_TargetAssemblyTypeName: Obstacle6, Assembly-CSharp
-        m_MethodName: EnterWall
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnInteractPlayerColStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerColExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerTriEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerTriStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerTriExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriExit:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1222439398
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1222439395}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67b0b74cfbfc6524d8e5431b3b7508ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _wall: {fileID: 1944628158}
-  _moveSpeed: 10
-  _startPos: {x: 0, y: 0, z: 0}
-  _targetPosition: {x: 5.5, y: -14.8, z: -1.2}
-  _targetPosObj: {fileID: 1786778800}
-  _stageNum: 0
-  _name: Obstacle1_3
 --- !u!65 &1222439399
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37932,7 +38399,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1222628157}
   - component: {fileID: 1222628158}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: virtualCamera (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38022,7 +38489,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1db16ae81aefc94b8562db96d554b0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _objects: {fileID: 0}
+  _objects: {fileID: 1570358992}
 --- !u!4 &1229389539
 Transform:
   m_ObjectHideFlags: 0
@@ -38051,7 +38518,7 @@ GameObject:
   - component: {fileID: 1231759722}
   - component: {fileID: 1231759721}
   - component: {fileID: 1231759724}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_98
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -38168,7 +38635,7 @@ GameObject:
   - component: {fileID: 1232500176}
   - component: {fileID: 1232500175}
   - component: {fileID: 1232500174}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_88
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -38285,7 +38752,7 @@ GameObject:
   - component: {fileID: 1237116888}
   - component: {fileID: 1237116887}
   - component: {fileID: 1237116886}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_43
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -38400,6 +38867,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PTK_Ramp_Large (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 1556607509100966, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4353395921811104, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
       propertyPath: m_RootOrder
       value: 30
@@ -38472,7 +38943,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1239227768}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rotate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38507,7 +38978,7 @@ GameObject:
   - component: {fileID: 1240781660}
   - component: {fileID: 1240781659}
   - component: {fileID: 1240781658}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_62
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -38623,6 +39094,10 @@ PrefabInstance:
       value: Platform2_53
       objectReference: {fileID: 0}
     - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
@@ -38726,7 +39201,7 @@ GameObject:
   - component: {fileID: 1248446965}
   - component: {fileID: 1248446964}
   - component: {fileID: 1248446963}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_82
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -38840,7 +39315,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1248687490}
   - component: {fileID: 1248687491}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: virtualCamera (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38914,7 +39389,7 @@ GameObject:
   - component: {fileID: 1250069851}
   - component: {fileID: 1250069850}
   - component: {fileID: 1250069849}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_78
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -39032,7 +39507,7 @@ GameObject:
   - component: {fileID: 1250336741}
   - component: {fileID: 1250336746}
   - component: {fileID: 1250336745}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform1_15
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -39115,7 +39590,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1599769823}
-  m_RootOrder: 20
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: -179.306, z: 0}
 --- !u!114 &1250336745
 MonoBehaviour:
@@ -39162,7 +39637,7 @@ GameObject:
   - component: {fileID: 1255419483}
   - component: {fileID: 1255419482}
   - component: {fileID: 1255419481}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle4_19
   m_TagString: ObstacleCol
   m_Icon: {fileID: 0}
@@ -39349,7 +39824,7 @@ GameObject:
   - component: {fileID: 1256556199}
   - component: {fileID: 1256556198}
   - component: {fileID: 1256556197}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_45
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -39465,6 +39940,10 @@ PrefabInstance:
       value: Platform2_26
       objectReference: {fileID: 0}
     - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
@@ -39565,7 +40044,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1271896959}
   - component: {fileID: 1271896960}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39612,7 +40091,7 @@ GameObject:
   - component: {fileID: 1276213497}
   - component: {fileID: 1276213496}
   - component: {fileID: 1276213495}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_92
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -39730,7 +40209,7 @@ GameObject:
   - component: {fileID: 1284392267}
   - component: {fileID: 1284392266}
   - component: {fileID: 1284392265}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle4_16
   m_TagString: ObstacleCol
   m_Icon: {fileID: 0}
@@ -39919,7 +40398,7 @@ GameObject:
   - component: {fileID: 1285230722}
   - component: {fileID: 1285230721}
   - component: {fileID: 1285230720}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle4_11
   m_TagString: ObstacleCol
   m_Icon: {fileID: 0}
@@ -40133,6 +40612,10 @@ PrefabInstance:
     - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_Name
       value: Platform2_39
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_TagString
@@ -40353,12 +40836,16 @@ PrefabInstance:
       value: PTK_Ramp_Medium (3)
       objectReference: {fileID: 0}
     - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 4226684656622418, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_RootOrder
-      value: 27
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 4226684656622418, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_LocalScale.x
@@ -40432,7 +40919,7 @@ GameObject:
   - component: {fileID: 1302523447}
   - component: {fileID: 1302523446}
   - component: {fileID: 1302523445}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_47
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -40545,7 +41032,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1303223889}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RotatePos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40580,7 +41067,7 @@ GameObject:
   - component: {fileID: 1313798274}
   - component: {fileID: 1313798273}
   - component: {fileID: 1313798272}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_50
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -40697,7 +41184,7 @@ GameObject:
   - component: {fileID: 1317746156}
   - component: {fileID: 1317746155}
   - component: {fileID: 1317746154}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_56
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -40814,7 +41301,7 @@ GameObject:
   - component: {fileID: 1322835516}
   - component: {fileID: 1322835515}
   - component: {fileID: 1322835514}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_27
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -40932,7 +41419,7 @@ GameObject:
   - component: {fileID: 1323215123}
   - component: {fileID: 1323215122}
   - component: {fileID: 1323215121}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle4_13
   m_TagString: ObstacleCol
   m_Icon: {fileID: 0}
@@ -41121,7 +41608,7 @@ GameObject:
   - component: {fileID: 1323409520}
   - component: {fileID: 1323409519}
   - component: {fileID: 1323409518}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle4_9
   m_TagString: ObstacleCol
   m_Icon: {fileID: 0}
@@ -41338,7 +41825,7 @@ GameObject:
   - component: {fileID: 1323862686}
   - component: {fileID: 1323862685}
   - component: {fileID: 1323862684}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_138
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -41455,7 +41942,7 @@ GameObject:
   - component: {fileID: 1326175708}
   - component: {fileID: 1326175707}
   - component: {fileID: 1326175706}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_3
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -41573,7 +42060,7 @@ GameObject:
   - component: {fileID: 1329813920}
   - component: {fileID: 1329813919}
   - component: {fileID: 1329813918}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle4_18
   m_TagString: ObstacleCol
   m_Icon: {fileID: 0}
@@ -41760,7 +42247,7 @@ GameObject:
   - component: {fileID: 1331017646}
   - component: {fileID: 1331017644}
   - component: {fileID: 1331017640}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle3_2
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -41876,7 +42363,7 @@ GameObject:
   - component: {fileID: 1331811566}
   - component: {fileID: 1331811565}
   - component: {fileID: 1331811564}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_39
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -41993,7 +42480,7 @@ GameObject:
   - component: {fileID: 1340323975}
   - component: {fileID: 1340323974}
   - component: {fileID: 1340323973}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_57
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -42106,7 +42593,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1342760266}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RotatePosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42141,7 +42628,7 @@ GameObject:
   - component: {fileID: 1343564280}
   - component: {fileID: 1343564279}
   - component: {fileID: 1343564278}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle4_23
   m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
@@ -42254,7 +42741,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1347336612}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42289,7 +42776,7 @@ GameObject:
   - component: {fileID: 1352234409}
   - component: {fileID: 1352234408}
   - component: {fileID: 1352234411}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_92
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -42406,7 +42893,7 @@ GameObject:
   - component: {fileID: 1361674180}
   - component: {fileID: 1361674179}
   - component: {fileID: 1361674178}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_89
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -42523,7 +43010,7 @@ GameObject:
   - component: {fileID: 1362243068}
   - component: {fileID: 1362243067}
   - component: {fileID: 1362243066}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_16 (1)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -42640,7 +43127,7 @@ GameObject:
   - component: {fileID: 1362741604}
   - component: {fileID: 1362741603}
   - component: {fileID: 1362741602}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_86
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -42756,6 +43243,10 @@ PrefabInstance:
       value: Platform2_3
       objectReference: {fileID: 0}
     - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
@@ -42854,7 +43345,7 @@ GameObject:
   - component: {fileID: 1379609579}
   - component: {fileID: 1379609578}
   - component: {fileID: 1379609577}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: GameObject (1)
   m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
@@ -43128,7 +43619,7 @@ GameObject:
   - component: {fileID: 1384429831}
   - component: {fileID: 1384429830}
   - component: {fileID: 1384429829}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_21
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -43243,6 +43734,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PTK_Ramp_Large (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 1556607509100966, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4353395921811104, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
       propertyPath: m_RootOrder
       value: 34
@@ -43319,7 +43814,7 @@ GameObject:
   - component: {fileID: 1399433407}
   - component: {fileID: 1399433406}
   - component: {fileID: 1399433405}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_79
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -43436,7 +43931,7 @@ GameObject:
   - component: {fileID: 1407056228}
   - component: {fileID: 1407056227}
   - component: {fileID: 1407056226}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_45
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -43553,7 +44048,7 @@ GameObject:
   - component: {fileID: 1408133384}
   - component: {fileID: 1408133383}
   - component: {fileID: 1408133382}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_22
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -43670,7 +44165,7 @@ GameObject:
   - component: {fileID: 1408829208}
   - component: {fileID: 1408829207}
   - component: {fileID: 1408829206}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_15
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -43787,7 +44282,7 @@ GameObject:
   - component: {fileID: 1416260645}
   - component: {fileID: 1416260644}
   - component: {fileID: 1416260643}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_67
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -43904,7 +44399,7 @@ GameObject:
   - component: {fileID: 1419156207}
   - component: {fileID: 1419156206}
   - component: {fileID: 1419156205}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_9
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -44021,7 +44516,7 @@ GameObject:
   - component: {fileID: 1421115978}
   - component: {fileID: 1421115977}
   - component: {fileID: 1421115974}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -44187,7 +44682,7 @@ GameObject:
   - component: {fileID: 1423354790}
   - component: {fileID: 1423354789}
   - component: {fileID: 1423354788}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_56
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -44304,7 +44799,7 @@ GameObject:
   - component: {fileID: 1423763041}
   - component: {fileID: 1423763040}
   - component: {fileID: 1423763039}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_48
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -44421,7 +44916,7 @@ GameObject:
   - component: {fileID: 1424051110}
   - component: {fileID: 1424051109}
   - component: {fileID: 1424051108}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_51
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -44630,7 +45125,7 @@ GameObject:
   - component: {fileID: 1434740972}
   - component: {fileID: 1434740971}
   - component: {fileID: 1434740970}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_83
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -44746,7 +45241,7 @@ GameObject:
   - component: {fileID: 1436146340}
   - component: {fileID: 1436146339}
   - component: {fileID: 1436146338}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
@@ -44872,6 +45367,37 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.5853039, y: 1.4406891, z: 1}
   m_Center: {x: -0.0442186, y: 0.22034454, z: 0}
+--- !u!1 &1441499439
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1441499440}
+  m_Layer: 8
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1441499440
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441499439}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.6, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 660211600}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1442145956
 GameObject:
   m_ObjectHideFlags: 0
@@ -44885,7 +45411,7 @@ GameObject:
   - component: {fileID: 1442145959}
   - component: {fileID: 1442145958}
   - component: {fileID: 1442145957}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_12
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -45002,7 +45528,7 @@ GameObject:
   - component: {fileID: 1445311217}
   - component: {fileID: 1445311216}
   - component: {fileID: 1445311215}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_28
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -45118,106 +45644,13 @@ GameObject:
   - component: {fileID: 1450427851}
   - component: {fileID: 1450427850}
   - component: {fileID: 1450427849}
-  - component: {fileID: 1450427847}
-  - component: {fileID: 1450427846}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle2_4
   m_TagString: ObstacleCol
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1450427846
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1450427845}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnInteractPlayerColEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1450427847}
-        m_TargetAssemblyTypeName: Obstacle6, Assembly-CSharp
-        m_MethodName: EnterWall
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnInteractPlayerColStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerColExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerTriEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerTriStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerTriExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1450427847}
-        m_TargetAssemblyTypeName: Obstacle6, Assembly-CSharp
-        m_MethodName: EnterWall
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnInteractItemColStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriExit:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1450427847
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1450427845}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67b0b74cfbfc6524d8e5431b3b7508ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _wall: {fileID: 1107319346}
-  _moveSpeed: 5
-  _startPos: {x: 0, y: 0, z: 0}
-  _targetPosition: {x: 0, y: 0, z: 0}
-  _targetPosObj: {fileID: 1504501765}
-  _stageNum: 0
-  _name: Obstacle2_4
 --- !u!65 &1450427849
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -45309,7 +45742,7 @@ GameObject:
   - component: {fileID: 1451410794}
   - component: {fileID: 1451410793}
   - component: {fileID: 1451410792}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_75
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -45502,7 +45935,7 @@ GameObject:
   - component: {fileID: 1460482320}
   - component: {fileID: 1460482319}
   - component: {fileID: 1460482318}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_7
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -45619,7 +46052,7 @@ GameObject:
   - component: {fileID: 1466799156}
   - component: {fileID: 1466799155}
   - component: {fileID: 1466799154}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_23
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -45736,7 +46169,7 @@ GameObject:
   - component: {fileID: 1470369030}
   - component: {fileID: 1470369029}
   - component: {fileID: 1470369028}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_85
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45929,7 +46362,7 @@ GameObject:
   - component: {fileID: 1475539519}
   - component: {fileID: 1475539518}
   - component: {fileID: 1475539517}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_17
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -46043,7 +46476,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1476002981}
   - component: {fileID: 1476002982}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46090,7 +46523,7 @@ GameObject:
   - component: {fileID: 1476580804}
   - component: {fileID: 1476580803}
   - component: {fileID: 1476580802}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle4_5
   m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
@@ -46207,7 +46640,7 @@ GameObject:
   - component: {fileID: 1476941001}
   - component: {fileID: 1476941000}
   - component: {fileID: 1476940999}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_136
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -46324,7 +46757,7 @@ GameObject:
   - component: {fileID: 1477551754}
   - component: {fileID: 1477551753}
   - component: {fileID: 1477551752}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_11
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -46441,7 +46874,7 @@ GameObject:
   - component: {fileID: 1483186863}
   - component: {fileID: 1483186862}
   - component: {fileID: 1483186860}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -46475,7 +46908,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d2b59aa824121f488c5a6573501bddd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameSceneManager: {fileID: 0}
+  _gameSceneManager: {fileID: 1958565681}
   _stage: 3
   _isSavePlatform: 1
   _isClearPlatform: 0
@@ -46558,7 +46991,7 @@ GameObject:
   - component: {fileID: 1489820458}
   - component: {fileID: 1489820457}
   - component: {fileID: 1489820456}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_116
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -46676,7 +47109,7 @@ GameObject:
   - component: {fileID: 1495420207}
   - component: {fileID: 1495420206}
   - component: {fileID: 1495420213}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle1_5
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -46698,7 +47131,7 @@ Transform:
   - {fileID: 1808564242}
   - {fileID: 757936253}
   m_Father: {fileID: 1599769823}
-  m_RootOrder: 19
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1495420206
 BoxCollider:
@@ -46804,7 +47237,7 @@ GameObject:
   - component: {fileID: 1501661218}
   - component: {fileID: 1501661217}
   - component: {fileID: 1501661216}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_41
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -46921,7 +47354,7 @@ GameObject:
   - component: {fileID: 1502462658}
   - component: {fileID: 1502462657}
   - component: {fileID: 1502462656}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_109
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -47066,7 +47499,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1504739806}
   - component: {fileID: 1504739807}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47113,7 +47546,7 @@ GameObject:
   - component: {fileID: 1507022088}
   - component: {fileID: 1507022087}
   - component: {fileID: 1507022086}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_88
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -47230,7 +47663,7 @@ GameObject:
   - component: {fileID: 1508846646}
   - component: {fileID: 1508846645}
   - component: {fileID: 1508846644}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_10
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -47347,7 +47780,7 @@ GameObject:
   - component: {fileID: 1510642381}
   - component: {fileID: 1510642380}
   - component: {fileID: 1510642379}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_10
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -47465,7 +47898,7 @@ GameObject:
   - component: {fileID: 1511952226}
   - component: {fileID: 1511952224}
   - component: {fileID: 1511952223}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle3_8
   m_TagString: ObstacleCol
   m_Icon: {fileID: 0}
@@ -47640,7 +48073,7 @@ GameObject:
   - component: {fileID: 1513080617}
   - component: {fileID: 1513080616}
   - component: {fileID: 1513080615}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_68
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -47757,7 +48190,7 @@ GameObject:
   - component: {fileID: 1517418031}
   - component: {fileID: 1517418030}
   - component: {fileID: 1517418029}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_4
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -47874,7 +48307,7 @@ GameObject:
   - component: {fileID: 1517666094}
   - component: {fileID: 1517666093}
   - component: {fileID: 1517666092}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_83
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -47989,6 +48422,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PTK_Ramp_Large (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1556607509100966, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4353395921811104, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -48062,7 +48499,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1525493838}
   - component: {fileID: 1525493839}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48109,7 +48546,7 @@ GameObject:
   - component: {fileID: 1526676782}
   - component: {fileID: 1526676781}
   - component: {fileID: 1526676780}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_46
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -48226,7 +48663,7 @@ GameObject:
   - component: {fileID: 1529553924}
   - component: {fileID: 1529553923}
   - component: {fileID: 1529553922}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_96
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -48342,6 +48779,10 @@ PrefabInstance:
       value: Platform2_95
       objectReference: {fileID: 0}
     - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
@@ -48445,7 +48886,7 @@ GameObject:
   - component: {fileID: 1536032612}
   - component: {fileID: 1536032611}
   - component: {fileID: 1536032610}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle4_40
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -48562,7 +49003,7 @@ GameObject:
   - component: {fileID: 1536693749}
   - component: {fileID: 1536693748}
   - component: {fileID: 1536693747}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_112
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -48679,7 +49120,7 @@ GameObject:
   - component: {fileID: 1543354276}
   - component: {fileID: 1543354275}
   - component: {fileID: 1543354274}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_4
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -48795,6 +49236,10 @@ PrefabInstance:
       value: PTK_Ramp_Medium
       objectReference: {fileID: 0}
     - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
@@ -48870,7 +49315,7 @@ GameObject:
   - component: {fileID: 1550014612}
   - component: {fileID: 1550014611}
   - component: {fileID: 1550014610}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_61
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -48987,7 +49432,7 @@ GameObject:
   - component: {fileID: 1563765283}
   - component: {fileID: 1563765282}
   - component: {fileID: 1563765281}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_76
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -49104,7 +49549,7 @@ GameObject:
   - component: {fileID: 1564496412}
   - component: {fileID: 1564496411}
   - component: {fileID: 1564496410}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_31
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -49221,7 +49666,7 @@ GameObject:
   - component: {fileID: 1567657472}
   - component: {fileID: 1567657471}
   - component: {fileID: 1567657470}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_33
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -49337,7 +49782,7 @@ GameObject:
   - component: {fileID: 1568876643}
   - component: {fileID: 1568876642}
   - component: {fileID: 1568876641}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle3_1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -49475,7 +49920,7 @@ GameObject:
   - component: {fileID: 1576465832}
   - component: {fileID: 1576465831}
   - component: {fileID: 1576465830}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
@@ -49614,7 +50059,7 @@ GameObject:
   - component: {fileID: 1585066304}
   - component: {fileID: 1585066303}
   - component: {fileID: 1585066302}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_57
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -49731,7 +50176,7 @@ GameObject:
   - component: {fileID: 1588238927}
   - component: {fileID: 1588238926}
   - component: {fileID: 1588238925}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_38
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -49846,6 +50291,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PTK_Ramp_Large (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1556607509100966, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4353395921811104, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -49922,7 +50371,7 @@ GameObject:
   - component: {fileID: 1591335536}
   - component: {fileID: 1591335535}
   - component: {fileID: 1591335534}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_49
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -50134,8 +50583,10 @@ Transform:
   - {fileID: 233113513}
   - {fileID: 493564185}
   - {fileID: 1222439402}
+  - {fileID: 1798663869}
   - {fileID: 1944628162}
   - {fileID: 5562363}
+  - {fileID: 1896444060}
   - {fileID: 817671126}
   - {fileID: 999293953}
   - {fileID: 1880128508}
@@ -50161,7 +50612,7 @@ GameObject:
   - component: {fileID: 1603236904}
   - component: {fileID: 1603236903}
   - component: {fileID: 1603236902}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_16
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -50278,7 +50729,7 @@ GameObject:
   - component: {fileID: 1604118293}
   - component: {fileID: 1604118292}
   - component: {fileID: 1604118291}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_57
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -50395,7 +50846,7 @@ GameObject:
   - component: {fileID: 1607129607}
   - component: {fileID: 1607129606}
   - component: {fileID: 1607129605}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_32
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -50512,7 +50963,7 @@ GameObject:
   - component: {fileID: 1607252211}
   - component: {fileID: 1607252210}
   - component: {fileID: 1607252209}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_24
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -50629,7 +51080,8 @@ GameObject:
   - component: {fileID: 1607683985}
   - component: {fileID: 1607683984}
   - component: {fileID: 1607683983}
-  m_Layer: 0
+  - component: {fileID: 1607683987}
+  m_Layer: 8
   m_Name: Obstacle4_34_Wall
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -50644,12 +51096,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1607683981}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.766666, y: 3, z: 0}
-  m_LocalScale: {x: 0.33333334, y: 5, z: 1}
+  m_LocalPosition: {x: -16.65, y: 59.499985, z: -2}
+  m_LocalScale: {x: 0.5, y: 2.5, z: 3}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1007223692}
-  m_RootOrder: 0
+  m_Children:
+  - {fileID: 660211600}
+  m_Father: {fileID: 1887573287}
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1607683983
 MonoBehaviour:
@@ -50733,6 +51186,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1607683981}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &1607683987
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607683981}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1610617672
 GameObject:
   m_ObjectHideFlags: 0
@@ -50746,7 +51215,7 @@ GameObject:
   - component: {fileID: 1610617676}
   - component: {fileID: 1610617675}
   - component: {fileID: 1610617674}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_44
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -50863,7 +51332,7 @@ GameObject:
   - component: {fileID: 1612445294}
   - component: {fileID: 1612445293}
   - component: {fileID: 1612445292}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_46
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -50981,7 +51450,7 @@ GameObject:
   - component: {fileID: 1613906613}
   - component: {fileID: 1613906611}
   - component: {fileID: 1613906612}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_133
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -51114,11 +51583,9 @@ GameObject:
   - component: {fileID: 1614320665}
   - component: {fileID: 1614320664}
   - component: {fileID: 1614320663}
-  - component: {fileID: 1614320662}
-  - component: {fileID: 1614320667}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle4_34
-  m_TagString: ObstacleCol
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51134,30 +51601,10 @@ Transform:
   m_LocalPosition: {x: -1.25, y: 57.75, z: -2}
   m_LocalScale: {x: 2.5, y: 0.5, z: 3}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 695645865}
+  m_Children: []
   m_Father: {fileID: 1887573287}
-  m_RootOrder: 33
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1614320662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1614320659}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67b0b74cfbfc6524d8e5431b3b7508ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _wall: {fileID: 695645864}
-  _moveSpeed: 15
-  _startPos: {x: 0, y: 0, z: 0}
-  _targetPosition: {x: -3.5, y: 57.75, z: -2}
-  _targetPosObj: {fileID: 871879530}
-  _stageNum: 0
-  _name: Obstacle4_34
 --- !u!114 &1614320663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51240,78 +51687,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1614320659}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1614320667
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1614320659}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnInteractPlayerColEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1614320662}
-        m_TargetAssemblyTypeName: Obstacle6, Assembly-CSharp
-        m_MethodName: EnterWall
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnInteractPlayerColStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerColExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerTriEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerTriStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerTriExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1614320662}
-        m_TargetAssemblyTypeName: Obstacle6, Assembly-CSharp
-        m_MethodName: EnterWall
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnInteractItemColStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriExit:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &1623303902
 GameObject:
   m_ObjectHideFlags: 0
@@ -51325,7 +51700,7 @@ GameObject:
   - component: {fileID: 1623303907}
   - component: {fileID: 1623303906}
   - component: {fileID: 1623303905}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle4_1
   m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
@@ -51442,7 +51817,7 @@ GameObject:
   - component: {fileID: 1627861393}
   - component: {fileID: 1627861392}
   - component: {fileID: 1627861391}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_67
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -51559,7 +51934,7 @@ GameObject:
   - component: {fileID: 1635050025}
   - component: {fileID: 1635050024}
   - component: {fileID: 1635050023}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_65
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -51676,7 +52051,7 @@ GameObject:
   - component: {fileID: 1638757501}
   - component: {fileID: 1638757500}
   - component: {fileID: 1638757499}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_62
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -51793,7 +52168,7 @@ GameObject:
   - component: {fileID: 1646105062}
   - component: {fileID: 1646105061}
   - component: {fileID: 1646105060}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_12
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -51910,7 +52285,7 @@ GameObject:
   - component: {fileID: 1646520801}
   - component: {fileID: 1646520800}
   - component: {fileID: 1646520799}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_17
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -52027,7 +52402,7 @@ GameObject:
   - component: {fileID: 1670505055}
   - component: {fileID: 1670505054}
   - component: {fileID: 1670505053}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_66
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -52144,7 +52519,7 @@ GameObject:
   - component: {fileID: 1680484803}
   - component: {fileID: 1680484802}
   - component: {fileID: 1680484801}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_99
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -52261,7 +52636,7 @@ GameObject:
   - component: {fileID: 1683688454}
   - component: {fileID: 1683688453}
   - component: {fileID: 1683688452}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_94
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -52378,7 +52753,7 @@ GameObject:
   - component: {fileID: 1688441992}
   - component: {fileID: 1688441991}
   - component: {fileID: 1688441990}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_50
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -52492,7 +52867,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1688616742}
   - component: {fileID: 1688616743}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: virtualCamera (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52563,7 +52938,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1689004229}
   - component: {fileID: 1689004230}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: virtualCamera (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52637,7 +53012,7 @@ GameObject:
   - component: {fileID: 1692923563}
   - component: {fileID: 1692923562}
   - component: {fileID: 1692923561}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_77
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -52754,7 +53129,7 @@ GameObject:
   - component: {fileID: 1696781823}
   - component: {fileID: 1696781822}
   - component: {fileID: 1696781821}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_6
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -52871,7 +53246,7 @@ GameObject:
   - component: {fileID: 1697344294}
   - component: {fileID: 1697344293}
   - component: {fileID: 1697344292}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_42
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -52988,7 +53363,7 @@ GameObject:
   - component: {fileID: 1699231563}
   - component: {fileID: 1699231562}
   - component: {fileID: 1699231561}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_54
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -53105,7 +53480,7 @@ GameObject:
   - component: {fileID: 1705982378}
   - component: {fileID: 1705982377}
   - component: {fileID: 1705982376}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_71
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -53222,7 +53597,7 @@ GameObject:
   - component: {fileID: 1706291075}
   - component: {fileID: 1706291074}
   - component: {fileID: 1706291073}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_113
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -53339,7 +53714,7 @@ GameObject:
   - component: {fileID: 1707596899}
   - component: {fileID: 1707596898}
   - component: {fileID: 1707596897}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_30
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -53454,6 +53829,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PTK_Ramp_Large (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 1556607509100966, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4353395921811104, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
       propertyPath: m_RootOrder
       value: 31
@@ -53530,7 +53909,7 @@ GameObject:
   - component: {fileID: 1709976390}
   - component: {fileID: 1709976389}
   - component: {fileID: 1709976385}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle3_13
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -53644,6 +54023,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PTK_Ramp_Large (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1556607509100966, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4353395921811104, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
       propertyPath: m_RootOrder
       value: 21
@@ -53720,7 +54103,7 @@ GameObject:
   - component: {fileID: 1713570411}
   - component: {fileID: 1713570410}
   - component: {fileID: 1713570409}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_87
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -53837,7 +54220,7 @@ GameObject:
   - component: {fileID: 1719478181}
   - component: {fileID: 1719478180}
   - component: {fileID: 1719478178}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle3_4
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -53952,7 +54335,7 @@ GameObject:
   - component: {fileID: 1723094910}
   - component: {fileID: 1723094909}
   - component: {fileID: 1723094908}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_69
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -54070,7 +54453,7 @@ GameObject:
   - component: {fileID: 1723785961}
   - component: {fileID: 1723785966}
   - component: {fileID: 1723785965}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform1_7
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -54199,7 +54582,7 @@ GameObject:
   - component: {fileID: 1728028893}
   - component: {fileID: 1728028892}
   - component: {fileID: 1728028891}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_130
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -54316,7 +54699,7 @@ GameObject:
   - component: {fileID: 1729124727}
   - component: {fileID: 1729124726}
   - component: {fileID: 1729124725}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_7
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -54433,7 +54816,7 @@ GameObject:
   - component: {fileID: 1743832664}
   - component: {fileID: 1743832663}
   - component: {fileID: 1743832662}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_73
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -54550,7 +54933,7 @@ GameObject:
   - component: {fileID: 1750610453}
   - component: {fileID: 1750610452}
   - component: {fileID: 1750610451}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_131
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -54667,7 +55050,7 @@ GameObject:
   - component: {fileID: 1753237974}
   - component: {fileID: 1753237973}
   - component: {fileID: 1753237972}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_32
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -54784,7 +55167,7 @@ GameObject:
   - component: {fileID: 1754075681}
   - component: {fileID: 1754075680}
   - component: {fileID: 1754075679}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_36
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -54901,7 +55284,7 @@ GameObject:
   - component: {fileID: 1757463390}
   - component: {fileID: 1757463389}
   - component: {fileID: 1757463388}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_125
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -55019,7 +55402,7 @@ GameObject:
   - component: {fileID: 1762741653}
   - component: {fileID: 1762741652}
   - component: {fileID: 1762741651}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle2_3
   m_TagString: ObstacleCol
   m_Icon: {fileID: 0}
@@ -55220,7 +55603,7 @@ GameObject:
   - component: {fileID: 1768649249}
   - component: {fileID: 1768649248}
   - component: {fileID: 1768649247}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_64
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -55392,7 +55775,7 @@ GameObject:
   - component: {fileID: 1779557301}
   - component: {fileID: 1779557300}
   - component: {fileID: 1779557299}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_55
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -55509,7 +55892,7 @@ GameObject:
   - component: {fileID: 1780923773}
   - component: {fileID: 1780923772}
   - component: {fileID: 1780923771}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_121
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -55625,6 +56008,10 @@ PrefabInstance:
       value: Platform2_117
       objectReference: {fileID: 0}
     - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
@@ -55725,6 +56112,10 @@ PrefabInstance:
     - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_Name
       value: Platform2_100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_TagString
@@ -55831,7 +56222,7 @@ GameObject:
   - component: {fileID: 1789224862}
   - component: {fileID: 1789224867}
   - component: {fileID: 1789224866}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform1_6
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -55959,6 +56350,10 @@ PrefabInstance:
       value: Platform2_60
       objectReference: {fileID: 0}
     - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
@@ -56059,7 +56454,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1795822132}
   - component: {fileID: 1795822133}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56106,7 +56501,7 @@ GameObject:
   - component: {fileID: 1796543467}
   - component: {fileID: 1796543466}
   - component: {fileID: 1796543465}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_79
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -56223,7 +56618,7 @@ GameObject:
   - component: {fileID: 1798348434}
   - component: {fileID: 1798348433}
   - component: {fileID: 1798348432}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_7
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -56327,6 +56722,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1798348430}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1798663868
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1798663869}
+  m_Layer: 8
+  m_Name: GameObject (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1798663869
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798663868}
+  m_LocalRotation: {x: -0, y: -0.9999817, z: -0, w: 0.0060563134}
+  m_LocalPosition: {x: 2.52, y: 21.209991, z: -1.85}
+  m_LocalScale: {x: 1, y: 2.1984599, z: 1.6908318}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1599769823}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1806545006
 GameObject:
   m_ObjectHideFlags: 0
@@ -56340,7 +56766,7 @@ GameObject:
   - component: {fileID: 1806545010}
   - component: {fileID: 1806545009}
   - component: {fileID: 1806545008}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_18
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -56456,7 +56882,7 @@ GameObject:
   - component: {fileID: 1808564245}
   - component: {fileID: 1808564244}
   - component: {fileID: 1808564243}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: Obstacle1_5
   m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
@@ -56595,7 +57021,7 @@ GameObject:
   - component: {fileID: 1808800178}
   - component: {fileID: 1808800177}
   - component: {fileID: 1808800176}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_81
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -56712,7 +57138,7 @@ GameObject:
   - component: {fileID: 1810032783}
   - component: {fileID: 1810032782}
   - component: {fileID: 1810032781}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_92
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -56829,7 +57255,7 @@ GameObject:
   - component: {fileID: 1812246807}
   - component: {fileID: 1812246806}
   - component: {fileID: 1812246805}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_41
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -56946,7 +57372,7 @@ GameObject:
   - component: {fileID: 1814433846}
   - component: {fileID: 1814433845}
   - component: {fileID: 1814433844}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_70
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -57059,7 +57485,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1815429723}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rotate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57095,7 +57521,7 @@ GameObject:
   - component: {fileID: 1815475726}
   - component: {fileID: 1815475725}
   - component: {fileID: 1815475730}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform1_1
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -57224,7 +57650,7 @@ GameObject:
   - component: {fileID: 1821337778}
   - component: {fileID: 1821337777}
   - component: {fileID: 1821337775}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle3_9
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -57340,6 +57766,10 @@ PrefabInstance:
       value: Platform2_28
       objectReference: {fileID: 0}
     - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
@@ -57440,7 +57870,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1827842224}
   - component: {fileID: 1827842225}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57484,6 +57914,10 @@ PrefabInstance:
     - target: {fileID: 1556607509100966, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
       propertyPath: m_Name
       value: PTK_Ramp_Large
+      objectReference: {fileID: 0}
+    - target: {fileID: 1556607509100966, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4353395921811104, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
       propertyPath: m_RootOrder
@@ -57560,7 +57994,7 @@ GameObject:
   - component: {fileID: 1835498845}
   - component: {fileID: 1835498843}
   - component: {fileID: 1835498842}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle2_6
   m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
@@ -57871,7 +58305,7 @@ GameObject:
   - component: {fileID: 1849023514}
   - component: {fileID: 1849023513}
   - component: {fileID: 1849023512}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_5
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -58028,6 +58462,7 @@ Transform:
   - {fileID: 1719478177}
   - {fileID: 419065219}
   - {fileID: 1544764003}
+  - {fileID: 220419339}
   - {fileID: 1164523773}
   - {fileID: 429821169}
   - {fileID: 1299284036}
@@ -58047,7 +58482,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1860566431}
   - component: {fileID: 1860566432}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: virtualCamera (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58118,7 +58553,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1864066292}
   - component: {fileID: 1864066293}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58165,7 +58600,7 @@ GameObject:
   - component: {fileID: 1865444275}
   - component: {fileID: 1865444274}
   - component: {fileID: 1865444272}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle3_19
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -58282,7 +58717,7 @@ GameObject:
   - component: {fileID: 1879050066}
   - component: {fileID: 1879050065}
   - component: {fileID: 1879050064}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_104
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -58400,7 +58835,7 @@ GameObject:
   - component: {fileID: 1880128505}
   - component: {fileID: 1880128510}
   - component: {fileID: 1880128509}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform1_12
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -58483,7 +58918,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1599769823}
-  m_RootOrder: 16
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: -179.306, z: 0}
 --- !u!114 &1880128509
 MonoBehaviour:
@@ -58528,12 +58963,16 @@ PrefabInstance:
       value: PTK_Ramp_Medium (4)
       objectReference: {fileID: 0}
     - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 4226684656622418, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_RootOrder
-      value: 28
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 4226684656622418, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_LocalScale.x
@@ -58608,7 +59047,7 @@ GameObject:
   - component: {fileID: 1882117873}
   - component: {fileID: 1882117878}
   - component: {fileID: 1882117877}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform1_5
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -58737,7 +59176,7 @@ GameObject:
   - component: {fileID: 1883529707}
   - component: {fileID: 1883529706}
   - component: {fileID: 1883529705}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle4_12
   m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
@@ -58854,7 +59293,7 @@ GameObject:
   - component: {fileID: 1884130575}
   - component: {fileID: 1884130574}
   - component: {fileID: 1884130573}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_51
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -58971,7 +59410,7 @@ GameObject:
   - component: {fileID: 1885081977}
   - component: {fileID: 1885081976}
   - component: {fileID: 1885081975}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_135
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -59088,7 +59527,7 @@ GameObject:
   - component: {fileID: 1887240966}
   - component: {fileID: 1887240965}
   - component: {fileID: 1887240964}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_31
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -59252,7 +59691,9 @@ Transform:
   - {fileID: 1098922343}
   - {fileID: 82485586}
   - {fileID: 550908245}
+  - {fileID: 695645865}
   - {fileID: 1007223692}
+  - {fileID: 1607683982}
   - {fileID: 1614320660}
   - {fileID: 751431171}
   m_Father: {fileID: 488753724}
@@ -59307,7 +59748,7 @@ GameObject:
   - component: {fileID: 1891085434}
   - component: {fileID: 1891085433}
   - component: {fileID: 1891085432}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_50
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -59424,7 +59865,7 @@ GameObject:
   - component: {fileID: 1891108076}
   - component: {fileID: 1891108075}
   - component: {fileID: 1891108074}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_29
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -59665,6 +60106,144 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1891225828}
   m_CullTransparentMesh: 1
+--- !u!1 &1896444059
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1896444060}
+  - component: {fileID: 1896444062}
+  - component: {fileID: 1896444061}
+  - component: {fileID: 1896444063}
+  m_Layer: 8
+  m_Name: GameObject
+  m_TagString: ObstacleTri
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1896444060
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1896444059}
+  m_LocalRotation: {x: -0, y: -0.9999817, z: -0, w: 0.0060563134}
+  m_LocalPosition: {x: 2.6245823, y: 21.209991, z: -1.8481331}
+  m_LocalScale: {x: 1, y: 2.1984599, z: 1.6908318}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1599769823}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1896444061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1896444059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67b0b74cfbfc6524d8e5431b3b7508ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _wall: {fileID: 1944628158}
+  _moveSpeed: 5
+  _startPos: {x: 0, y: 0, z: 0}
+  _targetPosition: {x: 0, y: 0, z: 0}
+  _targetPosObj: {fileID: 1798663868}
+  _stageNum: 0
+  _name: 
+--- !u!65 &1896444062
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1896444059}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1896444063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1896444059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnInteractPlayerColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1896444061}
+        m_TargetAssemblyTypeName: Obstacle6, Assembly-CSharp
+        m_MethodName: EnterWall
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnInteractPlayerTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1896444061}
+        m_TargetAssemblyTypeName: Obstacle6, Assembly-CSharp
+        m_MethodName: EnterWall
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnInteractItemTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriExit:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1899831257
 GameObject:
   m_ObjectHideFlags: 0
@@ -59678,7 +60257,7 @@ GameObject:
   - component: {fileID: 1899831261}
   - component: {fileID: 1899831260}
   - component: {fileID: 1899831259}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_62
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -59795,7 +60374,7 @@ GameObject:
   - component: {fileID: 1900296955}
   - component: {fileID: 1900296954}
   - component: {fileID: 1900296953}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_126
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -60047,7 +60626,7 @@ GameObject:
   - component: {fileID: 1908567627}
   - component: {fileID: 1908567626}
   - component: {fileID: 1908567625}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_90
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -60299,7 +60878,7 @@ GameObject:
   - component: {fileID: 1909109697}
   - component: {fileID: 1909109696}
   - component: {fileID: 1909109695}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_43
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -60413,7 +60992,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1911177934}
   - component: {fileID: 1911177933}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: virtualCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60487,7 +61066,7 @@ GameObject:
   - component: {fileID: 1911726924}
   - component: {fileID: 1911726923}
   - component: {fileID: 1911726922}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_15
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -60605,7 +61184,7 @@ GameObject:
   - component: {fileID: 1914273522}
   - component: {fileID: 1914273521}
   - component: {fileID: 1914273520}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle4_14
   m_TagString: ObstacleCol
   m_Icon: {fileID: 0}
@@ -60793,7 +61372,7 @@ GameObject:
   - component: {fileID: 1916241316}
   - component: {fileID: 1916241315}
   - component: {fileID: 1916241314}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle2_7
   m_TagString: ObstacleCol
   m_Icon: {fileID: 0}
@@ -60966,6 +61545,10 @@ PrefabInstance:
       value: Platform2_86
       objectReference: {fileID: 0}
     - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
@@ -61066,7 +61649,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1919168635}
   - component: {fileID: 1919168636}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: virtualCamera (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61140,7 +61723,7 @@ GameObject:
   - component: {fileID: 1919743744}
   - component: {fileID: 1919743743}
   - component: {fileID: 1919743742}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_132
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -61257,7 +61840,7 @@ GameObject:
   - component: {fileID: 1928860575}
   - component: {fileID: 1928860574}
   - component: {fileID: 1928860573}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_52
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -61374,7 +61957,7 @@ GameObject:
   - component: {fileID: 1932317975}
   - component: {fileID: 1932317974}
   - component: {fileID: 1932317973}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_76
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -61493,7 +62076,7 @@ GameObject:
   - component: {fileID: 1938323977}
   - component: {fileID: 1938323983}
   - component: {fileID: 1938323982}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform1_13
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -61595,7 +62178,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1599769823}
-  m_RootOrder: 17
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: -179.306, z: 0}
 --- !u!114 &1938323982
 MonoBehaviour:
@@ -61754,6 +62337,10 @@ PrefabInstance:
       value: Platform2_139 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
@@ -61858,7 +62445,7 @@ GameObject:
   - component: {fileID: 1944628159}
   - component: {fileID: 1944628164}
   - component: {fileID: 1944628163}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform1_17
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -61941,7 +62528,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1599769823}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: -179.306, z: 0}
 --- !u!114 &1944628163
 MonoBehaviour:
@@ -61987,7 +62574,7 @@ GameObject:
   - component: {fileID: 1946035101}
   - component: {fileID: 1946035100}
   - component: {fileID: 1946035099}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_98
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -62195,6 +62782,10 @@ PrefabInstance:
       value: Platform2_52
       objectReference: {fileID: 0}
     - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750121629297360, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
@@ -62298,7 +62889,7 @@ GameObject:
   - component: {fileID: 1952193111}
   - component: {fileID: 1952193110}
   - component: {fileID: 1952193109}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_22
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -62415,7 +63006,7 @@ GameObject:
   - component: {fileID: 1957324373}
   - component: {fileID: 1957324372}
   - component: {fileID: 1957324371}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_85
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -62638,7 +63229,7 @@ GameObject:
   - component: {fileID: 1964861703}
   - component: {fileID: 1964861702}
   - component: {fileID: 1964861701}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle4_27
   m_TagString: ObstacleCol
   m_Icon: {fileID: 0}
@@ -62855,7 +63446,7 @@ GameObject:
   - component: {fileID: 1965584868}
   - component: {fileID: 1965584867}
   - component: {fileID: 1965584866}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_64
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -62973,7 +63564,7 @@ GameObject:
   - component: {fileID: 1967976730}
   - component: {fileID: 1967976729}
   - component: {fileID: 1967976728}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle4_10
   m_TagString: ObstacleCol
   m_Icon: {fileID: 0}
@@ -63160,7 +63751,7 @@ GameObject:
   - component: {fileID: 1975482729}
   - component: {fileID: 1975482728}
   - component: {fileID: 1975482727}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_18
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -63274,7 +63865,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1978731302}
   - component: {fileID: 1978731303}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: virtualCamera (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63403,7 +63994,7 @@ GameObject:
   - component: {fileID: 1988104018}
   - component: {fileID: 1988104017}
   - component: {fileID: 1988104016}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_65
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -63520,7 +64111,7 @@ GameObject:
   - component: {fileID: 1989138664}
   - component: {fileID: 1989138663}
   - component: {fileID: 1989138662}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_75
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -63635,6 +64226,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PTK_Ramp_Large (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 1556607509100966, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4353395921811104, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
       propertyPath: m_RootOrder
       value: 31
@@ -63711,7 +64306,7 @@ GameObject:
   - component: {fileID: 2012486537}
   - component: {fileID: 2012486536}
   - component: {fileID: 2012486535}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_19
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -63815,6 +64410,37 @@ Transform:
   m_Father: {fileID: 313690256}
   m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
+--- !u!1 &2016628444
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2016628445}
+  m_Layer: 8
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2016628445
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2016628444}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.5, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 472911110}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2023709134
 GameObject:
   m_ObjectHideFlags: 0
@@ -63828,7 +64454,7 @@ GameObject:
   - component: {fileID: 2023709137}
   - component: {fileID: 2023709136}
   - component: {fileID: 2023709135}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_127
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -63945,7 +64571,7 @@ GameObject:
   - component: {fileID: 2024263667}
   - component: {fileID: 2024263666}
   - component: {fileID: 2024263665}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_86
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -64059,7 +64685,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2026135634}
   - component: {fileID: 2026135635}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: virtualCamera (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64130,7 +64756,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2031505856}
   - component: {fileID: 2031505857}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: cm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64177,7 +64803,7 @@ GameObject:
   - component: {fileID: 2034759805}
   - component: {fileID: 2034759804}
   - component: {fileID: 2034759803}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_13
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -64293,7 +64919,7 @@ GameObject:
   - component: {fileID: 2034995317}
   - component: {fileID: 2034995316}
   - component: {fileID: 2034995315}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
@@ -64432,7 +65058,7 @@ GameObject:
   - component: {fileID: 2037057612}
   - component: {fileID: 2037057611}
   - component: {fileID: 2037057610}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_23
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -64549,7 +65175,7 @@ GameObject:
   - component: {fileID: 2054114617}
   - component: {fileID: 2054114616}
   - component: {fileID: 2054114615}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_77
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -64700,7 +65326,7 @@ GameObject:
   - component: {fileID: 2062549440}
   - component: {fileID: 2062549439}
   - component: {fileID: 2062549438}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_19
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -64818,7 +65444,7 @@ GameObject:
   - component: {fileID: 2065133348}
   - component: {fileID: 2065133353}
   - component: {fileID: 2065133352}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform1_4
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -64947,7 +65573,7 @@ GameObject:
   - component: {fileID: 2067383741}
   - component: {fileID: 2067383740}
   - component: {fileID: 2067383739}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_2
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -65064,7 +65690,7 @@ GameObject:
   - component: {fileID: 2072908654}
   - component: {fileID: 2072908653}
   - component: {fileID: 2072908652}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_58
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -65181,7 +65807,7 @@ GameObject:
   - component: {fileID: 2081899605}
   - component: {fileID: 2081899604}
   - component: {fileID: 2081899603}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_91
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -65298,7 +65924,7 @@ GameObject:
   - component: {fileID: 2084766500}
   - component: {fileID: 2084766499}
   - component: {fileID: 2084766498}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_8
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -65550,7 +66176,7 @@ GameObject:
   - component: {fileID: 2094800202}
   - component: {fileID: 2094800201}
   - component: {fileID: 2094800200}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_37
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -65667,7 +66293,7 @@ GameObject:
   - component: {fileID: 2096469167}
   - component: {fileID: 2096469166}
   - component: {fileID: 2096469165}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform3_85
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -65785,7 +66411,7 @@ GameObject:
   - component: {fileID: 2116786719}
   - component: {fileID: 2116786718}
   - component: {fileID: 2116786717}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Obstacle2_5
   m_TagString: ObstacleCol
   m_Icon: {fileID: 0}
@@ -65986,7 +66612,7 @@ GameObject:
   - component: {fileID: 2121381640}
   - component: {fileID: 2121381639}
   - component: {fileID: 2121381638}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_21
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -66103,7 +66729,7 @@ GameObject:
   - component: {fileID: 2131739853}
   - component: {fileID: 2131739852}
   - component: {fileID: 2131739851}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform2_56
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -66220,7 +66846,7 @@ GameObject:
   - component: {fileID: 2134356829}
   - component: {fileID: 2134356828}
   - component: {fileID: 2134356827}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform4_19
   m_TagString: Ground
   m_Icon: {fileID: 0}
