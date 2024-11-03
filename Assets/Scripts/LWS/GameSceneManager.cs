@@ -206,7 +206,7 @@ public class GameSceneManager : UIBInder
         _players[DataManager.Instance.SaveData.GameData.CharacterNum].transform.position = _newSavePoint;
 
         // x축오른쪽으로 itemPoint지정하여 Player와 item 충돌없이
-        Vector3 _newItemPoint = new Vector3(_savePoints[_currentSaveStage].x + _itemPointXOffset , _savePoints[_currentSaveStage].y, _savePoints[_currentSaveStage].z);
+        Vector3 _newItemPoint = new Vector3(_savePoints[_currentSaveStage].x + _itemPointXOffset , _savePoints[_currentSaveStage].y + 1, _savePoints[_currentSaveStage].z);
 
         // 2. Item 위치 가져오기
         if (DataManager.Instance.SaveData.GameData.CharacterNum == 1)
