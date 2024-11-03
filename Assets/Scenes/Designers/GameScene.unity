@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 2586246}
   - component: {fileID: 2586245}
   m_Layer: 0
-  m_Name: Platform4_14
+  m_Name: Platform3_71
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -155,7 +155,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1039098708}
-  m_RootOrder: 15
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2586245
 MonoBehaviour:
@@ -173,7 +173,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform4_14
+  _name: Platform3_71
 --- !u!65 &2586246
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -251,7 +251,7 @@ GameObject:
   - component: {fileID: 2749399}
   - component: {fileID: 2749398}
   m_Layer: 0
-  m_Name: Platform5_17
+  m_Name: Platform3_93
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -270,7 +270,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 511479926}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2749398
 MonoBehaviour:
@@ -288,7 +288,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform5_17
+  _name: Platform3_93
 --- !u!65 &2749399
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -879,7 +879,7 @@ GameObject:
   - component: {fileID: 12265041}
   - component: {fileID: 12265040}
   m_Layer: 0
-  m_Name: Platform3_6
+  m_Name: Platform3_48
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -916,7 +916,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform3_6
+  _name: Platform3_48
 --- !u!65 &12265041
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1213,7 +1213,7 @@ GameObject:
   - component: {fileID: 35863174}
   - component: {fileID: 35863173}
   m_Layer: 0
-  m_Name: Platform2_9
+  m_Name: Platform3_28
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1232,7 +1232,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 719858623}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &35863173
 MonoBehaviour:
@@ -1250,7 +1250,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform2_9
+  _name: Platform3_28
 --- !u!65 &35863174
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1590,7 +1590,7 @@ GameObject:
   - component: {fileID: 43941757}
   - component: {fileID: 43941756}
   m_Layer: 0
-  m_Name: Obstacle4_3
+  m_Name: Obstacle3_16
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1609,7 +1609,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1039098708}
-  m_RootOrder: 22
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &43941756
 MonoBehaviour:
@@ -1627,7 +1627,7 @@ MonoBehaviour:
   _launchInterval: 5
   _direction: {x: 1, y: 0, z: 0}
   _launchSpeed: 5
-  _name: 
+  _name: Obstacle3_16
 --- !u!114 &43941757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2024,11 +2024,10 @@ GameObject:
   - component: {fileID: 64892610}
   - component: {fileID: 64892609}
   - component: {fileID: 64892608}
-  - component: {fileID: 64892607}
   - component: {fileID: 64892606}
   - component: {fileID: 64892605}
   m_Layer: 0
-  m_Name: Obstacle3_4
+  m_Name: Obstacle3_12
   m_TagString: ObstacleCol
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2050,7 +2049,7 @@ Transform:
   - {fileID: 274469206}
   - {fileID: 478067483}
   m_Father: {fileID: 1779013029}
-  m_RootOrder: 15
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &64892605
 MonoBehaviour:
@@ -2145,24 +2144,7 @@ MonoBehaviour:
   - {fileID: 478067482}
   _isTriggered: 0
   _explosionTimer: 3
-  _name: 
---- !u!114 &64892607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 64892603}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d2b59aa824121f488c5a6573501bddd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameSceneManager: {fileID: 0}
-  _stage: 0
-  _isSavePlatform: 0
-  _isClearPlatform: 0
-  _name: Obstacle3_4
+  _name: Obstacle3_12
 --- !u!65 &64892608
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2972,7 +2954,7 @@ GameObject:
   - component: {fileID: 84101753}
   - component: {fileID: 84101752}
   m_Layer: 0
-  m_Name: Platform1_5
+  m_Name: Platform3_5
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3009,7 +2991,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform1_5
+  _name: Platform3_5
 --- !u!65 &84101753
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3447,7 +3429,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4125583172438658978, guid: 2915f8ec48ff23b49b70374b872040bb, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4125583172438658978, guid: 2915f8ec48ff23b49b70374b872040bb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3773,7 +3755,7 @@ GameObject:
   - component: {fileID: 119314448}
   - component: {fileID: 119314447}
   m_Layer: 0
-  m_Name: Platform2_18
+  m_Name: Platform3_37
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3792,7 +3774,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 719858623}
-  m_RootOrder: 19
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &119314447
 MonoBehaviour:
@@ -3810,7 +3792,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform2_18
+  _name: Platform3_37
 --- !u!65 &119314448
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4808,6 +4790,63 @@ Transform:
   m_Father: {fileID: 313690256}
   m_RootOrder: 78
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &152972422
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5696102462490068146, guid: 1679d8713aa630b42b9ebd9c114b5248, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696102462490068146, guid: 1679d8713aa630b42b9ebd9c114b5248, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696102462490068146, guid: 1679d8713aa630b42b9ebd9c114b5248, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 160.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696102462490068146, guid: 1679d8713aa630b42b9ebd9c114b5248, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696102462490068146, guid: 1679d8713aa630b42b9ebd9c114b5248, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7211153
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696102462490068146, guid: 1679d8713aa630b42b9ebd9c114b5248, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696102462490068146, guid: 1679d8713aa630b42b9ebd9c114b5248, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.69281507
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696102462490068146, guid: 1679d8713aa630b42b9ebd9c114b5248, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696102462490068146, guid: 1679d8713aa630b42b9ebd9c114b5248, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696102462490068146, guid: 1679d8713aa630b42b9ebd9c114b5248, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 87.707
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696102462490068146, guid: 1679d8713aa630b42b9ebd9c114b5248, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6951904929084583928, guid: 1679d8713aa630b42b9ebd9c114b5248, type: 3}
+      propertyPath: m_Name
+      value: man_business 1 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1679d8713aa630b42b9ebd9c114b5248, type: 3}
 --- !u!1 &158679082
 GameObject:
   m_ObjectHideFlags: 0
@@ -5557,7 +5596,7 @@ GameObject:
   - component: {fileID: 196141879}
   - component: {fileID: 196141878}
   m_Layer: 0
-  m_Name: Platform2_10
+  m_Name: Platform3_29
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5576,7 +5615,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 719858623}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &196141878
 MonoBehaviour:
@@ -5594,7 +5633,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform2_10
+  _name: Platform3_29
 --- !u!65 &196141879
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6111,7 +6150,7 @@ GameObject:
   - component: {fileID: 210370939}
   - component: {fileID: 210370938}
   m_Layer: 0
-  m_Name: Platform4_17
+  m_Name: Platform3_74
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6130,7 +6169,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1039098708}
-  m_RootOrder: 20
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &210370938
 MonoBehaviour:
@@ -6148,7 +6187,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform4_17
+  _name: Platform3_74
 --- !u!65 &210370939
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6305,7 +6344,7 @@ GameObject:
   - component: {fileID: 213894875}
   - component: {fileID: 213894874}
   m_Layer: 0
-  m_Name: Platform2_23
+  m_Name: Platform3_42
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6324,7 +6363,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 719858623}
-  m_RootOrder: 25
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &213894874
 MonoBehaviour:
@@ -6342,7 +6381,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform2_23
+  _name: Platform3_42
 --- !u!65 &213894875
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6420,7 +6459,7 @@ GameObject:
   - component: {fileID: 218474887}
   - component: {fileID: 218474886}
   m_Layer: 0
-  m_Name: Platform4_12
+  m_Name: Platform3_69
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6439,7 +6478,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1039098708}
-  m_RootOrder: 13
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &218474886
 MonoBehaviour:
@@ -6457,7 +6496,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform4_12
+  _name: Platform3_69
 --- !u!65 &218474887
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6535,7 +6574,7 @@ GameObject:
   - component: {fileID: 220419341}
   - component: {fileID: 220419340}
   m_Layer: 0
-  m_Name: Obstacle1_6
+  m_Name: Obstacle3_6
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6572,7 +6611,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Obstacle1_6
+  _name: Obstacle3_6
 --- !u!65 &220419341
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6877,6 +6916,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _stageNum: 0
+  _gameObject: {fileID: 0}
   _rotateAngle: -90
   _isRotate: 0
   _rotatePos: {fileID: 1303223888}
@@ -7392,7 +7432,7 @@ GameObject:
   - component: {fileID: 256801521}
   - component: {fileID: 256801520}
   m_Layer: 0
-  m_Name: Platform4_6
+  m_Name: Platform3_63
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7411,7 +7451,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1039098708}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &256801520
 MonoBehaviour:
@@ -7429,7 +7469,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform4_6
+  _name: Platform3_63
 --- !u!65 &256801521
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7506,7 +7546,7 @@ GameObject:
   - component: {fileID: 265776464}
   - component: {fileID: 265776463}
   m_Layer: 0
-  m_Name: Obstacle4_2
+  m_Name: Obstacle3_15
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7525,7 +7565,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1039098708}
-  m_RootOrder: 5
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &265776463
 MonoBehaviour:
@@ -7543,7 +7583,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Obstacle4_2
+  _name: Obstacle3_15
 --- !u!23 &265776464
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7720,7 +7760,6 @@ GameObject:
   - component: {fileID: 274469206}
   - component: {fileID: 274469209}
   - component: {fileID: 274469208}
-  - component: {fileID: 274469207}
   m_Layer: 0
   m_Name: Sphere (1)
   m_TagString: Untagged
@@ -7743,19 +7782,6 @@ Transform:
   m_Father: {fileID: 64892604}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &274469207
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 274469205}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &274469208
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8823,6 +8849,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &324416691
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 324416692}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &324416692
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324416691}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4, y: 2.8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 419065219}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &330649831
 GameObject:
   m_ObjectHideFlags: 0
@@ -8837,7 +8894,7 @@ GameObject:
   - component: {fileID: 330649834}
   - component: {fileID: 330649833}
   m_Layer: 0
-  m_Name: Platform3_2
+  m_Name: Platform3_44
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8874,7 +8931,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform3_2
+  _name: Platform3_44
 --- !u!65 &330649834
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9049,7 +9106,7 @@ GameObject:
   - component: {fileID: 344943795}
   - component: {fileID: 344943794}
   m_Layer: 0
-  m_Name: Platform4_2
+  m_Name: Platform3_59
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9086,7 +9143,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform4_2
+  _name: Platform3_59
 --- !u!65 &344943795
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9161,7 +9218,6 @@ GameObject:
   - component: {fileID: 351108540}
   - component: {fileID: 351108543}
   - component: {fileID: 351108542}
-  - component: {fileID: 351108541}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -9184,19 +9240,6 @@ Transform:
   m_Father: {fileID: 64892604}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &351108541
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 351108539}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &351108542
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9791,7 +9834,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4353395921811104, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
       propertyPath: m_RootOrder
-      value: 29
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4353395921811104, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
       propertyPath: m_LocalScale.x
@@ -9866,7 +9909,7 @@ GameObject:
   - component: {fileID: 387020454}
   - component: {fileID: 387020453}
   m_Layer: 0
-  m_Name: Platform3_11
+  m_Name: Platform3_53
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9885,7 +9928,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1779013029}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &387020453
 MonoBehaviour:
@@ -9903,7 +9946,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform3_11
+  _name: Platform3_53
 --- !u!65 &387020454
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10639,11 +10682,10 @@ GameObject:
   - component: {fileID: 419065225}
   - component: {fileID: 419065224}
   - component: {fileID: 419065223}
-  - component: {fileID: 419065222}
   - component: {fileID: 419065221}
   - component: {fileID: 419065220}
   m_Layer: 0
-  m_Name: Obstacle1_5
+  m_Name: Obstacle3_5
   m_TagString: ObstacleCol
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10662,8 +10704,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 220419339}
+  - {fileID: 324416692}
   m_Father: {fileID: 1855016626}
-  m_RootOrder: 21
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &419065220
 MonoBehaviour:
@@ -10740,26 +10783,10 @@ MonoBehaviour:
   _wall: {fileID: 220419338}
   _moveSpeed: 5
   _startPos: {x: 0, y: 0, z: 0}
-  _targetPosition: {x: -5, y: 2, z: 0}
+  _targetPosition: {x: -6, y: 2, z: 0}
+  _targetPosObj: {fileID: 324416691}
   _stageNum: 0
-  _name: 
---- !u!114 &419065222
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 419065218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d2b59aa824121f488c5a6573501bddd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameSceneManager: {fileID: 0}
-  _stage: 0
-  _isSavePlatform: 0
-  _isClearPlatform: 0
-  _name: Obstacle1_5
+  _name: Obstacle3_5
 --- !u!65 &419065223
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11145,7 +11172,7 @@ GameObject:
   - component: {fileID: 431990075}
   - component: {fileID: 431990074}
   m_Layer: 0
-  m_Name: Obstacle5_1
+  m_Name: Obstacle3_20
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11164,7 +11191,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 511479926}
-  m_RootOrder: 22
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &431990074
 MonoBehaviour:
@@ -11182,7 +11209,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Obstacle5_1
+  _name: Obstacle3_20
 --- !u!65 &431990075
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11258,11 +11285,10 @@ GameObject:
   - component: {fileID: 439845158}
   - component: {fileID: 439845157}
   - component: {fileID: 439845156}
-  - component: {fileID: 439845155}
   - component: {fileID: 439845154}
   - component: {fileID: 439845153}
   m_Layer: 0
-  m_Name: Obstacle3_3
+  m_Name: Obstacle3_11
   m_TagString: ObstacleCol
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11281,7 +11307,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1779013029}
-  m_RootOrder: 13
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &439845153
 MonoBehaviour:
@@ -11385,24 +11411,7 @@ MonoBehaviour:
   _jumpForce: 0
   _isIncrease: 0
   _itemJumpPower: 0
-  _name: 
---- !u!114 &439845155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 439845151}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d2b59aa824121f488c5a6573501bddd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameSceneManager: {fileID: 0}
-  _stage: 0
-  _isSavePlatform: 0
-  _isClearPlatform: 0
-  _name: Obstacle3_3
+  _name: Obstacle3_11
 --- !u!65 &439845156
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11617,7 +11626,7 @@ GameObject:
   - component: {fileID: 451501278}
   - component: {fileID: 451501277}
   m_Layer: 0
-  m_Name: Platform5_6
+  m_Name: Platform3_81
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11636,7 +11645,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 511479926}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &451501277
 MonoBehaviour:
@@ -11654,7 +11663,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform5_6
+  _name: Platform3_81
 --- !u!65 &451501278
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12100,11 +12109,12 @@ GameObject:
   - component: {fileID: 462970604}
   - component: {fileID: 462970603}
   - component: {fileID: 462970602}
-  - component: {fileID: 462970601}
+  - component: {fileID: 462970606}
   - component: {fileID: 462970600}
   - component: {fileID: 462970599}
+  - component: {fileID: 462970605}
   m_Layer: 0
-  m_Name: Obstacle2_2
+  m_Name: Obstacle3_7
   m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12123,7 +12133,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 719858623}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &462970599
 MonoBehaviour:
@@ -12210,25 +12220,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _moveSpeed: 5
-  _rigid: {fileID: 0}
-  _name: 
---- !u!114 &462970601
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 462970597}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d2b59aa824121f488c5a6573501bddd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameSceneManager: {fileID: 0}
-  _stage: 0
-  _isSavePlatform: 0
-  _isClearPlatform: 0
-  _name: Obstacle2_2
+  _rigid: {fileID: 462970605}
+  _name: Obstacle3_7
 --- !u!65 &462970602
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12292,6 +12285,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 462970597}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &462970605
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 462970597}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &462970606
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 462970597}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.1574554, z: 1}
+  m_Center: {x: 0, y: 0.07872772, z: 0}
 --- !u!1 &464043721
 GameObject:
   m_ObjectHideFlags: 0
@@ -12651,7 +12673,7 @@ GameObject:
   - component: {fileID: 474396919}
   - component: {fileID: 474396918}
   m_Layer: 0
-  m_Name: Platform2_1
+  m_Name: Platform3_20
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12688,7 +12710,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform2_1
+  _name: Platform3_20
 --- !u!65 &474396919
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12878,7 +12900,6 @@ GameObject:
   - component: {fileID: 478067483}
   - component: {fileID: 478067486}
   - component: {fileID: 478067485}
-  - component: {fileID: 478067484}
   m_Layer: 0
   m_Name: Sphere (2)
   m_TagString: Untagged
@@ -12901,19 +12922,6 @@ Transform:
   m_Father: {fileID: 64892604}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &478067484
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 478067482}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &478067485
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12978,7 +12986,7 @@ GameObject:
   - component: {fileID: 482882844}
   - component: {fileID: 482882843}
   m_Layer: 0
-  m_Name: Platform1_11
+  m_Name: Platform3_11
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13015,7 +13023,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform1_11
+  _name: Platform3_11
 --- !u!65 &482882844
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13092,12 +13100,11 @@ GameObject:
   - component: {fileID: 487968197}
   - component: {fileID: 487968196}
   - component: {fileID: 487968195}
-  - component: {fileID: 487968194}
   - component: {fileID: 487968193}
   - component: {fileID: 487968192}
   - component: {fileID: 487968191}
   m_Layer: 0
-  m_Name: Obstacle4_1
+  m_Name: Obstacle3_14
   m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13117,7 +13124,7 @@ Transform:
   m_Children:
   - {fileID: 1031539232}
   m_Father: {fileID: 1039098708}
-  m_RootOrder: 10
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &487968191
 MonoBehaviour:
@@ -13212,24 +13219,7 @@ MonoBehaviour:
   _isMove: 0
   _stopPos: {fileID: 1031539232}
   _rigid: {fileID: 487968192}
-  _name: 
---- !u!114 &487968194
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 487968189}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d2b59aa824121f488c5a6573501bddd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameSceneManager: {fileID: 0}
-  _stage: 0
-  _isSavePlatform: 0
-  _isClearPlatform: 0
-  _name: Obstacle4_1
+  _name: Obstacle3_14
 --- !u!65 &487968195
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14107,12 +14097,11 @@ GameObject:
   - component: {fileID: 505721543}
   - component: {fileID: 505721542}
   - component: {fileID: 505721541}
-  - component: {fileID: 505721540}
   - component: {fileID: 505721539}
   - component: {fileID: 505721538}
   - component: {fileID: 505721537}
   m_Layer: 0
-  m_Name: Obstacle4_5
+  m_Name: Obstacle3_18
   m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14131,7 +14120,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1039098708}
-  m_RootOrder: 19
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &505721537
 MonoBehaviour:
@@ -14239,24 +14228,7 @@ MonoBehaviour:
   _isFalling: 0
   _isReturning: 0
   _stayTimer: 0
-  _name: 
---- !u!114 &505721540
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 505721535}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d2b59aa824121f488c5a6573501bddd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameSceneManager: {fileID: 0}
-  _stage: 0
-  _isSavePlatform: 0
-  _isClearPlatform: 0
-  _name: Obstacle4_5
+  _name: Obstacle3_18
 --- !u!65 &505721541
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14524,7 +14496,6 @@ Transform:
   - {fileID: 1250069848}
   - {fileID: 1796543464}
   - {fileID: 1003130818}
-  - {fileID: 1072234381}
   - {fileID: 451501276}
   - {fileID: 1248446962}
   - {fileID: 1434740969}
@@ -14535,22 +14506,23 @@ Transform:
   - {fileID: 1507022085}
   - {fileID: 919823963}
   - {fileID: 1908567624}
-  - {fileID: 1052417304}
+  - {fileID: 2081899602}
   - {fileID: 1276213494}
   - {fileID: 2749397}
   - {fileID: 1683688451}
   - {fileID: 1059989905}
   - {fileID: 1028536140}
-  - {fileID: 431990073}
   - {fileID: 898487420}
   - {fileID: 1946035098}
   - {fileID: 712098945}
   - {fileID: 965915036}
+  - {fileID: 431990073}
+  - {fileID: 1072234381}
+  - {fileID: 1052417304}
   - {fileID: 1176233745}
   - {fileID: 648613484}
   - {fileID: 375723868}
   - {fileID: 1708825121}
-  - {fileID: 2081899602}
   - {fileID: 896182018}
   - {fileID: 897630108}
   - {fileID: 1390687518}
@@ -15179,7 +15151,7 @@ GameObject:
   - component: {fileID: 537317627}
   - component: {fileID: 537317626}
   m_Layer: 0
-  m_Name: Platform4_3
+  m_Name: Platform3_60
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15216,7 +15188,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform4_3
+  _name: Platform3_60
 --- !u!65 &537317627
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15409,7 +15381,7 @@ GameObject:
   - component: {fileID: 538129391}
   - component: {fileID: 538129390}
   m_Layer: 0
-  m_Name: Platform2_7
+  m_Name: Platform3_26
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15428,7 +15400,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 719858623}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &538129390
 MonoBehaviour:
@@ -15446,7 +15418,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform2_7
+  _name: Platform3_26
 --- !u!65 &538129391
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15524,7 +15496,7 @@ GameObject:
   - component: {fileID: 538136374}
   - component: {fileID: 538136373}
   m_Layer: 0
-  m_Name: Platform1_14
+  m_Name: Platform3_14
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15543,7 +15515,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1855016626}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &538136373
 MonoBehaviour:
@@ -15561,7 +15533,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform1_14
+  _name: Platform3_14
 --- !u!65 &538136374
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16194,7 +16166,7 @@ GameObject:
   - component: {fileID: 564252203}
   - component: {fileID: 564252202}
   m_Layer: 0
-  m_Name: Platform2_12
+  m_Name: Platform3_31
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16213,7 +16185,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 719858623}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &564252202
 MonoBehaviour:
@@ -16231,7 +16203,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform2_12
+  _name: Platform3_31
 --- !u!65 &564252203
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16501,13 +16473,12 @@ GameObject:
   - component: {fileID: 595129059}
   - component: {fileID: 595129058}
   - component: {fileID: 595129057}
-  - component: {fileID: 595129056}
   - component: {fileID: 595129055}
   - component: {fileID: 595129054}
   - component: {fileID: 595129053}
   - component: {fileID: 595129052}
   m_Layer: 0
-  m_Name: Obstacle2_1
+  m_Name: Obstacle3_6
   m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16527,7 +16498,7 @@ Transform:
   m_Children:
   - {fileID: 696933731}
   m_Father: {fileID: 719858623}
-  m_RootOrder: 17
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &595129052
 BoxCollider:
@@ -16635,24 +16606,7 @@ MonoBehaviour:
   _isMove: 0
   _stopPos: {fileID: 696933731}
   _rigid: {fileID: 595129054}
-  _name: 
---- !u!114 &595129056
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 595129050}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d2b59aa824121f488c5a6573501bddd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameSceneManager: {fileID: 0}
-  _stage: 0
-  _isSavePlatform: 0
-  _isClearPlatform: 0
-  _name: Obstacle2_1
+  _name: Obstacle3_6
 --- !u!65 &595129057
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18384,9 +18338,8 @@ GameObject:
   - component: {fileID: 647535667}
   - component: {fileID: 647535666}
   - component: {fileID: 647535665}
-  - component: {fileID: 647535664}
   m_Layer: 0
-  m_Name: Obstacle1_3
+  m_Name: Obstacle3_3
   m_TagString: ObstacleCol
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18405,25 +18358,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1855016626}
-  m_RootOrder: 11
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &647535664
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 647535662}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d2b59aa824121f488c5a6573501bddd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameSceneManager: {fileID: 0}
-  _stage: 0
-  _isSavePlatform: 0
-  _isClearPlatform: 0
-  _name: Obstacle1_3
 --- !u!114 &647535665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18526,7 +18462,7 @@ MonoBehaviour:
   _jumpForce: 0
   _isIncrease: 0
   _itemJumpPower: 5
-  _name: 
+  _name: Obstacle3_3
 --- !u!65 &647535667
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18603,7 +18539,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4353395921811104, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
       propertyPath: m_RootOrder
-      value: 28
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 4353395921811104, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
       propertyPath: m_LocalScale.x
@@ -19196,6 +19132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _startPos: {x: 0, y: 0, z: 0}
   _isPlatformDestroyed: 0
+  _disappearTime: 0
   _respawnDelay: 3
   _name: 
 --- !u!65 &658732068
@@ -20029,7 +19966,7 @@ GameObject:
   - component: {fileID: 696131177}
   - component: {fileID: 696131176}
   m_Layer: 0
-  m_Name: Platform1_16
+  m_Name: Platform3_16
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20048,7 +19985,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1855016626}
-  m_RootOrder: 17
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &696131176
 MonoBehaviour:
@@ -20066,7 +20003,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform1_16
+  _name: Platform3_16
 --- !u!65 &696131177
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20140,7 +20077,7 @@ GameObject:
   m_Component:
   - component: {fileID: 696933731}
   m_Layer: 0
-  m_Name: obstacle2_1
+  m_Name: Obstacle3_6_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20732,7 +20669,7 @@ GameObject:
   - component: {fileID: 712098947}
   - component: {fileID: 712098946}
   m_Layer: 0
-  m_Name: Platform5_23
+  m_Name: Platform3_99
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20751,7 +20688,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 511479926}
-  m_RootOrder: 25
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &712098946
 MonoBehaviour:
@@ -20769,7 +20706,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform5_23
+  _name: Platform3_99
 --- !u!65 &712098947
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20978,7 +20915,6 @@ Transform:
   m_Children:
   - {fileID: 474396917}
   - {fileID: 1036967502}
-  - {fileID: 1511952222}
   - {fileID: 1088342235}
   - {fileID: 2037057609}
   - {fileID: 928652735}
@@ -20993,15 +20929,16 @@ Transform:
   - {fileID: 1002443140}
   - {fileID: 1079649704}
   - {fileID: 1078450761}
-  - {fileID: 595129051}
   - {fileID: 1754075678}
   - {fileID: 119314446}
   - {fileID: 1588238924}
   - {fileID: 1331811563}
   - {fileID: 1033522312}
-  - {fileID: 462970598}
   - {fileID: 901025217}
   - {fileID: 213894873}
+  - {fileID: 595129051}
+  - {fileID: 462970598}
+  - {fileID: 1511952222}
   - {fileID: 634590811}
   - {fileID: 1829125952}
   m_Father: {fileID: 1890921572}
@@ -21586,9 +21523,8 @@ GameObject:
   - component: {fileID: 729343243}
   - component: {fileID: 729343242}
   - component: {fileID: 729343241}
-  - component: {fileID: 729343240}
   m_Layer: 0
-  m_Name: Obstacle3_2
+  m_Name: Obstacle3_10_2
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21609,23 +21545,6 @@ Transform:
   m_Father: {fileID: 1157494326}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &729343240
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 729343238}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d2b59aa824121f488c5a6573501bddd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameSceneManager: {fileID: 0}
-  _stage: 0
-  _isSavePlatform: 0
-  _isClearPlatform: 0
-  _name: Obstacle3_2
 --- !u!65 &729343241
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21897,7 +21816,7 @@ GameObject:
   - component: {fileID: 741789084}
   - component: {fileID: 741789083}
   m_Layer: 0
-  m_Name: Platform2_6
+  m_Name: Platform3_25
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21916,7 +21835,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 719858623}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &741789083
 MonoBehaviour:
@@ -21934,7 +21853,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform2_6
+  _name: Platform3_25
 --- !u!65 &741789084
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22598,7 +22517,7 @@ GameObject:
   - component: {fileID: 769422436}
   - component: {fileID: 769422435}
   m_Layer: 0
-  m_Name: Platform2_8
+  m_Name: Platform3_27
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22617,7 +22536,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 719858623}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &769422435
 MonoBehaviour:
@@ -22635,7 +22554,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform2_8
+  _name: Platform3_27
 --- !u!65 &769422436
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23885,7 +23804,7 @@ GameObject:
   - component: {fileID: 818389161}
   - component: {fileID: 818389160}
   m_Layer: 0
-  m_Name: Platform2_11
+  m_Name: Platform3_30
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23904,7 +23823,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 719858623}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &818389160
 MonoBehaviour:
@@ -23922,7 +23841,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform2_11
+  _name: Platform3_30
 --- !u!65 &818389161
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24376,7 +24295,7 @@ GameObject:
   - component: {fileID: 846077719}
   - component: {fileID: 846077718}
   m_Layer: 0
-  m_Name: Platform5_2
+  m_Name: Platform3_77
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24413,7 +24332,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform5_2
+  _name: Platform3_77
 --- !u!65 &846077719
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24632,7 +24551,7 @@ GameObject:
   - component: {fileID: 871049487}
   - component: {fileID: 871049486}
   m_Layer: 0
-  m_Name: Platform5_12
+  m_Name: Platform3_87
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24651,7 +24570,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 511479926}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &871049486
 MonoBehaviour:
@@ -24669,7 +24588,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform5_12
+  _name: Platform3_87
 --- !u!65 &871049487
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25097,7 +25016,7 @@ GameObject:
   - component: {fileID: 886478530}
   - component: {fileID: 886478529}
   m_Layer: 0
-  m_Name: Platform1_3
+  m_Name: Platform3_3
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25134,7 +25053,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform1_3
+  _name: Platform3_3
 --- !u!65 &886478530
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25264,6 +25183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _stageNum: 0
+  _gameObject: {fileID: 0}
   _rotateAngle: -90
   _isRotate: 0
   _rotatePos: {fileID: 188051877}
@@ -25911,7 +25831,7 @@ GameObject:
   - component: {fileID: 898487422}
   - component: {fileID: 898487421}
   m_Layer: 0
-  m_Name: Platform5_21
+  m_Name: Platform3_97
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25930,7 +25850,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 511479926}
-  m_RootOrder: 23
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &898487421
 MonoBehaviour:
@@ -25948,7 +25868,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform5_21
+  _name: Platform3_97
 --- !u!65 &898487422
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26026,7 +25946,7 @@ GameObject:
   - component: {fileID: 901025219}
   - component: {fileID: 901025218}
   m_Layer: 0
-  m_Name: Platform2_22
+  m_Name: Platform3_41
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26045,7 +25965,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 719858623}
-  m_RootOrder: 24
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &901025218
 MonoBehaviour:
@@ -26063,7 +25983,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform2_22
+  _name: Platform3_41
 --- !u!65 &901025219
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26391,7 +26311,7 @@ GameObject:
   - component: {fileID: 915215806}
   - component: {fileID: 915215805}
   m_Layer: 0
-  m_Name: Platform1_8
+  m_Name: Platform3_8
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26428,7 +26348,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform1_8
+  _name: Platform3_8
 --- !u!65 &915215806
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26621,7 +26541,7 @@ GameObject:
   - component: {fileID: 919823965}
   - component: {fileID: 919823964}
   m_Layer: 0
-  m_Name: Platform5_14
+  m_Name: Platform3_89
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26640,7 +26560,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 511479926}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &919823964
 MonoBehaviour:
@@ -26658,7 +26578,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform5_14
+  _name: Platform3_89
 --- !u!65 &919823965
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26736,7 +26656,7 @@ GameObject:
   - component: {fileID: 928652737}
   - component: {fileID: 928652736}
   m_Layer: 0
-  m_Name: Platform2_5
+  m_Name: Platform3_24
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26755,7 +26675,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 719858623}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &928652736
 MonoBehaviour:
@@ -26773,7 +26693,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform2_5
+  _name: Platform3_24
 --- !u!65 &928652737
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27648,7 +27568,7 @@ GameObject:
   - component: {fileID: 958871512}
   - component: {fileID: 958871511}
   m_Layer: 0
-  m_Name: Platform4_9
+  m_Name: Platform3_66
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27667,7 +27587,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1039098708}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &958871511
 MonoBehaviour:
@@ -27685,7 +27605,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform4_9
+  _name: Platform3_66
 --- !u!65 &958871512
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27878,7 +27798,7 @@ GameObject:
   - component: {fileID: 965915038}
   - component: {fileID: 965915037}
   m_Layer: 0
-  m_Name: Platform5_24
+  m_Name: Platform3_100
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27897,7 +27817,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 511479926}
-  m_RootOrder: 26
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &965915037
 MonoBehaviour:
@@ -27915,7 +27835,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform5_24
+  _name: Platform3_100
 --- !u!65 &965915038
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28325,7 +28245,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &985572990
 GameObject:
@@ -28587,7 +28507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameSceneManager: {fileID: 1958565681}
-  _stage: 0
+  _stage: 4
   _isSavePlatform: 1
   _isClearPlatform: 0
   _name: Platform4_1
@@ -28668,7 +28588,7 @@ GameObject:
   - component: {fileID: 992840214}
   - component: {fileID: 992840213}
   m_Layer: 0
-  m_Name: Platform4_15
+  m_Name: Platform3_72
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28687,7 +28607,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1039098708}
-  m_RootOrder: 16
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &992840213
 MonoBehaviour:
@@ -28705,7 +28625,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform4_15
+  _name: Platform3_72
 --- !u!65 &992840214
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29004,7 +28924,7 @@ GameObject:
   - component: {fileID: 1002443142}
   - component: {fileID: 1002443141}
   m_Layer: 0
-  m_Name: Platform2_14
+  m_Name: Platform3_33
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29023,7 +28943,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 719858623}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1002443141
 MonoBehaviour:
@@ -29041,7 +28961,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform2_14
+  _name: Platform3_33
 --- !u!65 &1002443142
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29119,7 +29039,7 @@ GameObject:
   - component: {fileID: 1003130820}
   - component: {fileID: 1003130819}
   m_Layer: 0
-  m_Name: Platform5_5
+  m_Name: Platform3_80
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29156,7 +29076,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform5_5
+  _name: Platform3_80
 --- !u!65 &1003130820
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29478,6 +29398,7 @@ MonoBehaviour:
   _moveSpeed: 15
   _startPos: {x: 0, y: 0, z: 0}
   _targetPosition: {x: 5.5, y: 59.5, z: -2}
+  _targetPosObj: {fileID: 0}
   _stageNum: 0
   _name: 
 --- !u!65 &1007223696
@@ -29787,7 +29708,7 @@ GameObject:
   - component: {fileID: 1015357673}
   - component: {fileID: 1015357672}
   m_Layer: 0
-  m_Name: Platform4_7
+  m_Name: Platform3_64
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29806,7 +29727,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1039098708}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1015357672
 MonoBehaviour:
@@ -29824,7 +29745,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform4_7
+  _name: Platform3_64
 --- !u!65 &1015357673
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29999,7 +29920,7 @@ GameObject:
   - component: {fileID: 1028536142}
   - component: {fileID: 1028536141}
   m_Layer: 0
-  m_Name: Platform5_20
+  m_Name: Platform3_96
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30018,7 +29939,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 511479926}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1028536141
 MonoBehaviour:
@@ -30036,7 +29957,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform5_20
+  _name: Platform3_96
 --- !u!65 &1028536142
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30225,7 +30146,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1031539232}
   m_Layer: 0
-  m_Name: Obstacle4_1
+  m_Name: Obstacle3_14_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30260,7 +30181,7 @@ GameObject:
   - component: {fileID: 1033522314}
   - component: {fileID: 1033522313}
   m_Layer: 0
-  m_Name: Platform2_21
+  m_Name: Platform3_40
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30279,7 +30200,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 719858623}
-  m_RootOrder: 22
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1033522313
 MonoBehaviour:
@@ -30297,7 +30218,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform2_21
+  _name: Platform3_40
 --- !u!65 &1033522314
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30490,7 +30411,7 @@ GameObject:
   - component: {fileID: 1036967504}
   - component: {fileID: 1036967503}
   m_Layer: 0
-  m_Name: Platform2_2
+  m_Name: Platform3_21
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30527,7 +30448,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform2_2
+  _name: Platform3_21
 --- !u!65 &1036967504
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30624,12 +30545,10 @@ Transform:
   - {fileID: 537317625}
   - {fileID: 1550014609}
   - {fileID: 1240781657}
-  - {fileID: 265776462}
   - {fileID: 256801519}
   - {fileID: 1015357671}
   - {fileID: 1635050022}
   - {fileID: 958871510}
-  - {fileID: 487968190}
   - {fileID: 1627861390}
   - {fileID: 1513080614}
   - {fileID: 218474885}
@@ -30637,12 +30556,14 @@ Transform:
   - {fileID: 2586244}
   - {fileID: 992840212}
   - {fileID: 1743832661}
-  - {fileID: 1865444271}
-  - {fileID: 505721536}
   - {fileID: 210370937}
   - {fileID: 1989138661}
+  - {fileID: 487968190}
+  - {fileID: 265776462}
   - {fileID: 43941755}
   - {fileID: 1078611673}
+  - {fileID: 505721536}
+  - {fileID: 1865444271}
   - {fileID: 1126109285}
   - {fileID: 146206459}
   - {fileID: 141178607}
@@ -30999,13 +30920,12 @@ GameObject:
   - component: {fileID: 1052417312}
   - component: {fileID: 1052417311}
   - component: {fileID: 1052417310}
-  - component: {fileID: 1052417309}
   - component: {fileID: 1052417308}
   - component: {fileID: 1052417307}
   - component: {fileID: 1052417306}
   - component: {fileID: 1052417305}
   m_Layer: 0
-  m_Name: Obstacle5_3
+  m_Name: Obstacle3_22
   m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31025,7 +30945,7 @@ Transform:
   m_Children:
   - {fileID: 37599823}
   m_Father: {fileID: 511479926}
-  m_RootOrder: 16
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1052417305
 Rigidbody:
@@ -31141,28 +31061,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _stageNum: 0
+  _gameObject: {fileID: 0}
   _rotateAngle: -90
   _isRotate: 0
   _rotatePos: {fileID: 37599822}
   _rigid: {fileID: 1052417305}
-  _name: 
---- !u!114 &1052417309
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1052417303}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d2b59aa824121f488c5a6573501bddd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameSceneManager: {fileID: 0}
-  _stage: 0
-  _isSavePlatform: 0
-  _isClearPlatform: 0
-  _name: Obstacle5_3
+  _name: Obstacle3_22
 --- !u!65 &1052417310
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31240,7 +31144,7 @@ GameObject:
   - component: {fileID: 1059989907}
   - component: {fileID: 1059989906}
   m_Layer: 0
-  m_Name: Platform5_19
+  m_Name: Platform3_95
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31259,7 +31163,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 511479926}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1059989906
 MonoBehaviour:
@@ -31277,7 +31181,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform5_19
+  _name: Platform3_95
 --- !u!65 &1059989907
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31355,7 +31259,7 @@ GameObject:
   - component: {fileID: 1062049095}
   - component: {fileID: 1062049094}
   m_Layer: 0
-  m_Name: Platform5_9
+  m_Name: Platform3_84
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31374,7 +31278,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 511479926}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1062049094
 MonoBehaviour:
@@ -31392,7 +31296,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform5_9
+  _name: Platform3_84
 --- !u!65 &1062049095
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31841,11 +31745,10 @@ GameObject:
   - component: {fileID: 1072234387}
   - component: {fileID: 1072234386}
   - component: {fileID: 1072234385}
-  - component: {fileID: 1072234384}
   - component: {fileID: 1072234383}
   - component: {fileID: 1072234382}
   m_Layer: 0
-  m_Name: Obstacle5_2
+  m_Name: Obstacle3_21
   m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31865,7 +31768,7 @@ Transform:
   m_Children:
   - {fileID: 1239227768}
   m_Father: {fileID: 511479926}
-  m_RootOrder: 5
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1072234382
 MonoBehaviour:
@@ -31952,28 +31855,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _stageNum: 0
+  _gameObject: {fileID: 0}
   _rotateAngle: -90
   _isRotate: 0
   _rotatePos: {fileID: 1239227767}
   _rigid: {fileID: 1072234385}
-  _name: 
---- !u!114 &1072234384
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1072234380}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d2b59aa824121f488c5a6573501bddd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameSceneManager: {fileID: 0}
-  _stage: 0
-  _isSavePlatform: 0
-  _isClearPlatform: 0
-  _name: Obstacle5_2
+  _name: Obstacle3_21
 --- !u!54 &1072234385
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -32110,7 +31997,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1078450760
 GameObject:
@@ -32126,7 +32013,7 @@ GameObject:
   - component: {fileID: 1078450763}
   - component: {fileID: 1078450762}
   m_Layer: 0
-  m_Name: Platform2_16
+  m_Name: Platform3_35
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32145,7 +32032,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 719858623}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1078450762
 MonoBehaviour:
@@ -32163,7 +32050,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform2_16
+  _name: Platform3_35
 --- !u!65 &1078450763
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32239,11 +32126,10 @@ GameObject:
   - component: {fileID: 1078611679}
   - component: {fileID: 1078611678}
   - component: {fileID: 1078611677}
-  - component: {fileID: 1078611676}
   - component: {fileID: 1078611675}
   - component: {fileID: 1078611674}
   m_Layer: 0
-  m_Name: Obstacle4_4
+  m_Name: Obstacle3_17
   m_TagString: ObstacleCol
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32262,7 +32148,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1039098708}
-  m_RootOrder: 23
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1078611674
 MonoBehaviour:
@@ -32366,24 +32252,7 @@ MonoBehaviour:
   _jumpForce: 5
   _isIncrease: 0
   _itemJumpPower: 0
-  _name: 
---- !u!114 &1078611676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1078611672}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d2b59aa824121f488c5a6573501bddd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameSceneManager: {fileID: 0}
-  _stage: 0
-  _isSavePlatform: 0
-  _isClearPlatform: 0
-  _name: Obstacle4_4
+  _name: Obstacle3_17
 --- !u!65 &1078611677
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32576,7 +32445,7 @@ GameObject:
   - component: {fileID: 1079649706}
   - component: {fileID: 1079649705}
   m_Layer: 0
-  m_Name: Platform2_15
+  m_Name: Platform3_34
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32595,7 +32464,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 719858623}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1079649705
 MonoBehaviour:
@@ -32613,7 +32482,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform2_15
+  _name: Platform3_34
 --- !u!65 &1079649706
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32902,7 +32771,7 @@ GameObject:
   - component: {fileID: 1088342237}
   - component: {fileID: 1088342236}
   m_Layer: 0
-  m_Name: Platform2_3
+  m_Name: Platform3_22
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32921,7 +32790,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 719858623}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1088342236
 MonoBehaviour:
@@ -32939,7 +32808,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform2_3
+  _name: Platform3_22
 --- !u!65 &1088342237
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33963,6 +33832,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _startPos: {x: 0, y: 0, z: 0}
   _isPlatformDestroyed: 0
+  _disappearTime: 0
   _respawnDelay: 3
   _name: 
 --- !u!65 &1106223767
@@ -35542,7 +35412,7 @@ GameObject:
   - component: {fileID: 1157494326}
   - component: {fileID: 1157494327}
   m_Layer: 0
-  m_Name: Obstacle3_2
+  m_Name: Obstacle3_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35564,7 +35434,7 @@ Transform:
   - {fileID: 603283343}
   - {fileID: 630503739}
   m_Father: {fileID: 1779013029}
-  m_RootOrder: 19
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1157494327
 MonoBehaviour:
@@ -35584,7 +35454,7 @@ MonoBehaviour:
   _moveInterval: 5
   _startPos: {x: 0, y: 0, z: 0}
   _movingPositive: 0
-  _name: 
+  _name: Obstacle3_10
 --- !u!1 &1162301731
 GameObject:
   m_ObjectHideFlags: 3
@@ -35952,7 +35822,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4353395921811104, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
       propertyPath: m_RootOrder
-      value: 27
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 4353395921811104, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
       propertyPath: m_LocalScale.x
@@ -36376,7 +36246,7 @@ GameObject:
   - component: {fileID: 1202192598}
   - component: {fileID: 1202192597}
   m_Layer: 0
-  m_Name: Platform1_2
+  m_Name: Platform3_2
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36413,7 +36283,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform1_2
+  _name: Platform3_2
 --- !u!65 &1202192598
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36729,6 +36599,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _stageNum: 0
+  _gameObject: {fileID: 0}
   _rotateAngle: -90
   _isRotate: 0
   _rotatePos: {fileID: 934670315}
@@ -37327,6 +37198,7 @@ MonoBehaviour:
   _moveSpeed: 10
   _startPos: {x: 0, y: 0, z: 0}
   _targetPosition: {x: 5.5, y: -14.8, z: -1.2}
+  _targetPosObj: {fileID: 0}
   _stageNum: 0
   _name: Obstacle1_4
 --- !u!65 &1222439399
@@ -37528,7 +37400,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1231759719
 GameObject:
@@ -37756,7 +37628,7 @@ GameObject:
   - component: {fileID: 1237116887}
   - component: {fileID: 1237116886}
   m_Layer: 0
-  m_Name: Platform3_1
+  m_Name: Platform3_43
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37793,7 +37665,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform3_1
+  _name: Platform3_43
 --- !u!65 &1237116887
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37976,7 +37848,7 @@ GameObject:
   - component: {fileID: 1240781659}
   - component: {fileID: 1240781658}
   m_Layer: 0
-  m_Name: Platform4_5
+  m_Name: Platform3_62
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38013,7 +37885,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform4_5
+  _name: Platform3_62
 --- !u!65 &1240781659
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38191,7 +38063,7 @@ GameObject:
   - component: {fileID: 1248446964}
   - component: {fileID: 1248446963}
   m_Layer: 0
-  m_Name: Platform5_7
+  m_Name: Platform3_82
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38210,7 +38082,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 511479926}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1248446963
 MonoBehaviour:
@@ -38228,7 +38100,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform5_7
+  _name: Platform3_82
 --- !u!65 &1248446964
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38428,7 +38300,7 @@ GameObject:
   - component: {fileID: 1250069850}
   - component: {fileID: 1250069849}
   m_Layer: 0
-  m_Name: Platform5_3
+  m_Name: Platform3_78
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38465,7 +38337,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform5_3
+  _name: Platform3_78
 --- !u!65 &1250069850
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38766,6 +38638,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _startPos: {x: 0, y: 0, z: 0}
   _isPlatformDestroyed: 0
+  _disappearTime: 0
   _respawnDelay: 3
   _name: 
 --- !u!65 &1255419483
@@ -38845,7 +38718,7 @@ GameObject:
   - component: {fileID: 1256556198}
   - component: {fileID: 1256556197}
   m_Layer: 0
-  m_Name: Platform3_3
+  m_Name: Platform3_45
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38882,7 +38755,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform3_3
+  _name: Platform3_45
 --- !u!65 &1256556198
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39104,7 +38977,7 @@ GameObject:
   - component: {fileID: 1276213496}
   - component: {fileID: 1276213495}
   m_Layer: 0
-  m_Name: Platform5_16
+  m_Name: Platform3_92
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39123,7 +38996,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 511479926}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1276213495
 MonoBehaviour:
@@ -39141,7 +39014,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform5_16
+  _name: Platform3_92
 --- !u!65 &1276213496
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39345,6 +39218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _startPos: {x: 0, y: 0, z: 0}
   _isPlatformDestroyed: 0
+  _disappearTime: 0
   _respawnDelay: 3
   _name: 
 --- !u!65 &1284392267
@@ -39955,7 +39829,7 @@ GameObject:
   - component: {fileID: 1302523446}
   - component: {fileID: 1302523445}
   m_Layer: 0
-  m_Name: Platform3_5
+  m_Name: Platform3_47
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39992,7 +39866,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform3_5
+  _name: Platform3_47
 --- !u!65 &1302523446
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40216,7 +40090,7 @@ GameObject:
   - component: {fileID: 1317746155}
   - component: {fileID: 1317746154}
   m_Layer: 0
-  m_Name: Platform3_14
+  m_Name: Platform3_56
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40235,7 +40109,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1779013029}
-  m_RootOrder: 16
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1317746154
 MonoBehaviour:
@@ -40253,7 +40127,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform3_14
+  _name: Platform3_56
 --- !u!65 &1317746155
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40572,6 +40446,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _startPos: {x: 0, y: 0, z: 0}
   _isPlatformDestroyed: 0
+  _disappearTime: 0
   _respawnDelay: 3
   _name: 
 --- !u!65 &1323215123
@@ -41244,6 +41119,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _startPos: {x: 0, y: 0, z: 0}
   _isPlatformDestroyed: 0
+  _disappearTime: 0
   _respawnDelay: 3
   _name: 
 --- !u!65 &1329813920
@@ -41322,12 +41198,11 @@ GameObject:
   - component: {fileID: 1331017646}
   - component: {fileID: 1331017645}
   - component: {fileID: 1331017644}
-  - component: {fileID: 1331017643}
   - component: {fileID: 1331017642}
   - component: {fileID: 1331017641}
   - component: {fileID: 1331017640}
   m_Layer: 0
-  m_Name: Obstacle1_2
+  m_Name: Obstacle3_2
   m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41347,7 +41222,7 @@ Transform:
   m_Children:
   - {fileID: 69352922}
   m_Father: {fileID: 1855016626}
-  m_RootOrder: 23
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1331017640
 Rigidbody:
@@ -41450,28 +41325,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _stageNum: 0
+  _gameObject: {fileID: 69352921}
   _rotateAngle: -90
   _isRotate: 0
   _rotatePos: {fileID: 69352921}
   _rigid: {fileID: 1331017640}
-  _name: 
---- !u!114 &1331017643
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1331017638}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d2b59aa824121f488c5a6573501bddd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameSceneManager: {fileID: 0}
-  _stage: 0
-  _isSavePlatform: 0
-  _isClearPlatform: 0
-  _name: Obstacle1_2
+  _name: Obstacle3_2
 --- !u!65 &1331017644
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41595,7 +41454,7 @@ GameObject:
   - component: {fileID: 1331811565}
   - component: {fileID: 1331811564}
   m_Layer: 0
-  m_Name: Platform2_20
+  m_Name: Platform3_39
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41614,7 +41473,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 719858623}
-  m_RootOrder: 21
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1331811564
 MonoBehaviour:
@@ -41632,7 +41491,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform2_20
+  _name: Platform3_39
 --- !u!65 &1331811565
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41710,7 +41569,7 @@ GameObject:
   - component: {fileID: 1340323974}
   - component: {fileID: 1340323973}
   m_Layer: 0
-  m_Name: Platform3_15
+  m_Name: Platform3_57
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41729,7 +41588,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1779013029}
-  m_RootOrder: 18
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1340323973
 MonoBehaviour:
@@ -41747,7 +41606,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform3_15
+  _name: Platform3_57
 --- !u!65 &1340323974
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42318,7 +42177,7 @@ GameObject:
   - component: {fileID: 1362741603}
   - component: {fileID: 1362741602}
   m_Layer: 0
-  m_Name: Platform5_11
+  m_Name: Platform3_86
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42337,7 +42196,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 511479926}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1362741602
 MonoBehaviour:
@@ -42355,7 +42214,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform5_11
+  _name: Platform3_86
 --- !u!65 &1362741603
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43198,7 +43057,7 @@ GameObject:
   - component: {fileID: 1408829207}
   - component: {fileID: 1408829206}
   m_Layer: 0
-  m_Name: Platform1_15
+  m_Name: Platform3_15
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43217,7 +43076,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1855016626}
-  m_RootOrder: 16
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1408829206
 MonoBehaviour:
@@ -43235,7 +43094,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform1_15
+  _name: Platform3_15
 --- !u!65 &1408829207
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43428,7 +43287,7 @@ GameObject:
   - component: {fileID: 1419156206}
   - component: {fileID: 1419156205}
   m_Layer: 0
-  m_Name: Platform1_9
+  m_Name: Platform3_9
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43465,7 +43324,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform1_9
+  _name: Platform3_9
 --- !u!65 &1419156206
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43595,6 +43454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _stageNum: 0
+  _gameObject: {fileID: 0}
   _rotateAngle: -90
   _isRotate: 0
   _rotatePos: {fileID: 1342760265}
@@ -43784,7 +43644,7 @@ Transform:
   - {fileID: 501948827}
   - {fileID: 1689004229}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1423354786
 GameObject:
@@ -44030,7 +43890,7 @@ GameObject:
   - component: {fileID: 1424051109}
   - component: {fileID: 1424051108}
   m_Layer: 0
-  m_Name: Platform3_9
+  m_Name: Platform3_51
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44049,7 +43909,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1779013029}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1424051108
 MonoBehaviour:
@@ -44067,7 +43927,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform3_9
+  _name: Platform3_51
 --- !u!65 &1424051109
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -44237,7 +44097,7 @@ GameObject:
   - component: {fileID: 1434740971}
   - component: {fileID: 1434740970}
   m_Layer: 0
-  m_Name: Platform5_8
+  m_Name: Platform3_83
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44256,7 +44116,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 511479926}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1434740970
 MonoBehaviour:
@@ -44274,7 +44134,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform5_8
+  _name: Platform3_83
 --- !u!65 &1434740971
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -44678,6 +44538,7 @@ MonoBehaviour:
   _moveSpeed: 5
   _startPos: {x: 0, y: 0, z: 0}
   _targetPosition: {x: -5.4, y: 51, z: -0.5}
+  _targetPosObj: {fileID: 0}
   _stageNum: 0
   _name: 
 --- !u!114 &1450427848
@@ -45923,10 +45784,9 @@ GameObject:
   - component: {fileID: 1483186864}
   - component: {fileID: 1483186863}
   - component: {fileID: 1483186862}
-  - component: {fileID: 1483186861}
   - component: {fileID: 1483186860}
   m_Layer: 0
-  m_Name: Platform1_1
+  m_Name: Platform3_1
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45960,27 +45820,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameSceneManager: {fileID: 0}
-  _stage: 0
+  _stage: 3
   _isSavePlatform: 1
   _isClearPlatform: 0
-  _name: Platform1_1
---- !u!114 &1483186861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1483186858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d2b59aa824121f488c5a6573501bddd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameSceneManager: {fileID: 1958565681}
-  _stage: 0
-  _isSavePlatform: 1
-  _isClearPlatform: 0
-  _name: 
+  _name: Platform3_1
 --- !u!65 &1483186862
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46239,6 +46082,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _stageNum: 0
+  _gameObject: {fileID: 0}
   _rotateAngle: 90
   _isRotate: 0
   _rotatePos: {fileID: 1593551877}
@@ -46698,7 +46542,7 @@ GameObject:
   - component: {fileID: 1507022087}
   - component: {fileID: 1507022086}
   m_Layer: 0
-  m_Name: Platform5_13
+  m_Name: Platform3_88
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46717,7 +46561,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 511479926}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1507022086
 MonoBehaviour:
@@ -46735,7 +46579,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform5_13
+  _name: Platform3_88
 --- !u!65 &1507022087
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46928,7 +46772,7 @@ GameObject:
   - component: {fileID: 1510642380}
   - component: {fileID: 1510642379}
   m_Layer: 0
-  m_Name: Platform1_10
+  m_Name: Platform3_10
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46965,7 +46809,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform1_10
+  _name: Platform3_10
 --- !u!65 &1510642380
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -47041,11 +46885,10 @@ GameObject:
   - component: {fileID: 1511952228}
   - component: {fileID: 1511952227}
   - component: {fileID: 1511952226}
-  - component: {fileID: 1511952225}
   - component: {fileID: 1511952224}
   - component: {fileID: 1511952223}
   m_Layer: 0
-  m_Name: Obstacle2_3
+  m_Name: Obstacle3_8
   m_TagString: ObstacleCol
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47064,7 +46907,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 719858623}
-  m_RootOrder: 2
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1511952223
 MonoBehaviour:
@@ -47140,25 +46983,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _startPos: {x: 0, y: 0, z: 0}
   _isPlatformDestroyed: 0
+  _disappearTime: 0
   _respawnDelay: 5
-  _name: 
---- !u!114 &1511952225
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1511952221}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d2b59aa824121f488c5a6573501bddd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameSceneManager: {fileID: 0}
-  _stage: 0
-  _isSavePlatform: 0
-  _isClearPlatform: 0
-  _name: Obstacle2_3
+  _name: Obstacle3_8
 --- !u!65 &1511952226
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -47236,7 +47063,7 @@ GameObject:
   - component: {fileID: 1513080616}
   - component: {fileID: 1513080615}
   m_Layer: 0
-  m_Name: Platform4_11
+  m_Name: Platform3_68
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47255,7 +47082,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1039098708}
-  m_RootOrder: 12
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1513080615
 MonoBehaviour:
@@ -47273,7 +47100,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform4_11
+  _name: Platform3_68
 --- !u!65 &1513080616
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -47699,7 +47526,7 @@ GameObject:
   - component: {fileID: 1526676781}
   - component: {fileID: 1526676780}
   m_Layer: 0
-  m_Name: Platform3_4
+  m_Name: Platform3_46
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47736,7 +47563,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform3_4
+  _name: Platform3_46
 --- !u!65 &1526676781
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -48261,7 +48088,7 @@ GameObject:
   - component: {fileID: 1543354275}
   - component: {fileID: 1543354274}
   m_Layer: 0
-  m_Name: Platform1_4
+  m_Name: Platform3_4
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48298,7 +48125,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform1_4
+  _name: Platform3_4
 --- !u!65 &1543354275
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -48450,7 +48277,7 @@ GameObject:
   - component: {fileID: 1550014611}
   - component: {fileID: 1550014610}
   m_Layer: 0
-  m_Name: Platform4_4
+  m_Name: Platform3_61
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48487,7 +48314,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform4_4
+  _name: Platform3_61
 --- !u!65 &1550014611
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -48565,7 +48392,7 @@ GameObject:
   - component: {fileID: 1563765282}
   - component: {fileID: 1563765281}
   m_Layer: 0
-  m_Name: Platform5_1
+  m_Name: Platform3_76
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48602,7 +48429,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform5_1
+  _name: Platform3_76
 --- !u!65 &1563765282
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -48909,7 +48736,7 @@ GameObject:
   - component: {fileID: 1568876642}
   - component: {fileID: 1568876641}
   m_Layer: 0
-  m_Name: Obstacle1_1
+  m_Name: Obstacle3_1
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48928,7 +48755,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1855016626}
-  m_RootOrder: 15
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1568876641
 MonoBehaviour:
@@ -48946,7 +48773,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Obstacle1_1
+  _name: Obstacle3_1
 --- !u!23 &1568876642
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -49030,7 +48857,7 @@ Transform:
   - {fileID: 1890921572}
   - {fileID: 488753724}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1585066301
 GameObject:
@@ -49161,7 +48988,7 @@ GameObject:
   - component: {fileID: 1588238926}
   - component: {fileID: 1588238925}
   m_Layer: 0
-  m_Name: Platform2_19
+  m_Name: Platform3_38
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49180,7 +49007,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 719858623}
-  m_RootOrder: 20
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1588238925
 MonoBehaviour:
@@ -49198,7 +49025,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform2_19
+  _name: Platform3_38
 --- !u!65 &1588238926
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -49350,7 +49177,7 @@ GameObject:
   - component: {fileID: 1591335535}
   - component: {fileID: 1591335534}
   m_Layer: 0
-  m_Name: Platform3_7
+  m_Name: Platform3_49
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49387,7 +49214,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform3_7
+  _name: Platform3_49
 --- !u!65 &1591335535
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -49548,7 +49375,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1599769822
 GameObject:
@@ -49851,7 +49678,7 @@ GameObject:
   - component: {fileID: 1607129606}
   - component: {fileID: 1607129605}
   m_Layer: 0
-  m_Name: Platform2_13
+  m_Name: Platform3_32
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49870,7 +49697,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 719858623}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1607129605
 MonoBehaviour:
@@ -49888,7 +49715,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform2_13
+  _name: Platform3_32
 --- !u!65 &1607129606
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -50615,6 +50442,7 @@ MonoBehaviour:
   _moveSpeed: 15
   _startPos: {x: 0, y: 0, z: 0}
   _targetPosition: {x: -3.5, y: 57.75, z: -2}
+  _targetPosObj: {fileID: 0}
   _stageNum: 0
   _name: 
 --- !u!114 &1614320663
@@ -50846,7 +50674,7 @@ GameObject:
   - component: {fileID: 1627861392}
   - component: {fileID: 1627861391}
   m_Layer: 0
-  m_Name: Platform4_10
+  m_Name: Platform3_67
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50865,7 +50693,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1039098708}
-  m_RootOrder: 11
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1627861391
 MonoBehaviour:
@@ -50883,7 +50711,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform4_10
+  _name: Platform3_67
 --- !u!65 &1627861392
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -50961,7 +50789,7 @@ GameObject:
   - component: {fileID: 1635050024}
   - component: {fileID: 1635050023}
   m_Layer: 0
-  m_Name: Platform4_8
+  m_Name: Platform3_65
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50980,7 +50808,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1039098708}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1635050023
 MonoBehaviour:
@@ -50998,7 +50826,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform4_8
+  _name: Platform3_65
 --- !u!65 &1635050024
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -51191,7 +51019,7 @@ GameObject:
   - component: {fileID: 1646105061}
   - component: {fileID: 1646105060}
   m_Layer: 0
-  m_Name: Platform1_12
+  m_Name: Platform3_12
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51210,7 +51038,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1855016626}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1646105060
 MonoBehaviour:
@@ -51228,7 +51056,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform1_12
+  _name: Platform3_12
 --- !u!65 &1646105061
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -51306,7 +51134,7 @@ GameObject:
   - component: {fileID: 1646520800}
   - component: {fileID: 1646520799}
   m_Layer: 0
-  m_Name: Platform1_17
+  m_Name: Platform3_17
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51325,7 +51153,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1855016626}
-  m_RootOrder: 18
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1646520799
 MonoBehaviour:
@@ -51343,7 +51171,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform1_17
+  _name: Platform3_17
 --- !u!65 &1646520800
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -51651,7 +51479,7 @@ GameObject:
   - component: {fileID: 1683688453}
   - component: {fileID: 1683688452}
   m_Layer: 0
-  m_Name: Platform5_18
+  m_Name: Platform3_94
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51670,7 +51498,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 511479926}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1683688452
 MonoBehaviour:
@@ -51688,7 +51516,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform5_18
+  _name: Platform3_94
 --- !u!65 &1683688453
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -52138,7 +51966,7 @@ GameObject:
   - component: {fileID: 1696781822}
   - component: {fileID: 1696781821}
   m_Layer: 0
-  m_Name: Platform1_6
+  m_Name: Platform3_6
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52175,7 +52003,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform1_6
+  _name: Platform3_6
 --- !u!65 &1696781822
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -52368,7 +52196,7 @@ GameObject:
   - component: {fileID: 1699231562}
   - component: {fileID: 1699231561}
   m_Layer: 0
-  m_Name: Platform3_12
+  m_Name: Platform3_54
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52387,7 +52215,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1779013029}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1699231561
 MonoBehaviour:
@@ -52405,7 +52233,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform3_12
+  _name: Platform3_54
 --- !u!65 &1699231562
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -52827,7 +52655,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4353395921811104, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
       propertyPath: m_RootOrder
-      value: 30
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 4353395921811104, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
       propertyPath: m_LocalScale.x
@@ -52901,12 +52729,11 @@ GameObject:
   - component: {fileID: 1709976390}
   - component: {fileID: 1709976389}
   - component: {fileID: 1709976388}
-  - component: {fileID: 1709976387}
   - component: {fileID: 1709976386}
   - component: {fileID: 1709976385}
   - component: {fileID: 1709976384}
   m_Layer: 0
-  m_Name: Obstacle3_5
+  m_Name: Obstacle3_13
   m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52926,7 +52753,7 @@ Transform:
   m_Children:
   - {fileID: 164671448}
   m_Father: {fileID: 1779013029}
-  m_RootOrder: 17
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1709976384
 MonoBehaviour:
@@ -53029,28 +52856,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _stageNum: 0
+  _gameObject: {fileID: 0}
   _rotateAngle: 135
   _isRotate: 0
   _rotatePos: {fileID: 164671447}
   _rigid: {fileID: 1709976385}
-  _name: 
---- !u!114 &1709976387
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1709976382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d2b59aa824121f488c5a6573501bddd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameSceneManager: {fileID: 0}
-  _stage: 0
-  _isSavePlatform: 0
-  _isClearPlatform: 0
-  _name: Obstacle3_5
+  _name: Obstacle3_13
 --- !u!65 &1709976388
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53328,10 +53139,9 @@ GameObject:
   - component: {fileID: 1719478182}
   - component: {fileID: 1719478181}
   - component: {fileID: 1719478180}
-  - component: {fileID: 1719478179}
   - component: {fileID: 1719478178}
   m_Layer: 0
-  m_Name: Obstacle1_4
+  m_Name: Obstacle3_4
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53368,24 +53178,7 @@ MonoBehaviour:
   _launchInterval: 5
   _direction: {x: 1, y: 0, z: 0}
   _launchSpeed: 5
-  _name: 
---- !u!114 &1719478179
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1719478176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d2b59aa824121f488c5a6573501bddd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameSceneManager: {fileID: 0}
-  _stage: 0
-  _isSavePlatform: 0
-  _isClearPlatform: 0
-  _name: Obstacle1_4
+  _name: Obstacle3_4
 --- !u!65 &1719478180
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53905,7 +53698,7 @@ GameObject:
   - component: {fileID: 1743832663}
   - component: {fileID: 1743832662}
   m_Layer: 0
-  m_Name: Platform4_16
+  m_Name: Platform3_73
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53924,7 +53717,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1039098708}
-  m_RootOrder: 17
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1743832662
 MonoBehaviour:
@@ -53942,7 +53735,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform4_16
+  _name: Platform3_73
 --- !u!65 &1743832663
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54250,7 +54043,7 @@ GameObject:
   - component: {fileID: 1754075680}
   - component: {fileID: 1754075679}
   m_Layer: 0
-  m_Name: Platform2_17
+  m_Name: Platform3_36
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -54269,7 +54062,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 719858623}
-  m_RootOrder: 18
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1754075679
 MonoBehaviour:
@@ -54287,7 +54080,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform2_17
+  _name: Platform3_36
 --- !u!65 &1754075680
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54836,19 +54629,19 @@ Transform:
   - {fileID: 1302523444}
   - {fileID: 12265039}
   - {fileID: 1591335533}
-  - {fileID: 1821337774}
   - {fileID: 1891085431}
   - {fileID: 1424051107}
   - {fileID: 1928860572}
   - {fileID: 387020452}
   - {fileID: 1699231560}
-  - {fileID: 439845152}
   - {fileID: 1779557298}
-  - {fileID: 64892604}
   - {fileID: 1317746153}
-  - {fileID: 1709976383}
   - {fileID: 1340323972}
+  - {fileID: 1821337774}
   - {fileID: 1157494326}
+  - {fileID: 439845152}
+  - {fileID: 64892604}
+  - {fileID: 1709976383}
   - {fileID: 1590876669}
   - {fileID: 1710582039}
   - {fileID: 1519099268}
@@ -54870,7 +54663,7 @@ GameObject:
   - component: {fileID: 1779557300}
   - component: {fileID: 1779557299}
   m_Layer: 0
-  m_Name: Platform3_13
+  m_Name: Platform3_55
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -54889,7 +54682,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1779013029}
-  m_RootOrder: 14
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1779557299
 MonoBehaviour:
@@ -54907,7 +54700,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform3_13
+  _name: Platform3_55
 --- !u!65 &1779557300
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55541,7 +55334,7 @@ GameObject:
   - component: {fileID: 1796543466}
   - component: {fileID: 1796543465}
   m_Layer: 0
-  m_Name: Platform5_4
+  m_Name: Platform3_79
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55578,7 +55371,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform5_4
+  _name: Platform3_79
 --- !u!65 &1796543466
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55656,7 +55449,7 @@ GameObject:
   - component: {fileID: 1798348433}
   - component: {fileID: 1798348432}
   m_Layer: 0
-  m_Name: Platform1_7
+  m_Name: Platform3_7
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55693,7 +55486,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform1_7
+  _name: Platform3_7
 --- !u!65 &1798348433
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -56231,7 +56024,7 @@ GameObject:
   - component: {fileID: 1814433845}
   - component: {fileID: 1814433844}
   m_Layer: 0
-  m_Name: Platform4_13
+  m_Name: Platform3_70
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56250,7 +56043,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1039098708}
-  m_RootOrder: 14
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1814433844
 MonoBehaviour:
@@ -56268,7 +56061,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform4_13
+  _name: Platform3_70
 --- !u!65 &1814433845
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -56345,8 +56138,9 @@ GameObject:
   - component: {fileID: 1815475727}
   - component: {fileID: 1815475726}
   - component: {fileID: 1815475725}
+  - component: {fileID: 1815475730}
   m_Layer: 0
-  m_Name: Platform1
+  m_Name: Platform1_1
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56442,6 +56236,23 @@ Transform:
   m_Father: {fileID: 1599769823}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -179.306, z: 0}
+--- !u!114 &1815475730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815475724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d2b59aa824121f488c5a6573501bddd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameSceneManager: {fileID: 0}
+  _stage: 1
+  _isSavePlatform: 1
+  _isClearPlatform: 0
+  _name: Platform1_1
 --- !u!1 &1821337773
 GameObject:
   m_ObjectHideFlags: 0
@@ -56454,10 +56265,9 @@ GameObject:
   - component: {fileID: 1821337779}
   - component: {fileID: 1821337778}
   - component: {fileID: 1821337777}
-  - component: {fileID: 1821337776}
   - component: {fileID: 1821337775}
   m_Layer: 0
-  m_Name: Obstacle3_1
+  m_Name: Obstacle3_9
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56476,7 +56286,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1779013029}
-  m_RootOrder: 7
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1821337775
 MonoBehaviour:
@@ -56496,24 +56306,7 @@ MonoBehaviour:
   _moveInterval: 3
   _startPos: {x: 0, y: 0, z: 0}
   _movingPositive: 0
-  _name: 
---- !u!114 &1821337776
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1821337773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d2b59aa824121f488c5a6573501bddd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameSceneManager: {fileID: 0}
-  _stage: 0
-  _isSavePlatform: 0
-  _isClearPlatform: 0
-  _name: Obstacle3_1
+  _name: Obstacle3_9
 --- !u!65 &1821337777
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -57277,19 +57070,19 @@ Transform:
   - {fileID: 1419156204}
   - {fileID: 1510642378}
   - {fileID: 482882842}
-  - {fileID: 647535663}
   - {fileID: 1646105059}
   - {fileID: 2034759802}
   - {fileID: 538136372}
-  - {fileID: 1568876640}
   - {fileID: 1408829205}
   - {fileID: 696131175}
   - {fileID: 1646520798}
   - {fileID: 1975482726}
   - {fileID: 2062549437}
-  - {fileID: 419065219}
-  - {fileID: 1719478177}
+  - {fileID: 1568876640}
   - {fileID: 1331017639}
+  - {fileID: 647535663}
+  - {fileID: 1719478177}
+  - {fileID: 419065219}
   - {fileID: 1544764003}
   - {fileID: 1164523773}
   - {fileID: 429821169}
@@ -57427,10 +57220,9 @@ GameObject:
   - component: {fileID: 1865444276}
   - component: {fileID: 1865444275}
   - component: {fileID: 1865444274}
-  - component: {fileID: 1865444273}
   - component: {fileID: 1865444272}
   m_Layer: 0
-  m_Name: Obstacle4_6
+  m_Name: Obstacle3_19
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -57449,7 +57241,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1039098708}
-  m_RootOrder: 18
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1865444272
 MonoBehaviour:
@@ -57469,24 +57261,7 @@ MonoBehaviour:
   _moveInterval: 5
   _startPos: {x: 0, y: 0, z: 0}
   _movingPositive: 0
-  _name: 
---- !u!114 &1865444273
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1865444270}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d2b59aa824121f488c5a6573501bddd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameSceneManager: {fileID: 0}
-  _stage: 0
-  _isSavePlatform: 0
-  _isClearPlatform: 0
-  _name: Obstacle4_6
+  _name: Obstacle3_19
 --- !u!65 &1865444274
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58584,7 +58359,7 @@ GameObject:
   - component: {fileID: 1891085433}
   - component: {fileID: 1891085432}
   m_Layer: 0
-  m_Name: Platform3_8
+  m_Name: Platform3_50
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58603,7 +58378,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1779013029}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1891085432
 MonoBehaviour:
@@ -58621,7 +58396,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform3_8
+  _name: Platform3_50
 --- !u!65 &1891085433
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -59316,7 +59091,7 @@ GameObject:
   - component: {fileID: 1908567626}
   - component: {fileID: 1908567625}
   m_Layer: 0
-  m_Name: Platform5_15
+  m_Name: Platform3_90
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59335,7 +59110,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 511479926}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1908567625
 MonoBehaviour:
@@ -59353,7 +59128,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform5_15
+  _name: Platform3_90
 --- !u!65 &1908567626
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -59993,6 +59768,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _startPos: {x: 0, y: 0, z: 0}
   _isPlatformDestroyed: 0
+  _disappearTime: 0
   _respawnDelay: 3
   _name: 
 --- !u!65 &1914273522
@@ -60582,7 +60358,7 @@ GameObject:
   - component: {fileID: 1928860574}
   - component: {fileID: 1928860573}
   m_Layer: 0
-  m_Name: Platform3_10
+  m_Name: Platform3_52
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60601,7 +60377,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1779013029}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1928860573
 MonoBehaviour:
@@ -60619,7 +60395,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform3_10
+  _name: Platform3_52
 --- !u!65 &1928860574
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -60942,7 +60718,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1940569034
 GameObject:
@@ -61238,7 +61014,7 @@ GameObject:
   - component: {fileID: 1946035100}
   - component: {fileID: 1946035099}
   m_Layer: 0
-  m_Name: Platform5_22
+  m_Name: Platform3_98
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61257,7 +61033,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 511479926}
-  m_RootOrder: 24
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1946035099
 MonoBehaviour:
@@ -61275,7 +61051,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform5_22
+  _name: Platform3_98
 --- !u!65 &1946035100
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -61855,7 +61631,7 @@ Transform:
   m_Children:
   - {fileID: 1294629804}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1964861698
 GameObject:
@@ -62349,6 +62125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _startPos: {x: 0, y: 0, z: 0}
   _isPlatformDestroyed: 0
+  _disappearTime: 0
   _respawnDelay: 0
   _name: 
 --- !u!65 &1967976730
@@ -62428,7 +62205,7 @@ GameObject:
   - component: {fileID: 1975482728}
   - component: {fileID: 1975482727}
   m_Layer: 0
-  m_Name: Platform1_18
+  m_Name: Platform3_18
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62447,7 +62224,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1855016626}
-  m_RootOrder: 19
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1975482727
 MonoBehaviour:
@@ -62465,7 +62242,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform1_18
+  _name: Platform3_18
 --- !u!65 &1975482728
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -62784,7 +62561,7 @@ GameObject:
   - component: {fileID: 1989138663}
   - component: {fileID: 1989138662}
   m_Layer: 0
-  m_Name: Platform4_18
+  m_Name: Platform3_75
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62803,7 +62580,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1039098708}
-  m_RootOrder: 21
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1989138662
 MonoBehaviour:
@@ -62821,7 +62598,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform4_18
+  _name: Platform3_75
 --- !u!65 &1989138663
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63433,7 +63210,7 @@ GameObject:
   - component: {fileID: 2034759804}
   - component: {fileID: 2034759803}
   m_Layer: 0
-  m_Name: Platform1_13
+  m_Name: Platform3_13
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63452,7 +63229,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1855016626}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2034759803
 MonoBehaviour:
@@ -63470,7 +63247,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform1_13
+  _name: Platform3_13
 --- !u!65 &2034759804
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63548,7 +63325,7 @@ GameObject:
   - component: {fileID: 2037057611}
   - component: {fileID: 2037057610}
   m_Layer: 0
-  m_Name: Platform2_4
+  m_Name: Platform3_23
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63567,7 +63344,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 719858623}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2037057610
 MonoBehaviour:
@@ -63585,7 +63362,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform2_4
+  _name: Platform3_23
 --- !u!65 &2037057611
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63812,7 +63589,7 @@ GameObject:
   - component: {fileID: 2062549439}
   - component: {fileID: 2062549438}
   m_Layer: 0
-  m_Name: Platform1_19
+  m_Name: Platform3_19
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63831,7 +63608,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1855016626}
-  m_RootOrder: 20
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2062549438
 MonoBehaviour:
@@ -63849,7 +63626,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform1_19
+  _name: Platform3_19
 --- !u!65 &2062549439
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -64139,7 +63916,7 @@ GameObject:
   - component: {fileID: 2072908653}
   - component: {fileID: 2072908652}
   m_Layer: 0
-  m_Name: Platform4_1
+  m_Name: Platform3_58
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -64176,7 +63953,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform4_1
+  _name: Platform3_58
 --- !u!65 &2072908653
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -64254,7 +64031,7 @@ GameObject:
   - component: {fileID: 2081899604}
   - component: {fileID: 2081899603}
   m_Layer: 0
-  m_Name: Platform5_15 (1)
+  m_Name: Platform3_91
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -64273,7 +64050,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 511479926}
-  m_RootOrder: 31
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2081899603
 MonoBehaviour:
@@ -64291,7 +64068,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform5_25
+  _name: Platform3_91
 --- !u!65 &2081899604
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -64734,7 +64511,7 @@ GameObject:
   - component: {fileID: 2096469166}
   - component: {fileID: 2096469165}
   m_Layer: 0
-  m_Name: Platform5_10
+  m_Name: Platform3_85
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -64753,7 +64530,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 511479926}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2096469165
 MonoBehaviour:
@@ -64771,7 +64548,7 @@ MonoBehaviour:
   _stage: 0
   _isSavePlatform: 0
   _isClearPlatform: 0
-  _name: Platform5_10
+  _name: Platform3_85
 --- !u!65 &2096469166
 BoxCollider:
   m_ObjectHideFlags: 0
