@@ -31,10 +31,10 @@ public class MainSceneManager : UIBInder
         //GetUI<Image>("CharacterText").gameObject.SetActive(false);
 
         // 새로 플레이 버튼 클릭 이벤트
-        AddEvent("NewPlay Button", EventType.Click, NewGameStart);
+        AddEvent("NewPlayButton", EventType.Click, NewGameStart);
 
         // 저장 플레이 버튼 클릭 이벤트
-        AddEvent("LoadPlay Button", EventType.Click, LastGameStart);
+        AddEvent("LoadPlayButton", EventType.Click, LastGameStart);
 
         // 캐릭터 선택(오른쪽) 버튼 클릭 이벤트
         AddEvent("Character_Right", EventType.Click, NextCharacter);
@@ -43,10 +43,10 @@ public class MainSceneManager : UIBInder
         AddEvent("Character_Left", EventType.Click, PreviousCharacter);
 
         // 조작법 설명 버튼 클릭 이벤트
-        AddEvent("Explain Button", EventType.Click, ShowHowToPlay);
+        AddEvent("ExplainButton", EventType.Click, ShowHowToPlay);
 
         // 나가기 버튼 클릭 이벤트
-        AddEvent("Exit Button", EventType.Click, QuitGame);
+        AddEvent("ExitButton", EventType.Click, QuitGame);
     }
 
     private void Update()
@@ -68,6 +68,7 @@ public class MainSceneManager : UIBInder
         DataManager.Instance.SaveData.GameData.CharacterNum = (int)_characterNum;
         DataManager.Instance.SaveData.GameData.IsClear = false;
        _sceneChanger.ChangeScene("GameScene"); // 화면을 GameScene으로 전환
+        Debug.Log("게임씬으로 넘어감!!!!!!!!!!!!!!!!!!!!");
     }
 
     // 저장된 게임 시작버튼
@@ -97,17 +98,17 @@ public class MainSceneManager : UIBInder
         {
             case ECharacterNum.Base:
                 Debug.Log("Base");
-                GetUI<TextMeshProUGUI>("CharacterText").text = "Base";
+                GetUI<TextMeshProUGUI>("CharacterText").text = "Jumper";
                 break;
 
             case ECharacterNum.Stone:
                 Debug.Log("Stone");
-                GetUI<TextMeshProUGUI>("CharacterText").text = "Stone";
+                GetUI<TextMeshProUGUI>("CharacterText").text = "FlyingHead";
                 break;
 
             case ECharacterNum.Jump:
                 Debug.Log("Jump");
-                GetUI<TextMeshProUGUI>("CharacterText").text = "Jump";
+                GetUI<TextMeshProUGUI>("CharacterText").text = "Bouncer";
                 break;
         }
     }
