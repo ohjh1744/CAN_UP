@@ -10,7 +10,13 @@ public class ActJumperJump : PlayerAction
 
     [SerializeField] GameObject _rayShooter;
 
+    [SerializeField] AudioSource _audio;
+
+    [SerializeField] AudioClip _audioClip;
+
     private bool _isJumping;
+
+    private bool _isSound;
 
     private void Update()
     {
@@ -47,6 +53,7 @@ public class ActJumperJump : PlayerAction
             if (hit.collider.CompareTag("Ground") || hit.collider.CompareTag("ObstacleCol") || hit.collider.CompareTag("ObstacleTri"))
             {
                 _jumperData.IsGrounded = true;
+
             }
         }
         else
@@ -62,12 +69,18 @@ public class ActJumperJump : PlayerAction
         {
             _rigidbody.velocity = new Vector3(_rigidbody.velocity.x, _jumperData.JumpPower, 0);
             _isJumping = false;
-
+             
+            if(_isSound == false)
+            {
+                _isSound = true;
+                _audio.PlayOneShot(_audioClip);
+            }
             return BTNodeState.Running;
 
         }
         else
         {
+            _isSound = false;
             return BTNodeState.Failure;
         }
     }

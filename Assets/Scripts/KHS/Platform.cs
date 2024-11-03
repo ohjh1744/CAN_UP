@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Platform : MonoBehaviour , IObjectPosition
@@ -12,23 +13,39 @@ public class Platform : MonoBehaviour , IObjectPosition
 
     [SerializeField] string _name;
 
+    [SerializeField] AudioSource _audio;
+
+    [SerializeField] AudioClip _audioClip;
+
     public string Name { get { return _name; } set { _name = value; } }
     public Vector3 Position { get { return transform.position; } set { transform.position = value; } }
+
+    private void Awake()
+    {
+        _audio = gameObject.AddComponent<AudioSource>();
+        _audioClip = Resources.Load<AudioClip>("AudioClip/bump");
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
         // 플렛폼이 플레이어를 감지하였을때
         if (collision.collider.CompareTag("Base") || collision.collider.CompareTag("Stone") || collision.collider.CompareTag("Jumper"))
         {
-            // 세이브하는 플렛폼일 경우
-            if (_isSavePlatform == true)
+            if(collision.collider.CompareTag("Base") || collision.collider.CompareTag("Stone"))
             {
-                UpdateSavePoint(_stage);
+                _audio.PlayOneShot(_audioClip);
+                // 세이브하는 플렛폼일 경우
+                if (_isSavePlatform == true)
+                {
+                    UpdateSavePoint(_stage);
+                }
             }
+
 
             if(_isClearPlatform == true)
             {
-                DataManager.Instance.SaveData.GameData.IsClear = true;           
+                DataManager.Instance.SaveData.GameData.IsClear = true;
+                _gameSceneManager.ClearStage();
             }
         }
     }

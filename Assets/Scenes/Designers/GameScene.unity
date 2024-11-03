@@ -174,6 +174,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_71
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &2586246
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -289,6 +291,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_93
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &2749399
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -572,6 +576,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_11
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &5844899
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -687,6 +693,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_43
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &6674079
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -787,6 +795,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_107
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &11070782
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -917,6 +927,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_48
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &12265041
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1217,6 +1229,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_88
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!1 &35863171
 GameObject:
   m_ObjectHideFlags: 0
@@ -1269,6 +1283,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_28
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &35863174
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1400,6 +1416,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_134
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &42596895
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1530,6 +1548,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_72
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &42692907
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1663,6 +1683,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Obstacle4_3
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &43941758
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1763,6 +1785,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_38
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &48584436
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1878,6 +1902,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_9
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &50174541
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2321,6 +2347,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_18
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!4 &67672134 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4226684656622418, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
@@ -2363,6 +2391,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_120
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &68313472
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2631,6 +2661,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_61
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &71223241
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2809,6 +2841,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_102
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!1 &77271056
 GameObject:
   m_ObjectHideFlags: 0
@@ -3117,6 +3151,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_5
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &84101753
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3217,6 +3253,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_82
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &95132813
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3482,6 +3520,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_66
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &102242993
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3688,6 +3728,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_6
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &106514554
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3861,6 +3903,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_10
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!4 &115971500 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4226684656622418, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
@@ -3918,6 +3962,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_37
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &119314448
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4089,6 +4135,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_115
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &132018219
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4204,6 +4252,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_118
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &135246630
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4801,6 +4851,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_71
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &151142338
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5033,6 +5085,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_124
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &161783866
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5118,72 +5172,68 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2055474097}
     m_Modifications:
-    - target: {fileID: 3227878075326741986, guid: 645d93f2853a0b348b8402237be9bfd9, type: 3}
+    - target: {fileID: 3227878075326741986, guid: 30bf7ab05c3b09e4fb041dd72ab3d116, type: 3}
       propertyPath: m_Name
       value: Stone
       objectReference: {fileID: 0}
-    - target: {fileID: 3227878075326741986, guid: 645d93f2853a0b348b8402237be9bfd9, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3227878075326741991, guid: 645d93f2853a0b348b8402237be9bfd9, type: 3}
+    - target: {fileID: 3227878075326741991, guid: 30bf7ab05c3b09e4fb041dd72ab3d116, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3227878075326741991, guid: 645d93f2853a0b348b8402237be9bfd9, type: 3}
+    - target: {fileID: 3227878075326741991, guid: 30bf7ab05c3b09e4fb041dd72ab3d116, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.514127
       objectReference: {fileID: 0}
-    - target: {fileID: 3227878075326741991, guid: 645d93f2853a0b348b8402237be9bfd9, type: 3}
+    - target: {fileID: 3227878075326741991, guid: 30bf7ab05c3b09e4fb041dd72ab3d116, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.6009467
       objectReference: {fileID: 0}
-    - target: {fileID: 3227878075326741991, guid: 645d93f2853a0b348b8402237be9bfd9, type: 3}
+    - target: {fileID: 3227878075326741991, guid: 30bf7ab05c3b09e4fb041dd72ab3d116, type: 3}
       propertyPath: m_LocalPosition.z
       value: -4.2753677
       objectReference: {fileID: 0}
-    - target: {fileID: 3227878075326741991, guid: 645d93f2853a0b348b8402237be9bfd9, type: 3}
+    - target: {fileID: 3227878075326741991, guid: 30bf7ab05c3b09e4fb041dd72ab3d116, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3227878075326741991, guid: 645d93f2853a0b348b8402237be9bfd9, type: 3}
+    - target: {fileID: 3227878075326741991, guid: 30bf7ab05c3b09e4fb041dd72ab3d116, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 3227878075326741991, guid: 645d93f2853a0b348b8402237be9bfd9, type: 3}
+    - target: {fileID: 3227878075326741991, guid: 30bf7ab05c3b09e4fb041dd72ab3d116, type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 3227878075326741991, guid: 645d93f2853a0b348b8402237be9bfd9, type: 3}
+    - target: {fileID: 3227878075326741991, guid: 30bf7ab05c3b09e4fb041dd72ab3d116, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 3227878075326741991, guid: 645d93f2853a0b348b8402237be9bfd9, type: 3}
+    - target: {fileID: 3227878075326741991, guid: 30bf7ab05c3b09e4fb041dd72ab3d116, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3227878075326741991, guid: 645d93f2853a0b348b8402237be9bfd9, type: 3}
+    - target: {fileID: 3227878075326741991, guid: 30bf7ab05c3b09e4fb041dd72ab3d116, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3227878075326741991, guid: 645d93f2853a0b348b8402237be9bfd9, type: 3}
+    - target: {fileID: 3227878075326741991, guid: 30bf7ab05c3b09e4fb041dd72ab3d116, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7481959439214822292, guid: 645d93f2853a0b348b8402237be9bfd9, type: 3}
+    - target: {fileID: 7481959439214822292, guid: 30bf7ab05c3b09e4fb041dd72ab3d116, type: 3}
       propertyPath: _mainCamera
       value: 
       objectReference: {fileID: 77271058}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 645d93f2853a0b348b8402237be9bfd9, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 30bf7ab05c3b09e4fb041dd72ab3d116, type: 3}
 --- !u!4 &163699826 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 3227878075326741991, guid: 645d93f2853a0b348b8402237be9bfd9, type: 3}
+  m_CorrespondingSourceObject: {fileID: 3227878075326741991, guid: 30bf7ab05c3b09e4fb041dd72ab3d116, type: 3}
   m_PrefabInstance: {fileID: 163699825}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &163699827 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 3227878075326741986, guid: 645d93f2853a0b348b8402237be9bfd9, type: 3}
+  m_CorrespondingSourceObject: {fileID: 3227878075326741986, guid: 30bf7ab05c3b09e4fb041dd72ab3d116, type: 3}
   m_PrefabInstance: {fileID: 163699825}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &164671447
@@ -5445,6 +5495,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_78
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!4 &184603385 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4226684656622418, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
@@ -5518,6 +5570,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_14
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &191939376
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5648,6 +5702,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_29
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &196141879
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5748,6 +5804,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_129
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &200788461
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5957,6 +6015,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_23
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &203568377
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6072,6 +6132,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_49
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &205292588
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6202,6 +6264,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_74
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &210370939
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6265,85 +6329,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 210370936}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &211001217
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2055474097}
-    m_Modifications:
-    - target: {fileID: 5696102462490068146, guid: 1679d8713aa630b42b9ebd9c114b5248, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5696102462490068146, guid: 1679d8713aa630b42b9ebd9c114b5248, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 8.82
-      objectReference: {fileID: 0}
-    - target: {fileID: 5696102462490068146, guid: 1679d8713aa630b42b9ebd9c114b5248, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 124.19
-      objectReference: {fileID: 0}
-    - target: {fileID: 5696102462490068146, guid: 1679d8713aa630b42b9ebd9c114b5248, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1.22
-      objectReference: {fileID: 0}
-    - target: {fileID: 5696102462490068146, guid: 1679d8713aa630b42b9ebd9c114b5248, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7211153
-      objectReference: {fileID: 0}
-    - target: {fileID: 5696102462490068146, guid: 1679d8713aa630b42b9ebd9c114b5248, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5696102462490068146, guid: 1679d8713aa630b42b9ebd9c114b5248, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.69281507
-      objectReference: {fileID: 0}
-    - target: {fileID: 5696102462490068146, guid: 1679d8713aa630b42b9ebd9c114b5248, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5696102462490068146, guid: 1679d8713aa630b42b9ebd9c114b5248, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5696102462490068146, guid: 1679d8713aa630b42b9ebd9c114b5248, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 87.707
-      objectReference: {fileID: 0}
-    - target: {fileID: 5696102462490068146, guid: 1679d8713aa630b42b9ebd9c114b5248, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6951904929084583911, guid: 1679d8713aa630b42b9ebd9c114b5248, type: 3}
-      propertyPath: _item
-      value: 
-      objectReference: {fileID: 105366144}
-    - target: {fileID: 6951904929084583928, guid: 1679d8713aa630b42b9ebd9c114b5248, type: 3}
-      propertyPath: m_Name
-      value: Base
-      objectReference: {fileID: 0}
-    - target: {fileID: 6951904929084583928, guid: 1679d8713aa630b42b9ebd9c114b5248, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6951904929084583929, guid: 1679d8713aa630b42b9ebd9c114b5248, type: 3}
-      propertyPath: _item
-      value: 
-      objectReference: {fileID: 105366144}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1679d8713aa630b42b9ebd9c114b5248, type: 3}
---- !u!4 &211001218 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5696102462490068146, guid: 1679d8713aa630b42b9ebd9c114b5248, type: 3}
-  m_PrefabInstance: {fileID: 211001217}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &211001219 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6951904929084583928, guid: 1679d8713aa630b42b9ebd9c114b5248, type: 3}
-  m_PrefabInstance: {fileID: 211001217}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &213894872
 GameObject:
   m_ObjectHideFlags: 0
@@ -6396,6 +6381,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_42
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &213894875
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6511,6 +6498,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_69
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &218474887
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6626,6 +6615,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Obstacle3_6
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &220419341
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6726,6 +6717,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_63
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &222487694
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7069,6 +7062,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_75
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &236702154
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7184,6 +7179,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_74
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &245185479
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7302,10 +7299,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jumper
       objectReference: {fileID: 0}
-    - target: {fileID: 5314657556777289279, guid: ebd19894cb6d1e1428ee76016d7d9e63, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebd19894cb6d1e1428ee76016d7d9e63, type: 3}
 --- !u!1 &256801518
@@ -7360,6 +7353,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_63
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &256801521
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7474,6 +7469,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Obstacle3_15
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!23 &265776464
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7561,6 +7558,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_114
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &273737791
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7976,6 +7975,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_70
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &280130343
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8106,6 +8107,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_78
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &286862292
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8206,6 +8209,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_79
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &289086640
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8399,6 +8404,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_93
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!1 &295201190
 GameObject:
   m_ObjectHideFlags: 0
@@ -8436,6 +8443,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_108
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &295201192
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8822,6 +8831,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_44
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &330649834
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8998,8 +9009,10 @@ MonoBehaviour:
   _gameSceneManager: {fileID: 0}
   _stage: 0
   _isSavePlatform: 0
-  _isClearPlatform: 0
+  _isClearPlatform: 1
   _name: Platform4_105
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!1 &344943792
 GameObject:
   m_ObjectHideFlags: 0
@@ -9052,6 +9065,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_59
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &344943795
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9235,6 +9250,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_36
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &353435566
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9365,6 +9382,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_26
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &354866843
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9465,6 +9484,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_97
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &363347922
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9651,6 +9672,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_137
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &375183658
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9855,6 +9878,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_53
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &387020454
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9955,6 +9980,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_61
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &388097401
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10085,6 +10112,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_39
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &394570419
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10200,6 +10229,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_17
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &404218763
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10358,6 +10389,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_33
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!4 &408103429 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4226684656622418, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
@@ -10415,6 +10448,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_12
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &409899598
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10573,6 +10608,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_94
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!4 &411093462 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4226684656622418, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
@@ -10795,6 +10832,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_25
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &426659597
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10988,6 +11027,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_42
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &431977595
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11118,6 +11159,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Obstacle3_20
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &431990075
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11709,6 +11752,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_81
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &451501278
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12119,6 +12164,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_44
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!4 &461678595 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4226684656622418, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
@@ -12378,6 +12425,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_93
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &464043723
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12508,6 +12557,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_14
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &466113768
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12608,6 +12659,8 @@ MonoBehaviour:
   _isSavePlatform: 1
   _isClearPlatform: 0
   _name: Platform2_1
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &467380510
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12738,6 +12791,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_20
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &474396919
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12853,6 +12908,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_82
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &476830527
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12999,6 +13056,51 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 478067482}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &482167125
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 482167127}
+  - component: {fileID: 482167126}
+  m_Layer: 0
+  m_Name: UiCommonSound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &482167126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 482167125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11d05bbc2764c8242820f2936a63e010, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audioClip: {fileID: 8300000, guid: 0778025b2122ff545982695489899868, type: 3}
+--- !u!4 &482167127
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 482167125}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.599524, y: 3.5662162, z: -0.06917344}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &482882841
 GameObject:
   m_ObjectHideFlags: 0
@@ -13051,6 +13153,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_11
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &482882844
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13549,6 +13653,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_54
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &500245886
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13727,6 +13833,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_91
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!1 &501262839
 GameObject:
   m_ObjectHideFlags: 0
@@ -13779,6 +13887,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_15
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &501262842
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14178,6 +14288,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_105
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!4 &510579250 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4226684656622418, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
@@ -14286,6 +14398,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_83
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &512429409
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14401,6 +14515,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_32
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &517821729
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14531,6 +14647,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_36
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &521488925
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14631,6 +14749,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_78
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &529982082
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14824,6 +14944,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_100
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!1 &536901369
 GameObject:
   m_ObjectHideFlags: 0
@@ -14990,6 +15112,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_60
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &537317627
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15090,6 +15214,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_139
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &537324373
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15220,6 +15346,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_26
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &538129391
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15335,6 +15463,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_14
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &538136374
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15435,6 +15565,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_123
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &541449858
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15550,6 +15682,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_16
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &541670753
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15857,6 +15991,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_59
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &556804365
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15987,6 +16123,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_31
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &564252203
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16262,6 +16400,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_95
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!1 &595129050
 GameObject:
   m_ObjectHideFlags: 0
@@ -16430,6 +16570,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_68
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &596710650
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16619,6 +16761,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_80
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &605216767
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17016,6 +17160,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_101
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!1 &610603501
 GameObject:
   m_ObjectHideFlags: 0
@@ -17124,6 +17270,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_5
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &610791809
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17239,6 +17387,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_81
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &610947938
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17369,6 +17519,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_25
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &612750411
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17636,6 +17788,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_53
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &634256834
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17912,6 +18066,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_102
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!4 &640242290 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4226684656622418, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
@@ -17954,6 +18110,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_40
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &647382751
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18345,6 +18503,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_58
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &650430545
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18538,6 +18698,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_99
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!1 &656773203
 GameObject:
   m_ObjectHideFlags: 0
@@ -18736,6 +18898,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_104
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!1 &658732063
 GameObject:
   m_ObjectHideFlags: 0
@@ -19005,6 +19169,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_91
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &661717346
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19328,6 +19494,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_35
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!4 &679804944 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4226684656622418, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
@@ -19370,6 +19538,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_34
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &692166533
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19485,6 +19655,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_45
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &694056815
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19615,6 +19787,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Obstacle4_35_Wall
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &695645867
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19730,6 +19904,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_16
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &696131177
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19876,6 +20052,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_38
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &701018396
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19976,6 +20154,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_72
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &702161795
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20188,6 +20368,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_2
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &705594128
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20318,6 +20500,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_4
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &708172335
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20570,6 +20754,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_99
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &712098947
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20670,6 +20856,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_30
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &713550797
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20844,6 +21032,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_55
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &721189679
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21017,6 +21207,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_119
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!4 &723736954 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4226684656622418, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
@@ -21059,6 +21251,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_24
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &723864031
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21568,6 +21762,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_90
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!1 &735102176
 GameObject:
   m_ObjectHideFlags: 0
@@ -21859,6 +22055,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_25
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &741789084
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22204,6 +22402,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_35
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &762753637
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22573,6 +22773,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_27
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &769422436
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22688,6 +22890,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_58
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &770577824
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23022,6 +23226,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_8
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &779966262
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23137,6 +23343,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_49
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &784969133
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23372,6 +23580,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_111
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &800291218
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23565,6 +23775,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_89
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!1 &815445540
 GameObject:
   m_ObjectHideFlags: 0
@@ -23617,6 +23829,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_46
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &815445543
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23829,6 +24043,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_30
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &818389161
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23929,6 +24145,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_48
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &823094013
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24044,6 +24262,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_73
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &826831492
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24159,6 +24379,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_13
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &838427451
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24289,6 +24511,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_77
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &846077719
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24511,6 +24735,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_94
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!1 &871049484
 GameObject:
   m_ObjectHideFlags: 0
@@ -24563,6 +24789,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_87
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &871049487
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24895,6 +25123,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_59
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &884217608
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25010,6 +25240,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_3
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &886478530
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25241,6 +25473,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_70
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &891978024
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25489,6 +25723,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_47
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &898111700
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25604,6 +25840,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_128
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &898305492
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25734,6 +25972,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_97
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &898487422
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25849,6 +26089,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_41
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &901025219
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26081,6 +26323,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_60
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &913815241
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26196,6 +26440,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_8
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &915215806
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26296,6 +26542,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_103
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &916919603
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26426,6 +26674,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_89
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &919823965
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26541,6 +26791,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_24
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &928652737
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26641,6 +26893,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_20
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &929674617
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26802,6 +27056,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_63
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &934723310
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27212,6 +27468,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_84
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!4 &942465216 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4226684656622418, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
@@ -27389,6 +27647,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_69
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &949490003
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27590,6 +27850,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_66
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &958871512
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27705,6 +27967,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_40
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &964385336
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27820,6 +28084,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_100
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &965915038
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28283,6 +28549,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_84
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &985572993
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28461,6 +28729,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_103
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!1 &992764836
 GameObject:
   m_ObjectHideFlags: 0
@@ -28513,6 +28783,8 @@ MonoBehaviour:
   _isSavePlatform: 1
   _isClearPlatform: 0
   _name: Platform4_1
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &992764839
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28628,6 +28900,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_72
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &992840214
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28964,6 +29238,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_33
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1002443142
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29079,6 +29355,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_80
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1003130820
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29179,6 +29457,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_68
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1003278119
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29500,6 +29780,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_13
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1013247930
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29615,6 +29897,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_29
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1015132793
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29730,6 +30014,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_64
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1015357673
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29908,6 +30194,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_97
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!1 &1028536139
 GameObject:
   m_ObjectHideFlags: 0
@@ -29960,6 +30248,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_96
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1028536142
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30060,6 +30350,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_37
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1030388791
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30221,6 +30513,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_40
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1033522314
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30321,6 +30615,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_101
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1035777338
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30451,6 +30747,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_21
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1036967504
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30746,6 +31044,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_74
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!4 &1048773174 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4226684656622418, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
@@ -30832,6 +31132,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_110
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1052413480
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31078,6 +31380,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_95
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1059989907
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31193,6 +31497,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_84
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1062049095
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31308,6 +31614,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_68
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1064265912
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31841,6 +32149,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_35
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1078450763
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32143,6 +32453,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_27
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1079525580
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32273,6 +32585,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_34
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1079649706
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32427,6 +32741,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_80
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!4 &1083334045 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4226684656622418, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
@@ -32484,6 +32800,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_55
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1087275525
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32599,6 +32917,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_22
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1088342237
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33296,6 +33616,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_34
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1104846511
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33454,6 +33776,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_106
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!4 &1105991123 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4226684656622418, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
@@ -34070,6 +34394,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_87
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!1 &1121163785
 GameObject:
   m_ObjectHideFlags: 0
@@ -34122,6 +34448,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_67
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1121163788
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34311,6 +34639,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_74
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1122117098
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34426,6 +34756,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_9
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1122855410
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34541,6 +34873,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_65
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1123475483
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34868,6 +35202,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_52
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1143458082
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34968,6 +35304,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_51
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1148723073
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35142,6 +35480,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_20
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1153459176
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35242,6 +35582,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_122
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1154030365
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35615,6 +35957,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_54
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1171307184
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36058,6 +36402,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_98
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1194306508
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36251,6 +36597,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_96
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!1 &1202192595
 GameObject:
   m_ObjectHideFlags: 0
@@ -36303,6 +36651,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_2
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1202192598
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36489,6 +36839,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_6
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1203660578
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36837,6 +37189,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_47
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1214581787
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36952,6 +37306,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_76
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1219526846
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37438,6 +37794,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_98
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!1 &1232500173
 GameObject:
   m_ObjectHideFlags: 0
@@ -37475,6 +37833,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_88
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1232500175
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37605,6 +37965,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_43
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1237116887
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37825,6 +38187,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_62
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1240781659
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37983,6 +38347,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_53
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!4 &1242810215 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4226684656622418, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
@@ -38040,6 +38406,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_82
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1248446964
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38226,6 +38594,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_78
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1250069850
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38626,6 +38996,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_45
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1256556198
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38784,6 +39156,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_26
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!4 &1258979671 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4226684656622418, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
@@ -38885,6 +39259,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_92
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1276213496
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39450,6 +39826,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_39
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!4 &1286596238 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4226684656622418, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
@@ -39701,6 +40079,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_47
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1302523446
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39832,6 +40212,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_50
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1313798273
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39962,6 +40344,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_56
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1317746155
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40077,6 +40461,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_27
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1322835515
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40584,6 +40970,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_138
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1323862685
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40714,6 +41102,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_3
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1326175707
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41133,6 +41523,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_39
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1331811565
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41248,6 +41640,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_57
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1340323974
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41605,6 +41999,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_92
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!1 &1361674177
 GameObject:
   m_ObjectHideFlags: 0
@@ -41642,6 +42038,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_89
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1361674179
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41757,6 +42155,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_16
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1362243067
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41887,6 +42287,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_86
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1362741603
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42041,6 +42443,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_3
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!4 &1378129814 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4226684656622418, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
@@ -42356,6 +42760,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_21
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1384429830
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42560,6 +42966,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_79
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1399433406
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42675,6 +43083,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_45
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1407056227
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42775,6 +43185,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_22
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1408133383
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42905,6 +43317,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_15
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1408829207
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43005,6 +43419,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_67
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1416260644
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43135,6 +43551,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_9
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1419156206
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43416,6 +43834,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_56
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1423354789
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43531,6 +43951,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_48
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1423763040
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43646,6 +44068,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_51
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1424051109
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43853,6 +44277,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_83
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1434740971
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -44091,6 +44517,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_12
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1442145958
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -44221,6 +44649,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_28
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1445311216
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -44526,6 +44956,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_75
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1451410793
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -44702,6 +45134,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_7
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1460482319
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -44832,6 +45266,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_23
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1466799155
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -44947,6 +45383,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_85
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1470369029
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -45123,6 +45561,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_17
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1475539518
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -45399,6 +45839,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_136
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1476941000
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -45514,6 +45956,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_11
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1477551753
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -45644,6 +46088,8 @@ MonoBehaviour:
   _isSavePlatform: 1
   _isClearPlatform: 0
   _name: Platform3_1
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1483186862
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -45744,6 +46190,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_116
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1489820457
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -45990,6 +46438,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_41
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1501661217
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46090,6 +46540,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_109
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1502462657
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46295,6 +46747,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_88
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1507022087
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46410,6 +46864,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_10
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1508846645
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46525,6 +46981,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_10
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1510642380
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46816,6 +47274,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_68
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1513080616
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46916,6 +47376,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_4
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1517418030
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -47046,6 +47508,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_83
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1517666093
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -47279,6 +47743,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_46
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1526676781
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -47379,6 +47845,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_96
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1529553923
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -47552,6 +48020,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_95
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!4 &1529895359 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4226684656622418, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
@@ -47711,6 +48181,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_112
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1536693748
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -47841,6 +48313,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_4
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1543354275
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -48030,6 +48504,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_61
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1550014611
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -48145,6 +48621,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_76
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1563765282
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -48245,6 +48723,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_31
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1564496411
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -48375,6 +48855,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_33
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1567657471
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -48489,6 +48971,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Obstacle3_1
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!23 &1568876642
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -48549,7 +49033,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1570358993}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Objects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48749,6 +49233,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_57
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1585066303
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -48879,6 +49365,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_38
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1588238926
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -49068,6 +49556,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_49
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1591335535
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -49338,6 +49828,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_16
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1603236903
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -49453,6 +49945,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_57
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1604118292
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -49568,6 +50062,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_32
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1607129606
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -49683,6 +50179,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_24
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1607252210
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -49798,6 +50296,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Obstacle4_34_Wall
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1607683984
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -49913,6 +50413,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_44
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1610617675
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -50013,6 +50515,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_46
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1612445293
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -50145,6 +50649,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_133
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1613906613
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -50297,6 +50803,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_85
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1614320664
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -50601,6 +51109,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_67
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1627861392
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -50716,6 +51226,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_65
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1635050024
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -50816,6 +51328,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_62
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1638757500
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -50946,6 +51460,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_12
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1646105061
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -51061,6 +51577,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_17
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1646520800
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -51161,6 +51679,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_66
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1670505054
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -51276,6 +51796,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_99
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1680484802
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -51406,6 +51928,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_94
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1683688453
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -51521,6 +52045,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_50
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1688441991
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -51763,6 +52289,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_77
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1692923562
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -51893,6 +52421,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_6
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1696781822
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -52008,6 +52538,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_42
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1697344293
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -52123,6 +52655,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_54
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1699231562
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -52238,6 +52772,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_71
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1705982377
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -52338,6 +52874,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_113
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1706291074
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -52468,6 +53006,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_30
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1707596898
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -52832,6 +53372,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_87
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1713570410
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53077,6 +53619,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_69
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1723094909
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53274,6 +53818,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_130
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1728028892
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53404,6 +53950,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_7
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1729124726
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53519,6 +54067,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_73
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1743832663
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53619,6 +54169,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_131
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1750610452
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53749,6 +54301,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_32
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1753237973
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53864,6 +54418,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_36
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1754075680
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53964,6 +54520,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_125
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1757463389
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54296,6 +54854,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_64
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1768649248
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54466,6 +55026,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_55
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1779557300
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54566,6 +55128,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_121
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1780923772
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54739,6 +55303,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_117
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!4 &1786778802 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4226684656622418, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
@@ -54839,6 +55405,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_100
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!4 &1787159709 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4226684656622418, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
@@ -55036,6 +55604,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_60
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!4 &1793678159 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4226684656622418, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
@@ -55137,6 +55707,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_79
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1796543466
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55252,6 +55824,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_7
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1798348433
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55367,6 +55941,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_18
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1806545009
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55620,6 +56196,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_81
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1808800177
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55720,6 +56298,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_92
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1810032782
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55835,6 +56415,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_41
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1812246806
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55965,6 +56547,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_70
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1814433845
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -56187,6 +56771,8 @@ MonoBehaviour:
   _isSavePlatform: 1
   _isClearPlatform: 0
   _name: Platform1_1
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!1 &1821337773
 GameObject:
   m_ObjectHideFlags: 0
@@ -56399,6 +56985,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_28
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!4 &1822934674 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4226684656622418, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
@@ -56884,6 +57472,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_5
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1849023513
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -57278,6 +57868,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_104
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1879050065
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -57797,6 +58389,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_51
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1884130574
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -57897,6 +58491,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_135
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1885081976
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58027,6 +58623,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_31
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1887240965
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58244,6 +58842,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_50
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1891085433
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58344,6 +58944,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_29
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1891108075
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58611,6 +59213,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_62
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1899831260
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58711,6 +59315,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_126
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1900296954
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58976,6 +59582,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_90
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1908567626
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -59211,6 +59819,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_43
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1909109696
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -59397,6 +60007,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_15
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1911726923
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -59933,6 +60545,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_86
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!4 &1916293546 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4226684656622418, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
@@ -60046,6 +60660,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_132
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1919743743
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -60207,6 +60823,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_52
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1928860574
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -60307,6 +60925,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_76
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1932317974
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -60422,6 +61042,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: 
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1938323978
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -60709,6 +61331,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_95
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!4 &1941595867 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4226684656622418, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
@@ -60863,6 +61487,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_98
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1946035100
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -61113,6 +61739,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_52
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!4 &1951757899 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4226684656622418, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
@@ -61170,6 +61798,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_22
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1952193110
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -61270,6 +61900,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_85
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1957324372
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -61419,7 +62051,7 @@ MonoBehaviour:
   _item: {fileID: 105366144}
   _players:
   - {fileID: 0}
-  - {fileID: 211001219}
+  - {fileID: 6951904929293021305}
   - {fileID: 163699827}
   - {fileID: 1099603547}
   _resetObjects: []
@@ -61428,6 +62060,14 @@ MonoBehaviour:
   _escPanel: {fileID: 1940569034}
   _clearPanel: {fileID: 1154127294}
   _sceneChanger: {fileID: 1077023644}
+  _audioClips:
+  - {fileID: 0}
+  - {fileID: 8300000, guid: a784c8f3b58c5b24a9d1dd9d8945030f, type: 3}
+  - {fileID: 8300000, guid: 51a89ff55f2e4be4ba319f776ba9f3e1, type: 3}
+  - {fileID: 8300000, guid: a3d6739d4740a5d47b622db8794cb79a, type: 3}
+  - {fileID: 8300000, guid: 61cb60d759c121d429de2e0f0b1a7543, type: 3}
+  _audioClear: {fileID: 0}
+  _uiCommonSound: {fileID: 482167126}
 --- !u!4 &1958565682
 Transform:
   m_ObjectHideFlags: 0
@@ -61700,6 +62340,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_64
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1965584867
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -62018,6 +62660,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_18
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1975482728
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -62244,6 +62888,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_65
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1988104017
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -62374,6 +63020,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_75
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &1989138663
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -62548,6 +63196,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_19
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &2012486536
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -62663,6 +63313,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_127
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &2023709136
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -62793,6 +63445,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_86
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &2024263666
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63023,6 +63677,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_13
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &2034759804
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63276,6 +63932,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_23
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &2037057611
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63391,6 +64049,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_77
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &2054114616
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63482,7 +64142,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 211001218}
+  - {fileID: 5696102462413429555}
   - {fileID: 163699826}
   - {fileID: 1099603548}
   m_Father: {fileID: 0}
@@ -63540,6 +64200,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_19
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &2062549439
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63752,6 +64414,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_2
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &2067383740
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63867,6 +64531,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_58
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &2072908653
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63982,6 +64648,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_91
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &2081899604
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -64082,6 +64750,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_8
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &2084766499
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -64347,6 +65017,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_37
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &2094800201
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -64462,6 +65134,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform3_85
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &2096469166
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -64779,6 +65453,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_21
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &2121381639
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -64879,6 +65555,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform2_56
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &2131739852
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -65009,6 +65687,8 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_19
+  _audio: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!65 &2134356828
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -65072,3 +65752,82 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2134356825}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1757494536798164883
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2055474097}
+    m_Modifications:
+    - target: {fileID: 6300325848833199264, guid: e60a75fa819c33245a96e5bed70bde14, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6300325848833199264, guid: e60a75fa819c33245a96e5bed70bde14, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 6300325848833199264, guid: e60a75fa819c33245a96e5bed70bde14, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 124.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 6300325848833199264, guid: e60a75fa819c33245a96e5bed70bde14, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 6300325848833199264, guid: e60a75fa819c33245a96e5bed70bde14, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7211153
+      objectReference: {fileID: 0}
+    - target: {fileID: 6300325848833199264, guid: e60a75fa819c33245a96e5bed70bde14, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6300325848833199264, guid: e60a75fa819c33245a96e5bed70bde14, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.69281507
+      objectReference: {fileID: 0}
+    - target: {fileID: 6300325848833199264, guid: e60a75fa819c33245a96e5bed70bde14, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6300325848833199264, guid: e60a75fa819c33245a96e5bed70bde14, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6300325848833199264, guid: e60a75fa819c33245a96e5bed70bde14, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 87.707
+      objectReference: {fileID: 0}
+    - target: {fileID: 6300325848833199264, guid: e60a75fa819c33245a96e5bed70bde14, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654228858541139946, guid: e60a75fa819c33245a96e5bed70bde14, type: 3}
+      propertyPath: m_Name
+      value: Base
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654228858541139946, guid: e60a75fa819c33245a96e5bed70bde14, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654228858541139947, guid: e60a75fa819c33245a96e5bed70bde14, type: 3}
+      propertyPath: _item
+      value: 
+      objectReference: {fileID: 105366144}
+    - target: {fileID: 8654228858541139957, guid: e60a75fa819c33245a96e5bed70bde14, type: 3}
+      propertyPath: _item
+      value: 
+      objectReference: {fileID: 105366144}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e60a75fa819c33245a96e5bed70bde14, type: 3}
+--- !u!4 &5696102462413429555 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6300325848833199264, guid: e60a75fa819c33245a96e5bed70bde14, type: 3}
+  m_PrefabInstance: {fileID: 1757494536798164883}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6951904929293021305 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8654228858541139946, guid: e60a75fa819c33245a96e5bed70bde14, type: 3}
+  m_PrefabInstance: {fileID: 1757494536798164883}
+  m_PrefabAsset: {fileID: 0}
