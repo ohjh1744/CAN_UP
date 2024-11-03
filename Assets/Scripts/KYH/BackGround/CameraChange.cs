@@ -62,7 +62,7 @@ public class CameraChange : MonoBehaviour
                     // i + 1번째 카메라의 Prioriy값을 0으로 설정하여 후순위로 변경
                     _gameSceneManager.Cameras[i + 1].Priority = 0;
                 }
-                return;
+                break;
             }
         }
 
