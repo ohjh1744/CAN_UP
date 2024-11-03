@@ -447,7 +447,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1599769823}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: -179.306, z: 0}
 --- !u!1 &5781195
 GameObject:
@@ -1342,7 +1342,7 @@ GameObject:
   m_Component:
   - component: {fileID: 37599823}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Rotate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2450,9 +2450,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 69352922}
-  m_Layer: 0
+  - component: {fileID: 69352925}
+  - component: {fileID: 69352924}
+  - component: {fileID: 69352923}
+  m_Layer: 2
   m_Name: obstacle1_2
-  m_TagString: Untagged
+  m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2472,6 +2475,110 @@ Transform:
   m_Father: {fileID: 1331017639}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &69352923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 69352921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnInteractPlayerColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 69352924}
+        m_TargetAssemblyTypeName: Obstacle13, Assembly-CSharp
+        m_MethodName: RotatePlatform
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnInteractPlayerTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 69352924}
+        m_TargetAssemblyTypeName: Obstacle13, Assembly-CSharp
+        m_MethodName: RotatePlatform
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnInteractItemTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &69352924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 69352921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c71b55c5f8fd4542b445510e200245a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stageNum: 0
+  _gameObject: {fileID: 69352921}
+  _rotateAngle: -90
+  _isRotate: 0
+  _rotatePos: {fileID: 1815429722}
+  _rigid: {fileID: 1331017640}
+  _name: Obstacle3_2Obstacle3_2
+--- !u!65 &69352925
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 69352921}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &71223238
 GameObject:
   m_ObjectHideFlags: 0
@@ -5089,7 +5196,7 @@ GameObject:
   m_Component:
   - component: {fileID: 164671448}
   m_Layer: 0
-  m_Name: Obstacle3_5_2
+  m_Name: Rotate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5367,11 +5474,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 188051877}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.5, y: 0, z: 0}
+  m_LocalScale: {x: 0.5, y: 3.3333333, z: 0.33333334}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1249884017}
+  m_Father: {fileID: 890643919}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &191939374
@@ -6708,109 +6815,15 @@ GameObject:
   - component: {fileID: 227471064}
   - component: {fileID: 227471063}
   - component: {fileID: 227471062}
-  - component: {fileID: 227471061}
   - component: {fileID: 227471060}
   - component: {fileID: 227471059}
-  - component: {fileID: 227471058}
-  - component: {fileID: 227471057}
   m_Layer: 0
   m_Name: Obstacle2_1
-  m_TagString: ObstacleTri
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &227471057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 227471055}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnInteractPlayerColEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerColStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerColExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerTriEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 227471058}
-        m_TargetAssemblyTypeName: Obstacle13, Assembly-CSharp
-        m_MethodName: RotatePlatform
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnInteractPlayerTriStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerTriExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 227471058}
-        m_TargetAssemblyTypeName: Obstacle13, Assembly-CSharp
-        m_MethodName: RotatePlatform
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnInteractItemTriStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriExit:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &227471058
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 227471055}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c71b55c5f8fd4542b445510e200245a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _stageNum: 0
-  _gameObject: {fileID: 0}
-  _rotateAngle: -90
-  _isRotate: 0
-  _rotatePos: {fileID: 1303223888}
-  _rigid: {fileID: 227471059}
-  _name: Obstacle2_1
 --- !u!54 &227471059
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6840,19 +6853,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.99999994, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &227471061
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 227471055}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.6000096, y: 2.6752796, z: 1}
-  m_Center: {x: -0.3000035, y: 0.062139533, z: 0}
 --- !u!23 &227471062
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6916,6 +6916,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1303223889}
+  - {fileID: 1136159175}
   m_Father: {fileID: 313690256}
   m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -359.999}
@@ -7014,7 +7015,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1599769823}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: -179.306, z: 0}
 --- !u!1 &236702151
 GameObject:
@@ -11180,6 +11181,143 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 431990072}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &438354519
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 438354520}
+  - component: {fileID: 438354523}
+  - component: {fileID: 438354522}
+  - component: {fileID: 438354521}
+  m_Layer: 2
+  m_Name: GameObject (1)
+  m_TagString: ObstacleTri
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &438354520
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438354519}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 493564185}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &438354521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438354519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36b9871945454774d8f1e66578661420, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stageNum: 0
+  _moveSpeed: 5
+  _isMove: 0
+  _stopPos: {fileID: 996601389}
+  _rigid: {fileID: 493564180}
+  _name: Obstacle1_3
+--- !u!114 &438354522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438354519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnInteractPlayerColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 438354521}
+        m_TargetAssemblyTypeName: Obstacle07, Assembly-CSharp
+        m_MethodName: MovePlatform
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnInteractPlayerTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 438354521}
+        m_TargetAssemblyTypeName: Obstacle07, Assembly-CSharp
+        m_MethodName: MovePlatform
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnInteractItemTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!65 &438354523
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438354519}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 3, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &439845151
 GameObject:
   m_ObjectHideFlags: 0
@@ -12988,13 +13126,10 @@ GameObject:
   - component: {fileID: 487968198}
   - component: {fileID: 487968197}
   - component: {fileID: 487968196}
-  - component: {fileID: 487968195}
-  - component: {fileID: 487968193}
   - component: {fileID: 487968192}
-  - component: {fileID: 487968191}
   m_Layer: 0
   m_Name: Obstacle3_14
-  m_TagString: ObstacleTri
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13012,69 +13147,10 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1031539232}
+  - {fileID: 940228562}
   m_Father: {fileID: 1039098708}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &487968191
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 487968189}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnInteractPlayerColEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerColStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerColExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerTriEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 487968193}
-        m_TargetAssemblyTypeName: Obstacle07, Assembly-CSharp
-        m_MethodName: MovePlatform
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnInteractPlayerTriStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerTriExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriExit:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!54 &487968192
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13091,37 +13167,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &487968193
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 487968189}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36b9871945454774d8f1e66578661420, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _stageNum: 0
-  _moveSpeed: 1
-  _isMove: 0
-  _stopPos: {fileID: 1031539232}
-  _rigid: {fileID: 487968192}
-  _name: Obstacle3_14
---- !u!65 &487968195
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 487968189}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.0585492, y: 2.697998, z: 1}
-  m_Center: {x: 0.029272646, y: 0.848999, z: 0}
 --- !u!65 &487968196
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13231,102 +13276,14 @@ GameObject:
   - component: {fileID: 493564184}
   - component: {fileID: 493564183}
   - component: {fileID: 493564182}
-  - component: {fileID: 493564181}
   - component: {fileID: 493564180}
-  - component: {fileID: 493564179}
-  - component: {fileID: 493564178}
   m_Layer: 0
   m_Name: Obstacle1_2 (1)
-  m_TagString: ObstacleTri
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &493564178
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 493564177}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.0964656, y: 6.582058, z: 1.0000004}
-  m_Center: {x: 0.27659088, y: -0.025144577, z: 6.043028e-10}
---- !u!114 &493564179
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 493564177}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnInteractPlayerColEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerColStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerColExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerTriEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 493564181}
-        m_TargetAssemblyTypeName: Obstacle07, Assembly-CSharp
-        m_MethodName: MovePlatform
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnInteractPlayerTriStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerTriExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 493564181}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnInteractItemTriStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriExit:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!54 &493564180
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13343,24 +13300,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &493564181
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 493564177}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36b9871945454774d8f1e66578661420, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _stageNum: 0
-  _moveSpeed: 5
-  _isMove: 0
-  _stopPos: {fileID: 996601389}
-  _rigid: {fileID: 493564180}
-  _name: Obstacle1_3
 --- !u!65 &493564182
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13437,8 +13376,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 996601389}
+  - {fileID: 438354520}
   m_Father: {fileID: 1599769823}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: -179.306, z: 0}
 --- !u!1 &494510848
 GameObject:
@@ -13985,12 +13925,9 @@ GameObject:
   - component: {fileID: 505721543}
   - component: {fileID: 505721542}
   - component: {fileID: 505721541}
-  - component: {fileID: 505721539}
-  - component: {fileID: 505721538}
-  - component: {fileID: 505721537}
   m_Layer: 0
   m_Name: Obstacle3_18
-  m_TagString: ObstacleTri
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14006,117 +13943,12 @@ Transform:
   m_LocalPosition: {x: -6.2437997, y: 13.460002, z: 0}
   m_LocalScale: {x: 1.9598483, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1347336612}
+  - {fileID: 735102177}
   m_Father: {fileID: 1039098708}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &505721537
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 505721535}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnInteractPlayerColEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerColStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerColExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerTriEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 505721539}
-        m_TargetAssemblyTypeName: Obstacle8, Assembly-CSharp
-        m_MethodName: ActivateFall
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnInteractPlayerTriStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerTriExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 505721539}
-        m_TargetAssemblyTypeName: Obstacle8, Assembly-CSharp
-        m_MethodName: ActivateFall
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnInteractItemTriStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriExit:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!65 &505721538
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 505721535}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 3.7014465, z: 1}
-  m_Center: {x: 0, y: -1.3507233, z: 0}
---- !u!114 &505721539
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 505721535}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53870400365bc0e47b5b4f204944b7ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _fallSpeed: 5
-  _returnSpeed: 5
-  _stayTime: 3
-  _fallDistance: 2.5
-  _startPos: {x: 0, y: 0, z: 0}
-  _endPos: {x: 0, y: 0, z: 0}
-  _isFalling: 0
-  _isReturning: 0
-  _stayTimer: 0
-  _name: Obstacle3_18
 --- !u!65 &505721541
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15001,9 +14833,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 536901370}
-  m_Layer: 0
+  - component: {fileID: 536901373}
+  - component: {fileID: 536901372}
+  - component: {fileID: 536901371}
+  m_Layer: 2
   m_Name: Obstacle4_24
-  m_TagString: Untagged
+  m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15015,16 +14850,94 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 536901369}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.5, y: 40.5, z: -2}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 934670316}
-  - {fileID: 1206117362}
-  m_Father: {fileID: 1887573287}
-  m_RootOrder: 23
+  m_Children: []
+  m_Father: {fileID: 1206117362}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &536901371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536901369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnInteractPlayerColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &536901372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536901369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c71b55c5f8fd4542b445510e200245a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stageNum: 0
+  _gameObject: {fileID: 0}
+  _rotateAngle: -90
+  _isRotate: 0
+  _rotatePos: {fileID: 934670315}
+  _rigid: {fileID: 1206117363}
+  _name: Obstacle4_24
+--- !u!65 &536901373
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536901369}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 4, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &537317624
 GameObject:
   m_ObjectHideFlags: 0
@@ -15715,7 +15628,7 @@ Transform:
   m_Father: {fileID: 313690256}
   m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
---- !u!1 &550422943
+--- !u!1 &550120189
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -15723,27 +15636,27 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 550422944}
+  - component: {fileID: 550120190}
   m_Layer: 0
-  m_Name: EndPos
+  m_Name: StopPOS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &550422944
+--- !u!4 &550120190
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 550422943}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.07, y: -2.11, z: 0}
+  m_GameObject: {fileID: 550120189}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1331203396}
+  m_Father: {fileID: 1091733129}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &550908244
@@ -16232,7 +16145,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1599769823}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: -179.306, z: 0}
 --- !u!1 &590206359
 GameObject:
@@ -16361,10 +16274,7 @@ GameObject:
   - component: {fileID: 595129059}
   - component: {fileID: 595129058}
   - component: {fileID: 595129057}
-  - component: {fileID: 595129055}
   - component: {fileID: 595129054}
-  - component: {fileID: 595129053}
-  - component: {fileID: 595129052}
   m_Layer: 0
   m_Name: Obstacle3_6
   m_TagString: ObstacleTri
@@ -16385,82 +16295,10 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 696933731}
+  - {fileID: 711496296}
   m_Father: {fileID: 719858623}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &595129052
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 595129050}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.4118228, y: 4.1138287, z: 1}
-  m_Center: {x: -0.7059114, y: 1.5569143, z: 0}
---- !u!114 &595129053
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 595129050}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnInteractPlayerColEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerColStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerColExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerTriEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 595129055}
-        m_TargetAssemblyTypeName: Obstacle07, Assembly-CSharp
-        m_MethodName: MovePlatform
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnInteractPlayerTriStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerTriExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriExit:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!54 &595129054
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16477,24 +16315,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &595129055
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 595129050}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36b9871945454774d8f1e66578661420, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _stageNum: 0
-  _moveSpeed: 1
-  _isMove: 0
-  _stopPos: {fileID: 696933731}
-  _rigid: {fileID: 595129054}
-  _name: Obstacle3_6
 --- !u!65 &595129057
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16504,7 +16324,7 @@ BoxCollider:
   m_GameObject: {fileID: 595129050}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -18813,7 +18633,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1599769823}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: -179.306, z: 0}
 --- !u!1 &657932079
 GameObject:
@@ -19983,7 +19803,7 @@ GameObject:
   m_Component:
   - component: {fileID: 696933731}
   m_Layer: 0
-  m_Name: Obstacle3_6_2
+  m_Name: stopPOS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20561,6 +20381,143 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 708172332}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &711496295
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 711496296}
+  - component: {fileID: 711496299}
+  - component: {fileID: 711496298}
+  - component: {fileID: 711496297}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: ObstacleTri
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &711496296
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711496295}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 595129051}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &711496297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711496295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnInteractPlayerColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 711496298}
+        m_TargetAssemblyTypeName: Obstacle07, Assembly-CSharp
+        m_MethodName: MovePlatform
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnInteractPlayerTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 711496298}
+        m_TargetAssemblyTypeName: Obstacle07, Assembly-CSharp
+        m_MethodName: MovePlatform
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnInteractItemTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &711496298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711496295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36b9871945454774d8f1e66578661420, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stageNum: 0
+  _moveSpeed: 1
+  _isMove: 0
+  _stopPos: {fileID: 696933731}
+  _rigid: {fileID: 595129054}
+  _name: Obstacle3_6
+--- !u!65 &711496299
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711496295}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.1729379, y: 5, z: 1}
+  m_Center: {x: -0.41353106, y: 0, z: 0}
 --- !u!1 &712098944
 GameObject:
   m_ObjectHideFlags: 0
@@ -21611,6 +21568,148 @@ MonoBehaviour:
   _isSavePlatform: 0
   _isClearPlatform: 0
   _name: Platform4_90
+--- !u!1 &735102176
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 735102177}
+  - component: {fileID: 735102180}
+  - component: {fileID: 735102179}
+  - component: {fileID: 735102178}
+  m_Layer: 2
+  m_Name: GameObject (1)
+  m_TagString: ObstacleTri
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &735102177
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735102176}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 505721536}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &735102178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735102176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnInteractPlayerColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 735102179}
+        m_TargetAssemblyTypeName: Obstacle8, Assembly-CSharp
+        m_MethodName: ActivateFall
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnInteractPlayerTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 735102179}
+        m_TargetAssemblyTypeName: Obstacle8, Assembly-CSharp
+        m_MethodName: ActivateFall
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnInteractItemTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &735102179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735102176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53870400365bc0e47b5b4f204944b7ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetObs: {fileID: 1347336611}
+  _fallSpeed: 5
+  _returnSpeed: 5
+  _stayTime: 3
+  _fallDistance: 2.5
+  _startPos: {x: 0, y: 0, z: 0}
+  _endPos: {x: 0, y: 0, z: 0}
+  _isFalling: 0
+  _isReturning: 0
+  _stayTimer: 0
+  _name: Obstacle3_18
+--- !u!65 &735102180
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735102176}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 3.5231323, z: 1}
+  m_Center: {x: 0, y: -1.2615662, z: 0}
 --- !u!1 &740031195
 GameObject:
   m_ObjectHideFlags: 0
@@ -22022,6 +22121,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 751431170}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &757936252
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 757936253}
+  m_Layer: 0
+  m_Name: Rotate
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &757936253
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757936252}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.495, y: 0.42, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1495420205}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &762753634
 GameObject:
   m_ObjectHideFlags: 0
@@ -23645,7 +23775,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1599769823}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: -179.306, z: 0}
 --- !u!1 &818389158
 GameObject:
@@ -23991,37 +24121,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 313690256}
   m_RootOrder: 80
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &829867724
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 829867725}
-  m_Layer: 0
-  m_Name: StartPos
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &829867725
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 829867724}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1331203396}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &838427449
 GameObject:
@@ -24985,13 +25084,11 @@ GameObject:
   - component: {fileID: 890643919}
   - component: {fileID: 890643925}
   - component: {fileID: 890643924}
-  - component: {fileID: 890643923}
-  - component: {fileID: 890643922}
-  - component: {fileID: 890643921}
   - component: {fileID: 890643920}
+  - component: {fileID: 890643926}
   m_Layer: 0
   m_Name: Platform
-  m_TagString: ObstacleTri
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25004,12 +25101,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 890643918}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -3.5, y: 40.499985, z: -2}
   m_LocalScale: {x: 2, y: 0.3, z: 3}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1249884017}
-  m_RootOrder: 1
+  m_Children:
+  - {fileID: 188051878}
+  - {fileID: 1576465829}
+  m_Father: {fileID: 1887573287}
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &890643920
 Rigidbody:
@@ -25027,110 +25126,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &890643921
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 890643918}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c71b55c5f8fd4542b445510e200245a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _stageNum: 0
-  _gameObject: {fileID: 0}
-  _rotateAngle: -90
-  _isRotate: 0
-  _rotatePos: {fileID: 188051877}
-  _rigid: {fileID: 890643920}
-  _name: Obstacle4_26
---- !u!114 &890643922
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 890643918}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnInteractPlayerColEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerColStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerColExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerTriEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 890643921}
-        m_TargetAssemblyTypeName: Obstacle13, Assembly-CSharp
-        m_MethodName: RotatePlatform
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnInteractPlayerTriStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerTriExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 890643921}
-        m_TargetAssemblyTypeName: Obstacle13, Assembly-CSharp
-        m_MethodName: RotatePlatform
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnInteractItemTriStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriExit:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!65 &890643923
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 890643918}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.3636856, y: 6.4926505, z: 1}
-  m_Center: {x: 0.079148054, y: 0.12028972, z: 0}
 --- !u!23 &890643924
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25181,6 +25176,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 890643918}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &890643926
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 890643918}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &891978021
 GameObject:
   m_ObjectHideFlags: 0
@@ -26735,11 +26743,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 934670315}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.5, y: 0, z: 0}
+  m_LocalScale: {x: 0.5, y: 3.3333333, z: 0.33333334}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 536901370}
+  m_Father: {fileID: 1206117362}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &934723307
@@ -26970,8 +26978,145 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1599769823}
-  m_RootOrder: 25
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: -179.306, z: 0}
+--- !u!1 &940228561
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 940228562}
+  - component: {fileID: 940228565}
+  - component: {fileID: 940228564}
+  - component: {fileID: 940228563}
+  m_Layer: 2
+  m_Name: GameObject
+  m_TagString: ObstacleTri
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &940228562
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940228561}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 487968190}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &940228563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940228561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnInteractPlayerColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 940228564}
+        m_TargetAssemblyTypeName: Obstacle07, Assembly-CSharp
+        m_MethodName: MovePlatform
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnInteractPlayerTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 940228564}
+        m_TargetAssemblyTypeName: Obstacle07, Assembly-CSharp
+        m_MethodName: MovePlatform
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnInteractItemTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &940228564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940228561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36b9871945454774d8f1e66578661420, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stageNum: 0
+  _moveSpeed: 1
+  _isMove: 0
+  _stopPos: {fileID: 1031539232}
+  _rigid: {fileID: 487968192}
+  _name: Obstacle3_14
+--- !u!65 &940228565
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940228561}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.8730364, y: 3.0307465, z: 1}
+  m_Center: {x: 0.43651822, y: 1.0153732, z: 0}
 --- !u!1001 &942465213
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28556,7 +28701,7 @@ GameObject:
   m_Component:
   - component: {fileID: 996601389}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: StopPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28765,7 +28910,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1599769823}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1002443139
 GameObject:
@@ -30003,7 +30148,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1031539232}
   m_Layer: 0
-  m_Name: Obstacle3_14_2
+  m_Name: StopPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30777,13 +30922,10 @@ GameObject:
   - component: {fileID: 1052417312}
   - component: {fileID: 1052417311}
   - component: {fileID: 1052417310}
-  - component: {fileID: 1052417308}
-  - component: {fileID: 1052417307}
-  - component: {fileID: 1052417306}
   - component: {fileID: 1052417305}
   m_Layer: 0
   m_Name: Obstacle3_22
-  m_TagString: ObstacleTri
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30796,11 +30938,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1052417303}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.44, y: 11.65, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 37599823}
+  - {fileID: 1436146337}
   m_Father: {fileID: 511479926}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -30820,110 +30963,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &1052417306
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1052417303}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.4121336, y: 3.2999802, z: 1}
-  m_Center: {x: 0.20606618, y: 1.1499901, z: 0}
---- !u!114 &1052417307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1052417303}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnInteractPlayerColEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerColStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerColExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerTriEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1052417308}
-        m_TargetAssemblyTypeName: Obstacle13, Assembly-CSharp
-        m_MethodName: RotatePlatform
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnInteractPlayerTriStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerTriExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1052417308}
-        m_TargetAssemblyTypeName: Obstacle13, Assembly-CSharp
-        m_MethodName: RotatePlatform
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnInteractItemTriStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriExit:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1052417308
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1052417303}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c71b55c5f8fd4542b445510e200245a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _stageNum: 0
-  _gameObject: {fileID: 0}
-  _rotateAngle: -90
-  _isRotate: 0
-  _rotatePos: {fileID: 37599822}
-  _rigid: {fileID: 1052417305}
-  _name: Obstacle3_22
 --- !u!65 &1052417310
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31600,13 +31639,10 @@ GameObject:
   - component: {fileID: 1072234389}
   - component: {fileID: 1072234388}
   - component: {fileID: 1072234387}
-  - component: {fileID: 1072234386}
   - component: {fileID: 1072234385}
-  - component: {fileID: 1072234383}
-  - component: {fileID: 1072234382}
   m_Layer: 0
   m_Name: Obstacle3_21
-  m_TagString: ObstacleTri
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31624,100 +31660,10 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1239227768}
+  - {fileID: 1379609576}
   m_Father: {fileID: 511479926}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1072234382
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1072234380}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnInteractPlayerColEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerColStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerColExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerTriEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1072234383}
-        m_TargetAssemblyTypeName: Obstacle13, Assembly-CSharp
-        m_MethodName: RotatePlatform
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnInteractPlayerTriStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerTriExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1072234383}
-        m_TargetAssemblyTypeName: Obstacle13, Assembly-CSharp
-        m_MethodName: RotatePlatform
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnInteractItemTriStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriExit:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1072234383
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1072234380}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c71b55c5f8fd4542b445510e200245a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _stageNum: 0
-  _gameObject: {fileID: 0}
-  _rotateAngle: -90
-  _isRotate: 0
-  _rotatePos: {fileID: 1239227767}
-  _rigid: {fileID: 1072234385}
-  _name: Obstacle3_21
 --- !u!54 &1072234385
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -31734,19 +31680,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &1072234386
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1072234380}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.377141, y: 3.0561142, z: 1}
-  m_Center: {x: 0.18856983, y: 1.0280571, z: 0}
 --- !u!65 &1072234387
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32943,95 +32876,14 @@ GameObject:
   - component: {fileID: 1091733128}
   - component: {fileID: 1091733127}
   - component: {fileID: 1091733126}
-  - component: {fileID: 1091733125}
   - component: {fileID: 1091733124}
-  - component: {fileID: 1091733122}
-  - component: {fileID: 1091733121}
   m_Layer: 0
   m_Name: Obstacle2_2
-  m_TagString: ObstacleTri
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1091733121
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1091733120}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnInteractPlayerColEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerColStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerColExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerTriEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1091733122}
-        m_TargetAssemblyTypeName: Obstacle07, Assembly-CSharp
-        m_MethodName: MovePlatform
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnInteractPlayerTriStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerTriExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriExit:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1091733122
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1091733120}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36b9871945454774d8f1e66578661420, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _stageNum: 0
-  _moveSpeed: 3
-  _isMove: 0
-  _stopPos: {fileID: 1091876958}
-  _rigid: {fileID: 1091733126}
-  _name: Obstacle2_2
 --- !u!65 &1091733124
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33045,19 +32897,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &1091733125
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1091733120}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.7625836, y: 2.8697977, z: 1}
-  m_Center: {x: -0.04085273, y: 1.4332502e-14, z: 0}
 --- !u!54 &1091733126
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -33137,6 +32976,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1091876958}
+  - {fileID: 550120190}
   m_Father: {fileID: 313690256}
   m_RootOrder: 74
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
@@ -33149,9 +32989,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1091876958}
-  m_Layer: 0
+  - component: {fileID: 1091876961}
+  - component: {fileID: 1091876960}
+  - component: {fileID: 1091876959}
+  m_Layer: 2
   m_Name: GameObject
-  m_TagString: Untagged
+  m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33164,13 +33007,116 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1091876957}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.08, y: -0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1091733129}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1091876959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091876957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnInteractPlayerColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1091876960}
+        m_TargetAssemblyTypeName: Obstacle07, Assembly-CSharp
+        m_MethodName: MovePlatform
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnInteractPlayerTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1091876960}
+        m_TargetAssemblyTypeName: Obstacle07, Assembly-CSharp
+        m_MethodName: MovePlatform
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnInteractItemTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1091876960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091876957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36b9871945454774d8f1e66578661420, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stageNum: 0
+  _moveSpeed: 3
+  _isMove: 0
+  _stopPos: {fileID: 550120190}
+  _rigid: {fileID: 1091733126}
+  _name: Obstacle2_2
+--- !u!65 &1091876961
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091876957}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 4, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1098922342
 GameObject:
   m_ObjectHideFlags: 0
@@ -33798,6 +33744,120 @@ Transform:
   m_Father: {fileID: 313690256}
   m_RootOrder: 117
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!1 &1107324953
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1107324954}
+  - component: {fileID: 1107324957}
+  - component: {fileID: 1107324956}
+  - component: {fileID: 1107324955}
+  m_Layer: 2
+  m_Name: GameObject
+  m_TagString: ObstacleTri
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1107324954
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107324953}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1421115973}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1107324955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107324953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnInteractPlayerColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1107324956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107324953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c71b55c5f8fd4542b445510e200245a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stageNum: 0
+  _gameObject: {fileID: 0}
+  _rotateAngle: -90
+  _isRotate: 0
+  _rotatePos: {fileID: 1342760265}
+  _rigid: {fileID: 1421115974}
+  _name: Obstacle4_25
+--- !u!65 &1107324957
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107324953}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 3, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1115206866
 GameObject:
   m_ObjectHideFlags: 0
@@ -33893,7 +33953,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1599769823}
-  m_RootOrder: 24
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: -179.306, z: 0}
 --- !u!1 &1116480046
 GameObject:
@@ -34618,6 +34678,144 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4353395921811104, guid: a523b2a222cd33041a9851edfed862dd, type: 3}
   m_PrefabInstance: {fileID: 1126109284}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1136159174
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1136159175}
+  - component: {fileID: 1136159178}
+  - component: {fileID: 1136159177}
+  - component: {fileID: 1136159176}
+  m_Layer: 2
+  m_Name: GameObject
+  m_TagString: ObstacleTri
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1136159175
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136159174}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.02, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 227471064}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1136159176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136159174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnInteractPlayerColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1136159177}
+        m_TargetAssemblyTypeName: Obstacle13, Assembly-CSharp
+        m_MethodName: RotatePlatform
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnInteractPlayerTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1136159177}
+        m_TargetAssemblyTypeName: Obstacle13, Assembly-CSharp
+        m_MethodName: RotatePlatform
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnInteractItemTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1136159177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136159174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c71b55c5f8fd4542b445510e200245a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stageNum: 0
+  _gameObject: {fileID: 0}
+  _rotateAngle: -90
+  _isRotate: 0
+  _rotatePos: {fileID: 1303223888}
+  _rigid: {fileID: 227471059}
+  _name: Obstacle2_1
+--- !u!65 &1136159178
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136159174}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 3, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1143458079
 GameObject:
   m_ObjectHideFlags: 0
@@ -36366,12 +36564,10 @@ GameObject:
   - component: {fileID: 1206117368}
   - component: {fileID: 1206117367}
   - component: {fileID: 1206117366}
-  - component: {fileID: 1206117365}
-  - component: {fileID: 1206117364}
   - component: {fileID: 1206117363}
   m_Layer: 0
   m_Name: Platform
-  m_TagString: ObstacleTri
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36384,12 +36580,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1206117361}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 4.5, y: 40.499985, z: -2}
   m_LocalScale: {x: 2, y: 0.3, z: 3}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 536901370}
-  m_RootOrder: 1
+  m_Children:
+  - {fileID: 934670316}
+  - {fileID: 536901370}
+  m_Father: {fileID: 1887573287}
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1206117363
 Rigidbody:
@@ -36407,97 +36605,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1206117364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1206117361}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c71b55c5f8fd4542b445510e200245a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _stageNum: 0
-  _gameObject: {fileID: 0}
-  _rotateAngle: -90
-  _isRotate: 0
-  _rotatePos: {fileID: 934670315}
-  _rigid: {fileID: 1206117363}
-  _name: Obstacle4_24
---- !u!114 &1206117365
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1206117361}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnInteractPlayerColEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerColStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerColExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerTriEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1206117364}
-        m_TargetAssemblyTypeName: Obstacle13, Assembly-CSharp
-        m_MethodName: RotatePlatform
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnInteractPlayerTriStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerTriExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1206117364}
-        m_TargetAssemblyTypeName: Obstacle13, Assembly-CSharp
-        m_MethodName: RotatePlatform
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnInteractItemTriStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriExit:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!65 &1206117366
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36506,11 +36613,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1206117361}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.3636856, y: 6.4926505, z: 1}
-  m_Center: {x: 0.079148054, y: 0.12028972, z: 0}
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1206117367
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -37098,7 +37205,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1599769823}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: -179.306, z: 0}
 --- !u!1 &1222628156
 GameObject:
@@ -37645,7 +37752,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1239227768}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Rotate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38067,39 +38174,6 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 1162301732}
---- !u!1 &1249884016
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1249884017}
-  m_Layer: 0
-  m_Name: Obstacle4_26
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1249884017
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1249884016}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.5, y: 40.5, z: -2}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 188051878}
-  - {fileID: 890643919}
-  m_Father: {fileID: 1887573287}
-  m_RootOrder: 25
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1250069847
 GameObject:
   m_ObjectHideFlags: 0
@@ -38310,7 +38384,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1599769823}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: -179.306, z: 0}
 --- !u!1 &1255419478
 GameObject:
@@ -40902,14 +40976,11 @@ GameObject:
   - component: {fileID: 1331017639}
   - component: {fileID: 1331017647}
   - component: {fileID: 1331017646}
-  - component: {fileID: 1331017645}
   - component: {fileID: 1331017644}
-  - component: {fileID: 1331017642}
-  - component: {fileID: 1331017641}
   - component: {fileID: 1331017640}
   m_Layer: 0
   m_Name: Obstacle3_2
-  m_TagString: ObstacleTri
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40927,6 +40998,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 69352922}
+  - {fileID: 1815429723}
   m_Father: {fileID: 1855016626}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -40946,97 +41018,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1331017641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1331017638}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnInteractPlayerColEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerColStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerColExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerTriEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1331017642}
-        m_TargetAssemblyTypeName: Obstacle13, Assembly-CSharp
-        m_MethodName: RotatePlatform
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnInteractPlayerTriStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerTriExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1331017642}
-        m_TargetAssemblyTypeName: Obstacle13, Assembly-CSharp
-        m_MethodName: RotatePlatform
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnInteractItemTriStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriExit:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1331017642
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1331017638}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c71b55c5f8fd4542b445510e200245a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _stageNum: 0
-  _gameObject: {fileID: 69352921}
-  _rotateAngle: -90
-  _isRotate: 0
-  _rotatePos: {fileID: 69352921}
-  _rigid: {fileID: 1331017640}
-  _name: Obstacle3_2
 --- !u!65 &1331017644
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41050,19 +41031,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0.00000023841858, y: 0, z: 0}
---- !u!65 &1331017645
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1331017638}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.4295874, y: 1.5774193, z: 1}
-  m_Center: {x: -0.18186586, y: 0.28870964, z: 0}
 --- !u!23 &1331017646
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -41113,39 +41081,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1331017638}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1331203395
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1331203396}
-  m_Layer: 0
-  m_Name: Obstacle1_2
-  m_TagString: ObstacleCol
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1331203396
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1331203395}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.099194, y: 5.5395164, z: -2.01795}
-  m_LocalScale: {x: 1, y: 1, z: 3}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 829867725}
-  - {fileID: 550422944}
-  m_Father: {fileID: 1599769823}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1331811562
 GameObject:
   m_ObjectHideFlags: 0
@@ -41400,11 +41335,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1342760265}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.5, y: 0, z: 0}
+  m_LocalScale: {x: 0.5, y: 3.3333333, z: 0.33333334}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1880104629}
+  m_Father: {fileID: 1421115973}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1343564275
@@ -41524,6 +41459,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1343564275}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1347336611
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1347336612}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1347336612
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1347336611}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -2.78, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 505721536}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1352234406
 GameObject:
   m_ObjectHideFlags: 0
@@ -42080,6 +42046,144 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4226684656622418, guid: 47e679cbed6a2d34285382aaeb83a951, type: 3}
   m_PrefabInstance: {fileID: 1378129811}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1379609575
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1379609576}
+  - component: {fileID: 1379609579}
+  - component: {fileID: 1379609578}
+  - component: {fileID: 1379609577}
+  m_Layer: 2
+  m_Name: GameObject (1)
+  m_TagString: ObstacleTri
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1379609576
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379609575}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1072234381}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1379609577
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379609575}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3226551, y: 1.9192352, z: 1}
+  m_Center: {x: 0.16132705, y: 0.42223358, z: 0}
+--- !u!114 &1379609578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379609575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnInteractPlayerColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1379609579}
+        m_TargetAssemblyTypeName: Obstacle13, Assembly-CSharp
+        m_MethodName: RotatePlatform
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnInteractPlayerTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1379609579}
+        m_TargetAssemblyTypeName: Obstacle13, Assembly-CSharp
+        m_MethodName: RotatePlatform
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnInteractItemTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1379609579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379609575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c71b55c5f8fd4542b445510e200245a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stageNum: 0
+  _gameObject: {fileID: 0}
+  _rotateAngle: -90
+  _isRotate: 0
+  _rotatePos: {fileID: 1239227767}
+  _rigid: {fileID: 1072234385}
+  _name: Obstacle3_21
 --- !u!1 &1381782709
 GameObject:
   m_ObjectHideFlags: 0
@@ -43106,12 +43210,10 @@ GameObject:
   - component: {fileID: 1421115979}
   - component: {fileID: 1421115978}
   - component: {fileID: 1421115977}
-  - component: {fileID: 1421115976}
-  - component: {fileID: 1421115975}
   - component: {fileID: 1421115974}
   m_Layer: 0
   m_Name: Platform
-  m_TagString: ObstacleTri
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43124,12 +43226,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1421115972}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.5, y: 40.499985, z: -2}
   m_LocalScale: {x: 2, y: 0.3, z: 3}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1880104629}
-  m_RootOrder: 1
+  m_Children:
+  - {fileID: 1342760266}
+  - {fileID: 1107324954}
+  m_Father: {fileID: 1887573287}
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1421115974
 Rigidbody:
@@ -43147,97 +43251,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1421115975
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1421115972}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c71b55c5f8fd4542b445510e200245a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _stageNum: 0
-  _gameObject: {fileID: 0}
-  _rotateAngle: -90
-  _isRotate: 0
-  _rotatePos: {fileID: 1342760265}
-  _rigid: {fileID: 1421115974}
-  _name: Obstacle4_25
---- !u!114 &1421115976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1421115972}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnInteractPlayerColEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerColStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerColExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerTriEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1421115975}
-        m_TargetAssemblyTypeName: Obstacle13, Assembly-CSharp
-        m_MethodName: RotatePlatform
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnInteractPlayerTriStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerTriExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1421115975}
-        m_TargetAssemblyTypeName: Obstacle13, Assembly-CSharp
-        m_MethodName: RotatePlatform
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnInteractItemTriStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriExit:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!65 &1421115977
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43246,11 +43259,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1421115972}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.3636856, y: 6.4926505, z: 1}
-  m_Center: {x: 0.079148054, y: 0.12028972, z: 0}
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1421115978
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -43903,6 +43916,144 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1434740968}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1436146336
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1436146337}
+  - component: {fileID: 1436146340}
+  - component: {fileID: 1436146339}
+  - component: {fileID: 1436146338}
+  m_Layer: 2
+  m_Name: GameObject
+  m_TagString: ObstacleTri
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1436146337
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436146336}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1052417304}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1436146338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436146336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnInteractPlayerColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1436146339}
+        m_TargetAssemblyTypeName: Obstacle13, Assembly-CSharp
+        m_MethodName: RotatePlatform
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnInteractPlayerTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1436146339}
+        m_TargetAssemblyTypeName: Obstacle13, Assembly-CSharp
+        m_MethodName: RotatePlatform
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnInteractItemTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1436146339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436146336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c71b55c5f8fd4542b445510e200245a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stageNum: 0
+  _gameObject: {fileID: 0}
+  _rotateAngle: -90
+  _isRotate: 0
+  _rotatePos: {fileID: 37599822}
+  _rigid: {fileID: 1052417305}
+  _name: Obstacle3_22
+--- !u!65 &1436146340
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436146336}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5853039, y: 1.4406891, z: 1}
+  m_Center: {x: -0.0442186, y: 0.22034454, z: 0}
 --- !u!1 &1442145956
 GameObject:
   m_ObjectHideFlags: 0
@@ -45682,14 +45833,11 @@ GameObject:
   - component: {fileID: 1495420205}
   - component: {fileID: 1495420212}
   - component: {fileID: 1495420211}
-  - component: {fileID: 1495420210}
-  - component: {fileID: 1495420209}
-  - component: {fileID: 1495420208}
   - component: {fileID: 1495420207}
   - component: {fileID: 1495420206}
   m_Layer: 0
-  m_Name: Platform
-  m_TagString: ObstacleTri
+  m_Name: Obstacle1_8
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45705,9 +45853,11 @@ Transform:
   m_LocalPosition: {x: 12.9735565, y: 36.02, z: -2.01795}
   m_LocalScale: {x: 4, y: 2, z: 2.58749}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1808564242}
+  - {fileID: 757936253}
   m_Father: {fileID: 1599769823}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1495420206
 BoxCollider:
@@ -45738,110 +45888,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1495420208
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1495420204}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c71b55c5f8fd4542b445510e200245a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _stageNum: 0
-  _gameObject: {fileID: 0}
-  _rotateAngle: 90
-  _isRotate: 0
-  _rotatePos: {fileID: 1593551877}
-  _rigid: {fileID: 1495420207}
-  _name: Obstacle1_6
---- !u!114 &1495420209
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1495420204}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnInteractPlayerColEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerColStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerColExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerTriEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1495420208}
-        m_TargetAssemblyTypeName: Obstacle13, Assembly-CSharp
-        m_MethodName: RotatePlatform
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnInteractPlayerTriStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerTriExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1495420208}
-        m_TargetAssemblyTypeName: Obstacle13, Assembly-CSharp
-        m_MethodName: RotatePlatform
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnInteractItemTriStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriExit:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!65 &1495420210
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1495420204}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.3636856, y: 6.4926505, z: 1}
-  m_Center: {x: 0.079148054, y: 0.12028972, z: 0}
 --- !u!23 &1495420211
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -48528,6 +48574,144 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1576465828
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1576465829}
+  - component: {fileID: 1576465832}
+  - component: {fileID: 1576465831}
+  - component: {fileID: 1576465830}
+  m_Layer: 2
+  m_Name: GameObject
+  m_TagString: ObstacleTri
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1576465829
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576465828}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 890643919}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1576465830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576465828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnInteractPlayerColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1576465831}
+        m_TargetAssemblyTypeName: Obstacle13, Assembly-CSharp
+        m_MethodName: RotatePlatform
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnInteractPlayerTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1576465831}
+        m_TargetAssemblyTypeName: Obstacle13, Assembly-CSharp
+        m_MethodName: RotatePlatform
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnInteractItemTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1576465831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576465828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c71b55c5f8fd4542b445510e200245a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stageNum: 0
+  _gameObject: {fileID: 0}
+  _rotateAngle: -90
+  _isRotate: 0
+  _rotatePos: {fileID: 188051877}
+  _rigid: {fileID: 890643920}
+  _name: 
+--- !u!65 &1576465832
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576465828}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1585066301
 GameObject:
   m_ObjectHideFlags: 0
@@ -48976,7 +49160,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1599769823}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1596810654
 GameObject:
@@ -49080,7 +49264,6 @@ Transform:
   - {fileID: 767804404}
   - {fileID: 2065133351}
   - {fileID: 1882117876}
-  - {fileID: 1331203396}
   - {fileID: 1789224865}
   - {fileID: 1723785964}
   - {fileID: 580500503}
@@ -52434,13 +52617,10 @@ GameObject:
   - component: {fileID: 1709976391}
   - component: {fileID: 1709976390}
   - component: {fileID: 1709976389}
-  - component: {fileID: 1709976388}
-  - component: {fileID: 1709976386}
   - component: {fileID: 1709976385}
-  - component: {fileID: 1709976384}
   m_Layer: 0
   m_Name: Obstacle3_13
-  m_TagString: ObstacleTri
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52458,81 +52638,10 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 164671448}
+  - {fileID: 2034995314}
   m_Father: {fileID: 1779013029}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1709976384
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1709976382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnInteractPlayerColEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerColStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerColExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerTriEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1709976386}
-        m_TargetAssemblyTypeName: Obstacle13, Assembly-CSharp
-        m_MethodName: RotatePlatform
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnInteractPlayerTriStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractPlayerTriExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemColExit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriEnter:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1709976386}
-        m_TargetAssemblyTypeName: Obstacle13, Assembly-CSharp
-        m_MethodName: RotatePlatform
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnInteractItemTriStay:
-    m_PersistentCalls:
-      m_Calls: []
-  OnInteractItemTriExit:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!54 &1709976385
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -52549,38 +52658,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1709976386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1709976382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c71b55c5f8fd4542b445510e200245a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _stageNum: 0
-  _gameObject: {fileID: 0}
-  _rotateAngle: 135
-  _isRotate: 0
-  _rotatePos: {fileID: 164671447}
-  _rigid: {fileID: 1709976385}
-  _name: Obstacle3_13
---- !u!65 &1709976388
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1709976382}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.5209903, y: 2.206523, z: 1}
-  m_Center: {x: 0.743733, y: 0.6032615, z: 0}
 --- !u!65 &1709976389
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53158,7 +53235,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1599769823}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: -179.306, z: 0}
 --- !u!1 &1728028890
 GameObject:
@@ -54862,7 +54939,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1599769823}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: -179.306, z: 0}
 --- !u!1001 &1793678156
 PrefabInstance:
@@ -55353,6 +55430,144 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1806545006}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1808564241
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1808564242}
+  - component: {fileID: 1808564245}
+  - component: {fileID: 1808564244}
+  - component: {fileID: 1808564243}
+  m_Layer: 2
+  m_Name: GameObject
+  m_TagString: ObstacleTri
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1808564242
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808564241}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1495420205}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1808564243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808564241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnInteractPlayerColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1808564244}
+        m_TargetAssemblyTypeName: Obstacle13, Assembly-CSharp
+        m_MethodName: RotatePlatform
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnInteractPlayerTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1808564244}
+        m_TargetAssemblyTypeName: Obstacle13, Assembly-CSharp
+        m_MethodName: RotatePlatform
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnInteractItemTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1808564244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808564241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c71b55c5f8fd4542b445510e200245a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stageNum: 0
+  _gameObject: {fileID: 0}
+  _rotateAngle: 90
+  _isRotate: 0
+  _rotatePos: {fileID: 757936252}
+  _rigid: {fileID: 1495420207}
+  _name: 
+--- !u!65 &1808564245
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808564241}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 4, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1808800174
 GameObject:
   m_ObjectHideFlags: 0
@@ -55813,6 +56028,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1814433842}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1815429722
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1815429723}
+  m_Layer: 0
+  m_Name: Rotate
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1815429723
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815429722}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1331017639}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1815475724
 GameObject:
   m_ObjectHideFlags: 0
@@ -55936,7 +56182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d2b59aa824121f488c5a6573501bddd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameSceneManager: {fileID: 0}
+  _gameSceneManager: {fileID: 1958565681}
   _stage: 1
   _isSavePlatform: 1
   _isClearPlatform: 0
@@ -57110,39 +57356,6 @@ Transform:
   m_Father: {fileID: 313690256}
   m_RootOrder: 110
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
---- !u!1 &1880104628
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1880104629}
-  m_Layer: 0
-  m_Name: Obstacle4_25
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1880104629
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1880104628}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5, y: 40.5, z: -2}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1342760266}
-  - {fileID: 1421115973}
-  m_Father: {fileID: 1887573287}
-  m_RootOrder: 24
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1880128504
 GameObject:
   m_ObjectHideFlags: 0
@@ -57238,7 +57451,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1599769823}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: -179.306, z: 0}
 --- !u!1001 &1882012122
 PrefabInstance:
@@ -57928,10 +58141,10 @@ Transform:
   - {fileID: 274974754}
   - {fileID: 145859692}
   - {fileID: 1343564276}
-  - {fileID: 536901370}
-  - {fileID: 1880104629}
-  - {fileID: 1249884017}
   - {fileID: 1964861699}
+  - {fileID: 1206117362}
+  - {fileID: 1421115973}
+  - {fileID: 890643919}
   - {fileID: 606909696}
   - {fileID: 903970695}
   - {fileID: 1098922343}
@@ -59940,7 +60153,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1599769823}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1928860571
 GameObject:
@@ -60285,7 +60498,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1599769823}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: -179.306, z: 0}
 --- !u!1 &1939963686
 GameObject:
@@ -60596,7 +60809,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1599769823}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: -179.306, z: 0}
 --- !u!1 &1946035097
 GameObject:
@@ -61266,7 +61479,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1887573287}
-  m_RootOrder: 26
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1964861701
 Rigidbody:
@@ -62873,6 +63086,144 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2034759801}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2034995313
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2034995314}
+  - component: {fileID: 2034995317}
+  - component: {fileID: 2034995316}
+  - component: {fileID: 2034995315}
+  m_Layer: 2
+  m_Name: GameObject
+  m_TagString: ObstacleTri
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2034995314
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2034995313}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1709976383}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2034995315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2034995313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d376824ea6bb2e54ea8b736fb44d23b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnInteractPlayerColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2034995316}
+        m_TargetAssemblyTypeName: Obstacle13, Assembly-CSharp
+        m_MethodName: RotatePlatform
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnInteractPlayerTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractPlayerTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemColExit:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2034995316}
+        m_TargetAssemblyTypeName: Obstacle13, Assembly-CSharp
+        m_MethodName: RotatePlatform
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnInteractItemTriStay:
+    m_PersistentCalls:
+      m_Calls: []
+  OnInteractItemTriExit:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2034995316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2034995313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c71b55c5f8fd4542b445510e200245a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stageNum: 0
+  _gameObject: {fileID: 0}
+  _rotateAngle: 135
+  _isRotate: 0
+  _rotatePos: {fileID: 164671447}
+  _rigid: {fileID: 1709976385}
+  _name: Obstacle3_13
+--- !u!65 &2034995317
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2034995313}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4504913, y: 3.0697021, z: 1}
+  m_Center: {x: 0.22524537, y: 1.0348511, z: 0}
 --- !u!1 &2037057608
 GameObject:
   m_ObjectHideFlags: 0
