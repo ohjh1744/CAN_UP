@@ -29,7 +29,7 @@ public class Obstacle6 : MonoBehaviour, IResetObject, IObjectPosition
 
     private void Awake()
     {
-        _startPos = transform.position;
+        _startPos = _wall.transform.position;
         _targetPosition = _targetPosObj.transform.position;
         _isMoving = false;
     }
