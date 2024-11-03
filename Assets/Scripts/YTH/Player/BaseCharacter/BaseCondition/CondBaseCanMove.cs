@@ -4,8 +4,6 @@ public class CondBaseCanMove : PlayerCondition
 {
     [SerializeField] BaseData _data;
 
-    [SerializeField] Rigidbody _rigidbody;
-
     [SerializeField] float _dropRayPosY = 0.1f;
     public override bool DoCheck()
     {

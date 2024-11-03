@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class ActBaseJump : PlayerAction
@@ -11,11 +12,18 @@ public class ActBaseJump : PlayerAction
     [SerializeField] float _startJumpPositionY = 0.3f;
 
     [SerializeField] float _jumpPowerRate;
+
+    [SerializeField] AudioSource _jumpAudio;
+
+    [SerializeField] AudioSource _moveAudio;
+    
+    [SerializeField] AudioClip _audioClip;
+
+
     public override BTNodeState DoAction()
     {
         Vector3 _jumpDirectionR = new Vector3(1, 2, 0).normalized;
         Vector3 _jumpDirectionL = new Vector3(-1, 2, 0).normalized;
-
         //점프 차징 맥스, 최대점프력으로 점프
         if (_data.JumpPower >= _data.MaxJumpPower && (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.Space)))
         {
@@ -40,6 +48,12 @@ public class ActBaseJump : PlayerAction
 
         if (Input.GetKey(KeyCode.Space))// space 누르고 있는 상태
         {
+            //_moveAudio.Stop();
+            if (_data.WalkRoutine != null)
+            {
+                StopCoroutine(_data.WalkRoutine);
+                _data.WalkRoutine = null;
+            }
 
             _data.JumpPower += Time.deltaTime * _jumpPowerRate;
             //회전 적용
@@ -63,7 +77,7 @@ public class ActBaseJump : PlayerAction
         }
 
         //좌로 점프
-        if ((Input.GetKeyUp(KeyCode.Space)) && ((Input.GetKey(KeyCode.A) || (Input.GetKeyUp(KeyCode.A)))))
+        if ((Input.GetKeyUp(KeyCode.Space)) && ((Input.GetKey(KeyCode.A) )))
         {
             _rigidbody.AddForce(_jumpDirectionL * _data.JumpPower, ForceMode.Impulse);
             JumpEvent();
@@ -72,7 +86,7 @@ public class ActBaseJump : PlayerAction
         }
 
         // 우로 점프
-        if ((Input.GetKeyUp(KeyCode.Space)) && ((Input.GetKey(KeyCode.D) || (Input.GetKeyUp(KeyCode.D)))))
+        if ((Input.GetKeyUp(KeyCode.Space)) && ((Input.GetKey(KeyCode.D) )))
         {
             _rigidbody.AddForce(_jumpDirectionR * _data.JumpPower, ForceMode.Impulse);
             JumpEvent();
@@ -89,8 +103,6 @@ public class ActBaseJump : PlayerAction
             return BTNodeState.Success;
         }
 
-
-
         else
         {
             return BTNodeState.Failure;
@@ -105,5 +117,6 @@ public class ActBaseJump : PlayerAction
         _animator.SetTrigger("Jump");
         _data.JumpPower = 0;
         _data.JumpCount++;
+        _jumpAudio.PlayOneShot(_audioClip);
     }
 }

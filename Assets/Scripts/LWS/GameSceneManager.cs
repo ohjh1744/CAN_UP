@@ -75,6 +75,14 @@ public class GameSceneManager : UIBInder
 
     private float _curPlayTime;
 
+    [SerializeField] private AudioClip[] _audioClips;
+
+    [SerializeField] private AudioClip _audioClear;
+
+    private AudioClip _curAudioClip;
+
+    [SerializeField] private UiCommonSound _uiCommonSound;
+
     private void Awake()
     {
         _brain = Camera.main.GetComponent<CinemachineBrain>();
@@ -103,9 +111,15 @@ public class GameSceneManager : UIBInder
         AddEvent("MainButton", EventType.Click, GoToMain);
 
         SetGame();
-
         UpdateJumpTime();
         UpdateFallTime();
+        _curAudioClip = null;
+
+        //사운들 처리
+        AddEvent("ResumeButton", EventType.Click, _uiCommonSound.PlayCommonSound);
+        AddEvent("SaveExitButton", EventType.Click, _uiCommonSound.PlayCommonSound);
+        AddEvent("GiveUpButton", EventType.Click, _uiCommonSound.PlayCommonSound);
+        AddEvent("MainButton", EventType.Click, _uiCommonSound.PlayCommonSound);
     }
 
 
@@ -120,18 +134,58 @@ public class GameSceneManager : UIBInder
             ClearPanel.SetActive(true);
         }
 
-        if (Input.GetKeyUp(KeyCode.Escape))
+        if (Input.GetKeyUp(KeyCode.Escape) && _escPanel.activeSelf == false)
         {
+            SoundManager.Instance.PlaySFX(_uiCommonSound.AudioClip);
             Time.timeScale = 0;
             _escPanel.SetActive(true);
         }
 
         CheckState();
-
+        SetBGM();
         CheckPlayTime();
+
     }
 
 
+    private void SetBGM()
+    {
+        switch (DataManager.Instance.SaveData.GameData.PlayerStage)
+        {
+            case (int)EStage.First:
+                AudioClip audioClip = _audioClips[(int)EStage.First];
+                if (_curAudioClip != audioClip)
+                {
+                    _curAudioClip = audioClip;
+                    SoundManager.Instance.PlayeBGM(_audioClips[(int)EStage.First]);
+                }
+                break;
+            case (int)EStage.Second:
+                audioClip = _audioClips[(int)EStage.Second];
+                if (_curAudioClip != audioClip)
+                {
+                    _curAudioClip = audioClip;
+                    SoundManager.Instance.PlayeBGM(_audioClips[(int)EStage.Second]);
+                }
+                break;
+            case (int)EStage.Third:
+                audioClip = _audioClips[(int)EStage.Third];
+                if (_curAudioClip != audioClip)
+                {
+                    _curAudioClip = audioClip;
+                    SoundManager.Instance.PlayeBGM(_audioClips[(int)EStage.Third]);
+                }
+                break;
+            case (int)EStage.Fourth:
+                audioClip = _audioClips[(int)EStage.Fourth];
+                if (_curAudioClip != audioClip)
+                {
+                    _curAudioClip = audioClip;
+                    SoundManager.Instance.PlayeBGM(_audioClips[(int)EStage.Fourth]);
+                }
+                break;
+        }
+    }
 
     private void SetGame()
     {
@@ -263,9 +317,12 @@ public class GameSceneManager : UIBInder
         }
     }
 
-    private void ClearStage()
+    public void ClearStage()
     {
+        Time.timeScale = 0;
         DataManager.Instance.ResetData();
+        _clearPanel.SetActive(true);
+        SoundManager.Instance.PlaySFX(_audioClear);
         _sceneChanger.ChangeScene("MainScene");
     }
 

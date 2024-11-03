@@ -21,6 +21,10 @@ public class MainSceneManager : UIBInder
 
     [SerializeField] private ECharacterNum _characterNum;
 
+    [SerializeField] private AudioClip _audioClip;
+
+    [SerializeField] private UiCommonSound _uiCommonSound;
+
     private void Awake()
     {
         BindAll();
@@ -47,6 +51,27 @@ public class MainSceneManager : UIBInder
 
         // 나가기 버튼 클릭 이벤트
         AddEvent("ExitButton", EventType.Click, QuitGame);
+
+        //버튼 사운드 이벤트 연결
+        AddEvent("NewPlayButton", EventType.Click, _uiCommonSound.PlayCommonSound);
+
+        AddEvent("DifficultyUp", EventType.Click, _uiCommonSound.PlayCommonSound);
+
+        AddEvent("DifficultyDown", EventType.Click, _uiCommonSound.PlayCommonSound);
+
+        AddEvent("Character_Right", EventType.Click, _uiCommonSound.PlayCommonSound);
+
+        AddEvent("Character_Left", EventType.Click, _uiCommonSound.PlayCommonSound);
+
+        AddEvent("Character_Left", EventType.Click, _uiCommonSound.PlayCommonSound);
+
+        AddEvent("LoadPlayButton", EventType.Click, _uiCommonSound.PlayCommonSound);
+
+        AddEvent("ExplainButton", EventType.Click, _uiCommonSound.PlayCommonSound);
+
+        AddEvent("ExitButton", EventType.Click, _uiCommonSound.PlayCommonSound);
+
+        SetBGM();
     }
 
     private void Update()
@@ -59,6 +84,12 @@ public class MainSceneManager : UIBInder
             // 이미지 활성화 체크 여부 false로 변경
             _isImageActive = false;
         }
+    }
+
+    private void SetBGM()
+    {
+        SoundManager.Instance.StopBGM();
+        SoundManager.Instance.PlayeBGM(_audioClip);
     }
 
     // 새 게임 시작 버튼

@@ -1,10 +1,16 @@
 using UnityEngine;
 
+
+public enum EStoneSound {Pull, Fly }
 public class ActStoneReadyMove : PlayerAction
 {
     [SerializeField] StoneData _data;
     //[SerializeField] StoneRagdoll _ragdoll;
     [SerializeField] GameObject _playerForcePos;
+
+    [SerializeField] AudioSource _audio;
+
+    [SerializeField] AudioClip[] _audioClip;
 
     public override BTNodeState DoAction()
     {
@@ -12,7 +18,6 @@ public class ActStoneReadyMove : PlayerAction
         {
             DetectPlayerWithRay();
             //_data.Flying = false;
-
             if (_data.IsDragging)
             {
                 DrawLineToCursor();
@@ -22,6 +27,8 @@ public class ActStoneReadyMove : PlayerAction
         
         else if(Input.GetMouseButtonUp(0) && _data.SelectedPlayer != null) 
         {
+            _audio.loop = false;
+            _audio.PlayOneShot(_audioClip[(int)EStoneSound.Fly]);
             _data.IsDragging = false;
             _data.LineRenderer.enabled = false;
             return BTNodeState.Failure;
@@ -41,6 +48,13 @@ public class ActStoneReadyMove : PlayerAction
         {
             if(hit.collider.CompareTag("Stone"))
             {
+                // 사운드 처리
+                _audio.clip = _audioClip[(int)EStoneSound.Pull];
+                _audio.loop = true;
+                if (_audio.isPlaying == false)
+                {
+                    _audio.Play();
+                }
                 // 감지된 오브젝트를 선언해둔 selectedPlayer에 저장
                 _data.SelectedPlayer = hit.collider.gameObject;
 
