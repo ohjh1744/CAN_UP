@@ -24,8 +24,8 @@ public class GameSceneManager : UIBInder
     public float[] StageHight { get { return _stageHight; } set { _stageHight = value; } }
 
     // 카메라 배열
-    [SerializeField] private CinemachineVirtualCamera[] _cameras;
-    public CinemachineVirtualCamera[] Cameras { get { return _cameras; } set { _cameras = value; } }
+   //[SerializeField] private CinemachineVirtualCamera[] _cameras;
+   //public CinemachineVirtualCamera[] Cameras { get { return _cameras; } set { _cameras = value; } }
 
     // 현재 플레이어 포지션
     [SerializeField] private Vector3 _currentPlayerPos;
@@ -56,8 +56,8 @@ public class GameSceneManager : UIBInder
     public GameObject[] ReplaceObstacles { get { return _replaceObstacles; } set { _replaceObstacles = value; } }
 
     // 시네머신 브레인 이벤트 함수에 활용할 시네머신 브레인
-    [SerializeField] private CinemachineBrain _brain;
-    public CinemachineBrain Brain { get { return _brain; } set { _brain = value; } }
+   //[SerializeField] private CinemachineBrain _brain;
+   //public CinemachineBrain Brain { get { return _brain; } set { _brain = value; } }
 
     // esc 누를 때 나올 패널
     [SerializeField] private GameObject _escPanel;
@@ -85,7 +85,7 @@ public class GameSceneManager : UIBInder
 
     private void Awake()
     {
-        _brain = Camera.main.GetComponent<CinemachineBrain>();
+        //_brain = Camera.main.GetComponent<CinemachineBrain>();
         BindAll();
     }
 
@@ -275,7 +275,7 @@ public class GameSceneManager : UIBInder
     // 시네머신 브레인 이벤트 함수 실행해서 카메라가 변경될 때 마다 Reset()
     private void CheckResetObject()
     {
-        _brain.m_CameraActivatedEvent.AddListener(Reset1);
+        //_brain.m_CameraActivatedEvent.AddListener(Reset1);
 
         void Reset1(ICinemachineCamera forecamera, ICinemachineCamera toCamera)
         {
