@@ -49,6 +49,7 @@ public class ActBaseJump : PlayerAction
         if (Input.GetKey(KeyCode.Space))// space 누르고 있는 상태
         {
             _data.JumpPower += Time.deltaTime * _jumpPowerRate;
+            _animator.SetBool("isIdle", true);
             //회전 적용
             if (Input.GetKey(KeyCode.A))
             {

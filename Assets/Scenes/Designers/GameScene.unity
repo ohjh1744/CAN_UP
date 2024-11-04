@@ -67237,20 +67237,40 @@ PrefabInstance:
       objectReference: {fileID: 105366144}
     - target: {fileID: 8654228858541139955, guid: e60a75fa819c33245a96e5bed70bde14, type: 3}
       propertyPath: _size.x
-      value: 0.2
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 8654228858541139955, guid: e60a75fa819c33245a96e5bed70bde14, type: 3}
       propertyPath: _size.y
-      value: 0.2
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 8654228858541139955, guid: e60a75fa819c33245a96e5bed70bde14, type: 3}
       propertyPath: _size.z
-      value: 0.2
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654228858541139955, guid: e60a75fa819c33245a96e5bed70bde14, type: 3}
+      propertyPath: _dropRayPosY
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8654228858541139957, guid: e60a75fa819c33245a96e5bed70bde14, type: 3}
       propertyPath: _item
       value: 
       objectReference: {fileID: 105366144}
+    - target: {fileID: 8654228858541139967, guid: e60a75fa819c33245a96e5bed70bde14, type: 3}
+      propertyPath: m_Height
+      value: 1.7426438
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654228858541139967, guid: e60a75fa819c33245a96e5bed70bde14, type: 3}
+      propertyPath: m_Center.x
+      value: -2.1318489e-11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654228858541139967, guid: e60a75fa819c33245a96e5bed70bde14, type: 3}
+      propertyPath: m_Center.y
+      value: 0.86611104
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654228858541139967, guid: e60a75fa819c33245a96e5bed70bde14, type: 3}
+      propertyPath: m_Center.z
+      value: 0.00802648
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e60a75fa819c33245a96e5bed70bde14, type: 3}
 --- !u!4 &5696102462413429555 stripped
