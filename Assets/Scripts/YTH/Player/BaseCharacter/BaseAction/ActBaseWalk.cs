@@ -27,7 +27,7 @@ public class ActBaseWalk : PlayerAction
     public override BTNodeState DoAction()
     {
         //좌로 이동
-        if ((Input.GetKey(KeyCode.A)) && !Input.GetKey(KeyCode.Space)) //A 또는 D 키를 눌렀을 때, Space 입력하지 않았을 때 이동
+        if ((Input.GetKey(KeyCode.A)) && !Input.GetKey(KeyCode.Space)) //A 또는 D 키를 누르면서, Space 입력하지 않았을 때 이동
         {
             _rigidbody.velocity = dir * _data.MoveSpeed;
             transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(dir), _data.Rate * Time.deltaTime);

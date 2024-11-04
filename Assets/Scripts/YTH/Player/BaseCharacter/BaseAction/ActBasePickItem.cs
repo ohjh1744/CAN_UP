@@ -6,9 +6,9 @@ public class ActBasePickItem : PlayerAction
 {
     [SerializeField] BaseData _data;
 
-    [SerializeField] public Transform _handPosition; // 아이템을 들 위치(손)
+    [SerializeField] Transform _handPosition; // 아이템을 들 위치(손)
 
-    [SerializeField] private GameObject _item;
+    [SerializeField] GameObject _item;
 
     [SerializeField] Animator _animator;
 
@@ -16,9 +16,9 @@ public class ActBasePickItem : PlayerAction
     {
         float distance = Vector3.Distance(transform.position, _item.transform.position);
 
-        if (Input.GetKeyDown(KeyCode.Mouse0) && distance <= _data.PickUpRange) //캐릭터와 아이템이 가까울 때 좌클릭 입력 시
+        if (Input.GetKeyDown(KeyCode.Mouse0) && distance <= _data.PickUpRange) // 캐릭터와 아이템이 가까울 때 좌클릭 입력 시
         {
-            pickRoutine = StartCoroutine(PickRoutine());
+            pickRoutine = StartCoroutine(PickRoutine());                       // 아이템을 주움
             return BTNodeState.Success;
         }
         else
