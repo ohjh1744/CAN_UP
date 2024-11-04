@@ -227,31 +227,20 @@ public class GameSceneManager : UIBInder
 
     private void CheckState()
     {
-        // 0. 계속 갱신되어야 하는 기본 변수
-        // 현재 포지션
+
+        // 0.현재 포지션
         _currentPlayerPos = _players[DataManager.Instance.SaveData.GameData.CharacterNum].transform.position;
 
-        // 1. currentStage 갱신
-        for (int i = 1; i < (int)EStage.Length; i++)
-        {
-            if (_stageHight[i] <= _players[DataManager.Instance.SaveData.GameData.CharacterNum].transform.position.y &&
-                _players[DataManager.Instance.SaveData.GameData.CharacterNum].transform.position.y < _stageHight[i + 1])
-            {
-                _currentStage = i;
-                break;
-            }
-        }
-
-        // 2. SavePoint 변경 (?)
+        // 1. SavePoint 변경 낙하하게 될시 _currentSaveStage 변경.
         if (_currentSaveStage > _currentStage)
         {
             _currentSaveStage = _currentStage;
         }
 
-        // 3. CheckResetObject
+        // 2. CheckResetObject
         CheckResetObject();
 
-        // 4. Item위치 체크 후 갱신
+        // 3. Item위치 체크 후 갱신
         if (!DataManager.Instance.SaveData.GameData.HasItem)
         {
             if (_item.transform.position.y < _stageHight[_currentStage])
