@@ -105,6 +105,13 @@ public class ActBaseJump : PlayerAction
 
         else
         {
+            if (_rigidbody.velocity.y < 0)
+            {
+                Vector3 _curVelocity = new Vector3(0, _rigidbody.velocity.y, 0);
+                
+                _rigidbody.velocity = _curVelocity;
+            }
+
             return BTNodeState.Failure;
         }
     }
