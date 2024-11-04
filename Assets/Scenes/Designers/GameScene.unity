@@ -69995,7 +69995,8 @@ MonoBehaviour:
   - {fileID: 1576465828}
   - {fileID: 0}
   - {fileID: 0}
-  _replaceObstacles: []
+  _replaceObstacles:
+  - {fileID: 1916241312}
   _escPanel: {fileID: 1940569034}
   _clearPanel: {fileID: 1154127294}
   _sceneChanger: {fileID: 1077023644}

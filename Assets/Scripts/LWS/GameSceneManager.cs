@@ -24,8 +24,8 @@ public class GameSceneManager : UIBInder
     public float[] StageHight { get { return _stageHight; } set { _stageHight = value; } }
 
     // 카메라 배열
-   //[SerializeField] private CinemachineVirtualCamera[] _cameras;
-   //public CinemachineVirtualCamera[] Cameras { get { return _cameras; } set { _cameras = value; } }
+    //[SerializeField] private CinemachineVirtualCamera[] _cameras;
+    //public CinemachineVirtualCamera[] Cameras { get { return _cameras; } set { _cameras = value; } }
 
     // 현재 플레이어 포지션
     [SerializeField] private Vector3 _currentPlayerPos;
@@ -56,8 +56,8 @@ public class GameSceneManager : UIBInder
     public GameObject[] ReplaceObstacles { get { return _replaceObstacles; } set { _replaceObstacles = value; } }
 
     // 시네머신 브레인 이벤트 함수에 활용할 시네머신 브레인
-   //[SerializeField] private CinemachineBrain _brain;
-   //public CinemachineBrain Brain { get { return _brain; } set { _brain = value; } }
+    //[SerializeField] private CinemachineBrain _brain;
+    //public CinemachineBrain Brain { get { return _brain; } set { _brain = value; } }
 
     // esc 누를 때 나올 패널
     [SerializeField] private GameObject _escPanel;
@@ -206,7 +206,7 @@ public class GameSceneManager : UIBInder
         _players[DataManager.Instance.SaveData.GameData.CharacterNum].transform.position = _newSavePoint;
 
         // x축오른쪽으로 itemPoint지정하여 Player와 item 충돌없이
-        Vector3 _newItemPoint = new Vector3(_savePoints[_currentSaveStage].x + _itemPointXOffset , _savePoints[_currentSaveStage].y + 1, _savePoints[_currentSaveStage].z);
+        Vector3 _newItemPoint = new Vector3(_savePoints[_currentSaveStage].x + _itemPointXOffset, _savePoints[_currentSaveStage].y + 1, _savePoints[_currentSaveStage].z);
 
         // 2. Item 위치 가져오기
         if (DataManager.Instance.SaveData.GameData.CharacterNum == 1)
@@ -238,7 +238,8 @@ public class GameSceneManager : UIBInder
         }
 
         // 2. CheckResetObject
-        CheckResetObject();
+        // CheckResetObject();
+        // -> CameraChanger에서 사용
 
         // 3. Item위치 체크 후 갱신
         if (!DataManager.Instance.SaveData.GameData.HasItem)
@@ -272,22 +273,18 @@ public class GameSceneManager : UIBInder
         _sceneChanger.ChangeScene("MainScene");
     }
 
-    // 시네머신 브레인 이벤트 함수 실행해서 카메라가 변경될 때 마다 Reset()
-    private void CheckResetObject()
-    {
-        //_brain.m_CameraActivatedEvent.AddListener(Reset1);
 
-        void Reset1(ICinemachineCamera forecamera, ICinemachineCamera toCamera)
+    public void Reset()
+    {
+        for (int i = 0; i < _resetObjects.Length; i++)
         {
-            for (int i = 0; i < _resetObjects.Length; i++)
+            foreach (GameObject j in _resetObjects)
             {
-                foreach (GameObject j in _resetObjects)
-                {
-                    IResetObject resetObject = j.GetComponent<IResetObject>();
-                    resetObject.Reset();
-                }
+                IResetObject resetObject = j.GetComponent<IResetObject>();
+                resetObject.Reset();
             }
         }
+
     }
 
     // 시작 캐릭터가 Base가 아닐 경우, Replace가 필요한 Obstacle들 대체 실행
