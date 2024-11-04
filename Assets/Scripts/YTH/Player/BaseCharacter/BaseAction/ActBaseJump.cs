@@ -48,13 +48,6 @@ public class ActBaseJump : PlayerAction
 
         if (Input.GetKey(KeyCode.Space))// space 누르고 있는 상태
         {
-            //_moveAudio.Stop();
-            if (_data.WalkRoutine != null)
-            {
-                StopCoroutine(_data.WalkRoutine);
-                _data.WalkRoutine = null;
-            }
-
             _data.JumpPower += Time.deltaTime * _jumpPowerRate;
             //회전 적용
             if (Input.GetKey(KeyCode.A))
