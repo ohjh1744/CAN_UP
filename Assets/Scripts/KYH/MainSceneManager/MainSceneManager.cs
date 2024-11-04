@@ -156,17 +156,17 @@ public class MainSceneManager : UIBInder
         {
             case ECharacterNum.Base:
                 Debug.Log("Base");
-                GetUI<TextMeshProUGUI>("CharacterText").text = "Base";
+                GetUI<TextMeshProUGUI>("CharacterText").text = "Jumper";
                 break;
 
             case ECharacterNum.Stone:
                 Debug.Log("Stone");
-                GetUI<TextMeshProUGUI>("CharacterText").text = "Stone";
+                GetUI<TextMeshProUGUI>("CharacterText").text = "FlyingHead";
                 break;
 
             case ECharacterNum.Jump:
                 Debug.Log("Jump");
-                GetUI<TextMeshProUGUI>("CharacterText").text = "Jump";
+                GetUI<TextMeshProUGUI>("CharacterText").text = "Bouncer";
                 break;
         }
     }
