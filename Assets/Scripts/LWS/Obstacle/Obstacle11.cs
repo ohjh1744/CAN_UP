@@ -67,4 +67,13 @@ public class Obstacle11 : MonoBehaviour, IObjectPosition
             yield return new WaitForSeconds(_moveInterval);
         }
     }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        Rigidbody rigid = collision.collider.GetComponent<Rigidbody>();
+        if (rigid.velocity.y <= 0)
+        {
+            rigid.velocity = Vector3.down;
+        }
+    }
 }

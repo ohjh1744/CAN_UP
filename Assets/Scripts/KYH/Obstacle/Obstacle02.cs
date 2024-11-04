@@ -65,4 +65,13 @@ public class Obstacle02 : MonoBehaviour, IObjectPosition
         // 内风凭阑 null肺 贸府
         _railRoutine = null;
     }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        Rigidbody rigid = collision.collider.GetComponent<Rigidbody>();
+        if (rigid.velocity.y <= 0)
+        {
+            rigid.velocity = Vector3.down;
+        }
+    }
 }
