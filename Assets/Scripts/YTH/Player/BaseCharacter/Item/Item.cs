@@ -5,8 +5,6 @@ public class Item : MonoBehaviour
     [SerializeField] Rigidbody _rigidbody;
 
     [SerializeField] Collider _collider;
-
-   
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Base"))
@@ -21,7 +19,6 @@ public class Item : MonoBehaviour
             IInteractable interactable = collision.gameObject.GetComponent<IInteractable>();
             interactable.TargetInteractColEnter(this);
         }
-
     }
 
     private void OnCollisionStay(Collision collision)
@@ -68,5 +65,4 @@ public class Item : MonoBehaviour
             interactable.TargetInteractTriExit(this);
         }
     }
-
 }

@@ -5,7 +5,6 @@ using UnityEngine;
 public class CondBaseHasItem : PlayerCondition
 {
     [SerializeField] BaseData _data;
-
     public override bool DoCheck()
     {
         if (_data.HasItem == true)

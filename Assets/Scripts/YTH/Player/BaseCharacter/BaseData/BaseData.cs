@@ -19,17 +19,9 @@ public class BaseData : PlayerData
 
     public float ThrowPower { get { return _throwPower; } set { _throwPower = value; } }
 
-    //[SerializeField] private bool IsGrounded; // 땅에 닿아있는지 여부
-
-    //public bool IsGrounded { get { return IsGrounded; } set { IsGrounded = value; } }
-
     [SerializeField] private bool _hasItem;
 
     public bool HasItem { get { return _hasItem; } set { _hasItem = value; } } //추후에 SaveData 쪽과 연동할 예정.
-
-    [SerializeField] private Vector3 _jumpDir;
-
-    public Vector3 JumpDir { get { return _jumpDir; } set { _jumpDir = value; } }
 
     [SerializeField] private float _pickUpRange;
 
@@ -41,5 +33,4 @@ public class BaseData : PlayerData
     private Coroutine _walkRoutine;
 
     public Coroutine WalkRoutine {  get { return _walkRoutine; } set { _walkRoutine = value; } }
-
 }

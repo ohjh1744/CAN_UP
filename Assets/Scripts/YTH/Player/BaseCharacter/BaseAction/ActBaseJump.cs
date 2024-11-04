@@ -1,4 +1,3 @@
-using TMPro;
 using UnityEngine;
 
 public class ActBaseJump : PlayerAction
@@ -16,16 +15,16 @@ public class ActBaseJump : PlayerAction
     [SerializeField] AudioSource _jumpAudio;
 
     [SerializeField] AudioSource _moveAudio;
-    
+
     [SerializeField] AudioClip _audioClip;
 
+    Vector3 _jumpDirectionR = new Vector3(1, 2, 0).normalized;
+    Vector3 _jumpDirectionL = new Vector3(-1, 2, 0).normalized;
 
     public override BTNodeState DoAction()
     {
-        Vector3 _jumpDirectionR = new Vector3(1, 2, 0).normalized;
-        Vector3 _jumpDirectionL = new Vector3(-1, 2, 0).normalized;
-        //점프 차징 맥스, 최대점프력으로 점프
-        if (_data.JumpPower >= _data.MaxJumpPower && (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.Space)))
+        //차징 최대로, 최대점프력으로 점프
+        if (_data.JumpPower >= _data.MaxJumpPower)
         {
             _data.JumpPower = _data.MaxJumpPower;
 
@@ -42,19 +41,18 @@ public class ActBaseJump : PlayerAction
                 _rigidbody.AddForce(Vector3.up * _data.JumpPower, ForceMode.Impulse);
             }
             JumpEvent();
-            Debug.Log("최대 점프");
             return BTNodeState.Success;
         }
 
-        if (Input.GetKey(KeyCode.Space))// space 누르고 있는 상태
+        if (Input.GetKey(KeyCode.Space)) //Space를 누르고 있는 상태
         {
-            _data.JumpPower += Time.deltaTime * _jumpPowerRate;
+            _data.JumpPower += Time.deltaTime * _jumpPowerRate; //Space를 누르고 있으면 점프력이 상승함
             _animator.SetBool("isIdle", true);
-            //회전 적용
-            if (Input.GetKey(KeyCode.A))
+
+            if (Input.GetKey(KeyCode.A)) // Space + A 키를 누르고 있을 때 
             {
-                _rigidbody.velocity = Vector3.zero;
-                transform.forward = Vector3.left;
+                _rigidbody.velocity = Vector3.zero; // 멈춰서
+                transform.forward = Vector3.left; // 왼쪽을 쳐다봄
             }
             else if (Input.GetKey(KeyCode.D))
             {
@@ -66,25 +64,22 @@ public class ActBaseJump : PlayerAction
                 _rigidbody.velocity = Vector3.zero;
                 transform.forward = Vector3.back;
             }
-            Debug.Log("점프력 차징 중");
             return BTNodeState.Running;
         }
 
         //좌로 점프
-        if ((Input.GetKeyUp(KeyCode.Space)) && ((Input.GetKey(KeyCode.A) )))
+        if ((Input.GetKeyUp(KeyCode.Space)) && ((Input.GetKey(KeyCode.A)))) // A 누른 상태로 Space를 떼면 좌로 점프
         {
             _rigidbody.AddForce(_jumpDirectionL * _data.JumpPower, ForceMode.Impulse);
             JumpEvent();
-            Debug.Log("좌로 살짝 점프");
             return BTNodeState.Success;
         }
 
         // 우로 점프
-        if ((Input.GetKeyUp(KeyCode.Space)) && ((Input.GetKey(KeyCode.D) )))
+        if ((Input.GetKeyUp(KeyCode.Space)) && ((Input.GetKey(KeyCode.D))))
         {
             _rigidbody.AddForce(_jumpDirectionR * _data.JumpPower, ForceMode.Impulse);
             JumpEvent();
-            Debug.Log("우로 살짝 점프");
             return BTNodeState.Success;
         }
 
@@ -93,16 +88,15 @@ public class ActBaseJump : PlayerAction
         {
             _rigidbody.AddForce(Vector3.up * _data.JumpPower, ForceMode.Impulse);
             JumpEvent();
-            Debug.Log("수직 살짝 점프");
             return BTNodeState.Success;
         }
 
         else
         {
-            if (_rigidbody.velocity.y < 0)
+            if (_rigidbody.velocity.y < 0) // 낙하 시
             {
-                Vector3 _curVelocity = new Vector3(0, _rigidbody.velocity.y, 0);
-                
+                Vector3 _curVelocity = new Vector3(0, _rigidbody.velocity.y, 0); // 수직으로 떨어지게 함
+
                 _rigidbody.velocity = _curVelocity;
             }
 
