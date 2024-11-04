@@ -227,13 +227,11 @@ public class PlayerController : MonoBehaviour
         {
 
             _faillingTime += Time.deltaTime; //체공 시간 체크
-            Debug.Log(_faillingTime);
 
             if (_faillingTime > _playerData.CheckedTimeBase)   // (아래에 있는 발판으로)최대 점프력으로 점프 했을 때의 체공시간보다길어지면 낙하로 판정 
             {
                 _faillingTime = 0;
                 DataManager.Instance.SaveData.GameData.FallTime = DataManager.Instance.SaveData.GameData.FallTime + 1; // 낙하 횟수 +1
-                Debug.Log(DataManager.Instance.SaveData.GameData.FallTime);
                 return;
             }
         }
