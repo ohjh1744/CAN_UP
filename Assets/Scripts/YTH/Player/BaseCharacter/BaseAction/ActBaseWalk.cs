@@ -67,6 +67,7 @@ public class ActBaseWalk : PlayerAction
                 StopCoroutine(_data.WalkRoutine);
                 _data.WalkRoutine = null;
             }
+            _animator.SetBool("isIdle", true);
             return BTNodeState.Failure;
         }
 
