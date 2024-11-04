@@ -90,4 +90,13 @@ public class Obstacle01 : MonoBehaviour, IObjectPosition
             _isIncrease = false;                                // 점프 수치가 원상태로 되돌아왔다고 체크
         }
     }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        Rigidbody rigid = collision.collider.GetComponent<Rigidbody>();
+        if (rigid.velocity.y <= 0 && rigid != null)
+        {
+            rigid.velocity = Vector3.down;
+        }
+    }
 }

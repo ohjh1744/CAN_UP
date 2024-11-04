@@ -67,4 +67,13 @@ public class Obstacle10 : MonoBehaviour, IObjectPosition
         gameObject.SetActive(true);
         _isPlatformDestroyed = false;
     }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        Rigidbody rigid = collision.collider.GetComponent<Rigidbody>();
+        if (rigid.velocity.y <= 0)
+        {
+            rigid.velocity = Vector3.down;
+        }
+    }
 }
