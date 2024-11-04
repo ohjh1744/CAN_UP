@@ -8,7 +8,7 @@ public class BounceZone : MonoBehaviour
     [SerializeField] PhysicMaterial _physic;
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Base"))
+        if (other.CompareTag("Base") || other.CompareTag("Stone") || other.CompareTag("Jumper"))
         {
             other.material = _physic;
         }
@@ -16,7 +16,7 @@ public class BounceZone : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Base"))
+        if (other.CompareTag("Base") || other.CompareTag("Stone") || other.CompareTag("Jumper"))
         {
             other.material = null;
         }
