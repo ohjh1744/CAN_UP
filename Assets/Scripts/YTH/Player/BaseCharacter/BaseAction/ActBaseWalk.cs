@@ -75,7 +75,7 @@ public class ActBaseWalk : PlayerAction
 
     private IEnumerator PlayWalkSound()
     {
-        while (true)
+        while (!Input.GetKey(KeyCode.Space))
         {
             _audio.clip = _audioClip;
             _audio.Play();
