@@ -34,11 +34,7 @@ public class Platform : MonoBehaviour , IObjectPosition
             if(collision.collider.CompareTag("Base") || collision.collider.CompareTag("Stone"))
             {
                 _audio.PlayOneShot(_audioClip);
-                // 세이브하는 플렛폼일 경우
-                if (_isSavePlatform == true)
-                {
-                    UpdateSavePoint(_stage);
-                }
+                UpdateSavePoint(_stage);
             }
 
 
@@ -59,7 +55,7 @@ public class Platform : MonoBehaviour , IObjectPosition
         }
     }
 
-    // 세이브 포인트 지점 설정
+    // 세이브 포인트 지점 및 현재 currentStage 설정.
     private void UpdateSavePoint(EStage stage)
     {
         Debug.Log(true);
@@ -67,27 +63,47 @@ public class Platform : MonoBehaviour , IObjectPosition
         {
             // 1번째 세이브지점
             case EStage.First:
-                _gameSceneManager.CurrentSaveStage = 1;
+                _gameSceneManager.CurrentStage = 1;
+                if(_isSavePlatform == true)
+                {
+                    _gameSceneManager.CurrentSaveStage = 1;
+                }
                 break;
 
             // 2번째 세이브지점
             case EStage.Second:
-                _gameSceneManager.CurrentSaveStage = 2;
+                _gameSceneManager.CurrentStage = 2;
+                if (_isSavePlatform == true)
+                {
+                    _gameSceneManager.CurrentSaveStage = 2;
+                }
                 break;
 
             // 3번째 세이브지점
             case EStage.Third:
-                _gameSceneManager.CurrentSaveStage = 3;
+                _gameSceneManager.CurrentStage = 3;
+                if (_isSavePlatform == true)
+                {
+                    _gameSceneManager.CurrentSaveStage = 3;
+                }
                 break;
 
             // 4번째 세이브지점
             case EStage.Fourth:
-                _gameSceneManager.CurrentSaveStage = 4;
+                _gameSceneManager.CurrentStage = 4;
+                if (_isSavePlatform == true)
+                {
+                    _gameSceneManager.CurrentSaveStage = 4;
+                }
                 break;
 
             // 5번째 세이브지점
             case EStage.Fifth:
-                _gameSceneManager.CurrentSaveStage = 5;
+                _gameSceneManager.CurrentStage = 5;
+                if (_isSavePlatform == true)
+                {
+                    _gameSceneManager.CurrentSaveStage = 5;
+                }
                 break;
         }
 
