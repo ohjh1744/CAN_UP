@@ -273,12 +273,14 @@ public class GameSceneManager : UIBInder
                 DataManager.Instance.SaveData.GameData.CameraPos = new Vector3(0, 243, -4);
                 break;
         }
-        DataManager.Instance.Save();
+
         DataManager.Instance.SaveData.GameData.IsClear = false;
         DataManager.Instance.SaveData.GameData.PlayerStage = _currentSaveStage;
         DataManager.Instance.SaveData.GameData.HasItem = false;
         DataManager.Instance.SaveData.GameData.ItemStage = _currentStage;
         DataManager.Instance.SaveData.GameData.PlayTime = _curPlayTime;
+
+        DataManager.Instance.Save();
 
         Application.Quit();
     }
