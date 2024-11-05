@@ -309,7 +309,6 @@ public class GameSceneManager : UIBInder
         DataManager.Instance.ResetData();
         _clearPanel.SetActive(true);
         SoundManager.Instance.PlaySFX(_audioClear);
-        _sceneChanger.ChangeScene("MainScene");
     }
 
     private void UpdateJumpTime()
