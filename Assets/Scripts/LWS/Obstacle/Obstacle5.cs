@@ -44,9 +44,8 @@ public class Obstacle5 : MonoBehaviour, IObjectPosition
         // 프리팹 생성
         GameObject obstacle = Instantiate(_obstaclePrefab, transform.position, Quaternion.identity);
 
-        // 발사설정
-        Rigidbody rigid = obstacle.GetComponent<Rigidbody>();
-
-        rigid.velocity = _direction.normalized * _launchSpeed;
+        // Obstacle5Bullet의 Initialize 메서드를 호출하여 방향과 속도 설정
+        Obstacle5Bullet bullet = obstacle.GetComponent<Obstacle5Bullet>();
+        bullet.Initialize(_direction, _launchSpeed);
     }
 }
