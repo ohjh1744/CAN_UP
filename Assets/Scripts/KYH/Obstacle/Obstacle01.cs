@@ -5,12 +5,6 @@ using UnityEngine;
 
 public class Obstacle01 : MonoBehaviour, IObjectPosition
 {
-    // BaseCharacter의 데이터
-    [SerializeField] BaseData _baseData;
-
-    // 전체 캐릭터의 데이터
-    [SerializeField] PlayerData _playerData;
-
     // Item의 데이터
     [SerializeField] Item _itemData;
 
@@ -48,15 +42,15 @@ public class Obstacle01 : MonoBehaviour, IObjectPosition
         // 플레이어가 BaseCharacter인 경우
         if (player.gameObject.tag == "Base")
         {
-            _baseData = player.GetComponent<BaseData>();    // BaseCharacter의 데이터를 참조
-            _baseData.MaxJumpPower += _jumpForce;           // BaseCharacter의 최대 점프치를 _jumpForce만큼 증가
+            PlayerData playerData = player.gameObject.GetComponent<PlayerData>();
+            playerData.MaxJumpPower += _jumpForce;           // BaseCharacter의 최대 점프치를 _jumpForce만큼 증가
             _isIncrease = true;                             // 점프 수치가 증가됐다고 체크
         }
         // 플레이어가 나머지 캐릭터 중 하나인 경우
         else
         {
-            _playerData = player.GetComponent<PlayerData>();    // 플레이어의 데이터를 참조
-            _playerData.JumpPower += _jumpForce;                // 플레이어의 점프력을 _jumpForce만큼 증가
+            PlayerData playerData = player.gameObject.GetComponent<PlayerData>();
+            playerData.JumpPower += _jumpForce;                // 플레이어의 점프력을 _jumpForce만큼 증가
             _isIncrease = true;                                 // 점프 수치가 증가됐다고 체크
         }
     }
@@ -78,15 +72,15 @@ public class Obstacle01 : MonoBehaviour, IObjectPosition
         // 플레이어가 BaseCharacter인 경우
         if (player.gameObject.tag == "Base")
         {
-            _baseData = player.GetComponent<BaseData>();    // BaseCharacter의 데이터를 참조
-            _baseData.MaxJumpPower -= _jumpForce;           // BaseCharacter의 최대 점프치를 _jumpForce만큼 감소
+            PlayerData playerData = player.gameObject.GetComponent<PlayerData>();
+            playerData.MaxJumpPower -= _jumpForce;           // BaseCharacter의 최대 점프치를 _jumpForce만큼 감소
             _isIncrease = false;                            // 점프 수치가 원상태로 되돌아왔다고 체크
         }
         // 플레이어가 나머지 캐릭터 중 하나인 경우
         else
         {
-            _playerData = player.GetComponent<PlayerData>();    // 플레이어의 데이터를 참조
-            _playerData.JumpPower -= _jumpForce;                // 플레이어의 최대 점프치를 _jumpForce만큼 감소
+            PlayerData playerData = player.gameObject.GetComponent<PlayerData>();
+            playerData.JumpPower -= _jumpForce;                // 플레이어의 최대 점프치를 _jumpForce만큼 감소
             _isIncrease = false;                                // 점프 수치가 원상태로 되돌아왔다고 체크
         }
     }

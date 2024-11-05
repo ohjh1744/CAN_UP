@@ -7,10 +7,6 @@ public class BaseData : PlayerData
 
     public float MoveSpeed { get { return _moveSpeed; } set { _moveSpeed = value; } }
 
-    [SerializeField] private float _maxJumpPower; // 최대 점프력 = 5m
-
-    public float MaxJumpPower { get { return _maxJumpPower; } set { _maxJumpPower = value; } }
-
     [SerializeField] private float _rate;
 
     public float Rate { get { return _rate; } set { _rate = value; } }
