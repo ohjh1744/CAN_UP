@@ -61,6 +61,7 @@ public class Obstacle07 : MonoBehaviour, IResetObject, IObjectPosition
 
     public void Reset()
     {
+        _isMove = false;
         _gameObject.transform.position = _startPos;
     }
 }

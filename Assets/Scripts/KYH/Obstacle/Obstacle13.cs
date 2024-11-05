@@ -77,6 +77,7 @@ public class Obstacle13 : MonoBehaviour, IResetObject, IObjectPosition
 
     public void Reset()
     {
+        _isRotate = false;
         transform.rotation = _startRot;
     }
 }

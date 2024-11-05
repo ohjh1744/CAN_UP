@@ -18,6 +18,10 @@ public class CondBaseCanMove : PlayerCondition
         {
             if (_hit[i].CompareTag("Ground") || _hit[i].CompareTag("ObstacleTri") || _hit[i].CompareTag("ObstacleCol"))
             {
+                if (_hit[i].CompareTag("ObstacleTri") || _hit[i].gameObject.layer == 3)
+                {
+                    continue;
+                }
                 _data.IsGrounded = true;
                 return true;
             }
