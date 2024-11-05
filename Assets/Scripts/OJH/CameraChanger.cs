@@ -32,6 +32,8 @@ public class CameraChanger : MonoBehaviour
                 _camera.transform.position = new Vector3(0, (_cameraHeight * _index) - _cameraHalfHeight + _cameraHeight, _cameraOffsetZ);
                 Debug.Log("hiiii");
             }
+
+            _gameSceneManager.Reset();
         }
     }
 

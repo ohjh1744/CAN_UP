@@ -46,6 +46,16 @@ public class Obstacle9 : MonoBehaviour, IReplaceObstacle, IObjectPosition
         _escapePlatform.velocity = moveDir;
     }
 
+    public void Cansle(PlayerController player)
+    {
+        _escapePlatform.velocity = Vector3.zero;
+    }
+
+    public void Cansle(Item item)
+    {
+        _escapePlatform.velocity = Vector3.zero;
+    }
+
     public void Replace()
     {
         _replaceObject.SetActive(true);
