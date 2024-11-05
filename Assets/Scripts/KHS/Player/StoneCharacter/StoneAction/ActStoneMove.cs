@@ -5,6 +5,7 @@ using UnityEngine;
 public class ActStoneMove : PlayerAction
 {
     [SerializeField] StoneData _data;
+
     [SerializeField] GameObject _playerForcePos;
 
     public override BTNodeState DoAction()

@@ -2854,7 +2854,7 @@ GameObject:
   - component: {fileID: 69352924}
   - component: {fileID: 69352923}
   m_Layer: 2
-  m_Name: obstacle1_2
+  m_Name: obstacle3_2
   m_TagString: ObstacleTri
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6018,6 +6018,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone
       objectReference: {fileID: 0}
+    - target: {fileID: 3227878075326741986, guid: 30bf7ab05c3b09e4fb041dd72ab3d116, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3227878075326741991, guid: 30bf7ab05c3b09e4fb041dd72ab3d116, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -6028,7 +6032,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3227878075326741991, guid: 30bf7ab05c3b09e4fb041dd72ab3d116, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.6009467
+      value: 17.98
       objectReference: {fileID: 0}
     - target: {fileID: 3227878075326741991, guid: 30bf7ab05c3b09e4fb041dd72ab3d116, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6063,9 +6067,29 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7481959439214822292, guid: 30bf7ab05c3b09e4fb041dd72ab3d116, type: 3}
+      propertyPath: _jumpPower
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7481959439214822292, guid: 30bf7ab05c3b09e4fb041dd72ab3d116, type: 3}
       propertyPath: _mainCamera
       value: 
       objectReference: {fileID: 77271058}
+    - target: {fileID: 7481959439214822293, guid: 30bf7ab05c3b09e4fb041dd72ab3d116, type: 3}
+      propertyPath: _nodeDatas.Array.data[2].NodeName
+      value: Sequence2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7481959439214822293, guid: 30bf7ab05c3b09e4fb041dd72ab3d116, type: 3}
+      propertyPath: _nodeDatas.Array.data[2].NodeType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7481959439214822293, guid: 30bf7ab05c3b09e4fb041dd72ab3d116, type: 3}
+      propertyPath: _edgeDatas.Array.data[1].ParentName
+      value: Sequence2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7481959439214822293, guid: 30bf7ab05c3b09e4fb041dd72ab3d116, type: 3}
+      propertyPath: _edgeDatas.Array.data[0].ChildNames.Array.data[1]
+      value: Sequence2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30bf7ab05c3b09e4fb041dd72ab3d116, type: 3}
 --- !u!4 &163699826 stripped
@@ -70098,12 +70122,10 @@ MonoBehaviour:
   - {fileID: 2034995313}
   - {fileID: 940228561}
   - {fileID: 1379609575}
-  - {fileID: 0}
+  - {fileID: 438354519}
   - {fileID: 536901369}
   - {fileID: 1107324953}
   - {fileID: 1576465828}
-  - {fileID: 0}
-  - {fileID: 0}
   _replaceObstacles:
   - {fileID: 1916241312}
   _escPanel: {fileID: 1940569034}
@@ -70115,7 +70137,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 51a89ff55f2e4be4ba319f776ba9f3e1, type: 3}
   - {fileID: 8300000, guid: a3d6739d4740a5d47b622db8794cb79a, type: 3}
   - {fileID: 8300000, guid: 61cb60d759c121d429de2e0f0b1a7543, type: 3}
-  _audioClear: {fileID: 0}
+  _audioClear: {fileID: 8300000, guid: af5faf033d4cd504787409510bc05417, type: 3}
   _uiCommonSound: {fileID: 482167126}
 --- !u!4 &1958565682
 Transform:
@@ -72801,7 +72823,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7836743699466688860, guid: 2509af5666dac024a88f8611833d7e22, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7836743699466688861, guid: 2509af5666dac024a88f8611833d7e22, type: 3}
       propertyPath: _item

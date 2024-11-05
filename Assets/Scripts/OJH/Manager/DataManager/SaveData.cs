@@ -33,6 +33,10 @@ public class GameData
 
     public int ItemStage { get { return _itemStage; } set { _itemStage = value; } }
 
+    [SerializeField] private Vector3 _cameraPos;
+
+    public Vector3 CameraPos { get { return _cameraPos; } set { _cameraPos = value; } }
+
     //점프 횟수 mvp 패턴 적용
     [SerializeField] private int _jumpTime;
 
@@ -47,6 +51,7 @@ public class GameData
     [SerializeField] private float _playTime;
 
     public float PlayTime { get { return _playTime; } set { _playTime = value; OnPlayTimeChange?.Invoke(); } }
+
 
     public event UnityAction OnJumpTimeChange;
 

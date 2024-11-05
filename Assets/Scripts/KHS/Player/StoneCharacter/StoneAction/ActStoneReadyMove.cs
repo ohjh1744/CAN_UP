@@ -17,23 +17,24 @@ public class ActStoneReadyMove : PlayerAction
         if (Input.GetMouseButton(0))
         {
             DetectPlayerWithRay();
-            //_data.Flying = false;
             if (_data.IsDragging)
             {
+                Debug.Log("땅김");
                 DrawLineToCursor();
             }
-            return BTNodeState.Running;
         }
         
-        else if(Input.GetMouseButtonUp(0) && _data.SelectedPlayer != null) 
+        if(Input.GetMouseButtonUp(0) && _data.SelectedPlayer != null) 
         {
+            Debug.Log("마우스 땜");
             _audio.loop = false;
             _audio.PlayOneShot(_audioClip[(int)EStoneSound.Fly]);
             _data.IsDragging = false;
             _data.LineRenderer.enabled = false;
-            return BTNodeState.Failure;
+            return BTNodeState.Success;
         }
-        return BTNodeState.Running;
+
+        return BTNodeState.Failure;
 
     }
 

@@ -223,6 +223,9 @@ public class GameSceneManager : UIBInder
 
         // 4. 캐릭터 가져오기
         _players[DataManager.Instance.SaveData.GameData.CharacterNum].SetActive(true);
+
+        // 5. 카메라 포지션 가져오기
+        Camera.main.transform.position = DataManager.Instance.SaveData.GameData.CameraPos;
     }
 
     private void CheckState()
@@ -237,11 +240,7 @@ public class GameSceneManager : UIBInder
             _currentSaveStage = _currentStage;
         }
 
-        // 2. CheckResetObject
-        // CheckResetObject();
-        // -> CameraChanger에서 사용
-
-        // 3. Item위치 체크 후 갱신
+        // 2. Item위치 체크 후 갱신
         if (!DataManager.Instance.SaveData.GameData.HasItem)
         {
             if (_item.transform.position.y < _stageHight[_currentStage])
@@ -259,12 +258,28 @@ public class GameSceneManager : UIBInder
 
     private void SaveAndQuitGame(PointerEventData eventData)
     {
+        switch (_currentSaveStage)
+        {
+            case (int)EStage.First:
+                DataManager.Instance.SaveData.GameData.CameraPos = new Vector3(0, 9 , -4);
+                break;
+            case (int)EStage.Second:
+                DataManager.Instance.SaveData.GameData.CameraPos = new Vector3(0, 63, -4);
+                break;
+            case (int)EStage.Third:
+                DataManager.Instance.SaveData.GameData.CameraPos = new Vector3(0, 153, -4);
+                break;
+            case (int)EStage.Fourth:
+                DataManager.Instance.SaveData.GameData.CameraPos = new Vector3(0, 243, -4);
+                break;
+        }
+        DataManager.Instance.Save();
         DataManager.Instance.SaveData.GameData.IsClear = false;
         DataManager.Instance.SaveData.GameData.PlayerStage = _currentSaveStage;
         DataManager.Instance.SaveData.GameData.HasItem = false;
         DataManager.Instance.SaveData.GameData.ItemStage = _currentStage;
         DataManager.Instance.SaveData.GameData.PlayTime = _curPlayTime;
-        DataManager.Instance.Save();
+
         Application.Quit();
     }
 

@@ -52,6 +52,9 @@ public class DataManager : MonoBehaviour
 
         //PlayTime 초기화
         _saveData.GameData.PlayTime = 0;
+
+        //카메라포지션 초기화
+        _saveData.GameData.CameraPos = new Vector3(0, 9, -4);
     }
 
     public void Save()

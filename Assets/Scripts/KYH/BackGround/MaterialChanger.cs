@@ -4,7 +4,7 @@ using UnityEngine;
 using Cinemachine;
 using System.Runtime.CompilerServices;
 
-public class CameraChange : MonoBehaviour
+public class MaterialChanger : MonoBehaviour
 {
     // GameSceneManager 클래스 참조용
     [SerializeField] private GameSceneManager _gameSceneManager;
