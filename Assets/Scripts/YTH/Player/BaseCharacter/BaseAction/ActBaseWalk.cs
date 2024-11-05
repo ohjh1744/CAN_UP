@@ -70,8 +70,6 @@ public class ActBaseWalk : PlayerAction
             _animator.SetBool("isIdle", true);
             return BTNodeState.Failure;
         }
-
-
     }
 
     private IEnumerator PlayWalkSound()

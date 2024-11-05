@@ -17,6 +17,10 @@ public class PlayerData : MonoBehaviour
 
     public float JumpPower { get { return _jumpPower; } set { _jumpPower = value; } }
 
+    [SerializeField] private float _maxJumpPower;
+
+    public float MaxJumpPower { get { return _maxJumpPower; } set { _maxJumpPower = value; } }
+
     [SerializeField] private bool _isGrounded;
 
     public bool IsGrounded { get { return _isGrounded; } set { _isGrounded = value; } }

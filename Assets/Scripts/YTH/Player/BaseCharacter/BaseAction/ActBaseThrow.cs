@@ -26,17 +26,17 @@ public class ActBaseThrow : PlayerAction
 
     public void ThrowItem()
     {
-        Vector3 _mousePos = Input.mousePosition;
-        _mousePos.z = Camera.main.WorldToScreenPoint(throwPoint.position).z;
+        Vector3 mousePos = Input.mousePosition;
+        mousePos.z = Camera.main.WorldToScreenPoint(throwPoint.position).z;
 
-        Vector3 _worldMousePos = Camera.main.ScreenToWorldPoint(_mousePos);
-        _worldMousePos.z = throwPoint.position.z; // Z축 고정
+        Vector3 worldMousePos = Camera.main.ScreenToWorldPoint(mousePos);
+        worldMousePos.z = throwPoint.position.z; // Z축 고정
 
         // 던질 방향 계산 (X, Y축만 고려)
-        Vector3 _throwDirection = (_worldMousePos - transform.position).normalized;
-        _throwDirection.z = 0; // Z축을 0으로 고정
+        Vector3 throwDirection = (worldMousePos - transform.position).normalized;
+        throwDirection.z = 0; // Z축을 0으로 고정
 
-        if (_worldMousePos.x > transform.position.x) // 던진 방향으로 쳐다봄
+        if (worldMousePos.x > transform.position.x) // 던진 방향으로 쳐다봄
         {
             transform.forward = Vector3.right;
         }
@@ -51,7 +51,7 @@ public class ActBaseThrow : PlayerAction
         _itemRb.isKinematic = false;                                                          //
         _collider.enabled = true;                                                             //
         _collider.isTrigger = true;                                                           // 
-        _itemRb.AddForce(_throwDirection * _data.ThrowPower, ForceMode.Impulse);               //
+        _itemRb.AddForce(throwDirection * _data.ThrowPower, ForceMode.Impulse);               //
 
         _data.HasItem = false;
     }

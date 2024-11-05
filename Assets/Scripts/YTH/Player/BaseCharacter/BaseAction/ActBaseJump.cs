@@ -95,9 +95,9 @@ public class ActBaseJump : PlayerAction
         {
             if (_rigidbody.velocity.y < 0) // 낙하 시
             {
-                Vector3 _curVelocity = new Vector3(0, _rigidbody.velocity.y, 0); // 수직으로 떨어지게 함
+                Vector3 curVelocity = new Vector3(0, _rigidbody.velocity.y, 0); // 수직으로 떨어지게 함
 
-                _rigidbody.velocity = _curVelocity;
+                _rigidbody.velocity = curVelocity;
             }
 
             return BTNodeState.Failure;
