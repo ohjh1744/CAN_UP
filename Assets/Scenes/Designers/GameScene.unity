@@ -25727,7 +25727,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 757936252}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.495, y: 0.42, z: 0}
+  m_LocalPosition: {x: -0.495, y: 0.24, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -28051,6 +28051,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2055474097}
     m_Modifications:
+    - target: {fileID: 2494564716251522933, guid: 51deb36ac2aa6f944aa188bf219279ea, type: 3}
+      propertyPath: _checkedFallTime
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2494564716251522953, guid: 51deb36ac2aa6f944aa188bf219279ea, type: 3}
       propertyPath: m_Name
       value: Jumper
@@ -52565,7 +52569,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1495420204}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.9735565, y: 38.04, z: -2.01795}
+  m_LocalPosition: {x: 12.9735565, y: 35.99, z: -2.01795}
   m_LocalScale: {x: 4, y: 2, z: 2.58749}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -66742,8 +66746,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1896444059}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.978134, y: 1.6699886, z: -0.036862455}
-  m_LocalScale: {x: 0.20000002, y: 2.1984599, z: 0.5636107}
+  m_LocalPosition: {x: 0.978134, y: 3.31, z: -0.036862455}
+  m_LocalScale: {x: 0.20000002, y: 6.02334, z: 0.5636107}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1222439402}
@@ -69989,7 +69993,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _savePointYOffset: 2
-  _itemPointXOffset: 0
+  _itemPointXOffset: 1
   _savePoints:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
@@ -72712,6 +72716,10 @@ PrefabInstance:
       propertyPath: _item
       value: 
       objectReference: {fileID: 105366144}
+    - target: {fileID: 7836743699466688839, guid: 2509af5666dac024a88f8611833d7e22, type: 3}
+      propertyPath: _jumpPowerRate
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 7836743699466688841, guid: 2509af5666dac024a88f8611833d7e22, type: 3}
       propertyPath: m_Material
       value: 
@@ -72720,13 +72728,21 @@ PrefabInstance:
       propertyPath: _throwPower
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 7836743699466688842, guid: 2509af5666dac024a88f8611833d7e22, type: 3}
+      propertyPath: _maxJumpPower
+      value: 10.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7836743699466688842, guid: 2509af5666dac024a88f8611833d7e22, type: 3}
+      propertyPath: _checkedFallTime
+      value: 3.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7836743699466688860, guid: 2509af5666dac024a88f8611833d7e22, type: 3}
       propertyPath: m_Name
       value: Base
       objectReference: {fileID: 0}
     - target: {fileID: 7836743699466688860, guid: 2509af5666dac024a88f8611833d7e22, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7836743699466688861, guid: 2509af5666dac024a88f8611833d7e22, type: 3}
       propertyPath: _item
