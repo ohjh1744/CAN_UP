@@ -7,6 +7,9 @@ public class Obstacle13 : MonoBehaviour, IResetObject, IObjectPosition
     // Reset 시 시작 각도 저장용 변수
     private Quaternion _startRot;
 
+    // Reset 시 시작 각도 저장용 변수
+    private Vector3 _startPos;
+
     // Reset 시 사용할 스테이지 목차
     [SerializeField] private int _stageNum;
     public int StageNum { get; set; }
@@ -45,8 +48,11 @@ public class Obstacle13 : MonoBehaviour, IResetObject, IObjectPosition
 
     private void Start()
     {
+        _isRotate = false;
         // 처음의 회전 각도를 저장
         _startRot = transform.rotation;
+        // 처음의 위치를 저장
+        _startPos = transform.position;
     }
 
     // 발판 회전 함수(플레이어용)
@@ -77,7 +83,8 @@ public class Obstacle13 : MonoBehaviour, IResetObject, IObjectPosition
 
     public void Reset()
     {
+        _gameObject.transform.rotation = _startRot;
+        _gameObject.transform.position = _startPos;
         _isRotate = false;
-        transform.rotation = _startRot;
     }
 }
