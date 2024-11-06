@@ -6,19 +6,19 @@ using UnityEngine;
 public class BounceZone : MonoBehaviour
 {
     [SerializeField] PhysicMaterial _physic;
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision other)
     {
-        if (other.CompareTag("Base") || other.CompareTag("Stone") || other.CompareTag("Jumper"))
+        if (other.gameObject.CompareTag("Base") || other.gameObject.CompareTag("Stone") || other.gameObject.CompareTag("Jumper"))
         {
-            other.material = _physic;
+            other.collider.material = _physic;
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnCollisionExit(Collision other)
     {
-        if (other.CompareTag("Base") || other.CompareTag("Stone") || other.CompareTag("Jumper"))
+        if (other.gameObject.CompareTag("Base") || other.gameObject.CompareTag("Stone") || other.gameObject.CompareTag("Jumper"))
         {
-            other.material = null;
+            other.collider.material = null;
         }
     }
 }
