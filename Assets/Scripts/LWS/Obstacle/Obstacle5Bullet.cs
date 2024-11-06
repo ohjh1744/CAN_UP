@@ -5,11 +5,14 @@ using UnityEngine;
 public class Obstacle5Bullet : MonoBehaviour
 {
     // 부딪혔을 때 플레이어를 밀 힘
-    [SerializeField] private float pushForce;
+    [SerializeField] private float _pushForce;
+    [SerializeField] private Vector3 _pushDir;
 
     // 이동 속도와 방향
     private Vector3 _direction;
     private float _speed;
+
+
 
     private void Start()
     {
@@ -33,8 +36,7 @@ public class Obstacle5Bullet : MonoBehaviour
         // 플레이어의 rigid를 가져옴
         Rigidbody rigid = player.GetComponent<Rigidbody>();
 
-        Vector3 pushDir = (rigid.transform.position - transform.position).normalized;
-        rigid.AddForce(pushDir * pushForce, ForceMode.Impulse);
+        rigid.AddForce(_pushDir * _pushForce, ForceMode.Impulse);
 
         Destroy(gameObject);
     }
@@ -44,7 +46,8 @@ public class Obstacle5Bullet : MonoBehaviour
         // 플레이어의 rigid를 가져옴
         Rigidbody rigid = item.GetComponent<Rigidbody>();
 
-        Vector3 pushDir = (rigid.transform.position - transform.position).normalized;
-        rigid.AddForce(pushDir * pushForce, ForceMode.Impulse);
+        rigid.AddForce(_pushDir * _pushForce, ForceMode.Impulse);
+
+        Destroy(gameObject);
     }
 }
