@@ -8,7 +8,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class MainSceneManager : UIBInder
+public class MainSceneContext : UIBInder
 {
     // SceneChanger 클래스 참조용
     [SerializeField] private SceneChanger _sceneChanger;

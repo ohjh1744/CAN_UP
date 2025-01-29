@@ -6,7 +6,7 @@ public class CameraChanger : MonoBehaviour
 
     [SerializeField] private GameObject _camera;
 
-    [SerializeField] private GameSceneManager _gameSceneManager;
+    [SerializeField] private GameSceneContext _gameSceneManager;
 
     [SerializeField] private int _cameraHeight;
 

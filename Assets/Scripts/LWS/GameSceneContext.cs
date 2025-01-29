@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class GameSceneManager : UIBInder
+public class GameSceneContext: UIBInder
 {
     private StringBuilder _sb = new StringBuilder();
 

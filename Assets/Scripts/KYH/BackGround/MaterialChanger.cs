@@ -7,7 +7,7 @@ using System.Runtime.CompilerServices;
 public class MaterialChanger : MonoBehaviour
 {
     // GameSceneManager 클래스 참조용
-    [SerializeField] private GameSceneManager _gameSceneManager;
+    [SerializeField] private GameSceneContext _gameSceneManager;
 
     // 스테이지 별 배경 스카이박스 메터리얼 저장용 배열
     [SerializeField] private Material[] _skyMaterials;

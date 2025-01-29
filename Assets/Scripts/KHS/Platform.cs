@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Platform : MonoBehaviour , IObjectPosition
 {
-    [SerializeField] GameSceneManager _gameSceneManager;
+    [SerializeField] GameSceneContext _gameSceneManager;
 
     [SerializeField] EStage _stage;
 
